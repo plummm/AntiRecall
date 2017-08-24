@@ -58,7 +58,6 @@ namespace AntiRecall
         private void UpdateCount()
         {
             Regex re = new Regex("[\\d*?]");
-            Console.WriteLine(count);
             Recall_Text.Text = re.Replace(Recall_Text.Text, Convert.ToString(Math.Ceiling(count / 8)));
         }
 
