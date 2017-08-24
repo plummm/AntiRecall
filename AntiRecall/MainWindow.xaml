@@ -1,0 +1,34 @@
+﻿<Window x:Class="AntiRecall.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        Title="AntiRecall" 
+        Height="350" 
+        Width="350"
+        ResizeMode="CanMinimize">
+    <Grid VerticalAlignment="Center">
+        <TextBlock Margin="95,-109,193,127" 
+                   Text="端口"
+                   FontWeight="Black"
+                   FontSize="25"/>
+        <TextBox MinWidth="64" 
+                 HorizontalAlignment="Center" 
+                 VerticalAlignment="Center" 
+                 x:Name="PortText" 
+                 Margin="166,-112,113,125" 
+                 Text="7777"
+                 FontSize="20" Width="63"/>
+
+        <TextBlock Text="已经拦截到 [0] 次撤回"
+                   x:Name="Recall_Text"
+                   TextAlignment="Center"
+                   FontSize="17"
+                   FontWeight="Black" Margin="0,10,0,-8"/>
+
+        <Button Content="开始" 
+                x:Name="Start" 
+                Click="StartButton_Click" 
+                Margin="95,115,98,-101" 
+                FontSize="20"/>
+    </Grid>
+</Window>
