@@ -3,14 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Forms;
 using System.Drawing;
 using socks5;
@@ -28,14 +20,30 @@ namespace AntiRecall
     {
 
         private string port;
+        private static NotifyIcon ni;
         public static socks5.Socks5Server proxy;
         public static double count { get; set; }
 
         private void init_minimize()
         {
-            NotifyIcon ni = new NotifyIcon();
-            ni.Icon = new Icon("../../Resources/main.ico");
+            MenuItem menuItem1 = new MenuItem();
+            ContextMenu contextMenu = new ContextMenu();
+
+            menuItem1.Index = 0;
+            menuItem1.Text = "退出";
+            menuItem1.Click += new System.EventHandler(menuItem1_Click);
+            contextMenu.MenuItems.Add(menuItem1);
+
+            ni = new NotifyIcon();
+            ni.Text = "一个优雅的防撤回工具";
+            ni.ContextMenu = contextMenu;
             ni.Visible = true;
+#if DEBUG
+            ni.Icon = new Icon("../../Resources/main.ico");
+#else
+            //注意路径
+            ni.Icon = new Icon("./Resources/main.ico");
+#endif
             ni.DoubleClick +=
                 delegate (object sender, EventArgs args)
                 {
@@ -75,8 +83,6 @@ namespace AntiRecall
             InitializeComponent();
 
             init_minimize();
-            Thread recallCount = new Thread(ModifyRecallCount);
-            recallCount.Start();
         }
 
 
@@ -88,6 +94,8 @@ namespace AntiRecall
             Start.IsEnabled = false;
             Start.Content = "正在监听";
             init_socks5();
+            Thread recallCount = new Thread(ModifyRecallCount);
+            recallCount.Start();
         }
 
         protected override void OnStateChanged(EventArgs e)
@@ -95,8 +103,23 @@ namespace AntiRecall
             if (WindowState == System.Windows.WindowState.Minimized)
                 this.Hide();
 
+            ni.BalloonTipTitle = "AntiRecall";
+            ni.BalloonTipText = "已将AntiRecall最小化到托盘,程序将在后台运行";
+            ni.BalloonTipIcon = ToolTipIcon.Info;
+            ni.ShowBalloonTip(30000);
             base.OnStateChanged(e);
         }
 
+        protected override void OnClosed(EventArgs e)
+        {
+            ni.Visible = false;
+            base.OnClosed(e);
+            App.Current.Shutdown();
+        }
+
+        private void menuItem1_Click(object Sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

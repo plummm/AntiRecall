@@ -6,6 +6,7 @@
         Height="350" 
         Width="350"
         ResizeMode="CanMinimize">
+    
     <Grid VerticalAlignment="Center">
         <TextBlock Margin="95,-109,193,127" 
                    Text="端口"
@@ -30,5 +31,7 @@
                 Click="StartButton_Click" 
                 Margin="95,115,98,-101" 
                 FontSize="20"/>
+
+     
     </Grid>
 </Window>
