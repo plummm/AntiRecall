@@ -85,12 +85,13 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="Telerik.Windows.Controls, Version=2017.2.614.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+    <Reference Include="Telerik.Windows.Controls, Version=2017.2.614.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\IDE\Telerik\UI for WPF R2 2017\Binaries\WPF40\Telerik.Windows.Controls.dll</HintPath>
+      <HintPath>library\Telerik.Windows.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Themes.Material">
-      <HintPath>..\..\..\..\IDE\Telerik\UI for WPF R2 2017\Binaries.NoXaml\WPF40\Telerik.Windows.Themes.Material.dll</HintPath>
+    <Reference Include="Telerik.Windows.Themes.Material, Version=2017.2.614.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>library\Telerik.Windows.Themes.Material.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />

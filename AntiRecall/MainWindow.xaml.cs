@@ -66,11 +66,11 @@ namespace AntiRecall
 
         private void UpdateCount()
         {
-            Regex re = new Regex("[\\d*?]");
+            Regex re = new Regex("\\[\\d*\\]");
 #if DEBUG
             Console.WriteLine(count);
 #endif
-            Recall_Text.Text = re.Replace(Recall_Text.Text, Convert.ToString(Math.Ceiling(count / 8)));
+            Recall_Text.Text = re.Replace(Recall_Text.Text, "["+Convert.ToString(Math.Ceiling(count / 8))+"]");
         }
 
         public void ModifyRecallCount()
