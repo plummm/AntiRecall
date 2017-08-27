@@ -8,8 +8,8 @@
 
 配置QQ
 
-![](https://etenal.me/wp-content/uploads/2017/08/0.png)
+![](https://etenal.me/wp-content/uploads/2017/08/3.gif)
 
-![](https://etenal.me/wp-content/uploads/2017/08/1.png)
+![](https://etenal.me/wp-content/uploads/2017/08/4.gif)
 
 登录
