@@ -24,7 +24,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
+using System.Windows.Forms;
 using System.Text;
+using System.Drawing;
 
 namespace socks5
 {
@@ -41,6 +43,14 @@ namespace socks5
         private int Timeout = 10000;
         private int PacketSize = 4096;
 
+        private static bool is_recallmodule_load;
+        private NotifyIcon module_ni;
+
+        private void disposeBallon(MouseEventHandler value)
+        {
+            module_ni.Visible = false;
+        }
+
         public SocksTunnel(SocksClient p, SocksRequest req, SocksRequest req1, int packetSize, int timeout)
         {
             RemoteClient = new Client(new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp), PacketSize);
@@ -56,8 +66,26 @@ namespace socks5
         public void Open(IPAddress outbound)
         {
             if (ModifiedReq.Address == null || ModifiedReq.Port <= -1) { Client.Client.Disconnect(); return; }
+
+            if (!is_recallmodule_load)
+            {
+                if (ModifiedReq.Address.Equals("httpring.qq.com"))
+                {
+                    is_recallmodule_load = true;
+
+                    module_ni = new NotifyIcon();
+                    module_ni.Icon = SystemIcons.Exclamation;
+                    module_ni.Visible = true;
+                    module_ni.BalloonTipTitle = "AntiRecall";
+                    module_ni.BalloonTipText = "防撤回模块已成功加载";
+                    module_ni.BalloonTipIcon = ToolTipIcon.Info;
+                    module_ni.ShowBalloonTip(30000);
+                    module_ni.Visible = false;
+                    module_ni.Dispose();
+                }
+            }
 #if DEBUG
-            Console.WriteLine("{0}:{1}", ModifiedReq.Address, ModifiedReq.Port);
+            Console.WriteLine("{0}({1}):{2}", ModifiedReq.Address, ModifiedReq.IP, ModifiedReq.Port);
 #endif
             foreach (ConnectSocketOverrideHandler conn in PluginLoader.LoadPlugin(typeof(ConnectSocketOverrideHandler)))
             if(conn.Enabled)

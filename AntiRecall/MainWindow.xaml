@@ -8,7 +8,7 @@
         ResizeMode="CanMinimize">
     
     <Grid VerticalAlignment="Center">
-        <TextBlock Margin="95,-109,193,127" 
+        <TextBlock Margin="95,-109,182,127" 
                    Text="端口"
                    FontWeight="Black"
                    FontSize="25"/>

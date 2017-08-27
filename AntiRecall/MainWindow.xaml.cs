@@ -23,6 +23,7 @@ namespace AntiRecall
         private static NotifyIcon ni;
         public static socks5.Socks5Server proxy;
         public static double count { get; set; }
+        public static bool is_recallmodule_load { get; set; }
 
         private void init_minimize()
         {
@@ -120,6 +121,7 @@ namespace AntiRecall
 
         private void menuItem1_Click(object Sender, EventArgs e)
         {
+            ni.Visible = false;
             proxy.Stop();
             Close();
         }
