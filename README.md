@@ -1,15 +1,25 @@
-# AntiRecall（QQ&&微信防撤回）
+# AntiRecall（QQ防撤回）
 
-这款软件针对Win PC平台，用于防止微信和QQ的撤回
+这款软件用于Win PC平台，针对QQ撤回功能，模块加载成功后方能使用
 
 ## 使用方法
 
-打开软件后配置端口，点击开始
 
-配置QQ
+###### 配置代理
 
-![](https://etenal.me/wp-content/uploads/2017/08/3.gif)
+![](https://etenal.me/wp-content/uploads/2017/08/0.gif)
 
-![](https://etenal.me/wp-content/uploads/2017/08/4.gif)
+###### 配置AntiRecall
 
-登录
+![](https://etenal.me/wp-content/uploads/2017/08/1.gif)
+
+###### 等待撤回模块加载
+
+![](https://etenal.me/wp-content/uploads/2017/08/2.gif)
+
+## TO DO
+
+#### 加快proxy处理数据包速度
+#### 加入自定义规则
+#### 定位确切的撤回消息
+
