@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiRecall", "AntiRecall\AntiRecall.csproj", "{A1EEF2B8-5BEF-46EF-BC94-216884427C1C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B1A31708-7AC8-44C9-BBB3-999BEBE1FA5B} = {B1A31708-7AC8-44C9-BBB3-999BEBE1FA5B}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "socks5", "socks5\socks5\socks5.csproj", "{B1A31708-7AC8-44C9-BBB3-999BEBE1FA5B}"
 EndProject
@@ -35,5 +32,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Socks5Test\Socks5Test.csproj
 	EndGlobalSection
 EndGlobal

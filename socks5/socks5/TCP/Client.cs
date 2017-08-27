@@ -49,26 +49,14 @@ namespace socks5.TCP
         private void DataReceived(IAsyncResult res)
         {
             Receiving = false;
-            int received;
             try
             {
                 SocketError err = SocketError.Success;
-                //Console.WriteLine("disposed {0}", disposed);
-                if (disposed)
+                if(disposed)
                     return;
-                try
-                {
-                    received = ((Socket)res.AsyncState).EndReceive(res, out err);
-                }
-                catch(ObjectDisposedException)
-                {
-                    return;
-                }
-                
+                int received = ((Socket)res.AsyncState).EndReceive(res, out err);
                 if (received <= 0 || err != SocketError.Success)
                 {
-                    //Console.WriteLine("Disconnect");
-
                     this.Disconnect();
                     return;
                 }
@@ -112,9 +100,6 @@ namespace socks5.TCP
 
         public void ReceiveAsync(int buffersize = -1)
         {
-            //Console.WriteLine("disposed {0}", disposed);
-            if (disposed)
-                return;
             try
             {
                 if (buffersize > -1)

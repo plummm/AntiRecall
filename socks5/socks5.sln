@@ -5,14 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "socks5", "socks5\socks5.csproj", "{B1A31708-7AC8-44C9-BBB3-999BEBE1FA5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socks5Test", "Socks5Test\Socks5Test.csproj", "{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNewSocks5", "..\..\..\Visual Studio 2013\Projects\TestNewSocks5\TestNewSocks5\TestNewSocks5.csproj", "{394D5DAD-0337-4DA4-914C-F58B11740715}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNewSocks5Client", "..\..\..\Visual Studio 2013\Projects\TestNewSocks5\TestNewSocks5Client\TestNewSocks5Client.csproj", "{6467E57C-E701-4472-9562-4A3B6F5FF4ED}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacketEditor", "Socks5Projects\PacketEditor\PacketEditor\PacketEditor.csproj", "{E6B3F300-9B27-4A06-8141-1DCA11285BF5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,34 +21,6 @@ Global
 		{B1A31708-7AC8-44C9-BBB3-999BEBE1FA5B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1A31708-7AC8-44C9-BBB3-999BEBE1FA5B}.Release|x86.ActiveCfg = Release|x86
 		{B1A31708-7AC8-44C9-BBB3-999BEBE1FA5B}.Release|x86.Build.0 = Release|x86
-		{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}.Debug|x86.ActiveCfg = Debug|x86
-		{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}.Debug|x86.Build.0 = Debug|x86
-		{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}.Release|x86.ActiveCfg = Release|x86
-		{838E506D-EFE1-4B1E-B7F3-2302FAAD58A2}.Release|x86.Build.0 = Release|x86
-		{394D5DAD-0337-4DA4-914C-F58B11740715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{394D5DAD-0337-4DA4-914C-F58B11740715}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{394D5DAD-0337-4DA4-914C-F58B11740715}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{394D5DAD-0337-4DA4-914C-F58B11740715}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{394D5DAD-0337-4DA4-914C-F58B11740715}.Release|Any CPU.Build.0 = Release|Any CPU
-		{394D5DAD-0337-4DA4-914C-F58B11740715}.Release|x86.ActiveCfg = Release|Any CPU
-		{6467E57C-E701-4472-9562-4A3B6F5FF4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6467E57C-E701-4472-9562-4A3B6F5FF4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6467E57C-E701-4472-9562-4A3B6F5FF4ED}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6467E57C-E701-4472-9562-4A3B6F5FF4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6467E57C-E701-4472-9562-4A3B6F5FF4ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6467E57C-E701-4472-9562-4A3B6F5FF4ED}.Release|x86.ActiveCfg = Release|Any CPU
-		{E6B3F300-9B27-4A06-8141-1DCA11285BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6B3F300-9B27-4A06-8141-1DCA11285BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6B3F300-9B27-4A06-8141-1DCA11285BF5}.Debug|x86.ActiveCfg = Debug|x86
-		{E6B3F300-9B27-4A06-8141-1DCA11285BF5}.Debug|x86.Build.0 = Debug|x86
-		{E6B3F300-9B27-4A06-8141-1DCA11285BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6B3F300-9B27-4A06-8141-1DCA11285BF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E6B3F300-9B27-4A06-8141-1DCA11285BF5}.Release|x86.ActiveCfg = Release|x86
-		{E6B3F300-9B27-4A06-8141-1DCA11285BF5}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

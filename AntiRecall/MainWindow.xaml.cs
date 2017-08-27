@@ -66,12 +66,14 @@ namespace AntiRecall
         private void UpdateCount()
         {
             Regex re = new Regex("[\\d*?]");
+#if DEBUG
+            Console.WriteLine(count);
+#endif
             Recall_Text.Text = re.Replace(Recall_Text.Text, Convert.ToString(Math.Ceiling(count / 8)));
         }
 
         public void ModifyRecallCount()
         {
-            while (true)
             Recall_Text.Dispatcher.Invoke(
                 System.Windows.Threading.DispatcherPriority.Normal,
                 new TextChanger(UpdateCount));
@@ -94,8 +96,6 @@ namespace AntiRecall
             Start.IsEnabled = false;
             Start.Content = "正在监听";
             init_socks5();
-            Thread recallCount = new Thread(ModifyRecallCount);
-            recallCount.Start();
         }
 
         protected override void OnStateChanged(EventArgs e)
@@ -113,12 +113,14 @@ namespace AntiRecall
         protected override void OnClosed(EventArgs e)
         {
             ni.Visible = false;
+            proxy.Stop();
             base.OnClosed(e);
             App.Current.Shutdown();
         }
 
         private void menuItem1_Click(object Sender, EventArgs e)
         {
+            proxy.Stop();
             Close();
         }
     }
