@@ -8,7 +8,8 @@ using System.Drawing;
 using socks5;
 using System.Net;
 using System.Text.RegularExpressions;
-using System.Threading;
+using System.IO;
+using AntiRecall.deploy;
 
 namespace AntiRecall
 {
@@ -42,8 +43,10 @@ namespace AntiRecall
 #if DEBUG
             ni.Icon = new Icon("../../Resources/main.ico");
 #else
-            //注意路径
-            ni.Icon = new Icon("./Resources/main.ico");
+            string truPath = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
+         
+            ni.Icon = new Icon(truPath + "\\Resources\\main.ico");
+            
 #endif
             ni.DoubleClick +=
                 delegate (object sender, EventArgs args)
@@ -84,7 +87,7 @@ namespace AntiRecall
         public MainWindow()
         {
             InitializeComponent();
-
+            ShortCut.init_shortcut("AntiRecall");
             init_minimize();
         }
 
