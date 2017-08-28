@@ -114,7 +114,8 @@ namespace AntiRecall
         protected override void OnClosed(EventArgs e)
         {
             ni.Visible = false;
-            proxy.Stop();
+            if (proxy!=null)
+                proxy.Stop();
             base.OnClosed(e);
             App.Current.Shutdown();
         }
@@ -122,7 +123,8 @@ namespace AntiRecall
         private void menuItem1_Click(object Sender, EventArgs e)
         {
             ni.Visible = false;
-            proxy.Stop();
+            if (proxy != null)
+                proxy.Stop();
             Close();
         }
     }
