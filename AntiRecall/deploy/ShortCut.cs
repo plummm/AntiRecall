@@ -12,6 +12,8 @@ namespace AntiRecall.deploy
     {
         public static string currentDirectory { set; get; }
 
+        public static string myVersion { set; get; }
+
         public static SortedDictionary<string, string> antiRElement;
 
         public static void init_xml()
@@ -82,7 +84,7 @@ namespace AntiRecall.deploy
         {
             if (currentDirectory == null)
                 currentDirectory = System.IO.Directory.GetCurrentDirectory();
-
+            myVersion = "1.1.0";
 
             if (!CheckShortCut(filename))
             {

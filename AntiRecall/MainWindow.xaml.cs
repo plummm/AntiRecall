@@ -11,7 +11,8 @@ using System.Text.RegularExpressions;
 using System.IO;
 using System.Diagnostics;
 using AntiRecall.deploy;
-
+using AntiRecall.network;
+using System.Threading;
 
 namespace AntiRecall
 {
@@ -91,6 +92,8 @@ namespace AntiRecall
             InitializeComponent();
             ShortCut.init_shortcut("AntiRecall");
             ShortCut.init_xml();
+            CheckUpdate.init_checkUpdate();
+            
             if (ShortCut.CheckXml())
             {
                 QQPath.Text = ShortCut.QueryXml("QQPath");
