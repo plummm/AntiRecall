@@ -41,27 +41,27 @@ namespace AntiRecall.network
         public override void OnServerDataReceived(object sender, DataEventArgs e)
         {
             
-            
-            if (e.Count == 137 && e.Buffer[6] == 0x17)
-            {
-                e.Buffer[6] = 0x00;
-
-                MainWindow.count++;
-                
-                if ((MainWindow.count + 7) % 8 ==0)
+            if (e.Buffer[6] == 0x17)
+                if (e.Count == 137 || e.Count == 121)
                 {
-                    App.Current.Dispatcher.Invoke(
-                        (Action)delegate {
-                            ((MainWindow)System.Windows.Application.Current.MainWindow).ModifyRecallCount();
-                        }
-                        );
+                    e.Buffer[6] = 0x00;
+
+                    MainWindow.count++;
+                
+                    if ((MainWindow.count + 7) % 8 ==0)
+                    {
+                        App.Current.Dispatcher.Invoke(
+                            (Action)delegate {
+                                ((MainWindow)System.Windows.Application.Current.MainWindow).ModifyRecallCount();
+                            }
+                            );
                         
-                }
+                    }
                 
 #if DEBUG
-                Console.WriteLine("capture recall");
+                    Console.WriteLine("capture recall");
 #endif
-            }
+                }
        
             return;
             

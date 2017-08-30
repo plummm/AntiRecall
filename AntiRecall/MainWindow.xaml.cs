@@ -93,7 +93,7 @@ namespace AntiRecall
             ShortCut.init_shortcut("AntiRecall");
             ShortCut.init_xml();
             CheckUpdate.init_checkUpdate();
-            
+            init_minimize();
             if (ShortCut.CheckXml())
             {
                 QQPath.Text = ShortCut.QueryXml("QQPath");
@@ -103,7 +103,6 @@ namespace AntiRecall
             {
                 ShortCut.CreateXml(ShortCut.antiRElement);
             }
-            init_minimize();
             
         }
 
