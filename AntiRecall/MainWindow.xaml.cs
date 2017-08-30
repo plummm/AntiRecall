@@ -9,7 +9,9 @@ using socks5;
 using System.Net;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Diagnostics;
 using AntiRecall.deploy;
+
 
 namespace AntiRecall
 {
@@ -43,9 +45,9 @@ namespace AntiRecall
 #if DEBUG
             ni.Icon = new Icon("../../Resources/main.ico");
 #else
-            string truPath = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
+            ShortCut.currentDirectory = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
          
-            ni.Icon = new Icon(truPath + "\\Resources\\main.ico");
+            ni.Icon = new Icon(ShortCut.currentDirectory + "\\Resources\\main.ico");
             
 #endif
             ni.DoubleClick +=
@@ -88,7 +90,18 @@ namespace AntiRecall
         {
             InitializeComponent();
             ShortCut.init_shortcut("AntiRecall");
+            ShortCut.init_xml();
+            if (ShortCut.CheckXml())
+            {
+                QQPath.Text = ShortCut.QueryXml("QQPath");
+                PortText.Text = ShortCut.QueryXml("PortText");
+            }
+            else
+            {
+                ShortCut.CreateXml(ShortCut.antiRElement);
+            }
             init_minimize();
+            
         }
 
 
@@ -100,6 +113,52 @@ namespace AntiRecall
             Start.IsEnabled = false;
             Start.Content = "正在监听";
             init_socks5();
+            ShortCut.antiRElement["QQPath"] = QQPath.Text;
+            ShortCut.antiRElement["PortText"] = PortText.Text;
+            if (!ShortCut.CheckXml())
+                ShortCut.CreateXml(ShortCut.antiRElement);
+            else
+                ShortCut.ModifyXml(ShortCut.antiRElement);
+            if (-1 != QQPath.Text.IndexOf("QQ.exe"))
+            {
+                try
+                {
+                    Process process = new Process();
+                    process.StartInfo.FileName = QQPath.Text;
+                    //process.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
+                    process.StartInfo.CreateNoWindow = true;
+                    process.Start();
+                }
+                catch (Exception)
+                {
+                    System.Windows.MessageBox.Show("启动QQ.exe失败，请确认路径正确或手动启动");
+                }
+            }
+        }
+
+        private void Explorer_Click(object sender, RoutedEventArgs e)
+        {
+            // Create OpenFileDialog 
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+            // Set filter for file extension and default file extension 
+            dlg.DefaultExt = ".exe";
+            dlg.Filter = "Executable Files|*.exe|All Files|*.*";
+
+
+            // Display OpenFileDialog by calling ShowDialog method 
+            Nullable<bool> result = dlg.ShowDialog();
+
+
+            // Get the selected file name and display in a TextBox 
+            if (result == true)
+            {
+                // Open document 
+                string filepath = dlg.FileName;
+                QQPath.Text = filepath;
+            }
+
+            
         }
 
         protected override void OnStateChanged(EventArgs e)
