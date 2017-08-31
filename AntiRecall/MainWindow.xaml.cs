@@ -44,11 +44,11 @@ namespace AntiRecall
             ni.ContextMenu = contextMenu;
             ni.Visible = true;
 #if DEBUG
-            ni.Icon = new Icon("../../Resources/main.ico");
+            ni.Icon = new Icon("../../Resources/main-blue.ico");
 #else
             ShortCut.currentDirectory = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
          
-            ni.Icon = new Icon(ShortCut.currentDirectory + "\\Resources\\main.ico");
+            ni.Icon = new Icon(ShortCut.currentDirectory + "\\Resources\\main-blue.ico");
             
 #endif
             ni.DoubleClick +=
@@ -130,6 +130,7 @@ namespace AntiRecall
                     //process.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
                     process.StartInfo.CreateNoWindow = true;
                     process.Start();
+                    MinimizeWindow();
                 }
                 catch (Exception)
                 {
@@ -163,15 +164,28 @@ namespace AntiRecall
             
         }
 
-        protected override void OnStateChanged(EventArgs e)
+        private void menuItem1_Click(object Sender, EventArgs e)
         {
-            if (WindowState == System.Windows.WindowState.Minimized)
-                this.Hide();
+            ni.Visible = false;
+            if (proxy != null)
+                proxy.Stop();
+            Close();
+        }
+
+        private void MinimizeWindow()
+        {
+            this.Hide();
 
             ni.BalloonTipTitle = "AntiRecall";
             ni.BalloonTipText = "已将AntiRecall最小化到托盘,程序将在后台运行";
             ni.BalloonTipIcon = ToolTipIcon.Info;
             ni.ShowBalloonTip(30000);
+        }
+
+        protected override void OnStateChanged(EventArgs e)
+        {
+            if (WindowState == System.Windows.WindowState.Minimized)
+                MinimizeWindow();
             base.OnStateChanged(e);
         }
 
@@ -184,12 +198,6 @@ namespace AntiRecall
             App.Current.Shutdown();
         }
 
-        private void menuItem1_Click(object Sender, EventArgs e)
-        {
-            ni.Visible = false;
-            if (proxy != null)
-                proxy.Stop();
-            Close();
-        }
+        
     }
 }
