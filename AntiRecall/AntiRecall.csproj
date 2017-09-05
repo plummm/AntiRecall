@@ -110,6 +110,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="deploy\ShortCut.cs" />
+    <Compile Include="deploy\Startup.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

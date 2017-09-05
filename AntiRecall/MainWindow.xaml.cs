@@ -98,6 +98,7 @@ namespace AntiRecall
             {
                 QQPath.Text = ShortCut.QueryXml("QQPath");
                 PortText.Text = ShortCut.QueryXml("PortText");
+                Startup.is_hide = ShortCut.QueryXml("is_hide_startup_notify");
             }
             else
             {
@@ -115,8 +116,11 @@ namespace AntiRecall
             Start.IsEnabled = false;
             Start.Content = "正在监听";
             init_socks5();
+            Startup.init_startup();
+            //Modify xml
             ShortCut.antiRElement["QQPath"] = QQPath.Text;
             ShortCut.antiRElement["PortText"] = PortText.Text;
+            ShortCut.antiRElement["is_hide_startup_notify"] = Startup.is_hide;
             if (!ShortCut.CheckXml())
                 ShortCut.CreateXml(ShortCut.antiRElement);
             else
@@ -130,13 +134,14 @@ namespace AntiRecall
                     //process.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
                     process.StartInfo.CreateNoWindow = true;
                     process.Start();
-                    MinimizeWindow();
+                    
                 }
                 catch (Exception)
                 {
                     System.Windows.MessageBox.Show("启动QQ.exe失败，请确认路径正确或手动启动");
                 }
             }
+            MinimizeWindow();
         }
 
         private void Explorer_Click(object sender, RoutedEventArgs e)

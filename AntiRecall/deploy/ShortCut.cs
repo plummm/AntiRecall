@@ -22,6 +22,7 @@ namespace AntiRecall.deploy
             MainWindow window = (MainWindow)System.Windows.Application.Current.MainWindow;
             antiRElement.Add("PortText", window.PortText.Text);
             antiRElement.Add("QQPath", window.QQPath.Text);
+            antiRElement.Add("is_hide_startup_notify", "0");
         }
 
         public static bool CheckXml()
@@ -36,6 +37,7 @@ namespace AntiRecall.deploy
             XmlElement el = (XmlElement)doc.AppendChild(doc.CreateElement("Setting"));
             el.SetAttribute("QQPath", dict["QQPath"]);
             el.SetAttribute("PortText", dict["PortText"]);
+            el.SetAttribute("is_hide_startup_notify", dict["is_hide_startup_notify"]);
             doc.Save(currentDirectory + @"\setting.xml");
         }
 
@@ -45,6 +47,7 @@ namespace AntiRecall.deploy
             doc.Load(currentDirectory + @"\setting.xml");
             doc.DocumentElement.SetAttribute("QQPath", dict["QQPath"]);
             doc.DocumentElement.SetAttribute("PortText", dict["PortText"]);
+            doc.DocumentElement.SetAttribute("is_hide_startup_notify", dict["is_hide_startup_notify"]);
             doc.Save(currentDirectory + @"\setting.xml");
             /*XmlNodeList nodelist = doc.GetElementsByTagName("Setting");
             foreach (XmlNode set in nodelist)
@@ -84,7 +87,7 @@ namespace AntiRecall.deploy
         {
             if (currentDirectory == null)
                 currentDirectory = System.IO.Directory.GetCurrentDirectory();
-            myVersion = "1.1.1";
+            myVersion = "1.1.2";
 
             if (!CheckShortCut(filename))
             {

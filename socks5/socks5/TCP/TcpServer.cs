@@ -84,7 +84,14 @@ namespace socks5.TCP
             if (!accept)
             {
                 accept = true;
-                p.Start(10000);               
+                try
+                {
+                    p.Start(10000);
+                }
+                catch(Exception e)
+                {
+                    System.Windows.Forms.MessageBox.Show(e.Message, @"错误", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                }          
                 new Thread(new ThreadStart(AcceptConnections)).Start();
             }
         }
