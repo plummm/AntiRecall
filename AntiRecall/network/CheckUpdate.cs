@@ -54,9 +54,18 @@ namespace AntiRecall.network
         private static bool CheckNewVersion()
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load("https://etenal.me/wp-content/uploads/AntiRecall/newversion.xml");
+            try
+            {
+
+                doc.Load("https://etenal.me/wp-content/uploads/AntiRecall/newversion.xml");
+            }
+            catch
+            {
+                //System.Windows.MessageBox.Show(@"检查更新失败，请检查计算机是否连接到互联网。");
+            }
             newVersion = doc.DocumentElement.GetAttribute("Version");
             url = doc.DocumentElement.GetAttribute("Url");
+            
             return (!newVersion.Equals(ShortCut.myVersion));
         }
 
