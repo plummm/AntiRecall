@@ -61,7 +61,7 @@ namespace AntiRecall.network
             }
             catch
             {
-                //System.Windows.MessageBox.Show(@"检查更新失败，请检查计算机是否连接到互联网。");
+                return false;
             }
             newVersion = doc.DocumentElement.GetAttribute("Version");
             url = doc.DocumentElement.GetAttribute("Url");
