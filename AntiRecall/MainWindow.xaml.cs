@@ -13,6 +13,7 @@ using System.Diagnostics;
 using AntiRecall.deploy;
 using AntiRecall.network;
 using System.Threading;
+using AntiRecall.patch;
 
 namespace AntiRecall
 {
@@ -115,6 +116,7 @@ namespace AntiRecall
             port = PortText.Text;
             Start.IsEnabled = false;
             Start.Content = "正在监听";
+            patch_memory.StartPatch();
             init_socks5();
             Startup.init_startup();
             //Modify xml
