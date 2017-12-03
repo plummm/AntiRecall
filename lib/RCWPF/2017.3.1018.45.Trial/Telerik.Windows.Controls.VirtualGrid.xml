@@ -1,0 +1,3850 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Controls.VirtualGrid</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer">
+            <summary>
+            An AutomationPeer type for FilteringControl.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer.#ctor(Telerik.Windows.Controls.VirtualGrid.FilteringControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer"/> class.
+            </summary>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer.GetItemStatusCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.FilteringControlAutomationPeer.GetChildrenCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer">
+            <summary>
+            AutomationPeer class for <see cref="T:Telerik.Windows.Controls.RadVirtualGrid"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.#ctor(Telerik.Windows.Controls.RadVirtualGrid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetItem(System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetSelection">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetColumnHeaders">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetRowHeaders">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.Scroll(System.Windows.Automation.ScrollAmount,System.Windows.Automation.ScrollAmount)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.SetScrollPercent(System.Double,System.Double)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetItemStatusCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetBaseItemStatusProperties">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetLocalizedControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.GetChildrenCore">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.ColumnCount">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.IsSelectionRequired">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.RowCount">
+            <inheritdoc />        
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.CanSelectMultiple">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.RowOrColumnMajor">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.HorizontallyScrollable">
+            <summary>
+            Gets a value that indicates whether the control can scroll horizontally.
+            </summary>
+            <value></value>
+            <returns>true if the control can scroll horizontally; otherwise false.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.HorizontalScrollPercent">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.HorizontalViewSize">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.VerticalScrollPercent">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.VerticalViewSize">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer.VerticallyScrollable">
+            <summary>
+            Gets a value that indicates whether the control can scroll vertically.
+            </summary>
+            <value></value>
+            <returns>true if the control can scroll vertically; otherwise false.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer">
+            <summary>
+            AutomationPeer class for <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.#ctor(System.Int32,System.Int32,Telerik.Windows.Automation.Peers.RadVirtualGridAutomationPeer,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.AddToSelection">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.RemoveFromSelection">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.Select">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.Invoke">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetLocalizedControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.HasKeyboardFocusCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.IsKeyboardFocusableCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetClickablePointCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetAcceleratorKeyCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetAccessKeyCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetAutomationIdCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetChildrenCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetItemStatusCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetItemTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetLabeledByCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.SetFocusCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetBoundingRectangleCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.GetOrientationCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.IsContentElementCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.IsControlElementCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.IsEnabledCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.IsOffscreenCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.IsPasswordCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.IsRequiredForFormCore">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.IsSelected">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.SelectionContainer">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.ColumnSpan">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.ContainingGrid">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.RowSpan">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Column">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Row">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.Item">
+            <summary>
+            Gets the item of the cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.Row">
+            <summary>
+            Gets the Row index of the Cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.Column">
+            <summary>
+            Gets the Column index of the Cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.VirtualGridCellInfoAutomationPeer.ChildTextBlockPeer">
+            <summary>
+            Gets or sets the TextBlock peer of the Cell.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer">
+            <summary>
+            AutomationPeer class for <see cref="T:Telerik.Windows.Controls.VirtualGridCompoundPanel"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer.#ctor(Telerik.Windows.Controls.VirtualGridCompoundPanel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer.#ctor(Telerik.Windows.Controls.VirtualGridCompoundPanel,Telerik.Windows.Controls.RadVirtualGrid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer.GetLocalizedControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.VirtualGridCompoundPanelAutomationPeer.GetChildrenCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs">
+            <summary>
+            Represent event arguments for the CellDecorationNeeded event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs.Background">
+            <summary>
+            Gets or sets the cell background.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs.Foreground">
+            <summary>
+            Gets or sets the cell foreground.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs.FontSize">
+            <summary>
+            Gets or sets the cell font size.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs.FontFamily">
+            <summary>
+            Gets or sets the cell font family.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs.RowIndex">
+            <summary>
+            Gets the cell's row index.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs.ColumnIndex">
+            <summary>
+            Gets the cell's column index.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.OverlayBrushesEventArgs">
+            <summary>
+            Represents the event args for the OverlayBrushesNeeded event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.OverlayBrushesEventArgs.Brushes">
+            <summary>
+            Represents the list of background brushes that will be used to customize cells' backgrounds.
+            </summary>
+            <value>The brushes.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs">
+            <summary>
+            Represents event arguments for the ValueForCell event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs.ColumnIndex">
+            <summary>
+            Gets or sets the index of the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs.RowIndex">
+            <summary>
+            Gets or sets the index of the row.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RadVirtualGrid">
+            <summary>
+            Represents a tabular control that dynamically loads data, using a light-weight engine to display and modify it.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CopyingEvent">
+            <summary>
+            Occurs on copying the RadVirtualGrid's selected cells to the Clipboard.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CopiedEvent">
+            <summary>
+            Occurs after copying the RadVirtualGrid's selected cells to the Clipboard.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CopyingCellClipboardContentEvent">
+            <summary>
+            Occurs on copying a cell to the Clipboard.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.CopyToClipboard">
+            <summary>
+            Copies RadVirtualGrid selected cells to clipboard.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.RaiseCopyingEvent">
+            <summary>
+            Raises the Copying event.
+            </summary>
+            <returns>Returns true if the event was cancelled.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.BeginEdit(System.Int32,System.Int32)">
+            <summary>
+            Causes the RadVirtualGrid to enter editing mode for a given cell coordinates, unless the data grid is already in editing mode.
+            </summary>	
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.CancelEdit">
+            <summary>
+            Causes the data grid to cancel the current edit, restore the original value, and exit editing mode.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.CommitEdit">
+            <summary>
+            Commits the edit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.BeginInsert">
+            <summary>
+            Causes the RadVirtualGrid to show new row and enter into EditMode.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>
+            Executed when text has been input.
+            </summary>
+            <param name="e">Event args.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ExecutePendingCommand">
+            <summary>
+            Executes all pending commands in a sequence.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.PreserveFocus">
+            <summary>
+            Preserves the focus. This method should be used in cases when focused element will become invisible
+            and nearby control could get the focus (in Silverlight).
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Occurs when KeyDown event is raised.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnArrowKeyDown(Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo,Telerik.Windows.Controls.FocusNavigationDirection,System.Windows.Input.KeyEventArgs)">
+            <summary>
+                Helper method which handles the arrow key down.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.#ctor">
+            <summary>
+            Initializes a new instance of the RadVirtualGrid class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application
+            code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.PinColumnLeft(System.Int32)">
+            <summary>
+            Pins the column left.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.PinColumnRight(System.Int32)">
+            <summary>
+            Pins the column right.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.PinRowTop(System.Int32)">
+            <summary>
+            Pins the row top.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.PinRowBottom(System.Int32)">
+            <summary>
+            Pins the row bottom.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.UnpinRow(System.Int32)">
+            <summary>
+            Unpins the row with the given index.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.UnpinColumn(System.Int32)">
+            <summary>
+            Unpins the column with the given index.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ResetTheme">
+            <summary>
+            Resets the theme.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.InsertNewRowAtIndex(System.Int32)">
+            <summary>
+            Increases the table capacity by adding a row on the given index.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.RemoveRowAtIndex(System.Int32)">
+            <summary>
+            Reduces the table capacity by removing a row on the given index.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.InsertNewColumnAtIndex(System.Int32)">
+            <summary>
+            Increases the table capacity by adding a column on the given index.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.RemoveColumnAtIndex(System.Int32)">
+            <summary>
+            Reduces the table capacity by removing a column on the given index.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.Reset">
+            <summary>
+            Resets the control to its initial visual state.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.Reset(System.Int32,System.Int32)">
+            <summary>
+            Resets the control to an initial visual state with the given row count and column count.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.UpdateUI">
+            <summary>
+            Update on the UI, taking into account visual properties changes.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.UpdateHeadersUI">
+            <summary>
+            Update on the row and column headers' UI, taking into account visual properties changes.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.PushCellValue(System.Int32,System.Int32,System.Object)">
+            <summary>
+            Updates VirtualGrid with the given value. It also needs to be persisted in the data source.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ScrollRowIndexIntoViewAsync(System.Int32,System.Action,System.Action)">
+            <summary>
+            Scrolls the row with the specified index into view in an asynchronous manner.
+            </summary>
+            <remarks>
+            Since this method is asynchronous, calling it will return immediately. If you need
+            to perform a certain action once the scrolling is done use the scrollFinishedCallback 
+            parameter to pass in a method to execute. The FrameworkElement parameter of this 
+            method will be the row that was just scrolled.
+            </remarks>
+            <param name="rowIndex">The row index to scroll into view.</param>
+            <param name="scrollFinishedCallback">The method to execute when scrolling has finished.</param>
+            <param name="scrollFailedCallback">The method to execute when scrolling has failed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ScrollColumnIndexIntoViewAsync(System.Int32,System.Action,System.Action)">
+            <summary>
+            Scrolls the column with the specified index into view in an asynchronous manner.
+            </summary>
+            <remarks>
+            Since this method is asynchronous, calling it will return immediately. If you need
+            to perform a certain action once the scrolling is done use the scrollFinishedCallback 
+            parameter to pass in a method to execute. The FrameworkElement parameter of this 
+            method will be the column that was just scrolled.
+            </remarks>
+            <param name="columnIndex">The column index to scroll into view.</param>
+            <param name="scrollFinishedCallback">The method to execute when scrolling has finished.</param>
+            <param name="scrollFailedCallback">The method to execute when scrolling has failed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ScrollIndexIntoViewAsync(System.Int32,System.Int32,System.Action,System.Action)">
+            <summary>
+            Scrolls the row with the specified index and column into view in an asynchronous manner.
+            </summary>
+            <remarks>
+            Since this method is asynchronous, calling it will return immediately. If you need
+            to perform a certain action once the scrolling is done use the scrollFinishedCallback method.
+            </remarks>
+            <param name="rowIndex">The row index to scroll into view.</param>
+            <param name="columnIndex">The column index to scroll into view.</param>
+            <param name="scrollFinishedCallback">The method to execute when scrolling has finished.</param>
+            <param name="scrollFailedCallback">The method to execute when scrolling has failed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.FitColumnWidthToContent(System.Int32)">
+            <summary>
+            Set column width to be as large as the biggest cell's content.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnCreateAutomationPeer">
+            <summary>
+            Returns an automation peer for RadVirtualGrid.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ColumnHeaderHeightProperty">
+            <summary>
+            Represents the ColumnHeaderHeight dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.RowHeaderWidthProperty">
+            <summary>
+            Represents the RowHeaderWidth dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.SortIconBackgroundProperty">
+            <summary>
+            Represents the SortIndicatorBackground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.LinesVisibilityProperty">
+            <summary>
+            Represents the LinesVisibility dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.HorizontalLinesBrushProperty">
+            <summary>
+            Represents the HorizontalLinesBrush dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.VerticalLinesBrushProperty">
+            <summary>
+            Represents the VerticalLinesBrush dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.RowHeaderBackgroundProperty">
+            <summary>
+            Represents the RowHeaderBackground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CanUserEditProperty">
+            <summary>
+            Represents the CanUserEdit dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CanUserSelectProperty">
+            <summary>
+            Represents the CanUserEdit dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ColumnHeaderBackgroundProperty">
+            <summary>
+            Represents the ColumnHeaderBackground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ColumnHeaderForegroundProperty">
+            <summary>
+            Represents the ColumnHeaderForeground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.RowHeaderForegroundProperty">
+            <summary>
+            Represents the RowHeaderForeground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CurrentCellStrokeProperty">
+            <summary>
+            Represents the CurrentCellStroke dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.MeasureTextOnRenderProperty">
+            <summary>
+            Represents the MeasureTextOnRender dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CellTextAlignmentProperty">
+            <summary>
+            Represents the CellTextAlignment dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CellPaddingProperty">
+            <summary>
+            Represents the CellPadding dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.PinnedCellBackgroundProperty">
+            <summary>
+            Represents the PinnedCellBackground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.PinnedCellForegroundProperty">
+            <summary>
+            Represents the PinnedCellForeground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.SortedHeaderBackgroundProperty">
+            <summary>
+            Represents the SortedHeaderBackground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.SortedHeaderForegroundProperty">
+            <summary>
+            Represents the SortedHeaderForeground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ColumnWidthProperty">
+            <summary>
+            Represents the ColumnWidth dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.RowHeightProperty">
+            <summary>
+            Represents the RowHeight dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.RowHeaderLinesBrushProperty">
+            <summary>
+            Represents the RowHeaderLinesBrush dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ColumnHeaderLinesBrushProperty">
+            <summary>
+            Represents the ColumnHeaderLinesBrush dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.AlternationBrushProperty">
+            <summary>
+            Represents the AlternationBrush dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.SelectionBrushProperty">
+            <summary>
+            Represents the SelectionBrush dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.InitialRowCountProperty">
+            <summary>
+            Represents the InitialRowCount dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.InitialColumnCountProperty">
+            <summary>
+            Represents the InitialColumnCount dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.PinnedRowHeaderBackgroundProperty">
+            <summary>
+            Represents the PinnedRowHeaderBackground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ShowDistinctFiltersProperty">
+            <summary>
+            Represents the ShowDistinctFilters dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ShowFieldFiltersProperty">
+            <summary>
+            Represents the ShowFieldFilters dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.IsFilteringDeferredProperty">
+            <summary>
+            Represents the IsFilteringDeferred dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.FilterIconBackgroundFilteredProperty">
+            <summary>
+            Represents the FilterIconBackgroundFiltered dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.FilterIconBackgroundProperty">
+            <summary>
+            Represents the FilterIconBackground dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.DataProviderProperty">
+            <summary>
+            Represents the DataProvider dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ClipboardCopyModeProperty">
+            <summary>
+            Represents the ClipboardCopyMode dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ColumnAlternationCountProperty">
+            <summary>
+            Represents the ColumnAlternationCount dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.RowAlternationCountProperty">
+            <summary>
+            Represents the RowAlternationCount dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.EditTriggersProperty">
+            <summary>
+            Represents the EditTriggers dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CanUserInsertRowsProperty">
+            <summary>
+            Represents the CanUserInsertRows dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CanUserFilterColumnsProperty">
+            <summary>
+            Represents the CanUserFilterColumns dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CanUserSortColumnsProperty">
+            <summary>
+            Represents the CanUserSortColumns dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.IsSortableProperty">
+            <summary>
+            Represents the IsSortable dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CanUserResizeRowsProperty">
+            <summary>
+            Represents the CanUserResizeRows dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CanUserResizeColumnsProperty">
+            <summary>
+            Represents the CanUserResizeColumns dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.CanUserDeleteRowsProperty">
+            <summary>
+            Represents the CanUserDeleteRows dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.IsFilterableProperty">
+            <summary>
+            Represents the IsFilterable dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ActionOnLostFocusProperty">
+            <summary>
+            Represents the ActionOnLostFocus dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.ShouldCreateAutomationPeerProperty">
+            <summary>
+            Represents the ShouldCreateAutomationPeer dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.SelectedIndexProperty">
+            <summary>
+            Identifies the <see cref="F:Telerik.Windows.Controls.RadVirtualGrid.SelectedIndexProperty"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.SelectionUnitProperty">
+            <summary>
+            Identifies the <see cref="F:Telerik.Windows.Controls.RadVirtualGrid.SelectionUnitProperty"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.SelectionModeProperty">
+            <summary>
+            Identifies the <see cref="F:Telerik.Windows.Controls.RadVirtualGrid.SelectionModeProperty"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGrid.SelectionChangedEvent">
+            <summary>
+            Identifies the SelectionChanged routed event.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.SelectAll">
+            <summary>
+            Selects all the items as defined by the <see cref="P:Telerik.Windows.Controls.RadVirtualGrid.SelectionMode"/> and <see cref="P:Telerik.Windows.Controls.RadVirtualGrid.SelectionUnit"/>
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ToggleIndexSelection(System.Int32)">
+            <summary>
+            Selects the given index if it is not selected, or deselects if it is already selected. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.UnselectAll">
+            <summary>
+            Clears the current selection state.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.SelectCellRegion(Telerik.Windows.Controls.VirtualGrid.CellRegion)">
+            <summary>
+            Selects specified region of cells.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.SelectCellRegion(System.Collections.Generic.IEnumerable{Telerik.Windows.Controls.VirtualGrid.CellRegion})">
+            <summary>
+            Selects specified region of cells.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.UnselectCellRegion(Telerik.Windows.Controls.VirtualGrid.CellRegion)">
+            <summary>
+            Deselects specified region of cells.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.UnselectCellRegion(System.Collections.Generic.IEnumerable{Telerik.Windows.Controls.VirtualGrid.CellRegion})">
+            <summary>
+            Deselects specified region of cells.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnSelectedCellsChanged(Telerik.Windows.Controls.VirtualGrid.CellInfoCollection,Telerik.Windows.Controls.VirtualGrid.CellInfoCollection)">
+            <summary>
+            Raises the <see cref="E:SelectedCellsChanged"/> event.
+            </summary>
+            <param name="selectedCells">The selected cells.</param>
+            <param name="unselectedCells">The unselected cells.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnSelectionChanged(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Raises the <see cref="E:SelectionChanged"/> event.
+            </summary>
+            <param name="addedIndices">The selected indices.</param>
+            <param name="removedIndices">The unselected indices.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnSelectedCellsChanging(Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs)">
+            <summary>
+            Raises the SelectedCellsChangingEvent event.
+            </summary>
+            <param name="args">The <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.GetFilteringControlForColumn(System.Int32)">
+            <summary>
+            Gets the FilteringControl for a specific column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.GetFilterDescriptorForColumn(System.Int32)">
+            <summary>
+            Gets the ColumnFilterDescriptor for a specific column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ClearColumnFilters">
+            <summary>
+            Clears all existing column filters.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.FilterColumn(System.Int32)">
+            <summary>
+            Invokes the filtering UI for a specific column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ClearFiltersForColumn(System.Int32)">
+            <summary>
+            Clears the filter descriptors for the given column and resets its filtering control.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.CallFilterOperatorsLoading(System.Int32)">
+            <summary>
+            Prepares the list of filter operators and raises the FilterOperatorsLoading event.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.FilterColumn(System.Int32,System.Windows.Controls.Primitives.PlacementMode)">
+            <summary>
+            Invokes the filtering UI for a specific column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.CallFiltering(System.Collections.Generic.IEnumerable{Telerik.Windows.Data.IFilterDescriptor},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.IFilterDescriptor},System.Int32)">
+            <summary>
+            Generates FilteringEventArgs and invokes the FilterDescriptorPreparing event.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.CallFiltered(System.Collections.Generic.IEnumerable{Telerik.Windows.Data.IFilterDescriptor},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.IFilterDescriptor},System.Int32)">
+            <summary>
+            Generates FilteredEventArgs and invokes the FilterDescriptorPrepared event.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnFiltered(Telerik.Windows.Controls.VirtualGrid.FilteredEventArgs)">
+            <summary>
+            Invokes the FilterDescriptorPrepared event.
+            </summary>	
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnFiltering(Telerik.Windows.Controls.VirtualGrid.FilteringEventArgs)">
+            <summary>
+            Invokes the FilterDescriptorsPreparing event.
+            </summary>	
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.ApplyFilterDescriptorChanges(Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor)">
+            <summary>
+            Propagates filter descriptor changes.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnFilterOperatorsLoading(Telerik.Windows.Controls.VirtualGrid.FilterOperatorsLoadingEventArgs)">
+            <summary>
+            Invokes DataProvider.FilterOperatorsLoading if DataProvider is available or raises FilterOperatorsLoading instead.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.GetAvailableOperatorsForType(System.Type)">
+            <summary>
+            Retrieves the list of available FilterOperators for a given type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnFieldFilterEditorCreated(Telerik.Windows.Controls.VirtualGrid.FieldFilterEditorCreatedEventArgs)">
+            <summary>
+            
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnDistinctValuesLoading(Telerik.Windows.Controls.VirtualGrid.DistinctValuesLoadingEventArgs)">
+            <summary>
+            Invoked DataProvider.DistinctValuesLoading if DataProvider is available, or raises DistinctValuesLoading instead.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.GetSortDescriptorForColumn(System.Int32)">
+            <summary>
+            Gets the ColumnSortDescriptor for a specific column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.SortColumn(System.Int32)">
+            <summary>
+            Invokes the sorting UI for a specific column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnSorting(Telerik.Windows.Controls.VirtualGrid.SortingEventArgs)">
+            <summary>
+            Invokes DataProvider.SortDescriptorPreparing if DataProvider is present or invokes the SortDescriptorPreparing event instead.
+            </summary>	
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadVirtualGrid.OnSorted(Telerik.Windows.Controls.VirtualGrid.SortedEventArgs)">
+            <summary>
+            Invokes DataProvider.SortDescriptorPreparing if DataProvider is present or invokes the SortDescriptorPreparing event instead.
+            </summary>	
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.Copying">
+            <summary>
+            Occurs before the selected cells of the RadVirtualGrid are copied to the Clipboard.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.Copied">
+            <summary>
+            Occurs after the selected cells of the RadVirtualGrid were copied to the Clipboard.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.CopyingCellClipboardContent">
+            <summary>
+            Occurs before a cell is copied to the Clipboard.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ClipboardProvider">
+            <summary>
+            Gets or sets the clipboard provider.
+            </summary>
+            <value>The clipboard provider.</value>
+            <remarks>The only reason this exists is to facilitate easier mocking of the Clipboard.</remarks>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CurrentCellInfo">
+            <summary>
+            Gets or sets the current cell info.
+            </summary>
+            <value>The current cell info.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.PendingCommands">
+            <summary>
+            Gets all pending commands.
+            </summary>
+            <value>The pending commands.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.KeyboardCommandProvider">
+            <summary>
+            Gets the keyboard command provider.
+            </summary>
+            <value>The keyboard command provider. This class provides command key mappings.</value>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.CellValueNeeded">
+            <summary>
+            Occurs when RadVirtualGrid fetches the value for a cell.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.EditorNeeded">
+            <summary>
+            Occurs when a cell is edited and the editor property value gets changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.EditorValueChanged">
+            <summary>
+            Occurs when a cell is edited and an editor is required.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.HeaderSizeNeeded">
+            <summary>
+            Occurs when size for a header cell is needed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.OverlayBrushesNeeded">
+            <summary>
+            Occurs when the set of brushes that will be used for background customization is needed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.CellDecorationsNeeded">
+            <summary>
+            Occurs when a cell will be visualized. Setting the arguments' properties will visually modify the cell.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.CellEditEnded">
+            <summary>
+            Occurs when an edit operation is finished.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.HeaderValueNeeded">
+            <summary>
+            Occurs when header cell values is needed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.Deleting">
+            <summary>
+            Occurs when deleting the VirtualGrid's selected indexes.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.Deleted">
+            <summary>
+            Occurs when VirtualGrid's selected indexes are deleted.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.CurrentCellChanged">
+            <summary>
+            Occurs when the current cell is changed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.MeasureTextOnRender">
+            <summary>
+            Gets or sets a value that indicates whether text is measured when rendering. Setting it to true enables changing TextAlignment and FitColumnWidthToContent. It may affect rendering performance.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CellTextAlignment">
+            <summary>
+            Gets or sets the text alignment.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CellPadding">
+            <summary>
+            Gets or sets a value that indicates the cells' text padding.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SortIconBackground">
+            <summary>
+            Gets or sets a value that indicates the background of the sort icon.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ShowDistinctFilters">
+            <summary>
+            Gets or sets a value that indicates whether distinct filters are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ShowFieldFilters">
+            <summary>
+            Gets or sets a value that indicates whether filed filters are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.IsFilteringDeferred">
+            <summary>
+            Gets or sets a value that indicates whether deferred filtering is enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CanUserFilterColumns">
+            <summary>
+            Gets or sets a value that indicates whether users can filter columns through the UI.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CanUserSortColumns">
+            <summary>
+            Gets or sets a value that indicates whether users can sort columns through the UI.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.IsFilterable">
+            <summary>
+            Gets or sets a value that indicates whether programmatic and UI filtering is possible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.IsSortable">
+            <summary>
+            Gets or sets a value that indicates whether programmatic and UI sorting is possible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CanUserResizeColumns">
+            <summary>
+            Gets or sets a value that indicates whether users can resize columns through the UI.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CanUserResizeRows">
+            <summary>
+            Gets or sets a value that indicates whether users can resize rows through the UI.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ColumnWidth">
+            <summary>
+            Gets or sets the width of the columns.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.RowHeight">
+            <summary>
+            Gets or sets the height of the rows.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CanUserEdit">
+            <summary>
+            Gets or sets a value that indicates whether data can be modified through user input.
+            </summary>
+            <value>The can user edit.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CanUserSelect">
+            <summary>
+            Gets or sets a value that indicates whether a user can select rows or cells.
+            </summary>
+            <value>The can user edit.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ColumnHeaderHeight">
+            <summary>
+            Gets or sets the height of the column headers.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.RowHeaderWidth">
+            <summary>
+            Gets or sets the width of the row headers.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.LinesVisibility">
+            <summary>
+            Gets or sets the lines' visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.HorizontalLinesBrush">
+            <summary>
+            Gets or sets the horizontal lines' stroke brush.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.FilterIconBackground">
+            <summary>
+            Gets or sets the filter icon background brush.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.FilterIconBackgroundFiltered">
+            <summary>
+            Gets or sets the filter icon background brush when the column is filtered.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.VerticalLinesBrush">
+            <summary>
+            Gets or sets the vertical lines' stroke brush.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.RowHeaderLinesBrush">
+            <summary>
+            Gets or sets the row header lines' stroke brush.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ColumnHeaderLinesBrush">
+            <summary>
+            Gets or sets the column header lines' stroke brush.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.RowHeaderBackground">
+            <summary>
+            Gets or sets the row headers' background.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.PinnedRowHeaderBackground">
+            <summary>
+            Gets or sets the pinned row headers' background.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ColumnHeaderBackground">
+            <summary>
+            Gets or sets the column headers' background.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ColumnHeaderForeground">
+            <summary>
+            Gets or sets the column headers' foreground.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.RowHeaderForeground">
+            <summary>
+            Gets or sets the row header's foreground.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CurrentCellStroke">
+            <summary>
+            Gets or sets the stroke brush of the current cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.InitialRowCount">
+            <summary>
+            Gets or sets the initial row count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.InitialColumnCount">
+            <summary>
+            Gets or sets the initial column count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.PinnedCellBackground">
+            <summary>
+            Gets or sets the cells' background when cells are pinned.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.PinnedCellForeground">
+            <summary>
+            Gets or sets the cells' foreground when cells are pinned.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SortedHeaderBackground">
+            <summary>
+            Gets or sets the headers' background when the respective columns are sorted.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.AlternationBrush">
+            <summary>
+            Get or sets the alternation color.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ColumnAlternationCount">
+            <summary>
+            Gets or sets the alternation step for columns.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.RowAlternationCount">
+            <summary>
+            Gets or sets the alternation step for rows.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SortedHeaderForeground">
+            <summary>
+            Gets or sets the headers' foreground when the respective columns are sorted.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SelectionBrush">
+            <summary>
+            Gets or sets a value that indicates the selection brush.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ShouldCreateAutomationPeer">
+            <summary>
+            Gets or sets a value indicating whether automation peers for the 
+            <see cref="T:Telerik.Windows.Controls.RadVirtualGrid"/> should be created.
+            </summary>       
+            <remarks>
+            The default value of this property is False which will stop RadVirtualGrid from creating child automation peers
+            for each of the visible cells. This may increase performance and decrease memory consumption on some touch-enabled computers,
+            where the automation tree is created on application startup.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.DataProvider">
+            <summary>
+            Gets or sets the data provider.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ClipboardCopyMode">
+            <summary>
+            Gets or sets a value that indicates how data is copied to the clipboard.
+            </summary>
+            <remarks>
+            Use this property to specify whether a user can copy RadVirtualGrid content to the clipboard.   
+            </remarks>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.EditTriggers">
+            <summary>
+            Gets or sets the edit triggers.
+            </summary>
+            <value>The edit triggers.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.ActionOnLostFocus">
+            <summary>
+            Gets or sets the action to take when an element of the <see cref="T:Telerik.Windows.Controls.RadVirtualGrid"/> loses focus.
+            </summary>
+            <value>The action to take when an element of the <see cref="T:Telerik.Windows.Controls.RadVirtualGrid"/> loses focus.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CanUserInsertRows">
+            <summary>
+            Gets or sets a value that indicates whether the user can add new rows.
+            </summary>
+            <value><c>true</c> if the user can add new rows; otherwise, <c>false</c>. The registered default is <c>true</c>.</value>	
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.CanUserDeleteRows">
+            <summary>
+            Gets or sets a value that indicates whether the user can delete rows.
+            </summary>
+            <value><c>true</c> if the user can add new rows; otherwise, <c>false</c>. The registered default is <c>true</c>.</value>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.SelectedCellsChanged">
+            <summary>
+            Event that fires when the SelectedCells collection is changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.SelectedCellsChanging">
+            <summary>
+            Event that fires when the SelectedCells collection is about to change.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.SelectionChanged">
+            <summary>
+            Event that fires when the selection of RadVirtualGrid is changed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SelectionUnit">
+            <summary>
+            Gets or sets the selection unit of the VirtualGrid. The default value is <c>VirtualGridSelectionUnit.FullRow</c>
+            </summary>       
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SelectedIndex">
+            <summary>
+            Gets or sets the selected index of RadVirtualGrid.
+            </summary>       
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SelectionMode">
+            <summary>
+            Gets or sets the selection mode of the VirtualGrid. The default value is <c>System.Windows.Controls.SelectionMode</c>.
+            </summary>        
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SelectedCells">
+            <summary>
+            Gets the selected cells.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGrid.SelectedIndexes">
+            <summary>
+            Gets the selected indexes.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.DataMemberNeeded">
+            <summary>
+            Occurs when data-related information for a given column is needed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.DistinctValuesLoading">
+            <summary>
+            Occurs when distinct values are being loaded.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.FilterOperatorsLoading">
+            <summary>
+            Occurs when filter operators are being loaded.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.FieldFilterEditorCreated">
+            <summary>
+            Occurs when filed filter editor is created.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.FilterDescriptorsPreparing">
+            <summary>
+            Occurs when filter descriptors for the filtered column are being prepared.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.FilterDescriptorsPrepared">
+            <summary>
+            Occurs when filter descriptors for the filtered column are ready and filtering operation will be executed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.SortDescriptorPreparing">
+            <summary>
+            Occurs when sort descriptor for the sorted column is being prepared.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadVirtualGrid.SortDescriptorPrepared">
+            <summary>
+            Occurs when sort descriptors for the sorted column is ready and sorting operation will be executed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGridCellClipboardEventArgs">
+            <summary>
+            Allows to control Clipboard operations on a per-cell basis.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCellClipboardEventArgs.#ctor(Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGridCellClipboardEventArgs"/> class.
+            </summary>
+            <param name="cell">The cell that will be affected by the Clipboard operation.</param>
+            <param name="value">The cell value that the Clipboard operation will be performed with.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCellClipboardEventArgs.Cell">
+            <summary>
+            Gets the cell that will be affected by the Clipboard operation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCellClipboardEventArgs.Value">
+            <summary>
+            Gets or sets the cell value that the Clipboard operation will be performed with.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridClipboardCopyMode">
+            <summary>
+            Defines modes that indicate how RadVirtualGrid content is copied to the Clipboard. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridClipboardCopyMode.None">
+            <summary>
+            Copying is disabled.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridClipboardCopyMode.Cells">
+            <summary>
+            Copy grid cells.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridClipboardCopyMode.SkipEmptyRows">
+            <summary>
+            Will not copy rows with values that are all null or empty.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridClipboardCopyMode.Default">
+            <summary>
+            Copy cells only.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGridClipboardEventArgs">
+            <summary>
+            Allows to control RadVirtualGrid Clipboard operations.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.AscendingSortPathSource">
+            <summary>
+            Represents meta-data for rendering an ascending sort geometry.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridGeometrySource">
+            <summary>
+            Represents meta-data for rendering custom geometry in a given cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridGeometrySource.Source">
+            <summary>
+            Gets the Data that defines this geometry.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridGeometrySource.Offset">
+            <summary>
+            Gets the translation transform offset.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.AscendingSortPathSource.Offset">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.AscendingSortPathSource.Source">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.DescendingSortPathSource">
+            <summary>
+            Represents meta-data for rendering a descending sort geometry.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DescendingSortPathSource.Offset">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DescendingSortPathSource.Source">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilterPathSource">
+            <summary>
+            Represents a GeometrySource for the filter funnel geometry.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterPathSource.Offset">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterPathSource.Source">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.Invalidate">
+            <summary>
+            Invalidates this instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.Render(System.Windows.Media.DrawingContext,System.Windows.Rect)">
+            <summary>
+            Renders the specified dc.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.Write(Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.BoolFlags,System.Boolean)">
+            <summary>
+            Writes the flag.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.Read(Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.BoolFlags)">
+            <summary>
+            Reads the flag.
+            </summary>
+            <param name="required">The required flag.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.BoolFlags">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.BoolFlags.NeedsVisualUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.FrameworkRenderElement.BoolFlags.FormattedTextInvalid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.IContainerGeneratorItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.IContainerGeneratorItem.Prepare">
+            <summary>
+            Prepares this instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.IContainerGeneratorItem.Draw(System.Windows.Media.DrawingContext)">
+            <summary>
+            Draws the specified drawing context.
+            </summary>
+            <param name="drawingContext">The drawing context.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.IContainerGeneratorItem.ShouldPrepare">
+            <summary>
+            Gets or sets the should prepare.
+            </summary>
+            <value>The should prepare.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.IContainerGeneratorItem.Container">
+            <summary>
+            Gets or sets the container.
+            </summary>
+            <value>The container.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.IContainerGeneratorItem.ArrangeLocation">
+            <summary>
+            Gets or sets the arrange location.
+            </summary>
+            <value>The arrange location.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.IContainerGeneratorItem.MeasureSize">
+            <summary>
+            Gets or sets the size of the measure.
+            </summary>
+            <value>The size of the measure.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.LineRenderElement">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.LineRenderElement.Render(System.Windows.Media.DrawingContext,System.Windows.Rect)">
+            <summary>
+            Renders the specified dc.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.OverlayRenderElement.Render(System.Windows.Media.DrawingContext,System.Windows.Rect)">
+            <summary>
+            Renders the specified dc.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridOrientation">
+            <summary>
+            Represents orientation.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridOrientation.Horizontal">
+            <summary>
+            Horizontal orientation.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridOrientation.Vertical">
+            <summary>
+            Vertical orientation.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.DataProvider">
+            <summary>
+            Represent a set of members that functionally affects RadVirtualGrid. They can be overridden to modify its behavior.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.#ctor(System.Collections.IEnumerable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.DataProvider"/> class.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.SortDescriptorPreparing(Telerik.Windows.Controls.VirtualGrid.SortingEventArgs)">
+            <summary>
+            The method is called when the SortDescriptors are being prepared. 
+            </summary>	
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.SortDescriptorPrepared(Telerik.Windows.Controls.VirtualGrid.SortedEventArgs)">
+            <summary>
+            The method is called when the SortDescriptors are prepared and a sort operation will occur. 
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.OnSortingCompleted">
+            <summary>
+            The method is called when the sort operation is completed. 
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.FilterDescriptorsPreparing(Telerik.Windows.Controls.VirtualGrid.FilteringEventArgs)">
+            <summary>
+            The method is called when the FilterDescriptors are being prepared. 
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.FilterDescriptorsPrepared(Telerik.Windows.Controls.VirtualGrid.FilteredEventArgs)">
+            <summary>
+            The method is called when the FilterDescriptors are prepared and a filter operation will occur. 
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.OnFilteringCompleted">
+            <summary>
+            The method is called when the filter operation is completed. 
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.ApplyFilterDescriptor(Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor)">
+            <summary>
+            Adds the filter descriptor to the Source QCV.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.ApplySortDescriptor(Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor)">
+            <summary>
+            Adds the sort descriptor to the Source QCV.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.RemoveColumnFilter(Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor)">
+            <summary>
+            Removes the given filter descriptor from the Source QCV.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.FilterOperatorsLoading(Telerik.Windows.Controls.VirtualGrid.FilterOperatorsLoadingEventArgs)">
+            <summary>
+            The method is invoked when the FilterOperators for a given column are being loaded.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.RemoveAllColumnFilters">
+            <summary>
+            Removes all column filters from the Source QCV.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.OnCellValueNeeded(Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs)">
+            <summary>
+            Invoked by RadVirtualGrid when the CellValueNeeded event is raised.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.OnEditorValueChanged(Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs)">
+            <summary>
+            Invoked by RadVirtualGrid when the EditorValueChanged event is raised.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.OnEditorNeeded(Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs)">
+            <summary>
+            Invoked by RadVirtualGrid when the EditorNeeded event is raised.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.IsColumnReadOnly(System.Int32)">
+            <summary>
+            Determines whether a given column is ReadOnly. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.CreateEditor(System.Windows.FrameworkElement@,System.Windows.DependencyProperty@,System.Object,System.Int32)">
+            <summary>
+            Creates an editor.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.InsertItemInSource">
+            <summary>
+            Inserts a new item in source.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.RemoveItemsFromSource(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Removes items from source.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.DistinctValuesLoading(Telerik.Windows.Controls.VirtualGrid.DistinctValuesLoadingEventArgs)">
+            <summary>
+            Initializes DistinctValuesLoadingEventArgs.ItemsSource based on ItemProperties value.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.OnCellEditEnded(Telerik.Windows.Controls.VirtualGrid.CellEditEndedEventArgs)">
+            <summary>
+            Invoked by RadVirtualGrid when the CellEditEnded event is raised.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.PushCellValueToSource(System.Int32,System.Int32,System.Object)">
+            <summary>
+            Invoked by RadVirtualGrid when the CellEditEnded event is raised.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.OnHeaderValueNeeded(Telerik.Windows.Controls.VirtualGrid.HeaderValueEventArgs)">
+            <summary>
+            Invoked by RadVirtualGrid when the HeaderValueNeeded event is raised.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataProvider.DataMemberNeeded(Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs)">
+            <summary>
+            Assigns the DataMemberEventArgs properties based on the values in ItemProperties.
+            </summary>		
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataProvider.DistinctValuesLimit">
+            <summary>
+            Gets or sets the maximum count of distinct values.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataProvider.ItemProperties">
+            <summary>
+            Gets the item properties.
+            </summary>
+            <value>The item properties.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataProvider.Source">
+            <summary>
+            Gets or sets a Source QCV collection that enables data operations.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataProvider.ShouldPushEditValueToGrid">
+            <summary>
+            Gets a value that indicates whether the new cell value should be pushed to VirtualGrid after CellEditEnded.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataProvider.InitialColumnCount">
+            <summary>
+            Represents the initial column count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataProvider.InitialRowCount">
+            <summary>
+            Represents the initial row count.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs">
+            <summary>
+            Represents event arguments for the EditorNeeded event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs.Editor">
+            <summary>
+            Gets or sets the editor that will be used for editing a particular cell.
+            </summary>
+            <value>The editor.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs.EditorProperty">
+            <summary>
+            Gets or sets the editor's editable dependency property.
+            </summary>
+            <value>The editor property.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs.RowIndex">
+            <summary>
+            Gets the index of the cell's row.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs.ColumnIndex">
+            <summary>
+            Gets the index of the cell's column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs.TextInput">
+            <summary>
+            Gets the string containing the entered text when the TextInput event occurs.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor">
+            <summary>
+            Represents a filter descriptor that contains the information for filtering a specific column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor.CreateFilterExpression(System.Linq.Expressions.Expression)">
+            <summary>
+            Creates a filter expression.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor.Clear">
+            <summary>
+            Clears the DistinctFilter and FieldFilter of the underlying ColumnFilterDescriptor.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents the current
+            <see cref="T:System.Object" />.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents the current <see cref="T:System.Object" />.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor.MemberName">
+            <summary>
+            Gets the data member name.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor.DistinctFilter">
+            <summary>
+            Gets the distinct filter descriptor.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor.FieldFilter">
+            <summary>
+            Gets the filed filter descriptor.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs">
+            <summary>
+            Represents event arguments for the DataMemberNeeded event args.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the DataMemberEventArgs class.
+            </summary>		
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs.ColumnIndex">
+            <summary>
+            Gets the column's index.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs.DataType">
+            <summary>
+            Gets or sets the data member type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs.MemberName">
+            <summary>
+            Gets or sets the data member name.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs.IsSortable">
+            <summary>
+            Gets or sets a value that indicates whether the column generated for this data member is sortable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs.IsFilterable">
+            <summary>
+            Gets or sets a value that indicates whether the column generated for this data member is filterable.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo">
+            <summary>
+            Represents meta data about a property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo.#ctor(System.Int32,System.Type,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the DataMemberInfo class.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo.#ctor(Telerik.Windows.Controls.VirtualGrid.DataMemberEventArgs)">
+            <summary>
+            Initializes a new instance of the DataMemberInfo class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo.#ctor">
+            <summary>
+            Initializes a new instance of the DataMemberInfo class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo.ColumnIndex">
+            <summary>
+            Gets the column's index.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo.DataType">
+            <summary>
+            Gets or sets the data member type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo.MemberName">
+            <summary>
+            Gets or sets the data member name.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo.IsSortable">
+            <summary>
+            Gets or sets a value that indicates whether the column generated for this data member is sortable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DataMemberInfo.IsFilterable">
+            <summary>
+            Gets or sets a value that indicates whether the column generated for this data member is filterable.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.DistinctValuesFilterDescriptor">
+            <summary>
+            The default implementation of IDistinctValuesFilterDescriptor.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DistinctValuesFilterDescriptor.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the DistinctValuesFilterDescriptor class.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DistinctValuesFilterDescriptor.CreateFilterExpression(System.Linq.Expressions.Expression)">
+            <summary>
+            Creates a filter expression based on the given filter descriptors.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DistinctValuesFilterDescriptor.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents the current
+            <see cref="T:System.Object" />.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents the current <see cref="T:System.Object" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DistinctValuesFilterDescriptor.AddDistinctValue(System.Object)">
+            <summary>
+            Adds a selected distinct value to the filter.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DistinctValuesFilterDescriptor.RemoveDistinctValue(System.Object)">
+            <summary>
+            Removes a selected distinct value from the filter.
+            </summary>		
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DistinctValuesFilterDescriptor.Clear">
+            <summary>
+            Clears the selected distinct values.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DistinctValuesFilterDescriptor.DistinctValues">
+            <summary>
+            Gets the selected distinct values.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.DistinctValuesLoadingEventArgs">
+            <summary>
+            Represents event arguments for the DistinctValuesLoading event args.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DistinctValuesLoadingEventArgs.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the DistinctValuesLoadingEventArgs class.
+            </summary>		
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DistinctValuesLoadingEventArgs.ItemsSource">
+            <summary>
+            Gets or sets the distinct values.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DistinctValuesLoadingEventArgs.ColumnIndex">
+            <summary>
+            Gets the index for the column for which distinct values are being loaded.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.DistinctValueViewModel">
+            <summary>
+            Represents a filter distinct value.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DistinctValueViewModel.RejectChanges">
+            <summary>
+            Returns the distinct value in its original state.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DistinctValueViewModel.IsActive">
+            <summary>
+            Gets a value indicating, which indicates that this filter can be applied.
+            </summary>
+            <value><c>true</c> if the filter can be applied; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DistinctValueViewModel.HasChanges">
+            <summary>
+            Indicates whether the distinct values has changed its state from active to inactive or vice versa.
+            </summary>
+            <value>A value indicating whether the distinct values has changed its state from active to inactive or vice versa.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.DistinctValueViewModel.RawValue">
+            <summary>
+            Gets the raw value.
+            </summary>
+            <value>The raw value.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FieldFilterEditorCreatedEventArgs">
+            <summary>
+            Represents event arguments for the FieldFilterEditorCreated event args.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FieldFilterEditorCreatedEventArgs.#ctor(System.Int32,System.Windows.FrameworkElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.FieldFilterEditorCreatedEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FieldFilterEditorCreatedEventArgs.ColumnIndex">
+            <summary>
+            Gets the filtered column index.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FieldFilterEditorCreatedEventArgs.Editor">
+            <summary>
+            Gets or sets the editor control.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FieldFilterDescriptor">
+            <summary>
+            The default implementation of IFieldFilterDescriptor.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FieldFilterDescriptor.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the FieldFilterDescriptor class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FieldFilterDescriptor.CreateFilterExpression(System.Linq.Expressions.Expression)">
+            <summary>
+            Creates a filter expression based on the filter descriptors.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FieldFilterDescriptor.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents the current
+            <see cref="T:System.Object" />.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents the current <see cref="T:System.Object" />.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FieldFilterDescriptor.Filter1">
+            <summary>
+            Gets or sets the first filter operator.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FieldFilterDescriptor.Filter2">
+            <summary>
+            Gets or sets the second filter operator.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FieldFilterDescriptor.LogicalOperator">
+            <summary>
+            Gets or sets the logical operator.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilterCompositionLogicalOperatorConverter">
+            <summary>
+            Converts <see cref="T:Telerik.Windows.Data.FilterCompositionLogicalOperator"/> to <see cref="T:System.String"/> using 
+            localization infrastructure.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterCompositionLogicalOperatorConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            Localized string for given filter operator.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterCompositionLogicalOperatorConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel">
+            <summary>
+            Holds properties for declarative binding of <see cref="T:Telerik.Windows.Data.FilterDescriptor"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel.#ctor(Telerik.Windows.Data.OperatorValueFilterDescriptorBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel"/> class.
+            </summary>
+            <param name="filterDescriptor">The filter descriptor.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel.#ctor(Telerik.Windows.Data.OperatorValueFilterDescriptorBase,System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel"/> class.
+            </summary>
+            <param name="filterDescriptor">The filter descriptor.</param>
+            <param name="distinctValues">The distinct values.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel.CreateCopyOfActual">
+            <summary>
+            Due to legacy reasons, I have to throw these copies in the events. 
+            I wish I could make breaking changes.
+            This would be the first thing that would be gone. Sigh...
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel.RawDistinctValues">
+            <summary>
+            Gets the raw distinct values.
+            </summary>
+            <value>The raw distinct values.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel.Operator">
+            <summary>
+            Gets or sets the filter operator.
+            </summary>
+            <value>The filter operator.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel.Value">
+            <summary>
+            Gets or sets the filter value.
+            </summary>
+            <value>The filter value.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel.IsCaseSensitive">
+            <summary>
+            Gets or sets a value indicating whether this instance is case sensitive.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is case sensitive; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterDescriptorViewModel.IsActive">
+            <summary>
+            Gets a value indicating, which indicates that this filter can be applied.
+            </summary>
+            <value><c>true</c> if the filter can be applied; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilteredEventArgs">
+            <summary>
+            Provides data for the PreparedFilterDescriptors event.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteredEventArgs.#ctor(System.Collections.Generic.IEnumerable{Telerik.Windows.Data.IFilterDescriptor},System.Collections.Generic.IEnumerable{Telerik.Windows.Data.IFilterDescriptor},System.Int32,Telerik.Windows.Controls.VirtualGrid.ColumnFilterDescriptor)">
+            <summary>
+            Initializes a new instance of the FilteredEventArgs class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteredEventArgs.Added">
+            <summary>
+            Gets the added descriptors.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteredEventArgs.Removed">
+            <summary>
+            Gets the removed descriptors.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteredEventArgs.ColumnIndex">
+            <summary>
+            Gets the filtered column index.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteredEventArgs.ColumnFilterDescriptor">
+            <summary>
+            Gets the filter descriptor for the filtered column.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilterEditorFactory">
+            <summary>
+            Factory used to create editors for the filtering UI.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterEditorFactory.CreateEditor(System.Type)">
+            <summary>
+            Creates the editor.
+            </summary>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterEditorFactory.CreateStringEditor">
+            <summary>
+            Creates the string editor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterEditorFactory.CreateDateTimeEditor">
+            <summary>
+            Creates the date time editor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterEditorFactory.CreateTimeSpanEditor">
+            <summary>
+            Creates the time span editor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterEditorFactory.CreateBooleanEditor(System.Type)">
+            <summary>
+            Creates the boolean editor.
+            </summary>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterEditorFactory.CreateEnumEditor(System.Type)">
+            <summary>
+            Creates the enumeration editor.
+            </summary>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterEditorFactory.CreateDefaultEditor">
+            <summary>
+            Creates the default editor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilteringEventArgs">
+            <summary>
+            Provides data for the PreparingFilterDescriptors event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringEventArgs.Added">
+            <summary>
+            Gets the added descriptors.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringEventArgs.Removed">
+            <summary>
+            Gets the removed descriptors.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringEventArgs.ColumnFilterDescriptor">
+            <summary>
+            Gets the filter descriptor for the filtered column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringEventArgs.ColumnIndex">
+            <summary>
+            Gets the filtered column index.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel">
+            <summary>
+            Provides a view model for interaction between FilteringControl and FilterDescriptors.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel.ClearFilters">
+            <summary>
+            Clear all distinct values, Filter1, and Filter2.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel.SelectAll">
+            <summary>
+            Gets or sets a value indicating whether select all options is applied.
+            </summary>
+            <value><c>true</c> if select all is used; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel.DistinctValues">
+            <summary>
+            Gets a collection of <see cref="T:Telerik.Windows.Controls.VirtualGrid.DistinctValueViewModel"/> that represent each distinct value.
+            </summary>
+            <value>The <see cref="T:Telerik.Windows.Controls.VirtualGrid.DistinctValueViewModel"/> collection for 
+            this <see cref="T:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel"/>.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel.AvailableActions">
+            <summary>
+            Gets collection of available <see cref="T:Telerik.Windows.Data.FilterOperator"/> 
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel.LogicalOperators">
+            <summary>
+            Gets the logical operators.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel.FieldFilterLogicalOperator">
+            <summary>
+            Gets or sets the field filter logical operator.
+            </summary>
+            <value>The field filter logical operator.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel.Filter1">
+            <summary>
+            Gets the first field filter view model.
+            </summary>
+            <value>The first field filter view model.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringViewModel.Filter2">
+            <summary>
+            Gets the second field filter view model.
+            </summary>
+            <value>The second field filter view model.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilterOperatorConverter">
+            <summary>
+            Converts <see cref="T:Telerik.Windows.Data.FilterOperator"/> to <see cref="T:System.String"/> using 
+            localization infrastructure.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterOperatorConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            Localized string for given filter operator.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterOperatorConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilterOperatorsLoadingEventArgs">
+            <summary>
+            Provides data for the FilterOperatorsLoading event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterOperatorsLoadingEventArgs.ColumnIndex">
+            <summary>
+            The index of the filtered column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterOperatorsLoadingEventArgs.AvailableOperators">
+            <summary>
+            Gets the available operators. You can only remove operators from this collection.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterOperatorsLoadingEventArgs.DefaultOperator1">
+            <summary>
+            Gets or sets the first default operator.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilterOperatorsLoadingEventArgs.DefaultOperator2">
+            <summary>
+            Gets or sets the second default operator.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilterOperatorToFilterEditorIsEnabledConverter">
+            <summary>
+            FilterOperatorToFilterEditorIsEnabledConverter.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterOperatorToFilterEditorIsEnabledConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilterOperatorToFilterEditorIsEnabledConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.HeaderSizeEventArgs">
+            <summary>
+            Represent event arguments for setting the size of a header cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.HeaderSizeEventArgs.HeaderOrientation">
+            <summary>
+            Gets the header orientation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.HeaderSizeEventArgs.Index">
+            <summary>
+            Gets the header cell index.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.HeaderSizeEventArgs.Size">
+            <summary>
+            Gets or sets the header cell size (width or height according to the orientation).
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.HeaderSizeEventArgs.SizeUnit">
+            <summary>
+            Gets or sets the header size unit.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.HeaderValueEventArgs">
+            <summary>
+            Represent event arguments for setting the value of a header cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.HeaderValueEventArgs.HeaderOrientation">
+            <summary>
+            Gets the header orientation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.HeaderValueEventArgs.Index">
+            <summary>
+            Gets the header cell index.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.HeaderValueEventArgs.Value">
+            <summary>
+            Gets or sets the header cell value.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.DefaultKeyboardCommandProvider">
+            <summary>
+            Provides key commands.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.IKeyboardCommandProvider">
+            <summary>
+            Provides key commands.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.IKeyboardCommandProvider.ProvideCommandsForKey(System.Windows.Input.Key)">
+            <summary>
+            Provides key commands.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DefaultKeyboardCommandProvider.#ctor(Telerik.Windows.Controls.RadVirtualGrid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.DefaultKeyboardCommandProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.DefaultKeyboardCommandProvider.ProvideCommandsForKey(System.Windows.Input.Key)">
+            <summary>
+            Provides key commands.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FocusNavigationDirection">
+            <summary>
+            Specifies the direction within a user interface (UI) in which a desired focus
+            change request is attempted. The direction is either based on tab order or
+            by relative direction in layout.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Next">
+            <summary>
+            Move focus to the next focusable element in tab order. Not supported for
+            System.Windows.UIElement.PredictFocus(System.Windows.Input.FocusNavigationDirection).
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Previous">
+            <summary>
+            Move focus to the previous focusable element in tab order. Not supported
+            for System.Windows.UIElement.PredictFocus(System.Windows.Input.FocusNavigationDirection).
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.First">
+            <summary>
+            Move focus to the first focusable element in tab order. Not supported for
+            System.Windows.UIElement.PredictFocus(System.Windows.Input.FocusNavigationDirection).
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Last">
+            <summary>
+            Move focus to the last focusable element in tab order. Not supported for 
+            System.Windows.UIElement.PredictFocus(System.Windows.Input.FocusNavigationDirection).
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Left">
+            <summary>
+            Move focus to another focusable element to the left of the currently focused element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Right">
+            <summary>
+            Move focus to another focusable element to the right of the currently focused element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Up">
+            <summary>
+            Move focus to another focusable element upwards from the currently focused element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Down">
+            <summary>
+            Move focus to another focusable element downwards from the currently focused element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Home">
+            <summary>
+            Move focus to the first topmost element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.End">
+            <summary>
+            Move focus to the last bottommost element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Top">
+            <summary>
+            Move focus to the topmost element from the currently focused element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.Bottom">
+            <summary>
+            Move focus to the bottommost element from the currently focused element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.PageDown">
+            <summary>
+            Move focus to another focusable element one page downwards from the current focused element.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FocusNavigationDirection.PageUp">
+            <summary>
+            Move focus to another focusable element one page upwards from the current focused element.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RadVirtualGridCommands">
+            <summary>
+            Provides commands for RadVirtualGrid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.CommitEdit">
+            <summary>
+            Gets value that represents the commit edit command.
+            </summary>
+            <value>The commit edit command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.BeginEdit">
+            <summary>
+            Gets value that represents the begin edit command.
+            </summary>
+            <value>The begin edit command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.BeginInsert">
+            <summary>
+            Gets value that represents the begin insert command.
+            </summary>
+            <value>The begin insert command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.CancelEdit">
+            <summary>
+            Gets value that represents the cancel edit command.
+            </summary>
+            <value>The cancel cell edit command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.SelectAll">
+            <summary>
+            Gets value that represents the SelectAll command.
+            </summary>
+            <value>The SelectAll command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.Copy">
+            <summary>
+            Gets value that represents the Copy command.
+            </summary>
+            <value>The SelectAll command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.Delete">
+            <summary>
+            Gets value that represents the delete command.
+            </summary>
+            <value>The delete command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveLeft">
+            <summary>
+            Gets value that represents the move left command.
+            </summary>
+            <value>The move left command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveRight">
+            <summary>
+            Gets value that represents the move right command.
+            </summary>
+            <value>The move right command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveUp">
+            <summary>
+            Gets value that represents the move up command.
+            </summary>
+            <value>The move up command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveDown">
+            <summary>
+            Gets value that represents the move down command.
+            </summary>
+            <value>The move down command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveNext">
+            <summary>
+            Gets value that represents the move next command.
+            </summary>
+            <value>The move next command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MovePrevious">
+            <summary>
+            Gets value that represents the move previous command.
+            </summary>
+            <value>The move previous command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveFirst">
+            <summary>
+            Gets value that represents the move first command.
+            </summary>
+            <value>The move first command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveLast">
+            <summary>
+            Gets value that represents the move last command.
+            </summary>
+            <value>The move last command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveHome">
+            <summary>
+            Gets value that represents the move home command.
+            </summary>
+            <value>The move home command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveEnd">
+            <summary>
+            Gets value that represents the move end command.
+            </summary>
+            <value>The move end command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MovePageDown">
+            <summary>
+            Gets value that represents the move page down command.
+            </summary>
+            <value>The move page down command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MovePageUp">
+            <summary>
+            Gets value that represents the move page up command.
+            </summary>
+            <value>The move page up command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveTop">
+            <summary>
+            Gets value that represents the move top command.
+            </summary>
+            <value>The move top command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.MoveBottom">
+            <summary>
+            Gets value that represents the move bottom command.
+            </summary>
+            <value>The move bottom command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.SelectCurrentUnit">
+            <summary>
+            Gets value that represents the SelectCurrentUnit command.
+            </summary>
+            <value>The select current item command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.ExtendSelectionToCurrentUnit">
+            <summary>
+            Gets value that represents the ExtendSelectionToCurrentUnit command.
+            </summary>
+            <value>The select current item command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.PinRowTop">
+            <summary>
+            Gets value that represents the PinRowTop command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.PinRowBottom">
+            <summary>
+            Gets value that represents the PinRowBottom command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.PinColumnLeft">
+            <summary>
+            Gets value that represents the PinColumnLeft command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.PinColumnRight">
+            <summary>
+            Gets value that represents the PinColumnRight command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.UnpinRow">
+            <summary>
+            Gets value that represents the UnpinRow command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadVirtualGridCommands.UnpinColumn">
+            <summary>
+            Gets value that represents the UnpinColumn command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.CommitEdit">
+            <summary>
+            CommitEdit.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.BeginEdit">
+            <summary>
+            BeginEdit.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.BeginInsert">
+            <summary>
+            BeginInsert.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.CancelEdit">
+            <summary>
+            CancelEdit.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.SelectAll">
+            <summary>
+            SelectAll.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.Copy">
+            <summary>
+            Copy.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.Delete">
+            <summary>
+            Delete.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveLeft">
+            <summary>
+            MoveLeft.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveRight">
+            <summary>
+            MoveRight.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveUp">
+            <summary>
+            MoveUp.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveDown">
+            <summary>
+            MoveDown.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveNext">
+            <summary>
+            MoveNext.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MovePrevious">
+            <summary>
+            MovePrevious.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveFirst">
+            <summary>
+            MoveFirst.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveLast">
+            <summary>
+            MoveLast.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveHome">
+            <summary>
+            MoveHome.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveEnd">
+            <summary>
+            MoveEnd.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MovePageDown">
+            <summary>
+            MovePageDown.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MovePageUp">
+            <summary>
+            MovePageUp.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveTop">
+            <summary>
+            MoveTop.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.MoveBottom">
+            <summary>
+            MoveBottom.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.SelectCurrentUnit">
+            <summary>
+            SelectCurrentUnit.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.ExtendSelectionToCurrentUnit">
+            <summary>
+            ExtendSelectionToCurrentUnit.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.PinRowTop">
+            <summary>
+            PinRowTop.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.PinRowBottom">
+            <summary>
+            PinRowBottom.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.PinColumnLeft">
+            <summary>
+            PinColumnLeft.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.PinColumnRight">
+            <summary>
+            PinColumnRight.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.UnpinRow">
+            <summary>
+            UnpinRow.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadVirtualGridCommands.CommandId.UnpinColumn">
+            <summary>
+            UnpinColumn.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellInfoCollection.Clear">
+            <summary>
+            Removes all cells from the collection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellInfoCollection.CreateCellInfo(System.Int32,System.Int32)">
+            <summary>
+            Generated cell info from the specified arguments.
+            </summary>
+            <param name="rowIndex">The row index.</param>
+            <param name="columnIndex">The column index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellInfoCollection.GetItemForLocation(Telerik.Windows.Controls.VirtualGrid.Selection.CellLocation)">
+            <summary>
+            Gets the item for location.
+            </summary>
+            <param name="location">The location.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellInfoCollection.CreateCellInfo(Telerik.Windows.Controls.VirtualGrid.Selection.CellLocation)">
+            <summary>
+            Creates the cell info from the specified location.
+            </summary>
+            <param name="location">The location.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.Selection.ICellInfoValidator">
+            <summary>
+            Interface that provides cell validation services.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.Selection.ICellInfoValidator.IsCellValid(Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo)">
+            <summary>
+            Determines whether the specified <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo"/> is valid.
+            </summary>
+            <param name="info">The cell info.</param>
+            <returns>
+            	<c>true</c> if the cell is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.Selection.ICellInfoValidator.IsPublicCellValid(Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo)">
+            <summary>
+            Determines whether the specified <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo"/> is valid.
+            </summary>
+            <param name="info">The cell info.</param>
+            <returns>
+            	<c>true</c> if the cell is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.Selection.CellInfoCollectionChangeType.Critical">
+            <summary>
+            Critical.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.Selection.CellInfoCollectionChangeType.Normal">
+            <summary>
+            Normal.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.CellRegion">
+            <summary>
+            A structure that represents a rectangular region of cells in RadVirtualGrid.
+            The origin of the region is specified by the Left and Top properties. 
+            The extent of the region is specified by the Width and the Height properties.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellRegion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.CellRegion"/> struct.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellRegion.op_Equality(Telerik.Windows.Controls.VirtualGrid.CellRegion,Telerik.Windows.Controls.VirtualGrid.CellRegion)">
+            <summary>
+            Implements the operator ==.
+            </summary>
+            <param name="leftCellRegion">Left cell region.</param>
+            <param name="rightCellRegion">Right cell region.</param>
+            <returns>The result of the operator.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellRegion.op_Inequality(Telerik.Windows.Controls.VirtualGrid.CellRegion,Telerik.Windows.Controls.VirtualGrid.CellRegion)">
+            <summary>
+            Implements the operator !=.
+            </summary>
+            <param name="leftCellRegion">Left cell region.</param>
+            <param name="rightCellRegion">Right cell region.</param>
+            <returns>The result of the operator.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellRegion.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellRegion.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.CellRegion.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.Selection.SelectedIndexes">
+            <summary>
+            Stores an ordered list of selected index ranges.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangedEventArgs">
+            <summary>
+            Event arguments used for the SelectedCellsChanged event. Provides information about the cells that were added or removed from the SelectedCells collection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangedEventArgs.#ctor(System.Collections.Generic.IList{Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo},System.Collections.Generic.IList{Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangedEventArgs"/> class.
+            </summary>
+            <param name="addedCells">Cells that were added.</param>
+            <param name="removedCells">Cells that were removed.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangedEventArgs.AddedCells">
+            <summary>
+            The cells that were added.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangedEventArgs.RemovedCells">
+            <summary>
+            The cells that were removed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs">
+            <summary>
+            Event arguments used for the SelectedCellsChanging event. Provides information about the cells that are about to be added or removed from the SelectedCells collection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs.#ctor(System.Collections.Generic.IList{Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo},System.Collections.Generic.IList{Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs"/> class.
+            </summary>
+            <param name="addedCells">Cells that were added.</param>
+            <param name="removedCells">Cells that were removed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs.#ctor(System.Collections.Generic.IList{Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo},System.Collections.Generic.IList{Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo},System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs"/> class.
+            </summary>
+            <param name="addedCells">Cells that were added.</param>
+            <param name="removedCells">Cells that were removed.</param>
+            <param name="isCancelable">Indicates if this event is cancelable.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs.AddedCells">
+            <summary>
+            The cells that were added.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs.RemovedCells">
+            <summary>
+            The cells that were removed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectedCellsChangingEventArgs.IsCancelable">
+            <summary>
+            Gets a value that indicates whether the event is cancelable.
+            </summary>
+            <value>
+            	<c>true</c> if this event is cancelable; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.Selection.NotifyCellInfoCollectionChangedEventHandler">
+            <summary>
+            Represents the method that handles changes of a CellInfoCollection.
+            </summary>
+            <param name="sender">
+            The object that raised the event.
+            </param>
+            <param name="e">
+            Information about the event.
+            </param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo">
+            <summary>
+            Class that describes VirtualCell as data object.
+            Used to get the appropriate VirtualCell in cases when it is recycled.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo"/> class.
+            </summary>
+            <param name="rowIndex">The row index.</param>
+            <param name="columnIndex">The column index.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo.#ctor(System.Int32,System.Int32,Telerik.Windows.Controls.RadVirtualGrid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo"/> class.
+            </summary>
+            <param name="rowIndex">The row index.</param>
+            <param name="columnIndex">The column index.</param>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo.RowIndex">
+            <summary>
+            Gets the column.
+            </summary>
+            <value>The column.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridCellInfo.ColumnIndex">
+            <summary>
+            Gets the column.
+            </summary>
+            <value>The column.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectionUnit">
+            <summary>
+             Defines the selection units used in the <see cref="T:Telerik.Windows.Controls.RadVirtualGrid"/> component.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectionUnit.Cell">
+            <summary>
+            Only cells are selectable.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectionUnit.Row">
+            <summary>
+            Only rows are selectable.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridSelectionUnit.Column">
+            <summary>
+            Only columns are selectable.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor">
+            <summary>
+            Represents a sort descriptor that contains the information for sorting a specific column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor.#ctor(System.String,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor.CreateSortKeyExpression(System.Linq.Expressions.Expression)">
+            <summary>
+            Create sort expression.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor.CreateSortKeyExpression(System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            Create sort expression.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor.SortDirection">
+            <summary>
+            Gets or sets descriptor's sort direction.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor.IsActive">
+            <summary>
+            Gets or sets a value that indicates whether the sort descriptor should be applied.
+            </summary>		
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.SortedEventArgs">
+            <summary>
+            Provides data for the PreparedSortDescriptors event.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.SortedEventArgs.#ctor(Telerik.Windows.Controls.SortingState,Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.SortedEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.SortedEventArgs.SortDirection">
+            <summary>
+            Gets the sort direction.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.SortedEventArgs.ColumnSortDescriptor">
+            <summary>
+            Gets the column sort descriptor.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.SortedEventArgs.ColumnIndex">
+            <summary>
+            Gets the sorted column index.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.SortingEventArgs">
+            <summary>
+            Provides data for the PreparingSortDescriptors event.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.SortingEventArgs.#ctor(Telerik.Windows.Controls.SortingState,Telerik.Windows.Controls.SortingState,Telerik.Windows.Controls.VirtualGrid.ColumnSortDescriptor,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGrid.SortingEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.SortingEventArgs.OldSortDirection">
+            <summary>
+            Gets the old sort direction.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.SortingEventArgs.NewSortDirection">
+            <summary>
+            Gets or sets the sort direction.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.SortingEventArgs.ColumnSortDescriptor">
+            <summary>
+            Gets the column sort descriptor.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.SortingEventArgs.ColumnIndex">
+            <summary>
+            Gets the sorted column index.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.SortingState">
+            <summary>
+            Describes a sorting state.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.SortingState.Ascending">
+            <summary>
+            Column is sorted in Ascending order.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.SortingState.Descending">
+            <summary>
+            Column is sorted in Descending order.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.SortingState.None">
+            <summary>
+            No column sorting.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilteringControl">
+            <summary>
+            FilteringControl.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.FilteringControlBase">
+            <summary>
+            Represents the base class for filtering controls.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.FilteringControlBase.IsActiveProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.VirtualGrid.FilteringControlBase.IsActive"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControlBase.Prepare">
+            <summary>
+            Prepares the component for the column it will service.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringControlBase.IsActive">
+            <summary>
+            Gets or sets a value indicating whether the filtering is active.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.FilteringControl.DistinctFiltersVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.VirtualGrid.FilteringControl.DistinctFiltersVisibility"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.FilteringControl.FieldFiltersVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.VirtualGrid.FilteringControl.FieldFiltersVisibility"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.FilteringControl.FilterButtonVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.VirtualGrid.FilteringControl.FilterButtonVisibility"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.#ctor(Telerik.Windows.Controls.RadVirtualGrid)">
+            <summary>
+            Initializes a new instance of the FilteringControl class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.#ctor(Telerik.Windows.Controls.RadVirtualGrid,System.Int32,System.Type,System.String)">
+            <summary>
+            Initializes a new instance of the FilteringControl class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.OnApplyTemplate">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.Prepare">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)">
+            <inheritdoc />
+            <remarks>
+            Marks the event as handled.
+            </remarks>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <inheritdoc />
+            <remarks>
+            Marks the event as handled.
+            </remarks>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.OnClearFilter">
+            <summary>
+            Called when the filter is cleared.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.OnApplyFilter">
+            <summary>
+            Called when the filter is applied.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.FilteringControl.Dispose(System.Boolean)">
+            <summary>
+            Calls IDisposable.Dispose.
+            </summary>		
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringControl.DistinctFiltersVisibility">
+            <summary>
+            Gets or sets a value indicating whether distinct values are visible.
+            </summary>
+            <value>
+            	<c>true</c> if distinct values are visible; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringControl.FieldFiltersVisibility">
+            <summary>
+            Gets or sets a value indicating whether field filters are visible.
+            </summary>
+            <value>
+            	<c>true</c> if this field filters are visible; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.FilteringControl.FilterButtonVisibility">
+            <summary>
+            Gets or sets a value indicating whether the filter button is visible.
+            </summary>
+            <value>
+            	<c>true</c> if the filter button is visible; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridCanvasPanel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualizingCanvasBase">
+            <summary>
+            A base class for virtualizing canvas.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualizingCanvasBase.InitialRowCount">
+            <summary>
+            Gets or sets the rows count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualizingCanvasBase.InitialColumnCount">
+            <summary>
+            Gets or sets the columns count.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridCanvasPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            When overridden in a derived class, positions child elements and determines
+            a size for a <see cref="T:System.Windows.FrameworkElement" /> derived class.
+            </summary>
+            <param name="finalSize">The final area within the parent that this element should
+            use to arrange itself and its children.</param>
+            <returns>The actual size used.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridCanvasPanel.WrappingBorder">
+            <summary>
+            Gets the wrapping border.
+            </summary>
+            <value>The wrapping border.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGridCompoundPanel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.VirtualGridCompoundPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.OnCreateAutomationPeer">
+            <summary>
+            Returns an automation peer for this VirtualGridCompoundPanel.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.MeasureOverride(System.Windows.Size)">
+            <summary>
+            When overridden in a derived class, measures the size in layout required
+            for child elements and determines a size for the <see cref="T:System.Windows.FrameworkElement" />-derived
+            class.
+            </summary>
+            <param name="availableSize">The available size that this element can give to
+            child elements. Infinity can be specified as a value to indicate that the element
+            will size to whatever content is available.</param>
+            <returns>
+            The size that this element determines it needs during layout, based
+            on its calculations of child element sizes.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            When overridden in a derived class, positions child elements and determines
+            a size for a <see cref="T:System.Windows.FrameworkElement" /> derived class.
+            </summary>
+            <param name="finalSize">The final area within the parent that this element should
+            use to arrange itself and its children.</param>
+            <returns>The actual size used.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGridCompoundPanel.scrollOwner">
+            <summary>
+            Gets or sets a <see cref="T:System.Windows.Controls.ScrollViewer" />
+            element that controls scrolling behavior.
+            </summary>
+            <returns>A <see cref="T:System.Windows.Controls.ScrollViewer" /> element that
+            controls scrolling behavior. This property has no default value.</returns>
+            <value></value>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.SetHorizontalOffset(System.Double)">
+            <summary>
+            Sets the amount of horizontal offset.
+            </summary>
+            <param name="offset">The degree to which content is horizontally offset from
+            the containing viewport.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.SetVerticalOffset(System.Double)">
+            <summary>
+            Sets the amount of vertical offset.
+            </summary>
+            <param name="offset">The degree to which content is vertically offset from the
+            containing viewport.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.LineDown">
+            <summary>
+            Scrolls down within content by one logical unit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.LineUp">
+            <summary>
+            Scrolls up within content by one logical unit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.LineRight">
+            <summary>
+            Scrolls right within content by one logical unit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.LineLeft">
+            <summary>
+            Scrolls left within content by one logical unit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.MouseWheelDown">
+            <summary>
+            Scrolls down within content after a user clicks the wheel button on
+            a mouse.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.MouseWheelUp">
+            <summary>
+            Scrolls up within content after a user clicks the wheel button on a
+            mouse.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.MouseWheelRight">
+            <summary>
+            Scrolls right within content after a user clicks the wheel button on
+            a mouse.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.MouseWheelLeft">
+            <summary>
+            Scrolls left within content after a user clicks the wheel button on
+            a mouse.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.PageDown">
+            <summary>
+            Scrolls down within content by one page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.PageUp">
+            <summary>
+            Scrolls up within content by one page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.PageRight">
+            <summary>
+            Scrolls right within content by one page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.PageLeft">
+            <summary>
+            Scrolls left within content by one page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGridCompoundPanel.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)">
+            <summary>
+            Forces content to scroll until the coordinate space of a <see cref="T:System.Windows.Media.Visual" />
+            object is visible.
+            </summary>
+            <param name="visual">A <see cref="T:System.Windows.Media.Visual" /> that becomes
+            visible.</param>
+            <param name="rectangle">A bounding rectangle that identifies the coordinate space
+            to make visible.</param>
+            <returns>A <see cref="T:System.Windows.Rect" /> that is visible.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.CanHorizontallyScroll">
+            <summary>
+            Gets or sets a value that indicates whether scrolling on the horizontal
+            axis is possible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.CanVerticallyScroll">
+            <summary>
+            Gets or sets a value that indicates whether scrolling on the vertical
+            axis is possible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.ExtentHeight">
+            <summary>
+            Gets the vertical size of the extent.
+            </summary>
+            <returns>A <see cref="T:System.Double" /> that represents, in device independent
+            pixels, the vertical size of the extent.This property has no default value.</returns>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.ExtentWidth">
+            <summary>
+            Gets the horizontal size of the extent.
+            </summary>
+            <returns>A <see cref="T:System.Double" /> that represents, in device independent
+            pixels, the horizontal size of the extent. This property has no default value.
+            </returns>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.HorizontalOffset">
+            <summary>
+            Gets the horizontal offset of the scrolled content.
+            </summary>
+            <returns>A <see cref="T:System.Double" /> that represents, in device independent
+            pixels, the horizontal offset. This property has no default value.</returns>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.VerticalOffset">
+            <summary>
+            Gets the vertical offset of the scrolled content.
+            </summary>
+            <returns>A <see cref="T:System.Double" /> that represents, in device independent
+            pixels, the vertical offset of the scrolled content. Valid values are between
+            zero and the <see cref="P:System.Windows.Controls.Primitives.IScrollInfo.ExtentHeight" />
+            minus the <see cref="P:System.Windows.Controls.Primitives.IScrollInfo.ViewportHeight" />.
+            This property has no default value.</returns>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.ViewportHeight">
+            <summary>
+            Gets the vertical size of the viewport for this content.
+            </summary>
+            <returns>A <see cref="T:System.Double" /> that represents, in device independent
+            pixels, the vertical size of the viewport for this content. This property has
+            no default value.</returns>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.ViewportWidth">
+            <summary>
+            Gets the horizontal size of the viewport for this content.
+            </summary>
+            <returns>A <see cref="T:System.Double" /> that represents, in device independent
+            pixels, the horizontal size of the viewport for this content. This property has
+            no default value.</returns>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.ScrollOwner">
+            <summary>
+            Gets or sets a <see cref="T:System.Windows.Controls.ScrollViewer" />
+            element that controls scrolling behavior.
+            </summary>
+            <returns>A <see cref="T:System.Windows.Controls.ScrollViewer" /> element that
+            controls scrolling behavior. This property has no default value.</returns>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.ComputedVerticalOffset">
+            <summary>
+            Gets or sets the computed vertical offset.
+            </summary>
+            <value>The computed vertical offset.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGridCompoundPanel.ComputedHorizontalOffset">
+            <summary>
+            Gets or sets the computed horizontal offset.
+            </summary>
+            <value>The computed horizontal offset.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridHeadersCanvasPanel.WrappingBorder">
+            <summary>
+            Gets the wrapping border.
+            </summary>
+            <value>The wrapping border.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridCurrentCellChangedEventArgs">
+            <summary>
+            Represents data for the CurrentCellChangedEvent.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridCurrentCellChangedEventArgs.OldCell">
+            <summary>
+            Gets or sets the old cell.
+            </summary>
+            <value>The old cell.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridCurrentCellChangedEventArgs.NewCell">
+            <summary>
+            Gets or sets the new cell.
+            </summary>
+            <value>The new cell.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridDeletedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Telerik.Windows.Controls.RadVirtualGrid.Deleted"/> event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridDeletedEventArgs.Indexes">
+            <summary>
+            Gets the indexes that were deleted.
+            </summary>
+            <value>Deleted items.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridDeletingEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Telerik.Windows.Controls.RadVirtualGrid.Deleting"/> event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.VirtualGridDeletingEventArgs.Indexes">
+            <summary>
+            Gets the indexes that are about to be deleted.
+            </summary>
+            <value>Deleted items.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditAction">
+            <summary>
+            Specifies values that represents the action which is
+            performed when RadVirtualGrid exits EditMode.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditAction.Cancel">
+            <summary>
+            Denotes that edit is cancelled. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditAction.Commit">
+            <summary>
+            Denotes that edit is committed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.CellEditEndedEventArgs">
+            <summary>
+            Contains info needed to handle CellEditEnded event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellEditEndedEventArgs.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellEditEndedEventArgs.ColumnIndex">
+            <summary>
+            Gets or sets the index of the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellEditEndedEventArgs.RowIndex">
+            <summary>
+            Gets or sets the index of the row.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.VirtualGrid.CellEditEndedEventArgs.EditAction">
+            <summary>
+            Gets or sets the edit action.
+            </summary>
+            <value>The edit action.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditTriggers">
+            <summary>
+            Defines what kind of action should put VirtualGridCell into edit mode.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditTriggers.None">
+            <summary>
+            Denotes that no action will put VirtualGridCell into edit mode.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditTriggers.CellClick">
+            <summary>
+            Denotes that Single click on a cell will put it into edit mode.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditTriggers.CurrentCellClick">
+            <summary>
+            Denotes that click on a current cell will put it into edit mode.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditTriggers.F2">
+            <summary>
+            Denotes that F2 key on a cell will put it into edit mode.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditTriggers.TextInput">
+            <summary>
+            Denotes that any text input key will put a cell into edit mode.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridEditTriggers.Default">
+            <summary>
+            Combines default values.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridLinesVisibility">
+            <summary>
+            Determines the visibility of the gridlines.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridLinesVisibility.None">
+            <summary>
+            No gridlines are visible.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridLinesVisibility.Horizontal">
+            <summary>
+            Only horizontal gridlines are visible.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridLinesVisibility.Vertical">
+            <summary>
+            Only vertical gridlines are visible.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.VirtualGridLinesVisibility.Both">
+            <summary>
+            Both vertical and horizontal gridlines are visible.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.HeaderSizeUnit">
+            <summary>
+            Represents a set of different size units.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.HeaderSizeUnit.Pixel">
+            <summary>
+            Precise pixel size.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.HeaderSizeUnit.Star">
+            <summary>
+            Relative size.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.VirtualGridScrollViewer">
+            <summary>
+            Represents a scrollable area that can contain other visible elements.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridScrollViewer.ResetTheme">
+            <summary>
+            Resets the theme.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridScrollViewer.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridScrollViewer.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.VirtualGrid.VirtualGridScrollViewer.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.VirtualGrid.PartitionStrategy">
+            <summary>
+            Represents the type of render blocks that are generated.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.PartitionStrategy.Dynamic">
+            <summary>
+            Crates an optimal set of rectangular blocks.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.PartitionStrategy.ViewPort">
+            <summary>
+            Crates one render block as large as the view port. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.VirtualGrid.PartitionStrategy.Lines">
+            <summary>
+            Crates a set of row and column blocks.
+            </summary>
+        </member>
+    </members>
+</doc>

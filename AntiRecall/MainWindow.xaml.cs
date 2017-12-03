@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Forms;
 using System.Drawing;
 using socks5;
 using System.Net;
-using System.Text.RegularExpressions;
-using System.IO;
 using System.Diagnostics;
 using AntiRecall.deploy;
 using AntiRecall.network;
 using System.Threading;
+using System.Windows.Media;
 using AntiRecall.patch;
 
 namespace AntiRecall
@@ -71,6 +67,31 @@ namespace AntiRecall
 
         private delegate void TextChanger();
 
+        public void ModeCheck()
+        {
+            if (Xml.antiRElement["Mode"] == "proxy")
+            {
+                this.PortItem.Foreground = System.Windows.Media.Brushes.Black;
+                this.PortText.Foreground = System.Windows.Media.Brushes.Black;
+                this.PortText.IsReadOnly = false;
+                this.Explorer.Foreground = System.Windows.Media.Brushes.Black;
+                this.Explorer.IsEnabled = true;
+            }
+
+            if (Xml.antiRElement["Mode"] == "patch")
+            {
+                this.PortItem.Foreground = System.Windows.Media.Brushes.Gray;
+                this.PortText.Foreground = System.Windows.Media.Brushes.Gray;
+                this.Explorer.Foreground = System.Windows.Media.Brushes.Black;
+                this.Explorer.IsEnabled = true;
+            }
+
+            if (-1 != Xml.antiRElement["QQPath"].IndexOf("QQ.exe"))
+            {
+                this.Explorer.Content = "一切就绪";
+            }
+        }
+        /*
         private void UpdateCount()
         {
             Regex re = new Regex("\\[\\d*\\]");
@@ -85,65 +106,98 @@ namespace AntiRecall
             Recall_Text.Dispatcher.Invoke(
                 System.Windows.Threading.DispatcherPriority.Normal,
                 new TextChanger(UpdateCount));
-        }
+        }*/
 
         
         public MainWindow()
         {
             InitializeComponent();
             ShortCut.init_shortcut("AntiRecall");
-            ShortCut.init_xml();
+            Xml.init_xml();
             CheckUpdate.init_checkUpdate();
             init_minimize();
-            if (ShortCut.CheckXml())
+            if (Xml.CheckXml())
             {
-                QQPath.Text = ShortCut.QueryXml("QQPath");
-                PortText.Text = ShortCut.QueryXml("PortText");
-                Startup.is_hide = ShortCut.QueryXml("is_hide_startup_notify");
+                Xml.antiRElement["PortText"] = Xml.QueryXml("PortText");
+                Xml.antiRElement["QQPath"] = Xml.QueryXml("QQPath");
+                Xml.antiRElement["Mode"] = Xml.QueryXml("Mode");
+                PortText.Text = Xml.antiRElement["PortText"];
             }
             else
             {
-                ShortCut.CreateXml(ShortCut.antiRElement);
+                Xml.CreateXml(Xml.antiRElement);
             }
-            
+            ModeCheck();
         }
 
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            // CoolButton Clicked! Let's show our InputBox.
-            //InputBox.Visibility = System.Windows.Visibility.Visible;
-            port = PortText.Text;
-            Start.IsEnabled = false;
-            Start.Content = "正在监听";
-            patch_memory.StartPatch();
-            init_socks5();
-            Startup.init_startup();
-            //Modify xml
-            ShortCut.antiRElement["QQPath"] = QQPath.Text;
-            ShortCut.antiRElement["PortText"] = PortText.Text;
-            ShortCut.antiRElement["is_hide_startup_notify"] = Startup.is_hide;
-            if (!ShortCut.CheckXml())
-                ShortCut.CreateXml(ShortCut.antiRElement);
-            else
-                ShortCut.ModifyXml(ShortCut.antiRElement);
-            if (-1 != QQPath.Text.IndexOf("QQ.exe"))
+
+            if (this.Start.IsChecked == false)
             {
-                try
+                if (Xml.antiRElement["Mode"] == "proxy")
                 {
-                    Process process = new Process();
-                    process.StartInfo.FileName = QQPath.Text;
-                    //process.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
-                    process.StartInfo.CreateNoWindow = true;
-                    process.Start();
-                    
+                    proxy.Stop();
                 }
-                catch (Exception)
+
+                if (Xml.antiRElement["Mode"] == "patch")
                 {
-                    System.Windows.MessageBox.Show("启动QQ.exe失败，请确认路径正确或手动启动");
+
                 }
             }
-            MinimizeWindow();
+
+            if (this.Start.IsChecked == true)
+            {
+                port = PortText.Text;
+
+                if (Xml.antiRElement["Mode"] == "proxy")
+                {
+                    init_socks5();
+                    //Startup.init_startup();
+                    //Modify xml
+                    Xml.antiRElement["PortText"] = PortText.Text;
+                    if (!Xml.CheckXml())
+                        Xml.CreateXml(Xml.antiRElement);
+                    else
+                        Xml.ModifyXml(Xml.antiRElement);
+                    
+                }
+                else if (Xml.antiRElement["Mode"] == "patch")
+                {
+                    Xml.antiRElement["PortText"] = PortText.Text;
+                    if (!Xml.CheckXml())
+                        Xml.CreateXml(Xml.antiRElement);
+                    else
+                        Xml.ModifyXml(Xml.antiRElement);
+                    var th = new Thread(() => patch_memory.StartPatch());
+                    th.Start();
+                    
+                }
+                else
+                {
+                    System.Windows.MessageBox.Show("请选择一个有效的防撤回模式");
+                    return;
+                }
+
+                if (-1 != Xml.antiRElement["QQPath"].IndexOf("QQ.exe"))
+                {
+                    try
+                    {
+                        Process process = new Process();
+                        process.StartInfo.FileName = Xml.antiRElement["QQPath"];
+                        //process.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
+                        process.StartInfo.CreateNoWindow = true;
+                        process.Start();
+
+                    }
+                    catch (Exception)
+                    {
+                        System.Windows.MessageBox.Show("启动QQ.exe失败，请确认路径正确或手动启动");
+                    }
+                }
+                MinimizeWindow();
+            }
         }
 
         private void Explorer_Click(object sender, RoutedEventArgs e)
@@ -165,7 +219,8 @@ namespace AntiRecall
             {
                 // Open document 
                 string filepath = dlg.FileName;
-                QQPath.Text = filepath;
+                Xml.antiRElement["QQPath"] = filepath;
+
             }
 
             
@@ -205,6 +260,10 @@ namespace AntiRecall
             App.Current.Shutdown();
         }
 
-        
+        private void RadRadialMenu_SelectionChanged(object sender, Telerik.Windows.Controls.RadialMenu.MenuSelectionChangedEventArgs e)
+        {
+
+        }
+
     }
 }

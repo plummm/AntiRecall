@@ -1,0 +1,2151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Controls.RichTextBoxUI</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.ColorPickers.DropDownColorPicker">
+            <summary>
+            DropDownColorPicker
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ColorPickers.DropDownColorPicker.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.ColorPickers.FormattingColorPicker.ImageProperty">
+            <summary>
+            Identifies the Image property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.ColorPickers.FormattingColorPicker.ActiveColor">
+            <summary>
+            Gets or sets the active color which is shown on the bottom part of the drop down button.
+            </summary>
+            <value>The active color.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.ColorPickers.FormattingColorPicker.Image">
+            <summary>
+            Gets or sets the image.
+            </summary>
+            <value>The image.</value>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Commands.RelayCommand.OnCanExecuteChanged">
+            <summary>
+            Called when CanExecute is changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.Commands.RelayCommand.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether or not the command should.
+            execute.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo">
+            <summary>
+            This class represents a holder for the Paragraph properties which shall be used in the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadParagraphPropertiesDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.#ctor(System.Nullable{Telerik.Windows.Documents.Layout.RadTextAlignment},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{Telerik.Windows.Documents.Model.LineSpacingType},System.Nullable{System.Double},System.Nullable{System.Windows.Media.Color},System.Nullable{System.Windows.FlowDirection},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo"/> class.
+            </summary>
+            <param name="textAlignment">The text alignment.</param>
+            <param name="spacingBefore">The spacing before.</param>
+            <param name="spacingAfter">The spacing after.</param>
+            <param name="automaticSpacingBefore">The automatic spacing before.</param>
+            <param name="automaticSpacingAfter">The automatic spacing after.</param>
+            <param name="lineSpacingType"> The type of the line spacing.</param>
+            <param name="lineSpacing">The line spacing.</param>
+            <param name="background">The background.</param>
+            <param name="flowDirection">The flow direction.</param>
+            <param name="rightIndent">The right indent.</param>
+            <param name="firstLineIndent">The first line indent.</param>
+            <param name="leftIndent">The left indent.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.TextAlignment">
+            <summary>
+            Gets or sets the text alignment.
+            </summary>
+            <value>The text alignment.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.SpacingBefore">
+            <summary>
+            Gets or sets the spacing before.
+            </summary>
+            <value>The spacing before.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.SpacingAfter">
+            <summary>
+            Gets or sets the spacing after.
+            </summary>
+            <value>The spacing after.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.AutomaticSpacingBefore">
+            <summary>
+            Gets or sets the automatic spacing before.
+            </summary>
+            <value>The automatic spacing before.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.AutomaticSpacingAfter">
+            <summary>
+            Gets or sets the automatic spacing after.
+            </summary>
+            <value>The automatic spacing after.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.LineSpacingType">
+            <summary>
+            Gets or sets the type of the line spacing.
+            </summary>
+            <value>The type of the line spacing.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.LineSpacing">
+            <summary>
+            Gets or sets the line spacing.
+            </summary>
+            <value>The line spacing.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.Background">
+            <summary>
+            Gets or sets the background.
+            </summary>
+            <value>The background.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.FlowDirection">
+            <summary>
+            Gets or sets the flow direction.
+            </summary>
+            <value>The flow direction.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.RightIndent">
+            <summary>
+            Gets or sets the right indent.
+            </summary>
+            <value>The right indent.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.FirstLineIndent">
+            <summary>
+            Gets or sets the first line indent.
+            </summary>
+            <value>The first line indent.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ParagraphPropertiesDialogInfo.LeftIndent">
+            <summary>
+            Gets or sets the left indent.
+            </summary>
+            <value>The left indent.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog">
+            <summary>
+            Represents the default <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog"/>.
+            </summary>
+            <summary>
+            SectionColumnsDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog.#ctor">
+            <summary>
+            Initialize a new instance of <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog.ShowDialog(Telerik.Windows.Documents.UI.Extensibility.SectionColumnsDialogContext)">
+            <summary>
+            Shows the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog"/>.
+            </summary>
+            <param name="context">The context which encapsulate the parameters needed for shown the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog.ColumnPropertiesNumericWidth">
+            <summary>
+            Gets or sets the width of the column properties numeric.
+            </summary>
+            <value>The width of the column properties numeric.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.NullableDoubleToBooleanConverter">
+            <summary>
+            Converts nullable double to boolean.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel">
+            <summary>
+            Represents row of section column.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.#ctor(System.Int32,System.Double,System.Nullable{System.Double})">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel"/> class.
+            </summary>
+            <param name="columnId">The id of the column.</param>
+            <param name="width">The width of the column.</param>
+            <param name="spacingAfter">The spacing after the column.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.CanDecreaseWidth(System.Double)">
+            <summary>
+            Indicates whether the width can be decreased.
+            </summary>
+            <param name="widthToDecrease">The width for which to check.</param>
+            <returns><code>True</code> if the width can be decreased. Otherwise <code>False</code>.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.CanDecreaseSpacingAfter(System.Double)">
+            <summary>
+            Indicates whether the spacing after can be decreased.
+            </summary>
+            <param name="widthToDecrease">The width for which to check.</param>
+            <returns><code>True</code> if the spacing can be decreased. Otherwise <code>False</code>.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.OnColumnWidthChanged(Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataChangedEventArgs)">
+            <summary>
+            Executes when ColumnWidth changes.
+            </summary>
+            <param name="e">Event parameters.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.OnColumnSpacingChanged(Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataChangedEventArgs)">
+            <summary>
+            Executes when ColumnSpacing changes.
+            </summary>
+            <param name="e">Event parameters.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.DisplayNumber">
+            <summary>
+            Gets the display number for the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.ColumnId">
+            <summary>
+            Gets or sets the Id of the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.Width">
+            <summary>
+            Gets or sets the width of the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.SpacingAfter">
+            <summary>
+            Gets or sets the spacing after for the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.MaximumWidth">
+            <summary>
+            Gets or sets the maximum column width.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.MaximumSpacingAfter">
+            <summary>
+            Gets or sets the maximum spacing after.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.MinimumWidth">
+            <summary>
+            Gets or sets the maximum column width.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.MinimumSpacingAfter">
+            <summary>
+            Gets or sets the maximum spacing after.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.IsEnabled">
+            <summary>
+            Gets or sets the is enabled.
+            </summary>
+            <value>The is enabled.</value>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.ColumnWidthChanged">
+            <summary>
+            Occurs when ColumnWidth changed
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.ColumnSpacingChanged">
+            <summary>
+            Occurs when ColumnSpacing changed
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel.ValueChangedEventHandler">
+            <summary>
+            Delegate for event <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel"/> changed event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">Event parameters.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataChangedEventArgs">
+            <summary>
+            EventArgs used when Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnData changes its width or spacing after.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataChangedEventArgs.#ctor(System.Int32,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataChangedEventArgs"/> class.
+            </summary>
+            <param name="id">The Id of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel"/> which width or spacing after is changed.</param>
+            <param name="oldValue">The old value of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel"/> width or spacing after.</param>
+            <param name="newValue">The new value of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel"/> width or spacing after.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataChangedEventArgs.Id">
+            <summary>
+            Gets or sets the Id of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel"/> which width or spacing after is changed
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataChangedEventArgs.OldValue">
+            <summary>
+            Gets or sets the old value of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel"/> width or spacing after.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataChangedEventArgs.NewValue">
+            <summary>
+            Gets or sets the new value of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnDataViewModel"/> width or spacing after.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnListItem">
+            <summary>
+            Represents <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnListItem"/>.
+            </summary>
+            <summary>
+            SectionColumnListItem
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnListItem.#ctor">
+            <summary>
+            Initialize new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnListItem"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnListItem.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsDialogViewModel">
+            <summary>
+            The view model of <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumnsDialog"/>.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.ViewModels.ViewModelBase.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsDialogViewModel.SelectedSectionColumnsLayout">
+            <summary>
+            Gets or sets the predefined selected section columns layout.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsLayoutToBooleanConverter">
+            <summary>
+            Converts SectionColumnsLayout to boolean.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsRadioButton">
+            <summary>
+            Represetns SectionColumnsRadioButton
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsRadioButton.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsRadioButton.#ctor">
+            <summary>
+            Initialize new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsRadioButton"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsRadioButton.OnApplyTemplate">
+            <summary>
+            Invoked whenever application code or internal processes (such as a rebuilding layout pass) call System.Windows.Controls.Control.ApplyTemplate.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SectionColumns.SectionColumnsRadioButton.Image">
+            <summary>
+            Gets or sets the image displayed by the radio button.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.RowProperties">
+            <summary>
+            Interaction logic for RowProperties.xaml
+            </summary>
+            <summary>
+            RowProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.RowProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.BorderSide">
+            <summary>
+            Represents a border side.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Converters.ColorToBrushConverter">
+            <summary>
+            Represents <see cref="T:System.Windows.Media.Color"/> to <see cref="T:System.Windows.Media.Brush"/> converter.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Converters.ColorToBrushConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value
+            is used.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Converters.ColorToBrushConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value
+            is used.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Converters.DoubleToVisibilityConverter">
+            <summary>
+            Represents double to <see cref="T:System.Windows.Visibility"/> converter.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Converters.DoubleToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value
+            is used.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Converters.DoubleToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value
+            is used.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.FixedColumnsPanel">
+            <summary>
+            Represents a fixed columns panel.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.FixedColumnsPanel.ColumnsProperty">
+            <summary>
+            IdentifiesTelerik.Windows.Controls.RichTextBoxUI.RibbonControls.ColumnsCount property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.FixedColumnsPanel.MeasureOverride(System.Windows.Size)">
+            <summary>
+            When overridden in a derived class, measures the size in layout required
+            for child elements and determines a size for the <see cref="T:System.Windows.FrameworkElement" />-derived
+            class.
+            </summary>
+            <param name="availableSize">The available size that this element can give to
+            child elements. Infinity can be specified as a value to indicate that the element
+            will size to whatever content is available.</param>
+            <returns>
+            The size that this element determines it needs during layout, based
+            on its calculations of child element sizes.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.FixedColumnsPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            When overridden in a derived class, positions child elements and determines
+            a size for a <see cref="T:System.Windows.FrameworkElement" /> derived class.
+            </summary>
+            <param name="finalSize">The final area within the parent that this element should
+            use to arrange itself and its children.</param>
+            <returns>The actual size used.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.FixedColumnsPanel.Columns">
+            <summary>
+            Gets or sets the columns count.
+            </summary>
+            <value>The columns count.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData">
+            <summary>
+            Represents a cell data.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.#ctor(System.Windows.Media.Color,System.Windows.Media.Color)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData"/> class.
+            </summary>
+            <param name="backgroundColor">Color of the background.</param>
+            <param name="foreColor">Color of the fore.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData"/> class.
+            </summary>
+            <param name="background">The background.</param>
+            <param name="foreColor">Color of the fore.</param>
+            <param name="borders">The borders.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders,System.Windows.Thickness,System.Windows.Thickness)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData"/> class.
+            </summary>
+            <param name="background">The background.</param>
+            <param name="foreColor">Color of the fore.</param>
+            <param name="borders">The borders.</param>
+            <param name="rightBorderMargin">The right border margin.</param>
+            <param name="bottomBorderMargin">The bottom border margin.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.CopyPropertiesFrom(Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData)">
+            <summary>
+            Copies the properties from another instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData"/> class.
+            </summary>
+            <param name="cellData">The cell data.</param>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.Background">
+            <summary>
+            Gets or sets the background.
+            </summary>
+            <value>The background.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.ForeColor">
+            <summary>
+            Gets or sets the color of the fore.
+            </summary>
+            <value>The color of the fore.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.Borders">
+            <summary>
+            Gets or sets the borders.
+            </summary>
+            <value>The borders.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.RightBorderMargin">
+            <summary>
+            Gets or sets the right border margin.
+            </summary>
+            <value>The right border margin.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.CellData.BottomBorderMargin">
+            <summary>
+            Gets or sets the left border margin.
+            </summary>
+            <value>The left border margin.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders">
+            <summary>
+            Represents table gallery item borders.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders.#ctor(Telerik.Windows.Documents.Model.Border,Telerik.Windows.Documents.Model.Border,Telerik.Windows.Documents.Model.Border,Telerik.Windows.Documents.Model.Border)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders"/> class.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="top">The top.</param>
+            <param name="right">The right.</param>
+            <param name="bottom">The bottom.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders.CopyPropertiesFrom(Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders)">
+            <summary>
+            Copies the properties from another instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders"/> class.
+            </summary>
+            <param name="other">The other.</param>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders.Left">
+            <summary>
+            Gets or sets the left.
+            </summary>
+            <value>The left.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders.Top">
+            <summary>
+            Gets or sets the top.
+            </summary>
+            <value>The top.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders.Right">
+            <summary>
+            Gets or sets the right.
+            </summary>
+            <value>The right.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableGalleryItemBorders.Bottom">
+            <summary>
+            Gets or sets the bottom.
+            </summary>
+            <value>The bottom.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData">
+            <summary>
+            Represents table style data.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData.#ctor(Telerik.Windows.Documents.Model.Styles.StyleDefinition)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData"/> class.
+            </summary>
+            <param name="styleDefinition">The style definition.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData.#ctor(Telerik.Windows.Documents.Model.Styles.StyleDefinition,Telerik.Windows.Documents.Model.Styles.TableStyleGroup)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData"/> class.
+            </summary>
+            <param name="styleDefinition">The style definition.</param>
+            <param name="tableStyleGroup">The table style group.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData.CompareTo(Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData)">
+            <summary>
+            Compares to.
+            </summary>
+            <param name="other">The other.</param>
+            <returns></returns>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData.StyleDefinition">
+            <summary>
+            Gets or sets the style definition.
+            </summary>
+            <value>The style definition.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStylesGalleryItemContent">
+            <summary>
+            Represents table styles gallery item content.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStylesGalleryItemContent.#ctor(System.Boolean,System.Object,Telerik.Windows.Documents.Model.Styles.TableStyleGroup)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStylesGalleryItemContent"/> class.
+            </summary>
+            <param name="isHeader">The is header.</param>
+            <param name="content">The content.</param>
+            <param name="tableStyleGroup">The table style group.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStylesGalleryItemContent.IsHeader">
+            <summary>
+            Gets the is header.
+            </summary>
+            <value>The is header.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStylesGalleryItemContent.Content">
+            <summary>
+            Gets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStylesGalleryItemContent.TableStyleGroup">
+            <summary>
+            Gets the table style group.
+            </summary>
+            <value>The table style group.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ObservableTableStyleCollection">
+            <summary>
+            Represents observable table style collection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ObservableTableStyleCollection.#ctor(Telerik.Windows.Documents.Model.StyleCollection,Telerik.Windows.Documents.Model.Styles.BuiltInStylesVersion)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ObservableTableStyleCollection"/> class.
+            </summary>
+            <param name="styleRepository">The style repository.</param>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ObservableTableStyleCollection.UIPriorityChanged">
+            <summary>
+            Occurs when UI priority changes.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem">
+            <summary>
+            TableGalleryItem
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem.TableLookProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableLook property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem.TableStyleProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStyle property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem.TableLook">
+            <summary>
+            Gets or sets the table look.
+            </summary>
+            <value>The table look.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem.TableStyle">
+            <summary>
+            Gets or sets the table style.
+            </summary>
+            <value>The table style.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableGalleryItem.TableGalleryItemViewModel">
+            <summary>
+            Gets or sets the table gallery item view model.
+            </summary>
+            <value>The table gallery item view model.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.TableStylesGallery">
+            <summary>
+            Represents table styles gallery. 
+            </summary>
+            <summary>
+            TableStylesGallery
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.TableStylesGallery.BuiltInStylesVersionProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.BuiltInStylesVersion property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.TableStylesGallery.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.TableStylesGallery"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.TableStylesGallery.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.TableStylesGallery.TableStylesGalleryViewModel">
+            <summary>
+            Gets or sets the table styles gallery view model.
+            </summary>
+            <value>The table styles gallery view model.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.TableStylesGallery.BuiltInStylesVersion">
+            <summary>
+            Gets or sets the built in styles version.
+            </summary>
+            <value>The built in styles version.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.TableStylesGallery.AssociatedRichTextBox">
+            <summary>
+            Gets or sets the associated rich text box.
+            </summary>
+            <value>The associated rich text box.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryCollection">
+            <summary>
+            Represents table styles gallery collection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryCollection.#ctor(Telerik.Windows.Documents.Model.StyleCollection,Telerik.Windows.Documents.Model.Styles.BuiltInStylesVersion)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryCollection"/> class.
+            </summary>
+            <param name="styles">The styles.</param>
+            <param name="builtInStylesVersion">The built in styles version.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryCollection.ChangeBuiltInStylesVersion(Telerik.Windows.Documents.Model.Styles.BuiltInStylesVersion)">
+            <summary>
+            Changes the built in styles version.
+            </summary>
+            <param name="builtInStylesVersion">The built in styles version.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryCollection.ChangeStyleRepository(Telerik.Windows.Documents.Model.StyleCollection)">
+            <summary>
+            Changes the style repository.
+            </summary>
+            <param name="styles">The styles.</param>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryCollection.UIPriorityChanged">
+            <summary>
+            Occurs when UI priority changes.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryCollection.CollectionChanged">
+            <summary>
+            Occurs when the collection changes.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryItemTemplateSelector">
+            <summary>
+            Represents table styles gallery item template selector.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryItemTemplateSelector.SelectTemplate(System.Object,System.Windows.DependencyObject)">
+            <summary>
+            When overridden in a derived class, returns a DataTemplate based on custom logic.
+            </summary>
+            <param name="item">The data object for which to select the template.</param>
+            <param name="container">The data-bound object.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryItemTemplateSelector.TableGalleryItemSelector">
+            <summary>
+            Gets or sets the table gallery item selector.
+            </summary>
+            <value>The table gallery item selector.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.TableStylesGalleryItemTemplateSelector.HeaderItemSelector">
+            <summary>
+            Gets or sets the header item selector.
+            </summary>
+            <value>The header item selector.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.UIPriorityChangedEventArgs">
+            <summary>
+            Represents UI priority changed event args.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.UIPriorityChangedEventArgs.#ctor(Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.Models.TableStyleItemData)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.UIPriorityChangedEventArgs"/> class.
+            </summary>
+            <param name="changedItem">The changed item.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.UIPriorityChangedEventArgs.ChangedItem">
+            <summary>
+            Gets the changed item.
+            </summary>
+            <value>The changed item.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableGalleryItemViewModel">
+            <summary>
+            Represents table gallery item view-model.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableGalleryItemViewModel.#ctor(Telerik.Windows.Documents.Model.Styles.StyleDefinition)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableGalleryItemViewModel"/> class.
+            </summary>
+            <param name="tableStyle">The table style.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableGalleryItemViewModel.Release">
+            <summary>
+            Releases this instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableGalleryItemViewModel.TableData">
+            <summary>
+            Gets or sets the table data.
+            </summary>
+            <value>The table data.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableGalleryItemViewModel.TableStyle">
+            <summary>
+            Gets the table style.
+            </summary>
+            <value>The table style.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableGalleryItemViewModel.TableDimension">
+            <summary>
+            Gets the table dimension.
+            </summary>
+            <value>The table dimension.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableStylesGalleryViewModel">
+            <summary>
+            Represents table styles gallery view-model.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.ViewModels.RadRichTextBoxViewModelBase">
+            <summary>
+            Represents RadRichTextBox view-model base class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ViewModels.RadRichTextBoxViewModelBase.#ctor(Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.ViewModels.RadRichTextBoxViewModelBase"/> class.
+            </summary>
+            <param name="editor">The editor.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableStylesGalleryViewModel.#ctor(Telerik.Windows.Controls.RadRichTextBox,Telerik.Windows.Documents.Model.Styles.BuiltInStylesVersion)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableStylesGalleryViewModel"/> class.
+            </summary>
+            <param name="editor">The editor.</param>
+            <param name="builtInStylesVersion">The built in styles version.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableStylesGalleryViewModel.ManageTableStylesDialogCommand">
+            <summary>
+            Gets the manage table styles dialog command.
+            </summary>
+            <value>The manage table styles dialog command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableStylesGalleryViewModel.DeleteStyleCommand">
+            <summary>
+            Gets the delete style command.
+            </summary>
+            <value>The delete style command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableStylesGalleryViewModel.StyleDefinitions">
+            <summary>
+            Gets or sets the style definitions.
+            </summary>
+            <value>The style definitions.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableStylesGalleryViewModel.CurrentTableLook">
+            <summary>
+            Gets or sets the current table look.
+            </summary>
+            <value>The current table look.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.RibbonControls.TableStylesGallery.ViewModels.TableStylesGalleryViewModel.CurrentSelectedStyle">
+            <summary>
+            Gets or sets the current selected style.
+            </summary>
+            <value>The current selected style.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.RichTextBoxUIAssemblyHandle">
+            <summary>
+            This class if for internal use only.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.ColorPickers.HighlightColorPicker">
+            <summary>
+            Represents color picker with changeable image.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.ColorPickers.HighlightColorPicker.ImageProperty">
+            <summary>
+            Identifies the Image property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.ColorPickers.HighlightColorPicker.Image">
+            <summary>
+            Gets or sets the image.
+            </summary>
+            <value>The image.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu">
+            <summary>
+            The default context menu.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.Show(System.Windows.Point,Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the context menu at specified location, relative to passed RadRichTextBox.
+            </summary>
+            <param name="location">The location to show at.</param>
+            <param name="radRichTextBox">RadRichTextBox to attach to.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.Show(System.Windows.Point,Telerik.Windows.Controls.RadRichTextBox,Telerik.Windows.Documents.TextSearch.WordInfo)">
+            <summary>
+            Shows the context menu at specified location, relative to passed RadRichTextBox, with list of suggestions for incorrect word.
+            </summary>
+            <param name="location">The location to show at.</param>
+            <param name="radRichTextBox">RadRichTextBox to attach to.</param>
+            <param name="incorrectWordInfo">The word info to show suggestions for.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.Hide">
+            <summary>
+            Hides the menu.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.OnOpened(Telerik.Windows.Documents.UI.Extensibility.ContextMenuPlacementEventArgs)">
+            <summary>
+            Raises the <see cref="E:Opened"/> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.Windows.Documents.UI.Extensibility.ContextMenuPlacementEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.OnShowing(Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuEventArgs)">
+            <summary>
+            Raises the <see cref="E:Showing"/> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.OnClosed(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Closed"/> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.Showing">
+            <summary>
+            Occurs before showing of context menu.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.Closed">
+            <summary>
+            Occurs when context menu is Closed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.Opened">
+            <summary>
+            Occurs when context menu is loaded.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.ContextMenu.ContentBuilder">
+            <summary>
+            Gets or sets the context menu content builder.
+            </summary>
+            <value>The context menu content builder.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.AddNewBibliographicSourceDialog">
+            <summary>
+            Default AddNewBibliographicSourceDialog
+            </summary>
+            <summary>
+            AddNewBibliographicSourceDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.AddNewBibliographicSourceDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ChangeEditingPermissionsDialog">
+            <summary>
+            ChangeEditingPermissionsDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ChangeEditingPermissionsDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.CodeFormattingDialog">
+            <summary>
+            CodeFormattingDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.CodeFormattingDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.CodeFormattingDialog.CodeTextBoxTabWidth">
+            <summary>
+            Gets or sets the tab size (in spaces) for the TextBox containing the code.
+            </summary>
+            <value>The width of the tab.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.EditCustomDictionaryDialog">
+            <summary>
+            Dialog for editing custom dictionaries.
+            </summary>
+            <summary>
+            EditCustomDictionaryDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.EditCustomDictionaryDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.EditCustomDictionaryDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.EditCustomDictionaryDialog.ShowDialog(Telerik.Windows.Documents.Proofing.ICustomWordDictionary,Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="customWordDictionary">The custom word dictionary to edit.</param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.EditCustomDictionaryDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FindReplaceDialog">
+            <summary>
+            FindReplaceDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FindReplaceDialog.Show(Telerik.Windows.Controls.RadRichTextBox,System.Action{System.String},System.String)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="richTextBox">The associated <see cref="T:Telerik.Windows.Controls.RadRichTextBox"/>.</param>
+            <param name="replaceCallback">The callback that will be invoked to perform replace.</param>
+            <param name="textToFind">The text to initially set in the search field.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FindReplaceDialog.Show(Telerik.Windows.Controls.RadRichTextBox,System.Func{System.String,System.Boolean},System.String)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="richTextBox">The associated <see cref="T:Telerik.Windows.Controls.RadRichTextBox"/>.</param>
+            <param name="replaceCallback">The callback that will be invoked to perform replace.</param>
+            <param name="textToFind">The text to initially set in the search field.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FindReplaceDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FloatingBlockPropertiesDialog">
+            <summary>
+            FloatingBlockPropertiesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FloatingBlockPropertiesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FloatingBlockProperties.PositionProperties">
+            <summary>
+            PositionProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FloatingBlockProperties.PositionProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FloatingBlockProperties.TextWrappingProperties">
+            <summary>
+            TextWrappingProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FloatingBlockProperties.TextWrappingProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FontPropertiesDialog">
+            <summary>
+            FontPropertiesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.FontPropertiesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ImageEditorDialog">
+            <summary>
+            ImageEditorDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ImageEditorDialog.ShowDialog(Telerik.Windows.Documents.Model.Inline,System.Action{Telerik.Windows.Documents.Model.Inline,Telerik.Windows.Documents.Model.Inline},System.String,Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog. Specified insert image callback is applied on user confirmation.
+            </summary>
+            <param name="selectedImage">The selected image.</param>
+            <param name="replaceCurrentImageCallback">The insert image callback.</param>
+            <param name="executeToolName"></param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ImageEditorDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertCaptionDialog">
+            <summary>
+            Default InsertCrossReferenceWindow
+            </summary>
+            <summary>
+            InsertCaptionDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertCaptionDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertSymbolDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertCaptionDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertCrossReferenceWindow">
+            <summary>
+            Default InsertCrossReferenceWindow
+            </summary>
+            <summary>
+            InsertCrossReferenceWindow
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertCrossReferenceWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertSymbolDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertCrossReferenceWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertDateTimeDialog">
+            <summary>
+            InsertDateTimeDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertDateTimeDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertTableDialog">
+            <summary>
+            InsertTableDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertTableDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertTableDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertTableDialog.ShowDialog(Telerik.Windows.Documents.UI.Extensibility.InsertTableDialogContext)">
+            <summary>
+            Shows the dialog. Specified insert table callback is applied on user confirmation.
+            </summary>
+            <param name="context">The dialog context.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertTableDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertTableOfContentsDialog">
+            <summary>
+            Default InsertTableOfContentsWindow
+            </summary>
+            <summary>
+            InsertTableOfContentsDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.InsertTableOfContentsDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ManageBibliographicSourcesDialog">
+            <summary>
+            Default AddNewBibliographicSourceDialog
+            </summary>
+            <summary>
+            ManageBibliographicSourcesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ManageBibliographicSourcesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ManageStylesDialog">
+            <summary>
+            ManageStylesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ManageStylesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.NewCaptionLabelDialog">
+            <summary>
+            NewCaptionLabelDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.NewCaptionLabelDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.NotesDialog">
+            <summary>
+            Represents dialog for footnotes and endnotes
+            </summary>
+            <summary>
+            NotesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.NotesDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.NotesDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.NotesDialog.ShowDialog(Telerik.Windows.Documents.UI.Extensibility.NotesDialogContext,Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="context">The notes dialog context.</param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.NotesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ProtectDocumentDialog">
+            <summary>
+            Represents a dialog for enforcing document protection.
+            </summary>
+            <summary>
+            ProtectDocumentDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ProtectDocumentDialog.ShowDialog(System.Action{Telerik.Windows.Documents.Model.DocumentProtectionMode,System.String},Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="protectDocumentCallback">The callback that will be used to set the document password.</param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ProtectDocumentDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertHyperlinkDialog">
+            <summary>
+            Represents dialog for inserting hyperlinks.
+            </summary>
+            <summary>
+            RadInsertHyperlinkDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertHyperlinkDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertHyperlinkDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertHyperlinkDialog.ShowDialog(System.String,Telerik.Windows.Documents.Model.HyperlinkInfo,System.Collections.Generic.IEnumerable{System.String},System.Action{System.String,Telerik.Windows.Documents.Model.HyperlinkInfo},System.Action,Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog for inserting hyperlinks.
+            </summary>
+            <param name="text">The text of the hyperlink.</param>
+            <param name="currentHyperlinkInfo">The current hyperlink info. Null if we are not in edit mode.</param>
+            <param name="bookmarkNames">Names of all existing bookmarks.</param>
+            <param name="insertHyperlinkCallback">The callback that will be called on confirmation to insert the hyperlink.</param>
+            <param name="cancelCallback">The callback that will be called on cancelation.</param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertHyperlinkDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertSymbolDialog">
+            <summary>
+            Default window for inserting symbols in <see cref="T:Telerik.Windows.Controls.RadRichTextBox"/>.
+            </summary>
+            <summary>
+            RadInsertSymbolDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertSymbolDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertSymbolDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertSymbolDialog.Show(System.Action{System.Char,System.Windows.Media.FontFamily},System.Windows.Media.FontFamily,Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="insertSymbolCallback">The callback that will be invoked to insert symbols.</param>
+            <param name="initialFont">The font which symbols will be loaded initially.</param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadInsertSymbolDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ManageBookmarksDialog">
+            <summary>
+            ManageBookmarksDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ManageBookmarksDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadParagraphPropertiesDialog">
+            <summary>
+            RadParagraphPropertiesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.RadParagraphPropertiesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SetNumberingValueDialog">
+            <summary>
+            Default SetNumberingValueDialog
+            </summary>
+            <summary>
+            SetNumberingValueDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SetNumberingValueDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SpellCheckingDialog">
+            <summary>
+            SpellCheckingDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SpellCheckingDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SpellCheckingDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SpellCheckingDialog.ShowDialog(Telerik.Windows.Documents.UI.Extensibility.SpellCheckingUIManager,Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="spellCheckingUIManager">The spellchecking UI manager.</param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.SpellCheckingDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.CharacterProperties">
+            <summary>
+            CharacterProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.CharacterProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ModifyMultiLevelListDialog">
+            <summary>
+            ModifyMultiLevelListDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ModifyMultiLevelListDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ModifyTableStyleBanding">
+            <summary>
+            ModifyTableStyleBanding
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.ModifyTableStyleBanding.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.NumberingProperties">
+            <summary>
+            NumberingProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.NumberingProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.ParagraphProperties">
+            <summary>
+            ParagraphProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.ParagraphProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.SpanProperties">
+            <summary>
+            SpanProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.SpanProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingPropertiesDialog">
+            <summary>
+            StyleFormattingPropertiesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingPropertiesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.TableProperties">
+            <summary>
+            TableProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.StyleFormattingProperties.TableProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.Styles.StyleListItem">
+            <summary>
+            StyleListItem
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.Styles.StyleListItem.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.Symbols.SymbolPicker">
+            <summary>
+            SymbolPicker
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.Symbols.SymbolPicker.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.Symbols.SymbolsTable">
+            <summary>
+            SymbolsTable
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.Symbols.SymbolsTable.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableBordersDialog">
+            <summary>
+            TableBordersDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableBordersDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableBorders.CellBordersProperties">
+            <summary>
+            CellBordersProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableBorders.CellBordersProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableBorders.TableBorderSelector">
+            <summary>
+            TableBorderSelector
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableBorders.TableBorderSelector.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableBorders.TableBordersProperties">
+            <summary>
+            TableBordersProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableBorders.TableBordersProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableOfContents.PrintPreview">
+            <summary>
+            PrintPreview
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableOfContents.PrintPreview.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TablePropertiesDialog">
+            <summary>
+            Represents dialog for showing dialogs for editing table properties.
+            </summary>
+            <summary>
+            TablePropertiesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TablePropertiesDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TablePropertiesDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TablePropertiesDialog.ShowDialog(Telerik.Windows.Documents.UI.Extensibility.TablePropertiesEditor,Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="tablePropertiesEditor">Instance of <see cref="T:Telerik.Windows.Documents.UI.Extensibility.TablePropertiesEditor"/> used to edit table properties.</param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TablePropertiesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.CellProperties">
+            <summary>
+            CellProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.CellProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.ColumnProperties">
+            <summary>
+            ColumnProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.ColumnProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.TableWidthControl">
+            <summary>
+            TableWidthControl
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.TableWidthControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.TableProperties">
+            <summary>
+            TableProperties
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TableProperties.TableProperties.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TabStopsPropertiesDialog">
+            <summary>
+            TabStopsPropertiesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.TabStopsPropertiesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.UnprotectDocumentDialog">
+            <summary>
+            Represents a dialog for removing document protection.
+            </summary>
+            <summary>
+            UnprotectDocumentDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.UnprotectDocumentDialog.ShowDialog(System.Func{System.String,System.Boolean},Telerik.Windows.Controls.RadRichTextBox)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="protectDocumentCallback">The callback that will be used to unprotect the document.</param>
+            <param name="owner">The owner of the dialog.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.UnprotectDocumentDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.WatermarkSettingsDialog">
+            <summary>
+            WatermarkSettingsDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Dialogs.WatermarkSettingsDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.FontFamiliesProvider">
+            <summary>
+            Represents bindable object containing registered fonts.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.FontFamiliesProvider.RegisteredFonts">
+            <summary>
+            Gets registered fonts.
+            </summary>
+            <value>The registered fonts.</value>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ImageMiniToolBar.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder">
+            <summary>
+            Generates items for the context menu.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.IContextMenuContentBuilder">
+            <summary>
+            Generates items for context menu.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.IContextMenuContentBuilder.Construct">
+            <summary>
+            Constructs collection of context menu groups, depending on the context determined from RadRichTextBox and IncorrectWordInfo properties.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Menus.IContextMenuContentBuilder.RadRichTextBox">
+            <summary>
+            Gets or sets the RadRichTexBox to get context from.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.Construct">
+            <summary>
+            Constructs collection of context menu groups, depending on the context determined from RadRichTextBox and IncorrectWordInfo properties.
+            </summary>
+            <returns>Collection of context menu groups.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateImageCommands">
+            <summary>
+            Creates the image commands menu items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateListCommands">
+            <summary>
+            Creates the list commands menu items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateFloatingBlockCommands">
+            <summary>
+            Creates the floating block commands menu items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateFieldCommands">
+            <summary>
+            Creates the field commands menu items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateTableCommands">
+            <summary>
+            Creates the table commands menu items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateTextEditCommands">
+            <summary>
+            Creates the text edit commands menu items.
+            </summary>
+            <returns><see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup"/> containing text editing commands.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateHyperlinkCommands(System.Boolean)">
+            <summary>
+            Creates the hyperlink commands menu items.
+            </summary>
+            <param name="forExistingHyperlink">True if group should be created for editing of existing hyperlink, otherwise false.</param>
+            <returns>
+            	<see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup"/> containing hyperlink commands.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateSpellCheckingSuggestions">
+            <summary>
+            Creates the spell checking suggestions menu items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateClipboardCommands">
+            <summary>
+            Creates the clipboard commands menu items (cut, copy, paste, etc.).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateHeaderFooterCommands(System.Boolean)">
+            <summary>
+            Creates the headers/footers commands.
+            </summary>
+            <param name="forHeader">If set to true, creates commands for header, otherwise creates commands for footer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateTrackChangesCommands">
+            <summary>
+            Creates the clipboard commands menu items (cut, copy, paste, etc.).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.CreateCodeBlockCommands">
+            <summary>
+            Creates the code block commands menu items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuContentBuilder.RadRichTextBox">
+            <summary>
+            Gets or sets the RadRichTexBox to get context from.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuEventArgs.#ctor(Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuEventArgs"/> class.
+            </summary>
+            <param name="contextMenuGroupCollection">Context menu group collection which can be customized.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuEventArgs.ContextMenuGroupCollection">
+            <summary>
+            Gets the context menu group collection which can be customized.
+            </summary>
+            <value>The context menu group collection.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup">
+            <summary>
+            Collection of context menu items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup.#ctor(Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup"/> class.
+            </summary>
+            <param name="type">The type of the group.</param>
+            <param name="name">The name of the group.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup.#ctor(Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup"/> class.
+            </summary>
+            <param name="type">The type of the group.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup"/> class.
+            </summary>
+            <param name="name">The name of the group.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup.Type">
+            <summary>
+            Gets the type of the group.
+            </summary>
+            <value>The type of the group.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup.Name">
+            <summary>
+            Gets the name of the group.
+            </summary>
+            <value>The name of the group.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupCollection">
+            <summary>
+            Collection of context menu groups.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupCollection.#ctor(System.Collections.Generic.IEnumerable{Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroup})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupCollection"/> class.
+            </summary>
+            <param name="contextMenuGroups">The context menu groups to initially add to collection.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType">
+            <summary>
+            Specifies the type of the context menu items group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.SpellCheckingCommands">
+            <summary>
+            Spell checking commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.ClipboardCommands">
+            <summary>
+            Clipboard commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.TableCommands">
+            <summary>
+             Table commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.HyperlinkCommands">
+            <summary>
+             Hyperlink commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.TextEditCommands">
+            <summary>
+             Text editing commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.ImageCommands">
+            <summary>
+             Image commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.FloatingBlockCommands">
+            <summary>
+             Floating block commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.FieldCommands">
+            <summary>
+             Field commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.HeaderFooterCommands">
+            <summary>
+            Header/footer commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.TrackChangesCommands">
+            <summary>
+            Track changes commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.ListCommands">
+            <summary>
+            List commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.CodeBlockCommands">
+            <summary>
+            Code block commands context menu group.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuGroupType.Custom">
+            <summary>
+            Custom context menu group.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.SpellCheckerMenuBuilder.#ctor(Telerik.Windows.Controls.RadRichTextBox,Telerik.Windows.Documents.TextSearch.WordInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.SpellCheckerMenuBuilder"/> class.
+            </summary>
+            <param name="radRichTextBox">The RadRichTextBox to create spell check suggestion for.</param>
+            <param name="incorrectWordInfo">Info about the incorrect word.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.SpellCheckerMenuBuilder.Construct">
+            <summary>
+            Constructs spell checking context menu group.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.Menus.TableCellContentAlignmentPicker">
+            <summary>
+            TableCellContentAlignmentPicker
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.Menus.TableCellContentAlignmentPicker.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.CitationsSourceGallery">
+            <summary>
+            Interaction logic for CitationsSourceGallery.xaml
+            </summary>
+            <summary>
+            CitationsSourceGallery
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.CitationsSourceGallery.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.ListStylesGallery">
+            <summary>
+            ListStylesGallery
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.ListStylesGallery.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.MultipleUndoControl.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.StylesGallery">
+            <summary>
+            StylesGallery
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.StylesGallery.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.DocumentRulerBase.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.DocumentRuler.AssociatedRichTextBox">
+            <summary>
+            Gets or sets the associated <see cref="T:Telerik.Windows.Controls.RadRichTextBox"/>. This is a dependency property.
+            </summary>
+            <value>The associated rich text box.</value>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RulerThumb.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RichTextBoxUI.TabStopInfo.Position">
+            <summary>
+            Offset from LeftActiveSeparator
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.SelectionMiniToolBar.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.StatusBar.LayoutModeSelector.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.StatusBar.NonLinearSlider.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.StatusBar.PercentComboBox.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.RadRichTextBoxStatusBar.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.StatusBar.ZoomController.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.TableControls.TableAndCellPaddingPicker">
+            <summary>
+            TableAndCellPaddingPicker
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.TableControls.TableAndCellPaddingPicker.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RichTextBoxUI.TableControls.TableSizePicker">
+            <summary>
+            TableSizePicker
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RichTextBoxUI.TableControls.TableSizePicker.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

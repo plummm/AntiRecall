@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Zip.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Zip.Extensions.DotNetPlatformManager">
+            <summary>
+            Platform manager which can be used with full version of the .NET Framework.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.#ctor">
+            <summary>
+            Initializes a new instance of the DotNetPlatformManager class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.CreateTemporaryStream">
+            <summary>
+            Creates temporary stream.
+            </summary>
+            <returns>Stream will be used for temporary operations.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.DeleteTemporaryStream(System.IO.Stream)">
+            <summary>
+            Deletes temporary stream.
+            </summary>
+            <param name="stream">Stream to delete.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.GetCryptoProvider(Telerik.Windows.Zip.EncryptionSettings)">
+            <summary>
+            Gets crypto provider initialized using given encryption settings.
+            </summary>
+            <param name="settings">Encryption settings.</param>
+            <returns>Crypto provider.</returns>
+            <exception cref="T:System.NotSupportedException">Specified crypto algorithm is not supported.</exception>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.IsEncodingSupported(System.Text.Encoding)">
+            <summary>
+            Indicates whether specified encoding is supported for this platform.
+            </summary>
+            <param name="encoding">Encoding.</param>
+            <returns>true if encoding is allowed in the ZIP file.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.AltDirectorySeparatorChar">
+            <summary>
+            Gets a platform-specific alternate character used to separate directory levels in a path string that reflects a hierarchical file system organization.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.DefaultEncoding">
+            <summary>
+            Gets default encoding for this platform.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.DirectorySeparatorChar">
+            <summary>
+            Gets a platform-specific character used to separate directory levels in a path string that reflects a hierarchical file system organization.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Zip.Extensions.DotNetPlatformManager.TemporaryStreamType">
+            <summary>
+            Gets or sets type of the temporary stream. The default value is TemporaryStreamType.Memory.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Zip.Extensions.TemporaryStreamType">
+            <summary>
+            Type of the temporary stream.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Zip.Extensions.TemporaryStreamType.File">
+            <summary>
+            The temporary stream represents temporary file in the file system.
+            </summary>
+            <remarks>It allows manipulations with large archives and minimize memory consumption.</remarks>
+        </member>
+        <member name="F:Telerik.Windows.Zip.Extensions.TemporaryStreamType.Memory">
+            <summary>
+            The temporary stream represents data in the memory.
+            </summary>
+            <remarks>It is the fastest way of the data manipulation.</remarks>
+        </member>
+        <member name="T:Telerik.Windows.Zip.Extensions.ZipFile">
+            <summary>
+            Provides static methods for creating, extracting, and opening zip archives. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.CreateEntryFromFile(Telerik.Windows.Zip.ZipArchive,System.String,System.String)">
+            <summary>
+            Archives a file by compressing it and adding it to the zip archive.
+            </summary>
+            <param name="destination">The zip archive to add the file to.</param>
+            <param name="sourceFileName">The path to the file to be archived. You can specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="entryName">The name of the entry to create in the zip archive.</param>
+            <returns>New entry in archive.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.CreateEntryFromFile(Telerik.Windows.Zip.ZipArchive,System.String,System.String,Telerik.Windows.Zip.CompressionLevel)">
+            <summary>
+            Archives a file by compressing it using the specified compression level and adding it to the zip archive.
+            </summary>
+            <param name="destination">The zip archive to add the file to.</param>
+            <param name="sourceFileName">The path to the file to be archived. You can specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="entryName">The name of the entry to create in the zip archive.</param>
+            <param name="compressionLevel">One of the enumeration values that indicates whether to emphasize speed or compression effectiveness when creating the entry.</param>
+            <returns>New entry in archive.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.CreateEntryFromFile(Telerik.Windows.Zip.ZipArchive,System.String,System.String,Telerik.Windows.Zip.CompressionSettings)">
+            <summary>
+            Archives a file by compressing it using the specified compression settings and adding it to the zip archive.
+            </summary>
+            <param name="destination">The zip archive to add the file to.</param>
+            <param name="sourceFileName">The path to the file to be archived. You can specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="entryName">The name of the entry to create in the zip archive.</param>
+            <param name="compressionSettings">Compression settings.</param>
+            <returns>New entry in archive.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.CreateFromDirectory(System.String,System.String)">
+            <summary>
+            Creates a zip archive that contains the files and directories from the specified directory.
+            </summary>
+            <param name="sourceDirectoryName">The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="destinationArchiveFileName">The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.CreateFromDirectory(System.String,System.String,Telerik.Windows.Zip.CompressionLevel,System.Boolean)">
+            <summary>
+            Creates a zip archive that contains the files and directories from the specified directory, uses the specified compression level, and optionally includes the base directory.
+            </summary>
+            <param name="sourceDirectoryName">The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="destinationArchiveFileName">The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="compressionLevel">One of the enumeration values that indicates whether to emphasize speed or compression effectiveness when creating the entry.</param>
+            <param name="includeBaseDirectory">True to include the directory name from sourceDirectoryName at the root of the archive; false to include only the contents of the directory.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.CreateFromDirectory(System.String,System.String,Telerik.Windows.Zip.CompressionLevel,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Creates a zip archive that contains the files and directories from the specified directory, uses the specified compression level, and optionally includes the base directory.
+            </summary>
+            <param name="sourceDirectoryName">The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="destinationArchiveFileName">The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="compressionLevel">One of the enumeration values that indicates whether to emphasize speed or compression effectiveness when creating the entry.</param>
+            <param name="includeBaseDirectory">True to include the directory name from sourceDirectoryName at the root of the archive; false to include only the contents of the directory.</param>
+            <param name="entryNameEncoding">The encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.CreateFromDirectory(System.String,System.String,Telerik.Windows.Zip.CompressionSettings,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Creates a zip archive that contains the files and directories from the specified directory, uses the specified compression settings, and optionally includes the base directory.
+            </summary>
+            <param name="sourceDirectoryName">The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="destinationArchiveFileName">The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="compressionSettings">Compression settings.</param>
+            <param name="includeBaseDirectory">True to include the directory name from sourceDirectoryName at the root of the archive; false to include only the contents of the directory.</param>
+            <param name="entryNameEncoding">The encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.ExtractToDirectory(System.String,System.String)">
+            <summary>
+            Extracts all the files in the specified zip archive to a directory on the file system.
+            </summary>
+            <param name="sourceArchiveFileName">The path to the archive that is to be extracted.</param>
+            <param name="destinationDirectoryName">The path to the directory in which to place the extracted files, 
+            specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            Extracts all the files in the specified zip archive to a directory on the file system and uses the specified character encoding for entry names.
+            </summary>
+            <param name="sourceArchiveFileName">The path to the archive that is to be extracted.</param>
+            <param name="destinationDirectoryName">The path to the directory in which to place the extracted files, 
+            specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="entryNameEncoding">The encoding to use when reading or writing entry names in this archive. 
+            Specify a value for this parameter only when an encoding is required for interoperability with zip archive 
+            tools and libraries that do not support UTF-8 encoding for entry names.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.ExtractToDirectory(Telerik.Windows.Zip.ZipArchive,System.String)">
+            <summary>
+            Extracts all the files in the zip archive to a directory on the file system.
+            </summary>
+            <param name="source">The zip archive to extract files from.</param>
+            <param name="destinationDirectoryName">The path to the directory to place the extracted files in. You can specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.ExtractToFile(Telerik.Windows.Zip.ZipArchiveEntry,System.String)">
+            <summary>
+            Extracts an entry in the zip archive to a file.
+            </summary>
+            <param name="source">The zip archive entry to extract a file from.</param>
+            <param name="destinationFileName">The path of the file to create from the contents 
+            of the entry. You can specify either a relative or an absolute path. A relative path 
+            is interpreted as relative to the current working directory.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.ExtractToFile(Telerik.Windows.Zip.ZipArchiveEntry,System.String,System.Boolean)">
+            <summary>
+            Extracts an entry in the zip archive to a file, and optionally overwrites an existing file that has the same name.
+            </summary>
+            <param name="source">The zip archive entry to extract a file from.</param>
+            <param name="destinationFileName">The path of the file to create from the contents 
+            of the entry. You can specify either a relative or an absolute path. A relative path 
+            is interpreted as relative to the current working directory.</param>
+            <param name="overwrite">True to overwrite an existing file that has the same name as the destination file; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.Open(System.String,Telerik.Windows.Zip.ZipArchiveMode)">
+            <summary>
+            Opens a zip archive at the specified path and in the specified mode.
+            </summary>
+            <param name="archiveFileName">The path to the archive to open, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="mode">One of the enumeration values that specifies the actions which are allowed on the entries in the opened archive.</param>
+            <returns>The opened zip archive.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.Open(System.String,Telerik.Windows.Zip.ZipArchiveMode,System.Text.Encoding)">
+            <summary>
+            Opens a zip archive at the specified path and in the specified mode.
+            </summary>
+            <param name="archiveFileName">The path to the archive to open, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="mode">One of the enumeration values that specifies the actions which are allowed on the entries in the opened archive.</param>
+            <param name="entryNameEncoding">The encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.</param>
+            <returns>The opened zip archive.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.OpenRead(System.String)">
+            <summary>
+            Opens a zip archive for reading at the specified path.
+            </summary>
+            <param name="archiveFileName">The path to the archive to open, specified as a relative or absolute path. 
+            A relative path is interpreted as relative to the current working directory.</param>
+            <returns>The opened zip archive.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Zip.Extensions.ZipFile.IsDirectoryEmpty(System.IO.DirectoryInfo)">
+            <summary>
+            Indicates whether specified directory is empty or not.
+            </summary>
+            <param name="directoryInfo">Directory info.</param>
+            <returns>True if directory is empty; otherwise - false.</returns>
+        </member>
+    </members>
+</doc>

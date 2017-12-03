@@ -1,0 +1,2049 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.PersistenceFramework</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Persistence.Core.AttachedPropertyInfo">
+            <summary>
+            Represents an attached property of a serialized object.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.AttachedPropertyInfo.PropertyName">
+            <summary>
+            Gets or sets the name of the attached property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.AttachedPropertyInfo.Instance">
+            <summary>
+            Gets or sets the instance of the attached property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.AttachedPropertyInfo.OwnerType">
+            <summary>
+            Gets or sets targeting type of the attached property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.AttachedPropertyInfo.ValueType">
+            <summary>
+            Gets or sets the type of the value of the attached property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.AttachedPropertyInfo.DeclaringType">
+            <summary>
+            Gets or sets the type that registers the attached property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.AttachedPropertyInfo.Getter">
+            <summary>
+            Gets or sets the getter of the attached property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.AttachedPropertyInfo.Setter">
+            <summary>
+            Gets or sets the setter of the attached property.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.AttachedPropertyInfoFactory">
+            <summary>
+            Class factory for creating <see cref="T:Telerik.Windows.Persistence.Core.AttachedPropertyInfo"/> instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Core.AttachedPropertyInfoFactory.Create(System.Reflection.MethodInfo,System.Reflection.MethodInfo,System.Type)">
+            <summary>
+            Creates a new instance of the <see cref="T:Telerik.Windows.Persistence.Core.AttachedPropertyInfo"/> class.
+            </summary>
+            <param name="setter">The setter of the attached property.</param>
+            <param name="getter">The getter of the attached property.</param>
+            <param name="type">The declaring type of the attached property.</param>
+            <returns>Returns a new instance of the <see cref="T:Telerik.Windows.Persistence.Core.AttachedPropertyInfo"/> class.</returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.Data">
+            <summary>
+            Represents the serialized objects' data.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.Data.Types">
+            <summary>
+            Gets or sets the type information about the serialized objects.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.Data.IncompatibleTypes">
+            <summary>
+            Gets or sets the type information about the serialized objects (incompatible types).
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.Data.PrimitiveValues">
+            <summary>
+            Gets or sets the primitive values of the serialized objects.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.Data.ReferenceValues">
+            <summary>
+            Gets or sets the reference values of the serialized objects.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.MatchResult">
+            <summary>
+            Represents the result of matching property metadata.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.Core.MatchResult.None">
+            <summary>
+            No match.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.Core.MatchResult.Full">
+            <summary>
+            Full match.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.Core.MatchResult.Partial">
+            <summary>
+            Partial match.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.MatchResultExtensions">
+            <summary>
+            MatchResult extensions class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Core.MatchResultExtensions.IsValue(Telerik.Windows.Persistence.Core.MatchResult,Telerik.Windows.Persistence.Core.MatchResult)">
+            <summary>
+            Determines whether the specified actual is the value.
+            </summary>
+            <param name="actualValue">The actual value.</param>
+            <param name="expectedValue">The expected value.</param>
+            <returns>
+              <c>true</c> if the specified actual is value; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Core.MatchResultExtensions.HasValue(Telerik.Windows.Persistence.Core.MatchResult,Telerik.Windows.Persistence.Core.MatchResult)">
+            <summary>
+            Determines whether the specified actual value has value.
+            </summary>
+            <param name="actualValue">The actual value.</param>
+            <param name="expectedValue">The expected value.</param>
+            <returns>
+              <c>true</c> if the specified actual value has value; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.PrimitiveValue">
+            <summary>
+            Represents a primitive serialized value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PrimitiveValue.Key">
+            <summary>
+            Gets or sets the lookup key of the value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PrimitiveValue.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PrimitiveValue.TypeKey">
+            <summary>
+            Gets or sets the type lookup key of the value.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.PropertyData">
+            <summary>
+            Represents information about a serialized property of an object.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PropertyData.PropertyName">
+            <summary>
+            Gets or sets the name of the property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PropertyData.ValueKey">
+            <summary>
+            Gets or sets the value lookup key of the property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PropertyData.RefKey">
+            <summary>
+            Gets or sets the reference lookup key of the property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PropertyData.TypeKey">
+            <summary>
+            Gets or sets the type look up key of the property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PropertyData.TypeConverterTypeKey">
+            <summary>
+            Gets or sets the type converter look up key of the property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.PropertyData.MatchResult">
+            <summary>
+            Gets or sets a value whether this data should be excluded from serialization.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.RawData">
+            <summary>
+            Represents the top most class saved in the stream.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.RawData.SerializationString">
+            <summary>
+            Gets or sets the serialization string.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.RawData.ValueTypes">
+            <summary>
+            Gets or sets a collection with the value types needed for serialization or deserialization.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.ReferenceValue">
+            <summary>
+            Represents a reference value of a serialized object.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.ReferenceValue.Key">
+            <summary>
+            Gets or sets the look up key of the value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.ReferenceValue.IsRoot">
+            <summary>
+            Gets or sets whether this reference value is a root object.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.ReferenceValue.Datas">
+            <summary>
+            Gets or sets the property data associated with this value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.ReferenceValue.TypeKey">
+            <summary>
+            Gets or sets the look up type key of the value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.ReferenceValue.AttachedDatas">
+            <summary>
+            Gets or sets the attached property data associated with this value.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.TypeCacheData">
+            <summary>
+            Represents a cache repository for properties of a type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.TypeCacheData.CachedProperties">
+            <summary>
+            Gets or sets the properties of a type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Core.TypeInfo">
+            <summary>
+            Represents the information about the serialized type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.Core.TypeInfo.Empty">
+            <summary>
+            Represents an empty TypeInfo, excluded from serialization.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.TypeInfo.Key">
+            <summary>
+            Gets or sets the lookup key of the type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.TypeInfo.Name">
+            <summary>
+            Gets or sets the full name of the type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Core.TypeInfo.OwnerType">
+            <summary>
+            Gets or sets the owner type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.TypeRestoredEventArgs">
+            <summary>
+            Persistence event arguments.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Events.TypeRestoredEventArgs.#ctor(System.String,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Events.TypeRestoredEventArgs"/> class.
+            </summary>
+            <param name="assemblyQualifiedName">The assembly qualified name.</param>
+            <param name="type">The type.</param>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.TypeRestoredEventArgs.AssemblyQualifiedName">
+            <summary>
+            Gets the serialization string of the type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.TypeRestoredEventArgs.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PropertyPersistingEventHandler">
+            <summary>
+            Raised before a property is persisted.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PropertyPersistedEventHandler">
+            <summary>
+            Raised after a property has been persisted.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PropertyRestoringEventHandler">
+            <summary>
+            Raised before a property is restored.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PropertyRestoredEventHandler">
+            <summary>
+            Raised after a property has been restored.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PropertyPersistenceCompletedEventHandler">
+            <summary>
+            Raised after persisting of all properties has been completed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PropertyRestoringCompletedEventHandler">
+            <summary>
+            Raised after restoring of all properties has been completed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PersistenceErrorEventHandler">
+            <summary>
+            Raised when an error occurs during persisting or restoring.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.QuotaRequestedEventHandler">
+            <summary>
+            Raised when additional isolated storage quota has been requested.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PersistenceErrorEventArgs">
+            <summary>
+            Persistence error event arguments.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PersistenceEventArgs">
+            <summary>
+            Persistence event arguments.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Events.PersistenceEventArgs.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Events.PersistenceEventArgs"/> class.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <param name="path">The path of the property.</param>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.PersistenceEventArgs.Name">
+            <summary>
+            Gets the name of the property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.PersistenceEventArgs.Path">
+            <summary>
+            Gets the path of the property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Events.PersistenceErrorEventArgs.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Events.PersistenceErrorEventArgs"/> class.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <param name="path">The path of the property.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.PersistenceErrorEventArgs.Exception">
+            <summary>
+            Gets the path of the property.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.PersistingPropertyEventArgs">
+            <summary>
+            Persistence persisting property event arguments.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Events.PersistingPropertyEventArgs.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Events.PersistingPropertyEventArgs"/> class.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <param name="path">The path of the property.</param>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.PersistingPropertyEventArgs.Cancel">
+            <summary>
+            Gets or sets whether the event should be cancelled.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.QuotaRequestedEventArgs">
+            <summary>
+            QuotaRequestedEvent arguments.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Events.QuotaRequestedEventArgs.#ctor(System.Int64,System.Boolean,System.Collections.Generic.Dictionary{System.String,System.IO.Stream})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Events.QuotaRequestedEventArgs"/> class.
+            </summary>
+            <param name="requestedBytes">The requested bytes.</param>
+            <param name="isSuccess">If set to <c>true</c> [is success].</param>
+            <param name="fileStreams">The saved streams.</param>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.QuotaRequestedEventArgs.RequestedBytes">
+            <summary>
+            Gets or sets the requested bytes.
+            </summary>
+            <value>
+            The requested bytes.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.QuotaRequestedEventArgs.IsSuccess">
+            <summary>
+            Gets a value indicating whether this operation is success.
+            </summary>
+            <value>
+            	<c>True</c> if this operation is success; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.QuotaRequestedEventArgs.FileStreams">
+            <summary>
+            Gets the file streams.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Events.RestoringPropertyEventArgs">
+            <summary>
+            Persistence restoring property event arguments.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Events.RestoringPropertyEventArgs.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Events.RestoringPropertyEventArgs"/> class.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <param name="path">The path of the property.</param>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Events.RestoringPropertyEventArgs.Cancel">
+            <summary>
+            Gets or sets whether the event should be cancelled.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.PersistenceFramework.ObjectStorage">
+            <summary>
+            Represents a storage for the storing objects and their StorageId keys.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.PersistenceFramework.ObjectStorage.AddItemToStorage(System.String,System.Windows.DependencyObject)">
+            <summary>
+            Adds the item to storage.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:Telerik.Windows.PersistenceFramework.ObjectStorage.ReplaceItemInStorage(System.String,System.Windows.DependencyObject)">
+            <summary>
+            Replaces the item in storage.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:Telerik.Windows.PersistenceFramework.ObjectStorage.RemoveItemFromStorage(System.String)">
+            <summary>
+            Removes the item from storage.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Telerik.Windows.PersistenceFramework.ObjectStorage.ContainsItemKey(System.String)">
+            <summary>
+            Determines whether [contains item key] [the specified key].
+            </summary>
+            <param name="key">The key.</param>
+            <returns>
+              <c>True</c> if [contains item key] [the specified key]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.PersistenceFramework.ObjectStorage.GetElement(System.String)">
+            <summary>
+            Gets the element.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.PersistenceFramework.ObjectStorage.GetKey(System.Windows.DependencyObject)">
+            <summary>
+            Gets the key.
+            </summary>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.PersistenceFramework.ObjectStorage.Clear">
+            <summary>
+            Clears this instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.PersistenceFramework.ObjectStorage.GetElementAt(System.Int32)">
+            <summary>
+            Gets the element at.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.PersistenceFramework.ObjectStorage.Count">
+            <summary>
+            Gets the count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.PersistenceFramework.ObjectStorage.Keys">
+            <summary>
+            Gets the keys.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.PersistenceFramework.ObjectStorage.Items">
+            <summary>
+            Gets the items.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.PersistenceManager">
+            <summary>
+            Manager class for serialization and deserialization.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Telerik.Windows.Persistence.PersistenceManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.PersistenceManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.#ctor(Telerik.Windows.Persistence.PersistenceOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.PersistenceManager"/> class.
+            </summary>
+            <param name="options">The persistence options.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.Save">
+            <summary>
+            Saves the specified object.
+            </summary>
+            <returns>Returns the serialized stream.</returns>
+            <remarks>This method will serialize the objects, which have <see cref="F:Telerik.Windows.Persistence.PersistenceManager.StorageIdProperty"/> property set.</remarks>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.Save(System.Object)">
+            <summary>
+            Saves the specified object.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>Returns the serialized stream.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.Load(System.IO.Stream)">
+            <summary>
+            Loads the objects from the specified stream.
+            </summary>
+            <param name="stream">The stream.</param>
+            <remarks>The persisted data will be restored on the objects, that have <see cref="F:Telerik.Windows.Persistence.PersistenceManager.StorageIdProperty"/> property set.</remarks>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.Load(System.Object,System.IO.Stream)">
+            <summary>
+            Loads the specified object.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="stream">The stream.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.Save(System.Object,System.IO.Stream)">
+            <summary>
+            Saves the specified object into a specific stream.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="stream">The stream.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.GetSerializerOverride">
+            <summary>
+            Gets the serialized used for serialization.
+            </summary>
+            <returns>Returns the serializer.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.GetDeserializerOverride">
+            <summary>
+            Gets the deserialization object used for deserialization.
+            </summary>        
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OnPropertyPersisting(Telerik.Windows.Persistence.Events.PersistingPropertyEventArgs)">
+            <summary>
+            Raises the PropertyPersisting event.
+            </summary>
+            <param name="args">Event args.</param>
+            <returns>Returns true if the event is to be cancelled.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OnPropertyPersisted(Telerik.Windows.Persistence.Events.PersistenceEventArgs)">
+            <summary>
+            Raises the PropertyPersisted event.
+            </summary>
+            <param name="args">Event args.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OnTypeRestored(Telerik.Windows.Persistence.Events.TypeRestoredEventArgs)">
+            <summary>
+            Raises the <see cref="E:TypeRestored"/> event.
+            </summary>
+            <param name="args">The <see cref="T:Telerik.Windows.Persistence.Events.TypeRestoredEventArgs"/> instance containing the event data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OnPropertyRestoring(Telerik.Windows.Persistence.Events.RestoringPropertyEventArgs)">
+            <summary>
+            Raises the PropertyRestoring event.
+            </summary>
+            <param name="args">Event args.</param>
+            <returns>Returns true if the event is to be cancelled.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OnPropertyRestored(Telerik.Windows.Persistence.Events.PersistenceEventArgs)">
+            <summary>
+            Raises the PropertyRestored event.
+            </summary>
+            <param name="args">Event args.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OnPropertyPersistenceCompleted(System.EventArgs)">
+            <summary>
+            Raises the PropertyPersistenceCompleted event.
+            </summary>
+            <param name="args">Event args.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OnPropertyRestoringCompleted(System.EventArgs)">
+            <summary>
+            Raises the PropertyRestoringCompleted event.
+            </summary>
+            <param name="args">Event args.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OnPersistenceError(Telerik.Windows.Persistence.Events.PersistenceErrorEventArgs)">
+            <summary>
+            Raises the PersistenceError event.
+            </summary>
+            <param name="args">Event args.</param>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.PersistenceManager.SerializationOptionsProperty">
+            <summary>
+            Defines the SerializationOptions dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.PersistenceManager.StorageIdProperty">
+            <summary>
+            Defines the StorageId dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.PersistenceManager.PersistenceOptionsProperty">
+            <summary>
+            Defines the PersistenceOptions dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.GetSerializationOptions(System.Windows.DependencyObject)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.SetSerializationOptions(System.Windows.DependencyObject,Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.GetStorageId(System.Windows.DependencyObject)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.SetStorageId(System.Windows.DependencyObject,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.GetStorage">
+            <summary>
+            Gets the current storage with the serialization objects.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.PersistenceManager.OverrideStorage(Telerik.Windows.PersistenceFramework.ObjectStorage)">
+            <summary>
+            Overrides the storage.
+            </summary>
+            <param name="newStorage">The new storage.</param>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceManager.AllowCrossVersion">
+            <summary>
+            Gets or sets a value indicating whether you can deserialize Telerik controls with different version.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceManager.Serializer">
+            <summary>
+            Gets or sets the Serializer used for serialization.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceManager.Deserializer">
+            <summary>
+            Gets or sets the deserialized used for deserialization.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.PersistenceManager.PropertyPersisting">
+            <summary>
+            Raised when a property is being persisted.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.PersistenceManager.PropertyPersisted">
+            <summary>
+            Raised when a property has been persisted.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.PersistenceManager.PropertyRestoring">
+            <summary>
+            Raised when a property is being restored.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.PersistenceManager.TypeRestored">
+            <summary>
+            Occurs when type is restored.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.PersistenceManager.PropertyRestored">
+            <summary>
+            Raised when a property has been restored.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.PersistenceManager.PropertyPersistenceCompleted">
+            <summary>
+            Raised when all properties have been persisted.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.PersistenceManager.PropertyRestoringCompleted">
+            <summary>
+            Raised when all properties has been restored.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.PersistenceManager.PersistenceError">
+            <summary>
+            Raised when an error occurs while persisting or restoring.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceManager.IntrinsicAttachedPropertyProviders">
+            <summary>
+            Gets the intrinsic attached property provider types.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceManager.PersistenceOptions">
+            <summary>
+            Gets or sets the persisted options.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.PersistenceOptions">
+            <summary>
+            Represents an options class for the persistence process.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.PersistenceOptions.SerializeComplexPropertiesWithNoPublicSetterProperty">
+            <summary>
+            Identifies the SerializeComplexPropertiesWithNoPublicSetter dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.PersistenceOptions.SerializesPropertiesWithOneWayBindingProperty">
+            <summary>
+            Identifies the SerializesPropertiesWithOneWayBinding dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.PersistenceOptions.AllowRestoringFrameworkElementsProperty">
+            <summary>
+            Identifies the AllowRestoringFrameworkElements dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.PersistenceOptions.UseUISerializerProperty">
+            <summary>
+            Identifies the UseUISerializer dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceOptions.AllowRestoringFrameworkElements">
+            <summary>
+            Gets or sets a value indicating whether restoring framework elements is allowed.
+            </summary>
+            <value>
+            	<c>True</c> if restoring framework elements is allowed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceOptions.SerializeComplexPropertiesWithNoPublicSetter">
+            <summary>
+            Gets or sets a value indicating whether complex properties with no public setter should be serialized.
+            </summary>
+            <value>
+            	<c>True</c> if complex properties with no public setter should be serialized; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceOptions.SerializesPropertiesWithOneWayBinding">
+            <summary>
+            Gets or sets a value indicating whether properties with one way binding should be serialized.
+            </summary>
+            <value>
+            	<c>True</c> if properties with one way binding should be serialized; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.PersistenceOptions.UseUISerializer">
+            <summary>
+            Gets or sets a value indicating whether an UISerialized will be used.
+            </summary>
+            <value>
+              <c>True</c> if UISerialized will be used otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.SerializationMetadata.ISerializationMetadata">
+            <summary>
+            Represents the serialization metadata.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.SerializationMetadata.ISerializationMetadata.ShouldSerialize(System.Reflection.PropertyInfo,System.String)">
+            <summary>
+            Should serialize.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="propertyPath">The property path.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.SerializationMetadata.LogicalOperator">
+            <summary>
+            The logical operator of the property metadata.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.SerializationMetadata.LogicalOperator.And">
+            <summary>
+            And.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.SerializationMetadata.LogicalOperator.Or">
+            <summary>
+            Or.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.SerializationMetadata.MetadataSearchCriteria">
+            <summary>
+            The metadata search criteria.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.SerializationMetadata.MetadataSearchCriteria.PropertyName">
+            <summary>
+            Search in property name.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.SerializationMetadata.MetadataSearchCriteria.PropertyPath">
+            <summary>
+            Search in property path.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.SerializationMetadata.PropertyNameMetadata">
+            <summary>
+            Represents a serialization metadata for property names and paths.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.SerializationMetadata.PropertyNameMetadata.ShouldSerialize(System.Reflection.PropertyInfo,System.String)">
+            <summary>
+            Should serialize.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="propertyPath">The property path.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyNameMetadata.Condition">
+            <summary>
+            Gets or sets the condition.
+            </summary>
+            <value>
+            The condition.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyNameMetadata.SearchType">
+            <summary>
+            Gets or sets the type of the search.
+            </summary>
+            <value>
+            The type of the search.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyNameMetadata.Expression">
+            <summary>
+            Gets or sets the expression.
+            </summary>
+            <value>
+            The expression.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyNameMetadata.IsRecursive">
+            <summary>
+            Gets or sets a value indicating whether this instance is recursive.
+            </summary>
+            <value>
+            	<c>True</c> if this instance is recursive; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.SerializationMetadata.PropertyTypeMetadata">
+            <summary>
+            Represents a serialization metadata for property types.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.SerializationMetadata.PropertyTypeMetadata.ShouldSerialize(System.Reflection.PropertyInfo,System.String)">
+            <summary>
+            Should serialize.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="propertyPath">The property path.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyTypeMetadata.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>
+            The type.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyTypeMetadata.TypeString">
+            <summary>
+            Gets or sets the type string.
+            </summary>
+            <value>
+            The type string.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyTypeMetadata.IsRecursive">
+            <summary>
+            Gets or sets a value indicating whether this instance is recursive.
+            </summary>
+            <value>
+            	<c>True</c> if this instance is recursive; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyTypeMetadata.Condition">
+            <summary>
+            Gets or sets the condition.
+            </summary>
+            <value>
+            The condition.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.PropertyTypeMetadata.AllowSubClasses">
+            <summary>
+            Gets or sets a value indicating whether [allow sub classes].
+            </summary>
+            <value>
+              <c>True</c> if [allow sub classes]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection">
+            <summary>
+            Represents a collection for serialization metadata.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection.ValidateMetadata(System.Reflection.PropertyInfo,System.String)">
+            <summary>
+            Validates the metadata.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="propertyPath">The property path.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection.ShouldSerialize(System.Reflection.PropertyInfo,System.String)">
+            <summary>
+            Determines whether it should serialize the property.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="propertyPath">The property path.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection.Operator">
+            <summary>
+            Gets or sets the operator.
+            </summary>
+            <value>
+            The operator.
+            </value>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCondition">
+            <summary>
+            The inclusive or exclusive conditions of the serialization metadata.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCondition.Only">
+            <summary>
+            Only.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCondition.Except">
+            <summary>
+            Except.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Serialization.Deserializer">
+            <summary>
+            Deserialization class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Serialization.SerializationBase">
+            <summary>
+            Base class for persistence serialization and deserialization.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.Serialization.SerializationBase.NULLVALUEKEY">
+            <summary>
+            Keeps the key for a serialized null object.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Persistence.Serialization.SerializationBase.UNSETVALUEKEY">
+            <summary>
+            Keeps the key for a serialized DependencyProperty.UnsetValue object.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationBase.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Telerik.Windows.Persistence.Serialization.SerializationBase"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationBase.#ctor(Telerik.Windows.Persistence.PersistenceManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Serialization.SerializationBase"/> class.
+            </summary>
+            <param name="manager">The associated <see cref="T:Telerik.Windows.Persistence.PersistenceManager"/> instance.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationBase.GetCollectionId(System.Collections.Generic.IEnumerable{System.Type})">
+            <summary>
+            Gets the collection id.
+            </summary>
+            <param name="collection">The collection.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Serialization.SerializationBase.KnownTypeConverters">
+            <summary>
+            Gets or sets the known type converters.
+            </summary>
+            <value>
+            The known type converters.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Serialization.SerializationBase.Primitives">
+            <summary>
+            Gets or sets the primitives.
+            </summary>
+            <value>
+            The primitives.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Serialization.SerializationBase.References">
+            <summary>
+            Gets or sets the references.
+            </summary>
+            <value>
+            The references.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Serialization.SerializationBase.CachedTypes">
+            <summary>
+            Gets or sets the cached types.
+            </summary>
+            <value>
+            The cached all types.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Serialization.SerializationBase.CachedIncompatibleTypes">
+            <summary>
+            Gets or sets the cached incompatible types.
+            </summary>
+            <value>
+            The cached incompatible types.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Serialization.SerializationBase.CachedTypeCacheData">
+            <summary>
+            Gets or sets the cached type cache data.
+            </summary>
+            <value>
+            The cached type cache data.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Serialization.SerializationBase.TraversedObjects">
+            <summary>
+            Gets or sets the traversed objects.
+            </summary>
+            <value>
+            The traversed objects.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Serialization.SerializationBase.Manager">
+            <summary>
+            Gets or sets the manager.
+            </summary>
+            <value>
+            The manager.
+            </value>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Serialization.IDeserializer">
+            <summary>
+            Represents a persistence deserialization object.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.IDeserializer.Deserialize(System.IO.Stream,System.Object)">
+            <summary>
+            Deserializes a specific object from a stream.
+            </summary>
+            <param name="stream">The stream containing the deserialization data.</param>
+            <param name="objectToDeserialize">The deserialization object.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.IDeserializer.Deserialize(System.IO.Stream,System.Object[])">
+            <summary>
+            Deserializes objects from the specified stream.
+            </summary>
+            <param name="stream">The stream containing the deserialization data.</param>
+            <param name="objectsToDeserialize">The objects to deserialize.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Deserializer.#ctor(Telerik.Windows.Persistence.PersistenceManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Serialization.Deserializer"/> class.
+            </summary>
+            <param name="manager">The associated <see cref="T:Telerik.Windows.Persistence.PersistenceManager"/> instance.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Deserializer.Deserialize(System.IO.Stream,System.Object)">
+            <summary>
+            Deserializes an object from the stream.
+            </summary>
+            <param name="stream">The stream containing the deserialization data.</param>
+            <param name="objectToDeserialize">The object to deserialize.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Deserializer.Deserialize(System.IO.Stream,System.Object[])">
+            <summary>
+            Deserializes objects from the specified stream.
+            </summary>
+            <param name="stream">The stream containing the deserialization data.</param>
+            <param name="objectsToDeserialize">The objects to deserialize.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Deserializer.Deserialize(Telerik.Windows.Persistence.Core.ReferenceValue,System.Object)">
+            <summary>
+            Deserializes a specific object and restores its property values.
+            </summary>
+            <param name="refValue">The serialized reference object.</param>
+            <param name="obj">The object being deserialized.</param>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Serialization.ISerializer">
+            <summary>
+            Represents a persistence rawDataSerializer.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.ISerializer.Serialize(System.Object)">
+            <summary>
+            Serializes a specific object.
+            </summary>
+            <param name="obj">The object to serialize.</param>
+            <returns>Returns a stream with the serialization data.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.ISerializer.Serialize(System.Object[])">
+            <summary>
+            Serializes the specified objects.
+            </summary>
+            <param name="obj">The objects to be serialized.</param>
+            <returns>Returns a stream with the serialization data.</returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Serialization.SerializationHelper">
+            <summary>
+            Helper class for serialization and deserialization.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.GenerateKeyFromType(System.Type)">
+            <summary>
+            Generates look up code for the specified type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>Returns the look up code.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.GenerateKeyFrom(System.String)">
+            <summary>
+            Generates look up code for the specified string.
+            </summary>
+            <param name="str">The string.</param>
+            <returns>Returns the look up code.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.IsForbidden(System.Type)">
+            <summary>
+            Gets a value indicating whether the specified type is allowed of forbidden for serialization.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>Returns true if the type is forbidden.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.IsValueType(System.Type)">
+            <summary>
+            Gets a value indicating whether the specified type is value or not.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>Returns true if the type is ValueType or a string.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.IsSpecialType(System.Type)">
+            <summary>
+            Gets a value whether the specified type is ambiguous and is not serialization friendly.
+            </summary>
+            <param name="type">The specified type.</param>
+            <returns>True is the type is special (not compatible).</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.CreatePropertyPath(System.String,System.String)">
+            <summary>
+            Creates a property path string from property name and parent property path.
+            </summary>
+            <param name="propertyName">The property name.</param>
+            <param name="propertyPath">The parent property path.</param>
+            <returns>Returns the new property path.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.CreatePropertyData(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Telerik.Windows.Persistence.Core.MatchResult)">
+            <summary>
+            Creates a new instance of the <see cref="T:Telerik.Windows.Persistence.Core.PropertyData"/> class.
+            </summary>
+            <param name="propertyName">The property name.</param>
+            <param name="valueKey">The value look up key.</param>
+            <param name="refKey">The reference look up key.</param>
+            <param name="typeKey">The type look up key.</param>
+            <param name="typeConverterKey">The type converter look up key.</param>
+            <param name="matchResult">The criteria match result.</param>
+            <returns>Returns the created property data.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.CreatePropertyData(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new instance of the <see cref="T:Telerik.Windows.Persistence.Core.PropertyData"/> class.
+            </summary>
+            <param name="propertyName">The property name.</param>
+            <param name="valueKey">The value look up key.</param>
+            <param name="refKey">The reference look up key.</param>
+            <param name="typeKey">The type look up key.</param>
+            <param name="typeConverterKey">The type converter look up key.</param>
+            <returns>Returns the created property data.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.CreatePrimitiveValue(System.Object,System.Int32,System.Int32)">
+            <summary>
+            Creates a wrapper class around a value type property.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="key">The key of the value.</param>
+            <param name="typeKey">The type look up key.</param>
+            <returns>Returns the wrapper object.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.CreateTypeInfo(System.Type)">
+            <summary>
+            Creates a serialization dataInfo of a type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>Returns the serialization type dataInfo.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.TryCreateObject(System.Type,System.Object[])">
+            <summary>
+            Tries to create an object of the specified type.
+            </summary>
+            <param name="type">The type of the new object.</param>
+            <param name="parameters">Invocation parameters.</param>
+            <returns>Returns the newly created object.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.TryCreateObjectViaTypeConverter(System.Type,System.Object)">
+            <summary>
+            Tries to create an object of the specified type converter type.
+            </summary>
+            <param name="typeConverterType">The type of the type converter.</param>
+            <param name="value">The value to convert from.</param>
+            <returns>Returns the newly created object.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.StorePropertyDataWithParentData(Telerik.Windows.Persistence.Core.ReferenceValue,Telerik.Windows.Persistence.Core.PropertyData)">
+            <summary>
+            Stores a property data in the parent value's data collection.
+            </summary>
+            <param name="parentValue">The parent value.</param>
+            <param name="data">The property data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.IsSubclassOfPresentationFrameworkCollection(System.Type)">
+            <summary>
+            Checks whether a specific type is a PresentationFrameworkCollection.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>Returns true if the type is a PresentationFrameworkCollection.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.GetDependencyProperty(System.String,System.Type)">
+            <summary>
+            Gets the dependency property field from a specific type.
+            </summary>
+            <param name="propertyName">The name of the CRL property.</param>
+            <param name="type">The type.</param>
+            <returns>Returns an instance of the dependency property.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.GetTypeConverterFrom(System.Reflection.PropertyInfo)">
+            <summary>
+            Gets a TypeConverter from a specific PropertyInfo.
+            </summary>
+            <param name="property">The property to get type converter from.</param>
+            <returns>Returns the TypeConverter associated with the specific property.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.GetTypeConverterFrom(System.Type)">
+            <summary>
+            Gets a TypeConverter from a specific Type.
+            </summary>
+            <param name="type">The type to get type converter from.</param>
+            <returns>Returns the TypeConverter associated with the specific property.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.DiscoverAttachedProperties(System.Type)">
+            <summary>
+            Discovers the attached properties for a specific type.
+            </summary>
+            <param name="type">The type declaring the attached property.</param>
+            <returns>Returns the discovered attached properties.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.GetValue(System.String,System.Object)">
+            <summary>
+            Gets the value of a specific property.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <param name="target">The target.</param>
+            <returns>Returns the value.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.SerializationHelper.GetValue(System.Reflection.PropertyInfo,System.Object)">
+            <summary>
+            Gets the value of a specific property.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="target">The target.</param>
+            <returns>Returns the value.</returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Serialization.Serializer">
+            <summary>
+            Serialization class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Serializer.#ctor(Telerik.Windows.Persistence.PersistenceManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Serialization.Serializer"/> class.
+            </summary>
+            <param name="manager">The associated <see cref="T:Telerik.Windows.Persistence.PersistenceManager"/> instance.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Serializer.Serialize(System.Object)">
+            <summary>
+            Serializes a specific object.
+            </summary>
+            <param name="obj">The object to serialize.</param>
+            <returns>
+            Returns a stream with the serialization data.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Serializer.Serialize(System.Object[])">
+            <summary>
+            Serializes the specified objects.
+            </summary>
+            <param name="obj">The objects to be serialized.</param>
+            <returns>Returns a stream with the serialization data.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Serializer.GeneratePropertyTree(System.Object,System.String,Telerik.Windows.Persistence.Core.ReferenceValue,Telerik.Windows.Persistence.Core.PropertyData,Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection,System.Boolean,System.Int32)">
+            <summary>
+            Generates the property tree.
+            </summary>
+            <param name="objectToSerialize">The object to serialize.</param>
+            <param name="path">The path.</param>
+            <param name="parentValue">The parent value.</param>
+            <param name="parentPropData">The parent prop data.</param>
+            <param name="options">The options.</param>
+            <param name="shouldValidateCriteria">If set to <c>true</c> [should validate criteria].</param>
+            <param name="nestingDepth">The nesting depth.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.Serializer.SaveProperty(System.Reflection.PropertyInfo,System.String,System.Object,Telerik.Windows.Persistence.Core.ReferenceValue,Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection,System.Boolean,System.Int32,Telerik.Windows.Persistence.Core.PropertyData,Telerik.Windows.Persistence.Core.MatchResult)">
+            <summary>
+            Saves the property.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="path">The path.</param>
+            <param name="obj">The object.</param>
+            <param name="parentValue">The parent value.</param>
+            <param name="options">The options.</param>
+            <param name="shouldValidateCriteria">If set to <c>true</c> [should validate criteria].</param>
+            <param name="nestingDepth">The nesting depth.</param>
+            <param name="parentPropData">The parent prop data.</param>
+            <param name="parentMatchResult">The parent match result.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Serialization.UISerializer">
+            <summary>
+            Serializer that stores only UI-related properties.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.UISerializer.#ctor(Telerik.Windows.Persistence.PersistenceManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Serialization.UISerializer"/> class.
+            </summary>
+            <param name="manager">The associated <see cref="T:Telerik.Windows.Persistence.PersistenceManager"/> instance.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Serialization.UISerializer.SaveProperty(System.Reflection.PropertyInfo,System.String,System.Object,Telerik.Windows.Persistence.Core.ReferenceValue,Telerik.Windows.Persistence.SerializationMetadata.SerializationMetadataCollection,System.Boolean,System.Int32,Telerik.Windows.Persistence.Core.PropertyData,Telerik.Windows.Persistence.Core.MatchResult)">
+            <summary>
+            Saves the property.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="path">The path.</param>
+            <param name="obj">The object.</param>
+            <param name="parentValue">The parent value.</param>
+            <param name="options">The options.</param>
+            <param name="shouldValidateCriteria">If set to <c>true</c> [should validate criteria].</param>
+            <param name="nestingDepth">The nesting depth.</param>
+            <param name="parentPropData">The parent prop data.</param>
+            <param name="parentMatchResult">The parent match result.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider">
+            <summary>
+            Provides functionality to save and load persistence data to and from the IsolatedStorage.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.Storage.IStorageProvider">
+            <summary>
+            Provides functionality for saving and loading from a storage.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IStorageProvider.SaveToStorage">
+            <summary>
+            Saves to storage.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IStorageProvider.LoadFromStorage">
+            <summary>
+            Loads from storage.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.#ctor(Telerik.Windows.Persistence.PersistenceManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider"/> class.
+            </summary>
+            <param name="manager">The Manager.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.SaveToStorage">
+            <summary>
+            Saves persisted data in the IsolatedStorage.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.SaveToStorage(System.String[])">
+            <summary>
+            Saves persisted data in the IsolatedStorage.
+            </summary>
+            <param name="storageIds">The storage ids to save.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.LoadFromStorage">
+            <summary>
+            Loads persisted data from the IsolatedStorage.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.LoadFromStorage(System.String[])">
+            <summary>
+            Loads from storage.
+            </summary>
+            <param name="storageIds">The storage ids to load.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.DeleteIsolatedStorageFiles">
+            <summary>
+            Deletes the saved isolated storage files.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.IncreaseQuota(System.Int64)">
+            <summary>
+            Manually increases the quota of the IsolatedStorage.
+            </summary>
+            <param name="newSize">The new size in bytes.</param>
+            <returns>Returns true if the quota is increased.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.GetIsolatedStoreOverride">
+            <summary>
+            Gets the isolated storage store.
+            </summary>
+            <returns>Returns the isolated storage store.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.OnQuotaRequestedRaised(Telerik.Windows.Persistence.Events.QuotaRequestedEventArgs)">
+            <summary>
+            Raises the QuotaRequested event.
+            </summary>
+            <param name="args">The Event args.</param>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.ResolveSerializationStreamOverride(System.IO.Stream)">
+            <summary>
+            Resolves the serialization stream.
+            </summary>
+            <param name="stream">The stream.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.ResolveDeserializationStreamOverride(System.IO.Stream)">
+            <summary>
+            Resolves the deserialization stream override.
+            </summary>
+            <param name="stream">The stream.</param>
+            <returns></returns>
+        </member>
+        <member name="E:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.QuotaRequested">
+            <summary>
+            Raised when additional quota is requested.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.Manager">
+            <summary>
+            Gets the persistence manager.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Persistence.Storage.IsolatedStorageProvider.FileExtension">
+            <summary>
+            Gets the file's extension.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.CultureInfoTypeConverter">
+            <summary>
+            CultureInfo TypeConverter.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.CultureInfoTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.CultureInfoTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.CultureInfoTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.CultureInfoTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.DurationTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.Windows.Duration"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.DurationTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.DurationTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.DurationTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.DurationTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.FontFamilyTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.Windows.Media.FontFamily"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontFamilyTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontFamilyTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontFamilyTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontFamilyTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.FontStretchTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.Windows.FontStretch"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontStretchTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontStretchTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontStretchTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontStretchTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.FontStyleTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.Windows.FontStyle"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontStyleTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontStyleTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontStyleTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontStyleTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.FontWeightTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.Windows.FontWeight"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontWeightTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontWeightTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontWeightTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.FontWeightTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.GridLengthTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.Windows.GridLength"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.GridLengthTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.GridLengthTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.GridLengthTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.GridLengthTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.LinearGradientBrushConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.LinearGradientBrushConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.LinearGradientBrushConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.LinearGradientBrushConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.LinearGradientBrushConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.PropertyPathTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.Windows.PropertyPath"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.PropertyPathTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.PropertyPathTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.PropertyPathTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.PropertyPathTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.RadialGradientBrushConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.RadialGradientBrushConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.RadialGradientBrushConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.RadialGradientBrushConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.RadialGradientBrushConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.RepeatBehaviorTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.Windows.Media.Animation.RepeatBehavior"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.RepeatBehaviorTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.RepeatBehaviorTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.RepeatBehaviorTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.RepeatBehaviorTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.TimeSpanTypeConverter">
+            <summary>
+            Represents a type converter for the <see cref="T:System.TimeSpan"/> type.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.TimeSpanTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.TimeSpanTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.TimeSpanTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.TimeSpanTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Persistence.TypeConverters.XmlLanguageTypeConverter">
+            <summary>
+            TypeConverter for the XmlLanguage class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.XmlLanguageTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.XmlLanguageTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.XmlLanguageTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Persistence.TypeConverters.XmlLanguageTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Documents.FormatProviders.Rtf</name>
+    </assembly>
+    <members>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfParserException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfParserException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfParserException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfStructureException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfStructureException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfStructureException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfBraceNestingException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfBraceNestingException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfBraceNestingException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfColorException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfColorException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfColorException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfColorTableFormatException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfColorTableFormatException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfColorTableFormatException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfEmptyDocumentException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfEmptyDocumentException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfEmptyDocumentException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfEncodingException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfEncodingException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfEncodingException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfFontTableFormatException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfFontTableFormatException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfFontTableFormatException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfHexEncodingException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfHexEncodingException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfHexEncodingException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfMissingCharacterException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfMissingCharacterException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfMissingCharacterException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfMultiByteEncodingException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfMultiByteEncodingException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfMultiByteEncodingException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfUnicodeEncodingException.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfUnicodeEncodingException.#ctor(System.String)">
+            <summary>Creates a new instance with the given message.</summary>
+            <param name="message">the message to display</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.FormatProviders.Rtf.Exceptions.RtfUnicodeEncodingException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new instance with the given message, based on the given cause.</summary>
+            <param name="message">the message to display</param>
+            <param name="cause">the original cause for this exception</param>
+        </member>
+        <member name="P:Telerik.Windows.Documents.FormatProviders.Rtf.RtfDataProvider.Rtf">
+            <summary>
+            Gets or sets the current document as RTF
+            </summary>
+        </member>
+    </members>
+</doc>

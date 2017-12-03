@@ -10,12 +10,13 @@ namespace AntiRecall.deploy
 {
     class ShortCut
     {
+
         public static string currentDirectory { set; get; }
 
         public static string myVersion { set; get; }
 
-        public static SortedDictionary<string, string> antiRElement;
 
+        /*
         public static void init_xml()
         {
             antiRElement = new SortedDictionary<string, string>();
@@ -49,37 +50,15 @@ namespace AntiRecall.deploy
             doc.DocumentElement.SetAttribute("PortText", dict["PortText"]);
             doc.DocumentElement.SetAttribute("is_hide_startup_notify", dict["is_hide_startup_notify"]);
             doc.Save(currentDirectory + @"\setting.xml");
-            /*XmlNodeList nodelist = doc.GetElementsByTagName("Setting");
-            foreach (XmlNode set in nodelist)
-            {
-                ((XmlElement)set).SetAttribute(attr, path);
-            }*/
             
         }
-
+        
         public static string QueryXml(string attr)
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(currentDirectory + @"\setting.xml");
             string ret = doc.DocumentElement.GetAttribute(attr);
             return ret;
-            /*
-            XmlNodeList nodelist = doc.GetElementsByTagName("Setting");
-            foreach (XmlNode set in nodelist)
-            {
-                string ret = ((XmlElement)set).GetAttribute(attr);
-                return ret;
-            }
-            return null;
-            */
-        }
-
-        /*
-        public static string GetLinkPath(string linkPath)
-        {
-            WshShell shell = new WshShell();
-            IWshShortcut link = (IWshShortcut)shell.CreateShortcut(linkPath);
-            return link.TargetPath;
         }
         */
 

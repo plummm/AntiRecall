@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Windows.Input;
 
 namespace AntiRecall.patch
 {
-    class patch_memory
+    public class patch_memory : ICommand
     {
         const int PROCESS_ALL_ACCESS = 0x1F0FFF;
         private static byte[] single = { (byte)'\x81', (byte)'\x7d', (byte)'\x0c', (byte)'\x8a', (byte)'\x00' };
@@ -51,17 +50,37 @@ namespace AntiRecall.patch
         public static extern bool CloseHandle(
             int hObject);
 
-        public static int StartingIndex(byte[] x, byte[] y)
+        public bool CanExecute(object parameter)
         {
-            IEnumerable<int> index = Enumerable.Range(0, x.Length - y.Length + 1);
-            for (int i = 0; i < y.Length; i++)
-            {
-                index = index.Where(n => x[n + i] == y[i]).ToArray();
-            }
-            return index.First();
+            return true;
         }
 
-        private void disposeBallon(MouseEventHandler value)
+        public void Execute(object parameter)
+        {
+            AntiRecall.deploy.Xml.antiRElement["Mode"] = "patch";
+            ((MainWindow)System.Windows.Application.Current.MainWindow).ModeCheck();
+        }
+
+        public event EventHandler CanExecuteChanged;
+
+        public static int StartingIndex(byte[] x, byte[] y)
+        {
+            try
+            {
+                IEnumerable<int> index = Enumerable.Range(0, x.Length - y.Length + 1);
+                for (int i = 0; i < y.Length; i++)
+                {
+                    index = index.Where(n => x[n + i] == y[i]).ToArray();
+                }
+                return index.First();
+            }
+            catch
+            {
+                return -2;
+            }
+        }
+
+        private void disposeBallon(System.Windows.Forms.MouseEventHandler value)
         {
             module_ni.Visible = false;
         }
@@ -81,26 +100,27 @@ namespace AntiRecall.patch
 
         public static void StartPatch()
         {
-            int is_running = FindProcess();
-            int resultQQ = -1;
-            int resultTim = -1;
+            int is_running = 0;
+            int result = -1;
+
+            System.Threading.Thread.Sleep(20000);
+            is_running = FindProcess();
             if ((is_running & 1) == 1) //QQ.exe
             {
-                resultQQ = Patch(pQQ);
+                result = Patch(pQQ);
+                if (result == -1)
+                {
+                    System.Windows.MessageBox.Show("QQ防撤回补丁加载失败，请关闭杀毒软件后重试。");
+                }
             }
             if ((is_running >> 1 & 1) == 1) //Tim.exe
             {
-                resultTim = Patch(pTIM);
-            }
-
-            if (resultQQ == 0)
-            {
-                System.Windows.MessageBox.Show("QQ防撤回补丁加载失败，请关闭杀毒软件后重试。");
-            }
-            if (resultTim == 0)
-            {
-                System.Windows.MessageBox.Show("Tim防撤回补丁加载失败，请关闭杀毒软件后重试。");
-            }
+                result = Patch(pTIM);
+                if (result == -1)
+                {
+                    System.Windows.MessageBox.Show("Tim防撤回补丁加载失败，请关闭杀毒软件后重试。");
+                }
+            }   
         }
 
         private static int FindProcess()
@@ -159,13 +179,16 @@ namespace AntiRecall.patch
             int groupAddr;
             int bytesRead = 0;
             int bytesWritten = 0;
+            int position = 0;
             byte[] buffer = new byte[process.Size];
             byte[] byteToWrite = new byte[1];
 
             if (ReadProcessMemory((int)pHandle, (int)process.StartAddr, buffer, process.Size, ref bytesRead) == false)
-                return -1;
+                    return -1;
 
-            int position = StartingIndex(buffer, single);
+            position = StartingIndex(buffer, single);
+            if (position < 0)
+                return position;
             //string str = System.Text.Encoding.Unicode.GetString(buffer);
             //int position = str.IndexOf(single);
             userAddr = (int)process.StartAddr + position - 5;
@@ -174,6 +197,8 @@ namespace AntiRecall.patch
             else
                 byteToWrite[0] = (byte)'\x85';
             position = StartingIndex(buffer, group);
+            if (position == -1)
+                return -1;
             groupAddr = (int)process.StartAddr + position + 5;
 
             if (WriteProcessMemory((int)pHandle, userAddr, byteToWrite, 1, ref bytesWritten) == false)

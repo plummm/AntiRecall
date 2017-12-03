@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Controls.Chart.Direct2D</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Controls.ChartView.D3D10Image">
+            <summary>
+            An <see cref="T:System.Windows.Media.ImageSource"/> that displays a user-created Direct3D10 surface.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.D3D10Image.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.ChartView.D3D10Image"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.D3D10Image.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing,
+            or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.D3D10Image.Invalidate">
+            <summary>
+            Invalidates this instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.D3D10Image.SetRenderTarget(SharpDX.Direct3D10.Texture2D)">
+            <summary>
+            Sets the render target.
+            </summary>
+            <param name="renderTarget">The render target.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.D3D10Image.Dispose(System.Boolean)">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing,
+            or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.Direct2DPath.ConvertPoints(System.Collections.Generic.IList{Telerik.Charting.RadPoint})">
+            <summary>
+            Converts a collection of <see cref="T:Telerik.Charting.RadPoint"/>s to a collection of <see cref="T:SharpDX.Vector2"/>s.
+            </summary>
+            <param name="pointModels">Collection of <see cref="T:Telerik.Charting.RadPoint"/>s.</param>
+            <returns>Collection of <see cref="T:SharpDX.Vector2"/>s.</returns>
+            <remarks>
+            I have tested different approaches and adding the points to a simple array
+            seems to be the fastest.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Windows.Controls.ChartView.Direct2DRenderOptions">
+            <summary>
+            Contains options for controlling the rendering behavior of <see cref="T:Telerik.Windows.Controls.ChartView.ChartSeries"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.Direct2DRenderOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.ChartView.Direct2DRenderOptions"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.Direct2DRenderOptions.IsHardwareDeviceAvailable">
+            <summary>
+            Determines if hardware device that supports Direct2D is available.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ChartView.Direct2DRenderOptions.DefaultVisualsRenderMode">
+            <summary>
+            Gets or sets a value indicating how to create default visuals.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ChartView.Direct2DRenderOptions.AntialiasMode">
+            <summary>
+            Gets or sets the <see cref="T:SharpDX.Direct2D1.AntialiasMode"/> enumeration value 
+            that determines how the edges of non-text primitives are rendered.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ChartView.Direct2DRenderTarget.CalculateTieredPlotAreaSize(Telerik.Charting.RadRect)">
+            <summary>
+            A method that calculates a tiered plot area size. This is to reduce the number of times a render target is created, so that flickering is reduced when resizing the chart.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Controls.GridView.Export</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Controls.GridView.CellSelectionStyle">
+            <summary>
+            Describes the Style for a CellSelection of the worksheet for exporting.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.CellSelectionStyle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridView.CellSelectionStyle"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.CellBorders">
+            <summary>
+            Gets or sets the borders of the cells.
+            </summary>
+            <value>The CellBorders.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.Fill">
+            <summary>
+            Gets or sets the fill of the cells.
+            </summary>
+            <value>The Fill.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.FontFamily">
+            <summary>
+            Gets or sets the font family of the text of the cells.
+            </summary>
+            <value>The FontFamily.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.FontSize">
+            <summary>
+            Gets or sets the font size of the text.
+            </summary>
+            <value>The FontSize.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.ForeColor">
+            <summary>
+            Gets or sets the foreground of the text of the cells.
+            </summary>
+            <value>The ForeColor.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.Format">
+            <summary>
+            Gets or sets the format of the text.
+            </summary>
+            <value>The Format.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.HorizontalAlignment">
+            <summary>
+            Gets or sets the horizontal alignment.
+            </summary>
+            <value>The HorizontalAlignment.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.Indent">
+            <summary>
+            Gets or sets the intent of the cells.
+            </summary>
+            <value>The Indent.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.IsBold">
+            <summary>
+            Gets or sets the IsBold property of the cells.
+            </summary>
+            <value>The IsBold.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.IsLocked">
+            <summary>
+            Gets or sets the isLocked property of the cells.
+            </summary>
+            <value>The IsLocked.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.IsItalic">
+            <summary>
+            Gets or sets the isItalic property of the cells.
+            </summary>
+            <value>The IsItalic.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.IsWrapped">
+            <summary>
+            Gets or sets the IsWrapped property of the cells.
+            </summary>
+            <value>The IsWrapped.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.StyleName">
+            <summary>
+            Gets or sets the StyleName property of the cells.
+            </summary>
+            <value>The StyleName.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.VerticalAlignment">
+            <summary>
+            Gets or sets the vertical alignment.
+            </summary>
+            <value>The VerticalAlignment.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.CellSelectionStyle.Underline">
+            <summary>
+            Gets or sets the Underline of the text in the cells.
+            </summary>
+            <value>The Underline.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GridView.ExportType">
+            <summary>
+            Simple enumeration holding the info of the current export format.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.GridView.ExportType.Xlsx">
+            <summary>
+            XLSX data.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.GridView.ExportType.Pdf">
+            <summary>
+            PDF data.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GridViewDataControlExportExtensions">
+            <summary>
+            Contains the <see cref="T:Telerik.Windows.Controls.GridView.GridViewDataControl"/> extension methods for exporting to XLSX and PDF formats.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDataControlExportExtensions.ExportToXlsx(Telerik.Windows.Controls.GridView.GridViewDataControl,System.IO.Stream)">
+            <summary>
+            Exports RadGridView to the specified stream in XLSX format.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDataControlExportExtensions.ExportToXlsx(Telerik.Windows.Controls.GridView.GridViewDataControl,System.IO.Stream,Telerik.Windows.Controls.GridViewDocumentExportOptions)">
+            <summary>
+            Exports RadGridView to the specified stream in XLSX format using the specified export options.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDataControlExportExtensions.ExportToWorkbook(Telerik.Windows.Controls.GridView.GridViewDataControl)">
+            <summary>
+            Exports RadGridView to the workbook.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDataControlExportExtensions.ExportToWorkbook(Telerik.Windows.Controls.GridView.GridViewDataControl,Telerik.Windows.Controls.GridViewDocumentExportOptions)">
+            <summary>
+            Exports RadGridView to the workbook using the specified export options.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDataControlExportExtensions.ExportToPdf(Telerik.Windows.Controls.GridView.GridViewDataControl,System.IO.Stream)">
+            <summary>
+            Exports RadGridView to the specified stream in PDF format using the specified export options.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDataControlExportExtensions.ExportToPdf(Telerik.Windows.Controls.GridView.GridViewDataControl,System.IO.Stream,Telerik.Windows.Controls.GridViewDocumentExportOptions)">
+            <summary>
+            Exports RadGridView to the specified stream in PDF format.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDataControlExportExtensions.ExportToRadFixedDocument(Telerik.Windows.Controls.GridView.GridViewDataControl)">
+            <summary>
+            Exports RadGridView to RadFixedDocument.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDataControlExportExtensions.ExportToRadFixedDocument(Telerik.Windows.Controls.GridView.GridViewDataControl,Telerik.Windows.Controls.GridViewDocumentExportOptions)">
+            <summary>
+            Exports RadGridView to RadFixedDocument using the specified export options.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GridViewDocumentExportOptions">
+            <summary>
+            Provides various options for exporting to XLSX and PDF.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDocumentExportOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridViewDocumentExportOptions"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridViewDocumentExportOptions.#ctor(Telerik.Windows.Controls.GridViewDocumentExportOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridViewDocumentExportOptions"/> class.
+            </summary>
+            <param name="options">The options.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.ExportDefaultStyles">
+            <summary>
+            Specifies whether GridViewDataControl will be exported with its default styles.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.Culture">
+            <summary>
+            Export culture.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.Items">
+            <summary>
+            Items to be exported.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.ShowColumnHeaders">
+            <summary>
+            Include column headers on export.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.ShowColumnFooters">
+            <summary>
+            Include column footers on export.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.ShowGroupFooters">
+            <summary>
+            Include group footers on export.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.AutoFitColumnsWidth">
+            <summary>
+            Automatically fit columns' width based on its content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.IgnoreCollapsedGroups">
+            <summary>
+            Include collapsed groups on export.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.ShowGroupHeaderRowAggregates">
+            <summary>
+            Include group header aggregates on export.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentExportOptions.ExcludedColumns">
+            <summary>
+            Gets or sets the columns that should not be exported.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GridViewDocumentVisualExportParameters">
+            <summary>
+            Defines visual export parameters for XLSX and PDF.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewDocumentVisualExportParameters.Style">
+            <summary>
+            Gets or sets the style set for the cell.
+            </summary>
+            <value>The style.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GridViewPdfExportOptions">
+            <summary>
+            Provides various options for exporting data in PDF format.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewPdfExportOptions.PageOrientation">
+            <summary>
+            Gets or sets orientation of the page. It could be Portrait or Landscape.
+            </summary>
+            <value>The Page orientation.</value>
+        </member>
+    </members>
+</doc>

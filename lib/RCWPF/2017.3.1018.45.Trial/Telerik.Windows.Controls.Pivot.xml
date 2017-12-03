@@ -1,0 +1,2264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Controls.Pivot</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Automation.Peers.LightTextBlockAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer">
+            <summary>
+            A base class for <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/> cell <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/>s.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.#ctor(System.Windows.FrameworkElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.SetValue(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.GetAutomationIdCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.GetColumnHeaderItems">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.GetRowHeaderItems">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.Value">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.Column">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.ColumnSpan">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.Row">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.RowSpan">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.TextBoxOwner">
+            <summary>
+            Overrides the Owner property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotCellBaseAutomationPeer.ContainingGrid">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.LightTextBlockAutomationPeer.#ctor(Telerik.Windows.Controls.LightTextBlock)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.LightTextBlockAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.LightTextBlockAutomationPeer.GetItemTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.LightTextBlockAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.PivotCellsPanelAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellsPanelAutomationPeer.#ctor(Telerik.Windows.Controls.Pivot.PivotCellsPanel)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellsPanelAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellsPanelAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellsPanelAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellsPanelAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotCellsPanelAutomationPeer.GetChildrenCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.PivotGridPanelAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGridPanelAutomationPeer.#ctor(Telerik.Windows.Controls.Pivot.PivotGridPanel)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGridPanelAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGridPanelAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGridPanelAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGridPanelAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGridPanelAutomationPeer.GetChildrenCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.#ctor(Telerik.Windows.Controls.PivotGroupHeader)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.GetItemTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.IsContentElementCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)">
+            <summary>
+            Sets the Header text of the RadTreeViewItemAutomationPeer.
+            </summary>
+            <param name="value">Header text for the RadTreeViewItem.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.SetValue(System.String)">
+            <summary>
+            Sets the header's text.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly">
+            <summary>
+            Gets the IsEditable property of the PivotGroupHeader indicating whether the value of a control is read-only.
+            </summary>
+            <returns> !IsEditable property of the PivotGroupHeader.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.PivotGroupHeaderOwner">
+            <summary>
+            Overrides the Owner property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value">
+            <summary>
+            Gets the text of the PivotGroupHeaderAutomationPeer.
+            </summary>
+            <returns>
+            The text of the PivotGroupHeader.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.TextValue">
+            <summary>
+            Public property for the text of the PivotGroupHeaderAutomationPeer.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotGroupHeaderAutomationPeer.IsReadOnly">
+            <summary>
+            Property used to store the IsEditable property of the PivotGroupHeader.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.#ctor(Telerik.Windows.Controls.PivotHeader)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.GetItemTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.IsContentElementCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)">
+            <summary>
+            Sets the text of the PivotGroupHeaderAutomationPeer.
+            </summary>
+            <param name="value">Text for the PivotGroupHeader.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.SetValue(System.String)">
+            <summary>
+            Sets the header's text.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value">
+            <summary>
+            Gets the text of the PivotHeaderAutomationPeer.
+            </summary>
+            <returns>
+            The text of the PivotHeader.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.TextValue">
+            <summary>
+            Public property for the text of the PivotHeaderAutomationPeer.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.PivotHeaderOwner">
+            <summary>
+            Overrides the Owner property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly">
+            <summary>
+            Gets the IsEditable property of the PivotHeader indicating whether the value of a control is read-only.
+            </summary>
+            <returns> !IsEditable property of the PivotHeader.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.PivotHeaderAutomationPeer.IsReadOnly">
+            <summary>
+            Property used to store the IsEditable property of the PivotHeader.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer.#ctor(Telerik.Windows.Controls.RadPivotGrid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer.HorizontallyScrollable">
+            <summary>
+            Gets a value that indicates whether the control can scroll horizontally.
+            </summary>
+            <value></value>
+            <returns>true if the control can scroll horizontally; otherwise false.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.RadPivotGridAutomationPeer.VerticallyScrollable">
+            <summary>
+            Gets a value that indicates whether the control can scroll vertically.
+            </summary>
+            <value></value>
+            <returns>true if the control can scroll vertically; otherwise false.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.#ctor(Telerik.Windows.Controls.Pivot.TreeGridRowGroupHeader)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.GetItemTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.IsContentElementCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.SetValue(System.String)">
+            <summary>
+            Sets the header's text.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly">
+            <summary>
+            Gets the IsEditable property of the TreeGridRowGroupHeader indicating whether the value of a control is read-only.
+            </summary>
+            <returns> !IsEditable property of the TreeGridRowGroupHeader.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.IsReadOnly">
+            <summary>
+            Property used to store the IsEditable property of the TreeGridRowGroupHeader.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.TreeGroupHeaderOwner">
+            <summary>
+            Overrides the Owner property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowGroupHeaderAutomationPeer.TextValue">
+            <summary>
+            Public property for the text of the PivotGroupHeaderAutomationPeer.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.#ctor(Telerik.Windows.Controls.Pivot.TreeGridRowHeader)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.GetItemTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.IsContentElementCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.GetAutomationControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)">
+            <summary>
+            Sets the text of the PivotGroupHeaderAutomationPeer.
+            </summary>
+            <param name="value">Text for the PivotGroupHeader.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.SetValue(System.String)">
+            <summary>
+            Sets the header's text.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.GetNameCore">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.TextValue">
+            <summary>
+            Public property for the text of the TreeGridRowHeaderAutomationPeer.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.TreeGridRowHeaderOwner">
+            <summary>
+            Overrides the Owner property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly">
+            <summary>
+            Gets the IsEditable property of the TreeGridRowHeader indicating whether the value of a control is read-only.
+            </summary>
+            <returns> !IsEditable property of the TreeGridRowHeader.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Automation.Peers.TreeGridRowHeaderAutomationPeer.IsReadOnly">
+            <summary>
+            Property used to store the IsEditable property of the TreeGridRowHeader.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.ColumnDefinition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ColumnDefinition.HeaderProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ColumnDefinition.HeaderStringFormatProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ColumnDefinition.IsAutoGeneratedProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ColumnDefinition.WidthProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ColumnDefinition.GetValueForItem(System.Object)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ColumnDefinition.PrepareContainerForItem(System.Windows.FrameworkElement,System.Object)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ColumnDefinition.Header">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ColumnDefinition.HeaderStringFormat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ColumnDefinition.IsAutoGenerated">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ColumnDefinition.Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.LocalizationConverter">
+            <summary>
+            A converter that uses a localized version of the provided parameter to format the binding value into string. Uses <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.LocalizationConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a localized version of the <paramref name="parameter"/> using the <see cref="T:Telerik.Windows.Controls.LocalizationManager"/> to format the <paramref name="value"/> into string. Uses <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>.
+            </summary>
+            <param name="value">The value to convert.</param>
+            <param name="targetType">This parameter is not used.</param>
+            <param name="parameter">A key used to find localized string format.</param>
+            <param name="culture">This parameter is not used.</param>
+            <returns>The localized string.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.LocalizationConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.PivotCellTemplateSelector">
+            <summary>
+            Default CellTemplateSelector for <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotCellTemplateSelector.SelectTemplate(System.Object,System.Windows.DependencyObject)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.PivotCellTemplateSelector.Negative">
+            <summary>
+            Gets or sets the template that is used for negative KPI values (smaller than zero).
+            </summary>
+            <value>
+            The template.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.PivotCellTemplateSelector.Neutral">
+            <summary>
+            Gets or sets the template that is used for neutral KPI values (equal to zero).
+            </summary>
+            <value>
+            The neutral.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.PivotCellTemplateSelector.Positive">
+            <summary>
+            Gets or sets the template that is used for positive KPI values (larger than zero).
+            </summary>
+            <value>
+            The positive.
+            </value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.TreeGrid">
+            <summary>
+            Represents a control that displays data in a tree based grid.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.TableBase">
+            <summary>
+            Represents a base class for rendering tabular data.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.AllowSelectionProperty">
+            <summary>
+            Identifies the AllowSelection dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnWidthProperty">
+            <summary>
+            Identifies the ColumnWidth dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowHeightProperty">
+            <summary>
+            Identifies the RowHeight dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.CellTooltipStyleProperty">
+            <summary>
+            Identifies the CellTooltipStyle dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowGroupTooltipStyleProperty">
+            <summary>
+            Identifies the RowGroupTooltipStyle dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnGroupTooltipStyleProperty">
+            <summary>
+            Identifies the ColumnGroupTooltipStyle dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnSubTotalsPositionProperty">
+            <summary>
+            Identifies the ColumnSubTotalsPosition dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnGrandTotalsPositionProperty">
+            <summary>
+            Identifies the ColumnGrandTotalsPosition dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowSubTotalsPositionProperty">
+            <summary>
+            Identifies the RowSubTotalsPosition dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowGrandTotalsPositionProperty">
+            <summary>
+            Identifies the RowGrandTotalsPosition dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.HorizontalLayoutProperty">
+            <summary>
+            Identifies the HorizontalLayout dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.VerticalLayoutProperty">
+            <summary>
+            Identifies the VerticalLayout dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.QuickStyleProperty">
+            <summary>
+            Identifies the QuickStyle dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.CellTextVerticalAlignmentProperty">
+            <summary>
+            Identifies the CellTextVerticalAlignment dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.CellTextAlignmentProperty">
+            <summary>
+            Identifies the CellTextAlignment dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.CellTextPaddingProperty">
+            <summary>
+            Identifies the CellTextPadding dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowHeaderStyleProperty">
+            <summary>
+                Identifies the RowHeaderStyle dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowHeaderStyleSelectorProperty">
+            <summary>
+                Identifies the RowHeaderStyleSelector dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowHeaderTemplateProperty">
+            <summary>
+                Identifies the RowHeaderTemplate dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowHeaderTemplateSelectorProperty">
+            <summary>
+                Identifies the ItemTemplateSelector dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnHeaderStyleProperty">
+            <summary>
+                Identifies the ColumnHeaderStyle dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnHeaderStyleSelectorProperty">
+            <summary>
+                Identifies the ColumnHeaderStyleSelector dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnHeaderTemplateProperty">
+            <summary>
+                Identifies the ColumnHeaderTemplate dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnHeaderTemplateSelectorProperty">
+            <summary>
+                Identifies the ItemTemplateSelector dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.CellTemplateProperty">
+            <summary>
+                Identifies the CellTemplate dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.CellTemplateSelectorProperty">
+            <summary>
+                Identifies the ItemTemplateSelector dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.RowToolTipIsEnabledProperty">
+            <summary>
+                Identifies the RowTooltipIsEnabled dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.ColumnToolTipIsEnabledProperty">
+            <summary>
+                Identifies the ColumnTooltipIsEnabled dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.TableBase.CellToolTipIsEnabledProperty">
+            <summary>
+                Identifies the CellTooltipIsEnabled dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.TableBase"/> class. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableBase.Refresh">
+            <summary>
+            Rebuild the UI.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableBase.OnApplyTemplate">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableBase.MeasureOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableBase.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableBase.OnAllowSelectionChanged(System.Boolean,System.Boolean)">
+            <summary>
+            Called when the <see cref="P:Telerik.Windows.Controls.TableBase.AllowSelection"/> of the control has changed.
+            </summary>
+            <param name="newValue">The new value.</param>
+            <param name="oldValue">The old value.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableBase.OnSelectionChanged">
+            <summary>
+            Called when the selection of the control has changed.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableBase.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Windows.Controls.TableBase.SelectionChanged">
+            <summary>
+            Fires when the selection of the control has changed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.AllowSelection">
+            <summary>
+            Gets or sets whether selection is enabled for the control. The default value is false.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnWidth">
+            <summary>
+            Gets or sets the standard width of columns in the control. The default is <see cref="F:System.Double.NaN"/> (auto).
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowHeight">
+            <summary>
+            Gets or sets the standard height of rows in the control. The default is <see cref="F:System.Double.NaN"/> (auto).
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowGroupTooltipStyle">
+            <summary>
+            Gets or sets the style of the Tooltip used for the <see cref="T:Telerik.Windows.Controls.PivotHeader"/>s in the row area.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnGroupTooltipStyle">
+            <summary>
+            Gets or sets the style of the Tooltip used for the <see cref="T:Telerik.Windows.Controls.PivotHeader"/>s in the column area.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.CellTooltipStyle">
+            <summary>
+            Gets or sets the style of the Tooltip used for the cells.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnSubTotalsPosition">
+            <summary>
+            Gets or sets the column subtotals position.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnGrandTotalsPosition">
+            <summary>
+            Gets or sets the column grand totals position.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowSubTotalsPosition">
+            <summary>
+            Gets or sets the row subtotals position.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowGrandTotalsPosition">
+            <summary>
+            Gets or sets the row grand totals position.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.VerticalLayout">
+            <summary>
+            Gets or sets the rows layout.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.HorizontalLayout">
+            <summary>
+            Gets or sets the columns layout.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.QuickStyle">
+            <summary>
+            Gets or sets the <see cref="P:Telerik.Windows.Controls.TableBase.QuickStyle"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.CellTextAlignment">
+            <summary>
+            Gets or sets the default text cell <see cref="T:System.Windows.TextAlignment"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.CellTextVerticalAlignment">
+            <summary>
+            Gets or sets the default text cell <see cref="T:System.Windows.VerticalAlignment"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.CellTextPadding">
+            <summary>
+            Gets or sets the default cell <see cref="T:System.Windows.TextAlignment"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowHeaderStyle">
+            <summary>
+            Gets or sets a Style that will be applied to RowHeader controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowHeaderStyleSelector">
+            <summary>
+            Gets or sets a StyleSelector that will be applied to RowHeader controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowHeaderTemplate">
+            <summary>
+            Gets or sets a DataTemplate that will be applied to RowHeader controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowHeaderTemplateSelector">
+            <summary>
+            Gets or sets a DataTemplateSelector that will be applied to RowHeader controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnHeaderStyle">
+            <summary>
+            Gets or sets a Style that will be applied to ColumnHeader controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnHeaderStyleSelector">
+            <summary>
+            Gets or sets a StyleSelector that will be applied to ColumnHeader controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnHeaderTemplate">
+            <summary>
+            Gets or sets a DataTemplate that will be applied to ColumnHeader controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnHeaderTemplateSelector">
+            <summary>
+            Gets or sets a DataTemplateSelector that will be applied to ColumnHeader controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.CellTemplate">
+            <summary>
+            Gets or sets a DataTemplate that will be applied to Cell controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.CellTemplateSelector">
+            <summary>
+            Gets or sets a DataTemplateSelector that will be applied to Cell controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.RowToolTipIsEnabled">
+            <summary>
+            Gets or sets whether Tooltip is enabled for RowHeaders.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.ColumnToolTipIsEnabled">
+            <summary>
+            Gets or sets whether Tooltip is enabled for ColumnHeaders.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.TableBase.CellToolTipIsEnabled">
+            <summary>
+            Gets or sets whether Tooltip is enabled for cell elements.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.TreeGrid.ItemsSourceProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.Pivot.TreeGrid.ItemsSource"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.TreeGrid.HierarchyAdapterProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.Pivot.TreeGrid.HierarchyAdapter"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGrid.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.Pivot.TreeGrid"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGrid.IsRowCollapsed(System.Object)">
+            <summary>
+            Gets a value that indicates if an item in the row area is collapsed.
+            </summary>
+            <param name="item">The item.</param>
+            <returns>true if the item is collapsed; otherwise, false. </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGrid.IsColumnCollapsed(System.Object)">
+            <summary>
+            Gets a value that indicates if an item in the column area is collapsed.
+            </summary>
+            <param name="item">The item.</param>
+            <returns>true if the item is collapsed; otherwise, false. </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGrid.CollapseRow(System.Object)">
+            <summary>
+            Collapse an item in the row area.
+            </summary>
+            <param name="item">The item that will be collapsed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGrid.ExpandRow(System.Object)">
+            <summary>
+            Expand an item in the row area.
+            </summary>
+            <param name="item">The item that will be expanded.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGrid.CollapseColumn(System.Object)">
+            <summary>
+            Collapse an item in the column area.
+            </summary>
+            <param name="item">The item that will be collapsed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGrid.ExpandColumn(System.Object)">
+            <summary>
+            Expand an item in the column area.
+            </summary>
+            <param name="item">The item that will be expanded.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.TreeGrid.ItemsSource">
+            <summary>
+            Gets or sets a collection used to generate the content of the <see cref="T:Telerik.Windows.Controls.Pivot.TreeGrid"/>. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.TreeGrid.HierarchyAdapter">
+            <summary>
+            Gets or sets an <see cref="T:Telerik.Pivot.Core.IHierarchyAdapter"/> used to describe the data hierarchy.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadListView.ColumnsSourceProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.RadListView.ColumnsSource"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadListView.ColumnHierarchyAdapterProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.RadListView.ColumnHierarchyAdapter"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadListView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RadListView"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadListView.ColumnsSource">
+            <summary>
+            Gets or sets a collection used to generate the columns of the <see cref="T:Telerik.Windows.Controls.RadListView"/>. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadListView.AutoGenerateColumns">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadListView.ColumnHierarchyAdapter">
+            <summary>
+            Gets or sets an <see cref="T:Telerik.Pivot.Core.IHierarchyAdapter"/> used to describe the columns hierarchy.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RadPivotGrid">
+            <summary>
+            Represents a control that displays data in a customizable pivot.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.OnAllowSelectionChanged(System.Boolean,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadPivotGrid.RowGroupsExpandBehaviorProperty">
+            <summary>
+            Identifies the RowGroupsExpandBehavior dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadPivotGrid.ColumnGroupsExpandBehaviorProperty">
+            <summary>
+            Identifies the ColumnGroupsExpandBehavior dependency property. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.GenerateExport">
+            <summary>
+            Generate export model that describe each cell in <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/>.
+            </summary>
+            <returns>The export model that describe each cell in <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/>.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.GenerateExport(System.Boolean)">
+            <summary>
+            Generate export model that describe each cell in <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/>.
+            </summary>
+            <param name="ignoreCollapsedGroups">Indicates whether to ignore collapsed groups when generating the export.</param>
+            <returns>The export model that describe each cell in <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/>.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadPivotGrid.EmptyValueTextProperty">
+            <summary>
+            Identifies the EmptyValueText dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadPivotGrid.ErrorValueTextProperty">
+            <summary>
+            Identifies the ErrorValueText dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadPivotGrid.DataProviderProperty">
+            <summary>
+            Identifies the DataProvider dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadPivotGrid.ShowAggregateValuesInlineProperty">
+            <summary>
+            Identifies the ShowAggregateValuesInline dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RadPivotGrid.IsBusyProperty">
+            <summary>
+            Identifies the IsBusy read-only dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.IsRowCollapsed(Telerik.Pivot.Core.IGroup)">
+            <summary>
+            Gets a value that indicates if an <see cref="T:Telerik.Pivot.Core.IGroup"/> in the row area is collapsed.
+            </summary>
+            <param name="group">The <see cref="T:Telerik.Pivot.Core.IGroup"/>.</param>
+            <returns>true if the <see cref="T:Telerik.Pivot.Core.IGroup"/> is collapsed; otherwise, false. </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.IsColumnCollapsed(Telerik.Pivot.Core.IGroup)">
+            <summary>
+            Gets a value that indicates if an <see cref="T:Telerik.Pivot.Core.IGroup"/> in the column area is collapsed.
+            </summary>
+            <param name="group">The <see cref="T:Telerik.Pivot.Core.IGroup"/>.</param>
+            <returns>true if the <see cref="T:Telerik.Pivot.Core.IGroup"/> is collapsed; otherwise, false. </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.CollapseRow(Telerik.Pivot.Core.IGroup)">
+            <summary>
+            Collapse an <see cref="T:Telerik.Pivot.Core.IGroup"/> in the row area.
+            </summary>
+            <param name="group">The group that will be collapsed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.ExpandRow(Telerik.Pivot.Core.IGroup)">
+            <summary>
+            Expand an <see cref="T:Telerik.Pivot.Core.IGroup"/> in the row area.
+            </summary>
+            <param name="group">The group that will be expanded.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.CollapseColumn(Telerik.Pivot.Core.IGroup)">
+            <summary>
+            Collapse an <see cref="T:Telerik.Pivot.Core.IGroup"/> in the column area.
+            </summary>
+            <param name="group">The group that will be collapsed.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadPivotGrid.ExpandColumn(Telerik.Pivot.Core.IGroup)">
+            <summary>
+            Expand an <see cref="T:Telerik.Pivot.Core.IGroup"/> in the column area.
+            </summary>
+            <param name="group">The group that will be expanded.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.RowGroupsExpandBehavior">
+            <summary>
+            Gets or sets the behavior that will set the expand or collapse state for row <see cref="T:Telerik.Pivot.Core.IGroup"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.ColumnGroupsExpandBehavior">
+            <summary>
+            Gets or sets the behavior that will set the expand or collapse state for column <see cref="T:Telerik.Pivot.Core.IGroup"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.RowGroups">
+            <summary>
+            Gets a read-only list of the root row <see cref="T:Telerik.Pivot.Core.IGroup"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.ColumnGroups">
+            <summary>
+            Gets a read-only list of the root column <see cref="T:Telerik.Pivot.Core.IGroup"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.RowLevels">
+            <summary>
+            Gets the depth of the rows.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.ColumnLevels">
+            <summary>
+            Gets the depth of the columns.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.DataProvider">
+            <summary>
+            Gets or sets the data provider.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.EmptyValueText">
+            <summary>
+            Gets or sets the string to be displayed in cells with no value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.IsBusy">
+            <summary>
+            Gets a value indicating whether this instance is processing or loading data.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.ErrorValueText">
+            <summary>
+            Gets or sets the string ro be displayed in cells with an error.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadPivotGrid.ShowAggregateValuesInline">
+            <summary>
+            Gets or sets value indicating if subtotals should be inlined for aggregate groups.
+            This affects groups at the same axis as the <see cref="P:Telerik.Pivot.Core.IDataProvider.AggregatesPosition"/>
+            with level greater than or equal <see cref="P:Telerik.Pivot.Core.IDataProvider.AggregatesLevel"/> 
+            and <see cref="P:Telerik.Pivot.Core.IPivotSettings.AggregateDescriptions"/>.Count is greater than one
+            and axis Layout is not <see cref="F:Telerik.Windows.Controls.PivotLayoutType.Tabular"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.PivotGridCommands">
+            <summary>
+            Holds commands that can be used by a <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.PivotGridCommands.ClearSelection">
+            <summary>
+            Gets the ClearSelection command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.PivotGridCommands.CopySelection">
+            <summary>
+            Gets the CopySelection command.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.TableRootPanel">
+            <summary>
+            Represents a panel that supports the layout of Table components.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableRootPanel.ArrangeOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.TableRootPanel.MeasureOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.TreeGridColumnHeader">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.PivotHeader">
+            <summary>
+            Allows a user to view a header for some details.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.PivotHeader.DataTemplateProperty">
+            <summary>
+            Identifies the DataTemplate dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotHeader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.PivotHeader"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotHeader.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotHeader.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.PivotHeader.DataTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.DataTemplate"/> used to display each item.
+            </summary>
+            <returns>The template that specifies the visualization of the data object. The default is null.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGridColumnHeader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.Pivot.TreeGridColumnHeader"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.TreeGridRowGroupHeader">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.PivotGroupHeader">
+            <summary>
+            Allows a user to view a header and expand that header to see further details, or to collapse a section up to a header.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.PivotGroupHeader.IsExpandedProperty">
+            <summary>
+            Identifies the IsExpanded dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotGroupHeader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.PivotGroupHeader"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotGroupHeader.OnApplyTemplate">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotGroupHeader.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotGroupHeader.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotGroupHeader.ChangeVisualState(System.Boolean)">
+            <summary>
+            Updates the visual state of the control.
+            </summary>
+            <param name="useTransitions">True to use a VisualTransition to transition between states; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.PivotGroupHeader.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Windows.Controls.PivotGroupHeader.IsExpandedChanged">
+            <summary>
+            Occurs when the value of the IsExpanded property on this element changes.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.PivotGroupHeader.IsExpanded">
+            <summary>
+            Gets or sets whether the details are expanded or collapsed.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGridRowGroupHeader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.Pivot.TreeGridRowGroupHeader"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGridRowGroupHeader.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGridRowGroupHeader.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.TreeGridRowHeader">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGridRowHeader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.Pivot.TreeGridRowHeader"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGridRowHeader.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.TreeGridRowHeader.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo">
+            <summary>
+            Class describing cells in <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/> used in export.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.Indent">
+            <summary>
+            Gets the cell indentation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.RowSpan">
+            <summary>
+            Gets the row span for this cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.ColumnSpan">
+            <summary>
+            Gets the column span for this cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.Row">
+            <summary>
+            Gets the row for this cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.Column">
+            <summary>
+            Gets the row for this cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.Value">
+            <summary>
+            Gets the value for this cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.Foreground">
+            <summary>
+            Gets the <see cref="T:System.Windows.Media.Brush"/> to apply to the text contents.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.Background">
+            <summary>
+            Gets the <see cref="T:System.Windows.Media.Brush"/> that fills the area between the bounds of a border area.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.BorderBrush">
+            <summary>
+            Gets the <see cref="T:System.Windows.Media.Brush"/> that draws the outer border color.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.BorderThickness">
+            <summary>
+            Gets the relative <see cref="T:System.Windows.Thickness"/> of a border area if it was applied.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.FontWeight">
+            <summary>
+            Gets the <see cref="T:System.Windows.FontWeight"/> of the specified font if it was applied.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.TextAlignment">
+            <summary>
+            Gets the cell content <see cref="T:System.Windows.TextAlignment"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.VerticalAlignment">
+            <summary>
+            Gets the cell content <see cref="T:System.Windows.VerticalAlignment"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportCellInfo.SpansThroughCells">
+            <summary>
+            Gets if this cell properties spans through cells.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.Export.PivotExportModel">
+            <summary>
+            Represents an export model of the <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportModel.RowCount">
+            <summary>
+            Gets the row count of the export model.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportModel.ColumnCount">
+            <summary>
+            Gets the column count of the export model.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Export.PivotExportModel.Cells">
+            <summary>
+            Gets the cell information of the export model.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.ITableMetrics">
+            <summary>
+            An interface that encapsulates data about the current <see cref="T:Telerik.Windows.Controls.TableBase"/> layout.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ITableMetrics.ColumnAt(System.Double)">
+            <summary>
+            Gets a column from physical point.
+            </summary>
+            <param name="x">The x coordinate.</param>
+            <returns>The column id.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ITableMetrics.RowAt(System.Double)">
+            <summary>
+            Gets a row from physical point.
+            </summary>
+            <param name="y">The y coordinate.</param>
+            <returns>The row id.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ITableMetrics.HeaderColumnAt(System.Double)">
+            <summary>
+            Gets a headers column from physical point.
+            </summary>
+            <param name="x">The x coordinate.</param>
+            <returns>The column id.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ITableMetrics.HeaderRowAt(System.Double)">
+            <summary>
+            Gets a headers row from physical point.
+            </summary>
+            <param name="y">The y coordinate.</param>
+            <returns>The row id.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ITableMetrics.GetCellBounds(System.Int32,System.Int32)">
+            <summary>
+            Gets the bounds of a cell identified by row and column ids.
+            </summary>
+            <param name="row">The row id.</param>
+            <param name="column">The column id.</param>
+            <returns>The rectangle that contains the cell.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ITableMetrics.GetCellData(System.Int32,System.Int32)">
+            <summary>
+            Gets the data object displayed in a single cell.
+            </summary>
+            <param name="row">The cell's row id.</param>
+            <param name="column">The cell's column id.</param>
+            <returns>The data.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ITableMetrics.GetRowHeaderBounds(System.Int32,System.Int32)">
+            <summary>
+            Gets the bounds of a header identified by row and header column ids.
+            </summary>
+            <param name="row">The row id.</param>
+            <param name="headerColumn">The header column id.</param>
+            <returns>The rectangle that contains the header.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ITableMetrics.GetColumnHeaderBounds(System.Int32,System.Int32)">
+            <summary>
+            Gets the bounds of a header identified by header row and column ids.
+            </summary>
+            <param name="headerRow">The header row id.</param>
+            <param name="column">The column id.</param>
+            <returns>The rectangle that contains the header.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.ITableMetrics.CellsBounds">
+            <summary>
+            Gets the rectangle that contains the visible cells.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.ITableMetrics.RowHeadersBounds">
+            <summary>
+            Gets the rectangle that contains the visible row headers.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.ITableMetrics.ColumnHeadersBounds">
+            <summary>
+            Gets the rectangle that contains the visible column headers.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.ITableMetrics.Rows">
+            <summary>
+            Gets an enumeration with the currently visible rows.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.ITableMetrics.Columns">
+            <summary>
+            Gets and enumeration with the currently visible columns.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.Overlay">
+            <summary>
+            A panel that handles rendering of decorations in <see cref="T:Telerik.Windows.Controls.TableBase"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.Overlay.OnRootChanged">
+            <summary>
+            Handles changes to the <see cref="P:Telerik.Windows.Controls.Pivot.Overlay.Root"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.Overlay.OnMetricsChanged">
+            <summary>
+            Handles changes to the <see cref="P:Telerik.Windows.Controls.Pivot.Overlay.Metrics"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Overlay.Metrics">
+            <summary>
+            Gets a <see cref="T:Telerik.Windows.Controls.Pivot.ITableMetrics"/> instance with data about the table layout.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.Overlay.Root">
+            <summary>
+            Gets a <see cref="T:System.Windows.FrameworkElement"/> instance which is the root of the overlay table.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.SelectionOverlay">
+            <summary>
+            An <see cref="T:Telerik.Windows.Controls.Pivot.Overlay"/> that handles the drawing of selection.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionFillProperty">
+            <summary>
+            Identifies the SelectionFill dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionStrokeProperty">
+            <summary>
+            Identifies the SelectionStroke dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionStrokeThicknessProperty">
+            <summary>
+            Identifies the SelectionStrokeThickness dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionPaddingProperty">
+            <summary>
+            Identifies the SelectionPadding dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionCellFillProperty">
+            <summary>
+            Identifies the SelectionCellFill dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionCellStrokeProperty">
+            <summary>
+            Identifies the SelectionCellStroke dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionCellPaddingProperty">
+            <summary>
+            Identifies the SelectionCellPadding dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionCellStrokeThicknessProperty">
+            <summary>
+            Identifies the SelectionCellStrokeThickness dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.SelectionOverlay.DrawSelectionCellProperty">
+            <summary>
+            Identifies the DrawSelectionCell dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.SelectionOverlay.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.Pivot.SelectionOverlay"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.SelectionOverlay.OnMetricsChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.SelectionOverlay.OnRootChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.SelectionOverlay.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.SelectionOverlay.OnRender(System.Windows.Media.DrawingContext)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.DrawSelectionCell">
+            <summary>
+            Gets or sets value indicating whether to draw the selected cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionFill">
+            <summary>
+            Gets or sets the Fill of the whole selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionStroke">
+            <summary>
+            Gets or sets the Stroke of the whole selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionStrokeThickness">
+            <summary>
+            Gets or sets the StrokeThickness of the whole selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionPadding">
+            <summary>
+            Gets or sets the Padding of each rectangle from the whole selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionCellFill">
+            <summary>
+            Gets or sets the Fill of the selected cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionCellStroke">
+            <summary>
+            Gets or sets the Stroke of the selected cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionCellPadding">
+            <summary>
+            Gets or sets the Padding of the selected cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.SelectionOverlay.SelectionCellStrokeThickness">
+            <summary>
+            Gets or sets the StrokeThickness of the selected cell.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.AlternationElementProperties">
+            <summary>
+            Defines alternation properties for decorating <see cref="T:Telerik.Windows.Controls.TableBase"/> area.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.ElementProperties">
+            <summary>
+            Defines properties for decorating <see cref="T:Telerik.Windows.Controls.TableBase"/> area.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ElementProperties.BorderThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.ElementProperties.BorderThickness"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ElementProperties.FontWeightProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.ElementProperties.FontWeight"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ElementProperties.BorderBrushProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.ElementProperties.BorderBrush"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ElementProperties.BackgroundProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.ElementProperties.Background"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ElementProperties.ForegroundProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.ElementProperties.Foreground"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ElementProperties.CreateInstanceCore">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Windows.Controls.ElementProperties"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Windows.Controls.ElementProperties"/>.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ElementProperties.Foreground">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.Brush"/> to apply to the text contents.
+            This is a dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ElementProperties.Background">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.Brush"/> that fills the area between the bounds of a border area.
+            This is a dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ElementProperties.BorderBrush">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.Brush"/> that draws the outer border color.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ElementProperties.BorderThickness">
+            <summary>
+            Gets or sets the relative <see cref="T:System.Windows.Thickness"/> of a border area.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.ElementProperties.FontWeight">
+            <summary>
+            Gets or sets the thickness of the specified font.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.AlternationElementProperties.AlternationCountProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.AlternationElementProperties.AlternationCount"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.AlternationElementProperties.CreateInstanceCore">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Windows.Controls.AlternationElementProperties"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Windows.Controls.AlternationElementProperties"/>.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.AlternationElementProperties.AlternationCount">
+            <summary>
+            Gets or sets the number of alternating item containers in the <see cref="T:Telerik.Windows.Controls.TableBase"/>, which enables alternating containers to have a unique appearance.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.CellData">
+            <summary>
+            Dependency object used as data context for cells.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.DataContextProxy">
+            <summary>
+            Dependency object used as data context proxy object.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.DataContextProxy.DataProperty">
+            <summary>
+            Identifies the Value read-only dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.DataContextProxy.Data">
+            <summary>
+            Gets the Data.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.CellData.AggregateDescriptionProperty">
+            <summary>
+            Identifies the AggregateDescription read-only dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.CellData.RowItemProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.Pivot.CellData.RowItem"/> read-only dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.CellData.ColumnItemProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.Pivot.CellData.ColumnItem"/> read-only dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.CellData.ColumnItem">
+            <summary>
+            Gets the ColumnGroup.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.CellData.RowItem">
+            <summary>
+            Gets the RowGroup.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.CellData.AggregateDescription">
+            <summary>
+            Gets the <see cref="T:Telerik.Pivot.Core.IAggregateDescription"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.CellsPresenter.UpdateSlotHeight(System.Int32,System.Double)">
+            <summary>
+            Updates the Height for given Slot.
+            </summary>
+            <param name="cellSlot">The slot which Height will be updated.</param>
+            <param name="cellHeight">The new Height.</param>
+            <returns>Returns true only if Slot Height was Updated (e.g. Smaller then the new Height).</returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.ExpandCollapseEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Telerik.Windows.Controls.PivotGroupHeader.IsExpandedChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.ExpandCollapseEventArgs.IsExpanded">
+            <summary>
+            Gets the state of the <see cref="T:Telerik.Windows.Controls.PivotGroupHeader"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.GroupData">
+            <summary>
+            Dependency object used as data context to <see cref="T:Telerik.Windows.Controls.PivotHeader"/> and <see cref="T:Telerik.Windows.Controls.PivotGroupHeader"/>.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.Pivot.GroupData.GroupDescriptionProperty">
+            <summary>
+            Identifies the GroupDescription read-only dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.GroupData.ToString">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.GroupData.GroupDescription">
+            <summary>
+            Gets the <see cref="T:Telerik.Pivot.Core.IGroupDescription"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GroupNameConverter">
+            <summary>
+            Converter that creates a string of all parent <see cref="T:Telerik.Pivot.Core.IGroup"/> names.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GroupNameConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts all parent groups names to a string.
+            </summary>
+            <param name="value">The <see cref="T:Telerik.Pivot.Core.IGroup"/>.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>A string containing all parent group names.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GroupNameConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented.
+            </summary>
+            <param name="value">The <see cref="T:Telerik.Pivot.Core.IGroup"/>.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>The same value.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.LayoutDoubleUtil.AreClose(System.Double,System.Double)">
+            <summary>
+            AreClose - Returns whether or not two doubles are "close".  That is, whether or 
+            not they are within epsilon of each other.  Note that this epsilon is proportional
+            to the numbers themselves to that AreClose survives scalar multiplication.
+            There are plenty of ways for this to return false even for numbers which
+            are theoretically identical, so no code calling this should fail to work if this 
+            returns false.  This is important enough to repeat:
+            NB: NO CODE CALLING THIS FUNCTION SHOULD DEPEND ON ACCURATE RESULTS - this should be
+            used for optimizations *only*.
+            </summary>
+            <returns>
+            Boolean - the result of the AreClose comparison.
+            </returns>
+            <param name="value1">The first double to compare. </param>
+            <param name="value2">The second double to compare. </param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.LayoutDoubleUtil.GreaterThan(System.Double,System.Double)">
+            <summary>
+            GreaterThan - Returns whether or not the first double is greater than the second double.
+            That is, whether or not the first is strictly greater than *and* not within epsilon of
+            the other number.  Note that this epsilon is proportional to the numbers themselves
+            to that AreClose survives scalar multiplication.  Note,
+            There are plenty of ways for this to return false even for numbers which
+            are theoretically identical, so no code calling this should fail to work if this 
+            returns false.  This is important enough to repeat:
+            NB: NO CODE CALLING THIS FUNCTION SHOULD DEPEND ON ACCURATE RESULTS - this should be
+            used for optimizations *only*.
+            </summary>
+            <returns>
+            Boolean - the result of the GreaterThan comparison.
+            </returns>
+            <param name="value1"> The first double to compare. </param>
+            <param name="value2"> The second double to compare. </param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.LayoutDoubleUtil.GreaterThanOrClose(System.Double,System.Double)">
+            <summary>
+            GreaterThanOrClose - Returns whether or not the first double is greater than or close to
+            the second double.  That is, whether or not the first is strictly greater than or within
+            epsilon of the other number.  Note that this epsilon is proportional to the numbers 
+            themselves to that AreClose survives scalar multiplication.  Note,
+            There are plenty of ways for this to return false even for numbers which
+            are theoretically identical, so no code calling this should fail to work if this 
+            returns false.  This is important enough to repeat:
+            NB: NO CODE CALLING THIS FUNCTION SHOULD DEPEND ON ACCURATE RESULTS - this should be
+            used for optimizations *only*.
+            </summary>
+            <returns>
+            Boolean - the result of the GreaterThanOrClose comparison.
+            </returns>
+            <param name="value1"> The first double to compare. </param>
+            <param name="value2"> The second double to compare. </param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.LayoutDoubleUtil.IsZero(System.Double)">
+            <summary>
+            IsZero - Returns whether or not the double is "close" to 0.  Same as AreClose(double, 0),
+            but this is faster.
+            </summary>
+            <returns>
+            Boolean - the result of the IsZero comparison.
+            </returns>
+            <param name="value"> The double to compare to 0. </param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.LayoutDoubleUtil.LessThan(System.Double,System.Double)">
+            <summary>
+            LessThan - Returns whether or not the first double is less than the second double.
+            That is, whether or not the first is strictly less than *and* not within epsilon of
+            the other number.  Note that this epsilon is proportional to the numbers themselves
+            to that AreClose survives scalar multiplication.  Note,
+            There are plenty of ways for this to return false even for numbers which
+            are theoretically identical, so no code calling this should fail to work if this 
+            returns false.  This is important enough to repeat:
+            NB: NO CODE CALLING THIS FUNCTION SHOULD DEPEND ON ACCURATE RESULTS - this should be
+            used for optimizations *only*.
+            </summary>
+            <returns>
+            Boolean - the result of the LessThan comparison.
+            </returns>
+            <param name="value1"> The first double to compare. </param>
+            <param name="value2"> The second double to compare. </param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.LayoutDoubleUtil.LessThanOrClose(System.Double,System.Double)">
+            <summary>
+            LessThanOrClose - Returns whether or not the first double is less than or close to
+            the second double.  That is, whether or not the first is strictly less than or within
+            epsilon of the other number.  Note that this epsilon is proportional to the numbers 
+            themselves to that AreClose survives scalar multiplication.  Note,
+            There are plenty of ways for this to return false even for numbers which
+            are theoretically identical, so no code calling this should fail to work if this 
+            returns false.  This is important enough to repeat:
+            NB: NO CODE CALLING THIS FUNCTION SHOULD DEPEND ON ACCURATE RESULTS - this should be
+            used for optimizations *only*.
+            </summary>
+            <returns>
+            Boolean - the result of the LessThanOrClose comparison.
+            </returns>
+            <param name="value1"> The first double to compare. </param>
+            <param name="value2"> The second double to compare. </param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.ColumnTotalsPosition">
+            <summary>
+            Defines the placement of column totals.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ColumnTotalsPosition.Right">
+            <summary>
+            Totals are placed on the right.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ColumnTotalsPosition.Left">
+            <summary>
+            Totals are placed on the right.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.ColumnTotalsPosition.None">
+            <summary>
+            Totals are not displayed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.PivotCellsPanel">
+            <summary>
+            Represents a panel that lays out cells in a <see cref="T:Telerik.Windows.Controls.TableBase"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotCellsPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.Pivot.PivotCellsPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotCellsPanel.MeasureOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotCellsPanel.ArrangeOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotCellsPanel.OnRender(System.Windows.Media.DrawingContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotCellsPanel.HitTestCore(System.Windows.Media.PointHitTestParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotCellsPanel.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.PivotDecoratorPanel">
+            <summary>
+            Represents a panel that lays out decorations in a pivot grid. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotDecoratorPanel.#ctor">
+            <summary>
+            Initializes a new instance of the PivotDecoratorPanel class.  
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotDecoratorPanel.ArrangeOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.PivotGridPanel">
+            <summary>
+            Represents a panel that lays out rows or columns in a <see cref="T:Telerik.Windows.Controls.TableBase"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotGridPanel.#ctor">
+            <summary>
+            Initializes a new instance of the PivotGridPanel class.  
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotGridPanel.MeasureOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotGridPanel.ArrangeOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.PivotGridPanel.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.PivotLayoutType">
+            <summary>
+            Enumerates the available layouts in <see cref="T:Telerik.Windows.Controls.TableBase"/>.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.PivotLayoutType.Compact">
+            <summary>
+            Specify Compact layout.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.PivotLayoutType.Tabular">
+            <summary>
+            Specify Tabular layout.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.PivotLayoutType.Outline">
+            <summary>
+            Specify Outline layout.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.ElementPropertiesCollection">
+            <summary>
+            A Collection of <see cref="T:Telerik.Windows.Controls.ElementProperties"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.ElementPropertiesCollection.CreateInstanceCore">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Windows.Controls.ElementPropertiesCollection"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Windows.Controls.ElementPropertiesCollection"/>.</returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.QuickStyle">
+            <summary>
+            Describes the visual appearance of elements in <see cref="T:Telerik.Windows.Controls.TableBase"/>.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.HeaderRowProperty">
+            <summary>
+            Identifies the HeaderRow dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.HeaderColumnProperty">
+            <summary>
+            Identifies the HeaderColumn dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.HeaderCellProperty">
+            <summary>
+            Identifies the HeaderCell dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.RowFirstAlternationPatternProperty">
+            <summary>
+            Identifies the RowFirstAlternationPattern dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.RowSecondAlternationPatternProperty">
+            <summary>
+            Identifies the RowSecondAlternationPattern dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.ColumnFirstAlternationPatternProperty">
+            <summary>
+            Identifies the ColumnFirstAlternationPattern dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.ColumnSecondAlternationPatternProperty">
+            <summary>
+            Identifies the ColumnSecondAlternationPattern dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.GrandTotalRowProperty">
+            <summary>
+            Identifies the GrandTotalRow dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.GrandTotalColumnProperty">
+            <summary>
+            Identifies the GrandTotalColumn dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.SubtotalRowsProperty">
+            <summary>
+            Identifies the SubtotalRows dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.SubtotalColumnsProperty">
+            <summary>
+            Identifies the SubtotalColumns dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.RowSubgroupsProperty">
+            <summary>
+            Identifies the RowSubgroups dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.QuickStyle.ColumnSubgroupsProperty">
+            <summary>
+            Identifies the ColumnSubgroups dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.QuickStyle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.QuickStyle"/> class. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.QuickStyle.CreateInstanceCore">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Windows.Controls.QuickStyle"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Windows.Controls.QuickStyle"/>.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.SubtotalRows">
+            <summary>
+            Gets a collection of <see cref="T:Telerik.Windows.Controls.ElementProperties"/> objects that define the appearance of each level of subtotal rows. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.SubtotalColumns">
+            <summary>
+            Gets a collection of <see cref="T:Telerik.Windows.Controls.ElementProperties"/> objects that define the appearance of each level of subtotal columns. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.RowSubgroups">
+            <summary>
+            Gets a collection of <see cref="T:Telerik.Windows.Controls.ElementProperties"/> objects that define the appearance of each level of row subgroups.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.ColumnSubgroups">
+            <summary>
+            Gets a collection of <see cref="T:Telerik.Windows.Controls.ElementProperties"/> objects that define the appearance of each level of column subgroups.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.HeaderRow">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.ElementProperties"/> that define the appearance of the HeaderRow.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.HeaderColumn">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.ElementProperties"/> that define the appearance of the HeaderColumn.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.HeaderCell">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.ElementProperties"/> that define the appearance of the HeaderCell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.RowFirstAlternationPattern">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.AlternationElementProperties"/> that define the appearance of rows in the first alternation pattern.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.RowSecondAlternationPattern">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.AlternationElementProperties"/> that define the appearance of rows in the second alternation pattern.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.ColumnFirstAlternationPattern">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.AlternationElementProperties"/> that define the appearance of columns in the first alternation pattern.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.ColumnSecondAlternationPattern">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.AlternationElementProperties"/> that define the appearance of columns in the second alternation pattern.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.GrandTotalRow">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.ElementProperties"/> that define the appearance of the GrandTotal row.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.QuickStyle.GrandTotalColumn">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Windows.Controls.ElementProperties"/> that define the appearance of the GrandTotal column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.FontFamily">
+            <summary>
+            Gets or sets the preferred top-level font family for the System.Windows.Controls.TextBlock.
+            </summary>
+            <returns>
+            A System.Windows.Media.FontFamily object specifying the preferred font family,
+            or a primary preferred font family with one or more fallback font families.
+            The default is the font determined by the System.Windows.SystemFonts.MessageFontFamily  value.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.FontSize">
+            <summary>
+            Gets or sets the top-level font size for the System.Windows.Controls.TextBlock.
+            </summary>
+            <returns>
+            The desired font size to use in device independent pixels). The default is
+            determined by the System.Windows.SystemFonts.MessageFontSize value.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.FontStretch">
+            <summary>
+            Gets or sets the top-level font-stretching characteristics for the System.Windows.Controls.TextBlock.
+            </summary>
+            <returns>
+            A member of the System.Windows.FontStretch class specifying the desired font-stretching
+            characteristics to use. The default is System.Windows.FontStretches.Normal.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.FontStyle">
+            <summary>
+            Gets or sets the top-level font style for the System.Windows.Controls.TextBlock.
+            </summary>
+             <returns>
+             A member of the System.Windows.FontStyles class specifying the desired font
+             style. The default is determined by the System.Windows.SystemFonts.MessageFontStyle value.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.FontWeight">
+            <summary>
+            Gets or sets the top-level font weight.
+            </summary>
+            <returns>
+            A member of <see cref="T:System.Windows.FontWeights"/> class specifying the desired font weight.
+            The default is determined by the System.Windows.SystemFonts.MessageFontWeight value.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.Foreground">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.Brush"/> to apply to the text contents.
+            </summary>
+            <returns>
+            The brush used to apply to the text contents. The default is System.Windows.Media.Brushes.Black.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.Padding">
+            <summary>
+            Gets or sets a value that indicates the thickness of padding space between
+            the boundaries of the content area, and the content displayed by a System.Windows.Controls.TextBlock.
+            </summary>
+            <returns>
+            A System.Windows.Thickness structure specifying the amount of padding to
+            apply, in device independent pixels. The default is System.Double.NaN.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.Text">
+            <summary>
+            Gets or sets the text contents of a System.Windows.Controls.TextBlock.
+            </summary>
+            <returns>
+            The text contents of this System.Windows.Controls.TextBlock. Note that all
+            non-text content is stripped out, resulting in a plain text representation
+            of the System.Windows.Controls.TextBlock contents. The default is System.String.Empty.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.LightTextBlock.TextAlignment">
+            <summary>
+            Gets or sets a value that indicates the horizontal alignment of text content.
+            </summary>
+            <returns>
+            One of the System.Windows.TextAlignment values that specifies the desired
+            alignment. The default is System.Windows.TextAlignment.Left.
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.ScrollBarPanel">
+            <summary>
+            Panel that wraps ScrollBar.
+            This panel is used to workaround bug in Silverlight. It must have only one child that should be ScrollBar.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ScrollBarPanel.MeasureOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.Pivot.ScrollBarPanel.ArrangeOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.ScrollBarPanel.Orientation">
+            <summary>
+            Gets or sets a value that indicates the dimension by which child element is stacked.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RowTotalsPosition">
+            <summary>
+            Defines the placement of row totals.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RowTotalsPosition.Bottom">
+            <summary>
+            Totals are placed to the bottom.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RowTotalsPosition.Top">
+            <summary>
+            Totals are placed to the top.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.RowTotalsPosition.None">
+            <summary>
+            Totals are not displayed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.Pivot.PivotSelectionCellInfo">
+            <summary>
+            Class describing cells in <see cref="T:Telerik.Windows.Controls.RadPivotGrid"/> used for selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.PivotSelectionCellInfo.Row">
+            <summary>
+            Gets the row for this cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.PivotSelectionCellInfo.Column">
+            <summary>
+            Gets the row for this cell.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.Pivot.PivotSelectionCellInfo.Value">
+            <summary>
+            Gets the value for this cell.
+            </summary>
+        </member>
+    </members>
+</doc>

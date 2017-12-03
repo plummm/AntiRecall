@@ -1,0 +1,859 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Pivot.DataProviders.Queryable</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Pivot.Queryable.QueryableAggregateDescription">
+            <summary>
+            Represents an aggregate description for QueryableDataProvider.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableAggregateDescriptionBase">
+            <summary>
+            Represents base aggregate description for QueryableDataProvider.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableAggregateDescriptionBase.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableAggregateDescriptionBase.StringFormat">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableAggregateDescriptionBase.StringFormatSelector">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableAggregateDescription.CreateAggregateExpression(System.Linq.Expressions.Expression,System.String)">
+            <summary>
+            Creates the aggregate expression.
+            </summary>
+            <param name="enumerableExpression">The grouping expression.</param>
+            <param name="aggregatedValueName">TODO: finish this.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableAggregateDescription.CreateAggregateValueExpression(System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            Creates the aggregate expression.
+            </summary>
+            <param name="itemExpression">TODO: finish this.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableAggregateDescription.GenerateFunctionName">
+            <summary>
+            Generates identification string for this function using <see cref="P:Telerik.Pivot.Queryable.QueryableAggregateDescription.AggregateMethodName"/>.
+            </summary>
+            <returns>
+            Function identification string.
+            </returns>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableAggregateDescription.FunctionName">
+            <summary>
+            Gets or sets the name of the aggregate function, which appears as a property of the group record on which records the function works.
+            </summary>
+            <value>The name of the function as visible from the group record.</value>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableAggregateDescription.ExtensionMethodsType">
+            <summary>
+            Gets the type of the extension methods that holds the extension methods for
+            aggregation. For example <see cref="T:System.Linq.Enumerable"/> or <see cref="N:Telerik.Pivot.Queryable"/>.
+            </summary>
+            <value>
+            The type of that holds the extension methods. The default value is <see cref="T:System.Linq.Enumerable"/>.
+            </value>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableAggregateDescription.AggregateMethodName">
+            <summary>
+            Gets the name of the aggregate method on the <see cref="P:Telerik.Pivot.Queryable.QueryableAggregateDescription.ExtensionMethodsType"/>
+            that will be used for aggregation.
+            </summary>
+            <value>The name of the aggregate method that will be used.</value>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableAggregateFunction">
+            <summary>
+            Represents a aggregation operation for QueryableDataProvider.
+            </summary>
+        </member>
+        <member name="F:Telerik.Pivot.Queryable.QueryableAggregateFunction.Sum">
+            <summary>
+            Represents Sum aggregate operation.
+            </summary>
+        </member>
+        <member name="F:Telerik.Pivot.Queryable.QueryableAggregateFunction.Count">
+            <summary>
+            Represents Count aggregate operation.
+            </summary>
+        </member>
+        <member name="F:Telerik.Pivot.Queryable.QueryableAggregateFunction.Average">
+            <summary>
+            Represents Average aggregate operation.
+            </summary>
+        </member>
+        <member name="F:Telerik.Pivot.Queryable.QueryableAggregateFunction.Max">
+            <summary>
+            Represents Max aggregate operation.
+            </summary>
+        </member>
+        <member name="F:Telerik.Pivot.Queryable.QueryableAggregateFunction.Min">
+            <summary>
+            Represents Mix aggregate operation.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Aggregates.QueryableAverageAggregate">
+            <summary>
+            Represents an aggregate that computes the average of items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Aggregates.QueryableAverageAggregate.GetValueOverride">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Aggregates.QueryableAverageAggregate.AccumulateOverride(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Aggregates.QueryableAverageAggregate.MergeOverride(Telerik.Pivot.Core.Aggregates.AggregateValue)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription">
+            <summary>
+            Class that describes the aggregation of items using <see cref="P:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.CalculatedField"/> as the criteria.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.GetUniqueName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.GetDisplayName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.CalculatedFieldName">
+            <summary>
+            Gets or sets the Name of the calculated field used in this <see cref="T:Telerik.Pivot.Core.CalculatedAggregateDescription"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.CalculatedField">
+            <summary>
+            Gets the <see cref="P:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.CalculatedField"/> associated with this <see cref="T:Telerik.Pivot.Core.CalculatedAggregateDescription"/> based on <see cref="P:Telerik.Pivot.Queryable.QueryableCalculatedAggregateDescription.CalculatedFieldName"/>.
+            </summary>
+            <remarks>
+            This property is initialized once ItemsSource is set.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Aggregates.QueryableCountAggregate">
+            <summary>
+            Represents an aggregate that counts items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Aggregates.QueryableCountAggregate.GetValueOverride">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Aggregates.QueryableCountAggregate.AccumulateOverride(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Aggregates.QueryableCountAggregate.MergeOverride(Telerik.Pivot.Core.Aggregates.AggregateValue)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription">
+            <summary>
+            Represents a group descriptor, which can group by date time values.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase">
+            <summary>
+            Represents an abstraction of a group descriptor, which groups by its <see cref="P:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.PropertyName"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableGroupDescription">
+            <summary>
+            Serves as a base class for group descriptors of <see cref="T:Telerik.Pivot.Queryable.QueryableDataProvider"/>.
+            that will be used for column and row grouping.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableGroupDescription.GetAllNames(System.Collections.Generic.IEnumerable{System.Object},System.Collections.Generic.IEnumerable{System.Object})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableGroupDescription.CreateGroupKeyExpression(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})">
+            <summary>
+            Creates the group key expression.
+            </summary>
+            <param name="valueExpressions">Value expressions used for generating group key.</param>
+            <returns>Expression that creates group key for the given item.</returns>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableGroupDescription.CreateGroupKeyValuesExpressions(System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            Creates value expressions for values that will be used for generating group key expression.
+            </summary>
+            <param name="itemExpression">The parameter expression, which will be used for grouping.</param>
+            <returns>Value expressions.</returns>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableGroupDescription.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableGroupDescription.CalculatedItems">
+            <summary>
+            Gets the collection of calculated items that are used to initialize a group with a set of subgroups and summarized value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableGroupDescription.NeedsProcessing">
+            <summary>
+            Gets a value indicating whether grouped data should be processed before handing it over to the engine.
+            </summary>
+            <value>
+              <c>true</c> if should process; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.ProcessGroupItem(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.CreateGroupKeyExpression(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.CreateGroupKeyValuesExpressions(System.Linq.Expressions.ParameterExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.GetDisplayName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.GetUniqueName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.PropertyName">
+            <summary>
+            Gets or sets a value identifying a property on the grouped items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.NeedsProcessing">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.GetUniqueName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.GetAllNames(System.Collections.Generic.IEnumerable{System.Object},System.Collections.Generic.IEnumerable{System.Object})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.ProcessGroupItem(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.CreateGroupKeyExpression(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.CreateGroupKeyValuesExpressions(System.Linq.Expressions.ParameterExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.Step">
+            <summary>
+            Gets or sets the step of the grouping.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDateTimeGroupDescription.NeedsProcessing">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription">
+            <summary>
+            Represents a group descriptor, which can group numeric values.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.GetAllNames(System.Collections.Generic.IEnumerable{System.Object},System.Collections.Generic.IEnumerable{System.Object})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.ProcessGroupItem(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.CreateGroupKeyExpression(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.CreateGroupKeyValuesExpressions(System.Linq.Expressions.ParameterExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.Step">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDoubleGroupDescription.NeedsProcessing">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableFilterDescription">
+            <summary>
+            Base class for Queryable filter descriptions.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFilterDescription.GetUniqueName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFilterDescription.CreateFilterKeyValuesExpressions(System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            Creates value expressions for values that will be used for generating filter key expression.
+            </summary>
+            <param name="itemExpression">The parameter expression, which will be used for filtering.</param>
+            <returns>Value expressions.</returns>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFilterDescription.CreateFilterKeyExpression(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})">
+            <summary>
+            Creates the filter key expression.
+            </summary>
+            <param name="valueExpressions">Value expressions used for generating filter key.</param>
+            <returns>Expression that creates filter key for the given item.</returns>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFilterDescription.GetDisplayName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFilterDescription.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableFilterDescription.PropertyName">
+            <summary>
+            Gets or sets a value identifying a property on the grouped items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableFilterDescription.Condition">
+            <summary>
+            Gets or sets the <see cref="P:Telerik.Pivot.Queryable.QueryableFilterDescription.Condition"/> used to filter the groups.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescription">
+            <summary>
+            Represents an aggregate descriptor, which aggregates by <see cref="P:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.PropertyName"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase">
+            <summary>
+            Represents an abstraction of an aggregate descriptor, which aggregates by <see cref="P:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.PropertyName"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.CreateAggregateExpression(System.Linq.Expressions.Expression,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.GetUniqueName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.CreateAggregateValueExpression(System.Linq.Expressions.ParameterExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.GetDisplayName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.GenerateFunctionName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.PropertyName">
+            <summary>
+            Gets or sets a value identifying a property on the grouped items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.AggregateFunction">
+            <summary>
+            Gets or sets the aggregate function that will be used for summary calculation.
+            </summary>
+            <value>Aggregation function.</value>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.IgnoreNullValues">
+            <summary>
+            Gets or sets a value that determines whether the <see cref="T:Telerik.Pivot.Queryable.QueryableAggregateFunction"/>s of this <see cref="T:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase"/> will ignore null values when calculating the result.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.DataType">
+            <summary>
+            Provides the data type of the aggregate description.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.SupportedAggregateFunctions">
+            <summary>
+            Gets a list of suitable functions for the <see cref="T:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescriptionBase.AggregateMethodName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyAggregateDescription.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryablePropertyFilterDescription">
+            <summary>
+            Queryable Report <see cref="T:Telerik.Pivot.Core.FilterDescription"/> implementation.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyFilterDescription.CreateFilterKeyValuesExpressions(System.Linq.Expressions.ParameterExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyFilterDescription.CreateFilterKeyExpression(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyFilterDescription.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition">
+            <summary>
+            A class that filters based on two queryable comparable objects.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Filtering.QueryableCondition">
+            <summary>
+            Base class used in queryable filtering.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableCondition.GetExpression(System.Linq.Expressions.Expression)">
+            <summary>
+            Determines the queryable <see cref="T:System.Linq.Expressions.Expression"/> for filtering an object.
+            </summary>
+            <param name="valueExpression">The <see cref="T:System.Linq.Expressions.Expression"/> that will be used as property for filter comparison.</param>
+            <returns>The filter <see cref="T:System.Linq.Expressions.Expression"/>.</returns>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition.GetExpression(System.Linq.Expressions.Expression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition.Than">
+            <summary>
+            Gets or sets the value that the groups would be compared to.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition.Condition">
+            <summary>
+            Gets or sets the condition used in the comparison.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition.IgnoreCase">
+            <summary>
+            Gets or sets the value of ignore case in comparison.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableComparisonCondition.IsActive">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition">
+            <summary>
+            A filters based on the relation between an item and an interval.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.GetExpression(System.Linq.Expressions.Expression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.IsActive">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.IgnoreCase">
+            <summary>
+            Gets or sets the value of ignore case.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.From">
+            <summary>
+            Gets or sets the start of the interval used in comparison.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.To">
+            <summary>
+            Gets or sets the end of the interval used in comparison.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableIntervalCondition.Condition">
+            <summary>
+            Gets or sets the condition used in the comparison.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition">
+            <summary>
+            Condition which is used to filter items based on two other conditions. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition.GetExpression(System.Linq.Expressions.Expression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition.DistinctCondition">
+            <summary>
+            Gets or sets a <see cref="T:Telerik.Pivot.Core.Filtering.SetCondition"/> used to filter the items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition.Condition">
+            <summary>
+            Gets or sets a <see cref="P:Telerik.Pivot.Queryable.Filtering.QueryableItemsFilterCondition.Condition"/> used to filter the items.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition">
+            <summary>
+            Filter that checks if items are included/excluded from a set.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition.GetExpression(System.Linq.Expressions.Expression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition.IsActive">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition.Comparison">
+            <summary>
+            Gets or sets the filter condition.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableSetCondition.Items">
+            <summary>
+            Gets the set of items used for filtering. Setting this property will create a clone of the provided <see cref="T:Telerik.Pivot.Core.SetConditionHashCollection"/> value. The setter is implemented to support deserialization.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition">
+            <summary>
+            A class that filters based on text matching.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition.GetExpression(System.Linq.Expressions.Expression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition.CloneCore(Telerik.Pivot.Core.Cloneable)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition.IsActive">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition.Pattern">
+            <summary>
+            Gets or sets the text pattern used in the comparison.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition.Comparison">
+            <summary>
+            Gets or sets the condition used in the comparison.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Filtering.QueryableTextCondition.IgnoreCase">
+            <summary>
+            Gets or set a value that indicates if the case of the strings should be ignored.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Groups.QueryableDayGroup">
+            <summary>
+            Used for internal grouping by days.
+            This is for internal use only and is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Groups.QueryableGroup">
+            <summary>
+            Base class for groups used by <see cref="T:Telerik.Pivot.Queryable.QueryableDataProvider"/>.
+            This is for internal use only and is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableGroup.IsValid">
+            <summary>
+            Gets or sets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableDayGroup.Day">
+            <summary>
+            Gets the Day part of the group.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableDayGroup.Month">
+            <summary>
+            Gets the Month part of the group.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Groups.QueryableDoubleGroup">
+            <summary>
+            Used for internal grouping by numeric ranges.
+            This is for internal use only and is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableDoubleGroup.Start">
+            <summary>
+            Gets the start part of the group.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableDoubleGroup.End">
+            <summary>
+            Gets the end part of the group.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Groups.QueryableMonthGroup">
+            <summary>
+            Used for internal grouping by months.
+            This is for internal use only and is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableMonthGroup.Month">
+            <summary>
+            Gets the Month part of the group.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Groups.QueryablePropertyGroup">
+            <summary>
+            Used for internal grouping by simple properties.
+            This is for internal use only and is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryablePropertyGroup.Value">
+            <summary>
+            Gets the value of the group.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Groups.QueryableQuarterGroup">
+            <summary>
+            Used for internal grouping by quarters.
+            This is for internal use only and is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableQuarterGroup.Quarter">
+            <summary>
+            Gets the Quarter part of the group.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableQuarterGroup.Month">
+            <summary>
+            Gets the Month part of the group.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.Groups.QueryableYearGroup">
+            <summary>
+            Used for internal grouping by years.
+            This is for internal use only and is not intended to be used directly from your code.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.Groups.QueryableYearGroup.Year">
+            <summary>
+            Gets the Year part of the group.
+            </summary>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.PivotQueryableExtensions">
+            <summary>
+            Holds extension methods for <see cref="T:System.Linq.IQueryable"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.PivotQueryableExtensions.Where(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression)">
+            <summary>
+            Filters the elements of a sequence according to a specified key selector function.
+            </summary>
+            <param name="source">An <see cref="T:System.Linq.IQueryable"/> whose elements to filter.</param>
+            <param name="filter"> A function to extract the key for each element.</param>
+            <returns>
+            An <see cref="T:System.Linq.IQueryable"/> with items, who passes the filter.
+            </returns>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.PivotQueryableExtensions.Select(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression)">
+            <summary>
+            Projects each element of a sequence into a new form.
+            </summary>
+            <returns>
+            An <see cref="T:System.Linq.IQueryable"/> whose elements are the result of invoking a 
+            projection selector on each element of <paramref name="source"/>.
+            </returns>
+            <param name="source"> A sequence of values to project. </param>
+            <param name="selector"> A projection function to apply to each element. </param>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.PivotQueryableExtensions.GroupBy(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression)">
+            <summary>
+            Groups the elements of a sequence according to a specified key selector function.
+            </summary>
+            <param name="source"> An <see cref="T:System.Linq.IQueryable"/> whose elements to group.</param>
+            <param name="keySelector"> A function to extract the key for each element.</param>
+            <returns>
+            An <see cref="T:System.Linq.IQueryable"/> with <see cref="T:System.Linq.IGrouping`2"/> items, 
+            whose elements contains a sequence of objects and a key.
+            </returns>
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryablePropertyGroupDescription">
+            <summary>
+            Represents a group descriptor, which groups by its <see cref="P:Telerik.Pivot.Queryable.QueryablePropertyGroupDescriptionBase.PropertyName"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryablePropertyGroupDescription.CreateInstanceCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableDataProvider">
+            <summary>
+            Represents an <see cref="T:Telerik.Pivot.Core.IDataProvider"/> that works with IQueryable sources.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.QueryableDataProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.RefreshOverride">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.BlockUntilRefreshCompletes">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.CreateFieldDescriptionsProvider">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.GetAggregateDescriptionForFieldDescriptionCore(Telerik.Pivot.Core.Fields.IPivotFieldInfo)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.GetGroupDescriptionForFieldDescriptionCore(Telerik.Pivot.Core.Fields.IPivotFieldInfo)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.GetFilterDescriptionForFieldDescriptionCore(Telerik.Pivot.Core.Fields.IPivotFieldInfo)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.GetAggregateFunctionsForAggregateDescription(Telerik.Pivot.Core.IAggregateDescription)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableDataProvider.SetAggregateFunctionToAggregateDescription(Telerik.Pivot.Core.IAggregateDescription,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDataProvider.FilterDescriptions">
+            <summary>
+            A list of <see cref="T:Telerik.Pivot.Core.FilterDescription"/> that specified how the pivot items should be filtered.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDataProvider.RowGroupDescriptions">
+            <summary>
+            A list of <see cref="T:Telerik.Pivot.Queryable.QueryableGroupDescription"/> that specified how the pivot should be grouped by rows.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDataProvider.ColumnGroupDescriptions">
+            <summary>
+            A list of <see cref="T:Telerik.Pivot.Queryable.QueryableGroupDescription"/> that specified how the pivot should be grouped by columns.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDataProvider.AggregateDescriptions">
+            <summary>
+            A list of <see cref="T:Telerik.Pivot.Queryable.QueryableAggregateDescription"/> that specified how the pivot should be aggregated for the groups.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDataProvider.CalculatedFields">
+            <summary>
+            Gets a list of <see cref="T:Telerik.Pivot.Core.CalculatedField"/>s that can be used as a calculated aggregate values.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDataProvider.Source">
+            <summary>
+            Gets or sets the IQueryable data source.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDataProvider.Results">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryableDataProvider.State">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableFieldDescription">
+            <summary>
+            Represents a property of an <see cref="T:System.Linq.IQueryable"/> entity.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFieldDescription.#ctor(System.Reflection.PropertyInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.QueryableFieldDescription"/> class.
+            </summary>
+            <param name="propertyInfo">The property info.</param>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFieldDescription.GetValue(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFieldDescription.SetValue(System.Object,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryableFieldDescriptionsProvider">
+            <summary>
+            Represents an <see cref="T:Telerik.Pivot.Core.Fields.IFieldDescriptionProvider"/> for <see cref="T:System.Linq.IQueryable"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFieldDescriptionsProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Pivot.Queryable.QueryableFieldDescriptionsProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFieldDescriptionsProvider.GetDescriptionsDataAsync(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Pivot.Queryable.QueryableFieldDescriptionsProvider.GenerateDescriptionsData">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Pivot.Queryable.QueryablePivotSerializationHelper">
+            <summary>
+            Provides all knownTypes necessary for serializing <see cref="T:Telerik.Pivot.Queryable.QueryableDataProvider"/>.
+            Use this class to extract these knownTypes and concatenate them with your knownTypes, so you can pass them to <see cref="T:System.Runtime.Serialization.DataContractSerializer"/> for example.
+            </summary>
+        </member>
+        <member name="P:Telerik.Pivot.Queryable.QueryablePivotSerializationHelper.KnownTypes">
+            <summary>
+            Gets known types in <see cref="T:Telerik.Pivot.Queryable.QueryableDataProvider"/> to use with serializer such as <see cref="T:System.Runtime.Serialization.DataContractSerializer"/>.
+            </summary>
+            <returns>An enumeration with the known serializable classes for the <see cref="T:Telerik.Pivot.Queryable.QueryableDataProvider"/> <see cref="T:Telerik.Pivot.Core.IDataProvider"/>.</returns>
+        </member>
+    </members>
+</doc>

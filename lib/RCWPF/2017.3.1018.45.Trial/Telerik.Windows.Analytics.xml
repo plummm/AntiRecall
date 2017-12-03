@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Analytics</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Analytics.TraceMonitor">
+            <summary>
+            Singleton class for creating IAnalyticsMonitor instance and enabling RadControls analytics support.
+            Call Initialize static method with an instance of <see cref="T:Telerik.Windows.Analytics.TraceMonitorSettings"/> to customize behavior of the constructed monitor. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Analytics.TraceMonitor.Initialize(System.Windows.Application,System.String)">
+            <summary>
+            Create an <see cref="T:EQATEC.Analytics.Monitor.IAnalyticsMonitor"/> instance using the default settings and enables RadControls analytics support.
+            </summary>
+            <param name="application">The application instance. It is used to report unhandled exceptions and stops monitor on application exit event.</param>
+            <param name="productKey">The id of the product to monitor.</param>
+            <returns>An instance of the <see cref="T:EQATEC.Analytics.Monitor.IAnalyticsMonitor"/> interface.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Analytics.TraceMonitor.Initialize(System.Windows.Application,Telerik.Windows.Analytics.TraceMonitorSettings)">
+            <summary>
+            Create an <see cref="T:EQATEC.Analytics.Monitor.IAnalyticsMonitor"/> instance using the provided settings and enables RadControls analytics support.
+            </summary>
+            <param name="application">The application instance. It is used to report unhandled exceptions and stops monitor on application exit event.</param>
+            <param name="settings">The settings to use for constructing the instance.</param>
+            <returns>An instance of the <see cref="T:EQATEC.Analytics.Monitor.IAnalyticsMonitor"/> interface.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Analytics.TraceMonitor.Initialize(System.Windows.Application,EQATEC.Analytics.Monitor.IAnalyticsMonitor)">
+            <summary>
+            Create an <see cref="T:EQATEC.Analytics.Monitor.IAnalyticsMonitor"/> instance using the provided settings and enables RadControls analytics support.
+            </summary>
+            <param name="application">The application instance. It is used to report unhandled exceptions and stops monitor on application exit event.</param>
+            <param name="analyticsMonitor">Instance that can be used to monitor.</param>
+            <returns>An instance of the <see cref="T:EQATEC.Analytics.Monitor.IAnalyticsMonitor"/> interface.</returns>
+        </member>
+        <member name="T:Telerik.Windows.Analytics.TraceMonitorSettings">
+            <summary>
+            Class containing the settings used for constructing <see cref="T:Telerik.Windows.Analytics.TraceMonitor"/> instance.
+            Instances are preloaded with default settings which can be adjusted before instance is being passed to the TraceMonitor.Initialize(TraceMonitorSettings) method.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Analytics.TraceMonitorSettings.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the TraceMonitorSettings class. 
+            </summary>
+            <param name="productKey">The id of the product to monitor.</param>
+        </member>
+    </members>
+</doc>

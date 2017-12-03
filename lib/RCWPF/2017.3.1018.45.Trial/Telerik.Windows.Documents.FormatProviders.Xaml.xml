@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Documents.FormatProviders.Xaml</name>
+    </assembly>
+    <members>
+        <member name="P:Telerik.Windows.Documents.FormatProviders.Xaml.XamlDataProvider.Xaml">
+            <summary>
+            Gets or sets the current document as HTML
+            </summary>
+        </member>
+    </members>
+</doc>

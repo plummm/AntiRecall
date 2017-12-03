@@ -1,0 +1,1877 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Controls.FileDialogs</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Automation.Peers.DialogWindowBaseAutomationPeer">
+            <summary>
+            The AutomationPeer associated with the <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.DialogWindowBaseAutomationPeer.#ctor(Telerik.Windows.Controls.DialogWindowBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.DialogWindowBaseAutomationPeer"/> class.
+            </summary>
+            <param name="dialog">The owner <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/> instance.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.DialogWindowBaseAutomationPeer.GetLocalizedControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.DialogWindowBaseAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.DialogWindowBaseAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.RadOpenFileDialogAutomationPeer">
+            <summary>
+            The AutomationPeer associated with the <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadOpenFileDialogAutomationPeer.#ctor(Telerik.Windows.Controls.RadOpenFileDialog)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.RadOpenFileDialogAutomationPeer"/> class.
+            </summary>
+            <param name="dialog">The owner <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/> instance.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadOpenFileDialogAutomationPeer.GetLocalizedControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadOpenFileDialogAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadOpenFileDialogAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.RadOpenFolderDialogAutomationPeer">
+            <summary>
+            The AutomationPeer associated with the <see cref="T:Telerik.Windows.Controls.RadOpenFolderDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadOpenFolderDialogAutomationPeer.#ctor(Telerik.Windows.Controls.RadOpenFolderDialog)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.RadOpenFolderDialogAutomationPeer"/> class.
+            </summary>
+            <param name="dialog">The owner <see cref="T:Telerik.Windows.Controls.RadOpenFolderDialog"/> instance.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadOpenFolderDialogAutomationPeer.GetLocalizedControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadOpenFolderDialogAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadOpenFolderDialogAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.RadSaveFileDialogAutomationPeer">
+            <summary>
+            The AutomationPeer associated with the <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadSaveFileDialogAutomationPeer.#ctor(Telerik.Windows.Controls.RadSaveFileDialog)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.RadSaveFileDialogAutomationPeer"/> class.
+            </summary>
+            <param name="dialog">The owner <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/> instance.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadSaveFileDialogAutomationPeer.GetLocalizedControlTypeCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadSaveFileDialogAutomationPeer.GetClassNameCore">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadSaveFileDialogAutomationPeer.GetHelpTextCore">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.DialogWindowBase">
+            <summary>
+            Base class for file and folder dialogs.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.DialogWindowBase.ResponseButtonProperty">
+            <summary>
+            Identifies the <see>ResponseButton</see> Property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.DialogWindowBase.DialogResultProperty">
+            <summary>
+            Identifies the <see>DialogResult</see> dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.DialogWindowBase.BorderBackgroundProperty">
+            <summary>
+            Identifies the <see>BorderBackground</see> dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.DialogWindowBase.IconProperty">
+            <summary>
+            Identifies the <see>Icon</see> dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.DialogWindowBase.IconTemplateProperty">
+            <summary>
+            Identifies the <see>IconTemplate</see> dependency property. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.DialogWindowBase.DialogStartupLocationProperty">
+            <summary>
+            Identifies the <see>DialogStartupLocation</see> dependency property. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetParentDialogWindow(System.Windows.DependencyObject)">
+            <summary>  
+            This walks the visual tree for a parent of a specific type.
+            </summary>  
+            <param name="child">The object which parent is searched.</param>  
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetResponseButton(System.Windows.DependencyObject)">
+            <summary>
+            Gets the response button.
+            </summary>
+            <param name="button">The button.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.SetResponseButton(System.Windows.DependencyObject,Telerik.Windows.Controls.ResponseButton)">
+            <summary>
+            Sets the response button.
+            </summary>
+            <param name="button">The button.</param>
+            <param name="value">The ResponseButton value.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnApplyTemplate">
+            <summary>
+                When overridden in a derived class, is invoked whenever application code or internal processes (such as a rebuilding layout pass) 
+                call <see cref="M:System.Windows.Controls.Control.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.ShowDialog">
+            <summary>
+            Opens modal <strong>DialogWindow</strong> in case it hasn't been already opened.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.ShowDialogInternal(System.Boolean)">
+            <summary>
+            Show for testing purposes.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetShouldUpdateActiveState">
+            <summary>
+            Indicates whether IsInActiveState property should be updated when dialog is deactivated.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetDialogViewModel">
+            <summary>
+            Gets the DialogViewModel that will be used as DataContext for this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetContent">
+            <summary>
+            Gets the content for this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.ShouldFocusOnActivate">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OpenFileInternal(System.IO.FileMode,System.IO.FileAccess)">
+            <summary>
+            Creates a <see cref="T:System.IO.FileStream"/> with the specified <see cref="T:System.IO.FileMode"/> and <see cref="T:System.IO.FileAccess"/>.
+            </summary>
+            <exception cref="T:System.ArgumentNullException">Selected file is null.</exception>
+            <exception cref="T:System.ArgumentException">Selected file is empty string, contains only white space, contains one or more invalid characters, or refers to a non-file device.</exception>
+            <exception cref="T:System.NotSupportedException">Selected file refers to a non-file device.</exception>
+            <exception cref="T:System.FileNotFoundException">Selected file cannot be found, such as when mode is FileMode.Truncate or FileMode.Open, and the file specified by path does not exist. The file must already exist in these modes.</exception>
+            <exception cref="T:System.IOException">An I/O error occurred or the stream has been closed.</exception>
+            <exception cref="T:System.SecurityException">The caller does not have the required permission.</exception>
+            <exception cref="T:System.DirectoryNotFoundException">Selected file is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.UnauthorizedAccessException">The access requested is not permitted by the operating system for the specified path, such as when access is Write or ReadWrite and the file or directory is set for read-only access.</exception>
+            <exception cref="T:System.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">The specified mode contains an invalid value.</exception>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.ChangeVisualState(System.Boolean)">
+            <summary>
+            Updates the visual state of the control.
+            </summary>
+            <param name="useTransitions">Indicates whether transitions should be used.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetDialogViewModelCustomPlaces">
+            <summary>
+            Provides the CustomPlaces as list of DirectoryInfoWrappers to the DialogViewModel of this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/> instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetDialogViewModelInitialDirectory">
+            <summary>
+            Provides the InitialDirectory as DirectoryInfoWrapper to the <see cref="T:Telerik.Windows.Controls.FileDialogs.DialogViewModel"/> of this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/> instance.
+            Returns null if DirectoryInfo cannot be created due to incorrect InitialDirectory string or access rights.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetWindowOwnerHandle">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnPreviewClosed(Telerik.Windows.Controls.WindowPreviewClosedEventArgs)">
+            <summary>
+            Raises the <see cref="E:PreviewClose"/> event.
+            </summary>
+            <param name="args">The <see cref="T:Telerik.Windows.Controls.WindowPreviewClosedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnClosed(Telerik.Windows.Controls.WindowClosedEventArgs)">
+            <summary>
+            Raises the <see cref="E:Closed"/> event.
+            </summary>
+            <param name="args">The <see cref="T:Telerik.Windows.Controls.WindowClosedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.SaveStateOnAccept">
+            <summary>
+            Save information from the <see cref="T:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel"/> into this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/> instance before the window is closed on Accept.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Called before the <see cref="E:System.Windows.UIElement.GotFocus"/> event occurs.
+            </summary>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Called before the <see cref="E:System.Windows.UIElement.LostFocus"/> event occurs.
+            </summary>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Called before the <see cref="E:System.Windows.UIElement.KeyDown"/> event occurs.
+            </summary>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnClosing">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnPreviewClosed">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetWindowOwner">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.GetWindowStartupLocation">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnClosed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.DialogWindowBase.RaiseExceptionRaisedEvent(Telerik.Windows.Controls.FileDialogs.FileBrowserExceptionRaisedEventArgs)">
+            <summary>
+            Raises the <see cref="E:Telerik.Windows.Controls.DialogWindowBase.ExceptionRaised"/> event.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.DialogWindowBase.Closed">
+            <summary>
+            Occurs when the DialogWindowBase is closed.
+            </summary>
+            <remarks>
+            The event is raised right next after the <see>PreviewClosed</see> event. Both events are raise by
+            <see>Close</see> method.
+            </remarks>
+        </member>
+        <member name="E:Telerik.Windows.Controls.DialogWindowBase.PreviewClosed">
+            <summary>
+            Occurs when the DialogWindowBase is closing.
+            </summary>
+            <remarks>
+            The event is raised whenever the <see>Close</see> method is invoked.
+            </remarks>
+        </member>
+        <member name="E:Telerik.Windows.Controls.DialogWindowBase.ExceptionRaised">
+            <summary>
+            Occurs when the <see cref="T:System.Exception"/> is raised.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.FileName">
+            <summary>
+            Gets or sets a string containing the selected file name, including the path.
+            Short file name without the full path is not supported.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.InitialDirectory">
+            <summary>
+            Gets or sets the initial directory.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.CustomPlaces">
+            <summary>
+            Gets or sets the collection of custom places.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.DialogResult">
+            <summary>
+            Gets or sets a DialogResult value for the <Strong>RadWindow</Strong>. This is a dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.BorderBackground">
+            <summary>
+            Gets or sets a brush to be used to draw the title of <Strong>DialogWindow</Strong>.
+            This is a dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.Icon">
+            <summary>
+            Gets or sets the Icon image to appear in the <Strong>RadWindow</Strong> title bar. This is a dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.IconTemplate">
+            <summary>
+            Gets or sets the IconTemplate property. This is a dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.DialogStartupLocation">
+            <summary>
+            Gets or sets a DialogStartupLocation value for this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/>. This is a dependency property.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.InitialSelectedLayout">
+            <summary>
+            Gets or sets the initial <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutType"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.DialogWindowBase.FileSystemInfoWrapperFactory">
+            <summary>
+            Gets the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase"/> for this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileBrowserExceptionRaisedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Telerik.Windows.Controls.DialogWindowBase.ExceptionRaised"/> event.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserExceptionRaisedEventArgs.#ctor(System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileBrowserExceptionRaisedEventArgs"/> class.
+            </summary>
+            <param name="exception"></param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileBrowserExceptionRaisedEventArgs.Exception">
+            <summary>
+            Gets the thrown exception.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands">
+            <summary>
+            Provides commands for FileDialogs.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands.Open">
+            <summary>
+            Gets the open command.
+            </summary>
+            <value>The open command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands.Cancel">
+            <summary>
+            Gets the cancel command.
+            </summary>
+            <value>The cancel command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands.SelectFolder">
+            <summary>
+            Gets the selectFolder command.
+            </summary>
+            <value>The selectFolder command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands.Save">
+            <summary>
+            Gets the save command.
+            </summary>
+            <value>The save command.</value>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands.CommandId.Open">
+            <summary>
+            Open command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands.CommandId.Cancel">
+            <summary>
+            Cancel command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands.CommandId.SelectFolder">
+            <summary>
+            SelectFolder command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileDialogsCommands.CommandId.Save">
+            <summary>
+            Save command.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ExplorerControl">
+            <summary>
+            Control used for the navigation part of the <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/>, <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/> and <see cref="T:Telerik.Windows.Controls.RadOpenFolderDialog"/>
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ExplorerControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.ExplorerControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ExplorerControl.ResetTheme">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ExplorerControl.OnApplyTemplate">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ExplorerControl.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.HistoryNavigationPaneControl">
+            <summary>
+            Control used for the history navigation part of the <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/>, <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/> and <see cref="T:Telerik.Windows.Controls.RadOpenFolderDialog"/>
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.HistoryNavigationPaneControl.DirectoryHistoryProperty">
+            <summary>
+            Identifies the <see>DirectoryHistory</see> dependency property. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.HistoryNavigationPaneControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.HistoryNavigationPaneControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.HistoryNavigationPaneControl.OnApplyTemplate">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.HistoryNavigationPaneControl.ResetTheme">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.HistoryNavigationPaneControl.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.HistoryNavigationPaneControl.DirectoryHistory">
+            <summary>
+            Gets or sets the collection of selected <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.HistoryNavigationCommands">
+            <summary>
+            Provides commands for HistoryNavigationCommands.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.HistoryNavigationCommands.Forward">
+            <summary>
+            Gets the forward command.
+            </summary>
+            <value>The forward command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.HistoryNavigationCommands.Back">
+            <summary>
+            Gets the back command.
+            </summary>
+            <value>The back command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.HistoryNavigationCommands.Up">
+            <summary>
+            Gets the up command.
+            </summary>
+            <value>The up command.</value>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.HistoryNavigationCommands.CommandId.Forward">
+            <summary>
+            Forward command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.HistoryNavigationCommands.CommandId.Back">
+            <summary>
+            Back command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.HistoryNavigationCommands.CommandId.Up">
+            <summary>
+            Up command.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileBrowserAutocompleteBoxesItemStyleSelector">
+            <summary>
+            A style selector that returns a different style whether a <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/> is a file or directory.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserAutocompleteBoxesItemStyleSelector.SelectStyle(System.Object,System.Windows.DependencyObject)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileBrowserAutocompleteBoxesItemStyleSelector.FileStyle">
+            <summary>
+            Gets or sets the style for item that is a <see cref="T:Telerik.Windows.Controls.FileDialogs.FileInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileBrowserAutocompleteBoxesItemStyleSelector.DirectoryStyle">
+            <summary>
+            Gets or sets the style for item that is <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileBrowserGridView">
+            <summary>
+            Represents a GridView control for listing detailed information for files and folders in the <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/>, <see cref="T:Telerik.Windows.Controls.RadOpenFolderDialog"/> 
+            and <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserGridView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileBrowserGridView"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserGridView.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserGridView.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileBrowserGridViewSelectedItemsBindingBehavior">
+            <summary>
+            An attached behavior for synchronization of <see cref="T:Telerik.Windows.Controls.RadGridView"/> selected items.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileBrowserGridViewSelectedItemsBindingBehavior.SelectedItemsProperty">
+            <summary>
+            Identifies the SelectedItems attached property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserGridViewSelectedItemsBindingBehavior.GetSelectedItems(System.Windows.DependencyObject)">
+            <summary>
+            Returns the value of the SelectedItems property related to the specified object.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserGridViewSelectedItemsBindingBehavior.SetSelectedItems(System.Windows.DependencyObject,System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>
+            Sets the value of the SelectedItems property related to the specified object.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileBrowserListBox">
+            <summary>
+            Represents a ListBox control for listing files and folders in the <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/>, <see cref="T:Telerik.Windows.Controls.RadOpenFolderDialog"/> 
+            and <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserListBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileBrowserListBox"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserListBox.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserListBox.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileBrowserTabControl">
+            <summary>
+            Represents a RadTabControl control for displaying the different layout views of files and folders in the <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/>, <see cref="T:Telerik.Windows.Controls.RadOpenFolderDialog"/> 
+            and <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/>.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileBrowserTabControl.TabStripVisibilityProperty">
+            <summary>
+            Identifies the TabStripVisibility dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserTabControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileBrowserTabControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserTabControl.OnApplyTemplate">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileBrowserTabControl.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileBrowserTabControl.TabStripVisibility">
+            <summary>
+            Gets or sets the visibility of the tab strip.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileSizeType">
+            <summary>
+            Options that specify the file size type in the main pane.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileSizeType.B">
+            <summary>
+            Specifies bytes file size type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileSizeType.KB">
+            <summary>
+            Specifies kilobytes file size type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileSizeType.MB">
+            <summary>
+            Specifies megabytes file size type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileSizeType.GB">
+            <summary>
+            Specifies gigabytes file size type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileSizeType.TB">
+            <summary>
+            Specifies terabytes file size type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel">
+            <summary>
+            Defines a layout for the Open file, Save file, and Open folder dialogs.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.#ctor(Telerik.Windows.Controls.FileDialogs.LayoutType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel"/> class.
+            </summary>
+            <param name="layoutType">The type of the layout.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.GetSizeForType(Telerik.Windows.Controls.FileDialogs.LayoutType)">
+            <summary>
+            A method to provide the <see cref="P:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.IconSize"/> for the <see cref="P:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.LayoutType"/>.
+            </summary>
+            <param name="layoutType"></param>
+            <returns>The chosen IconSize.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.GetNameKeyForType(Telerik.Windows.Controls.FileDialogs.LayoutType)">
+            <summary>
+            A method to provide the localization key for the <see cref="P:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.LayoutType"/>.
+            </summary>
+            <param name="layoutType"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.IconSize">
+            <summary>
+            Gets the <see cref="P:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.IconSize"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.LayoutType">
+            <summary>
+            Gets the <see cref="P:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.LayoutType"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel.NameKey">
+            <summary>
+            Gets the NameKey to be used for localizable strings.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector">
+            <summary>
+            A style selector that returns a different style based on the <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutType"/> of the <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel"/> of the control.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.SelectStyle(System.Object,System.Windows.DependencyObject)">
+            <summary>
+            Selects a <see cref="T:System.Windows.Style"/> based on the <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutType"/> of the <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel"/>.
+            </summary>
+            <param name="item"></param>
+            <param name="container"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.SmallIconsStyle">
+            <summary>
+            Gets or sets the style for item with LayoutType.SmallIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.MediumIconsStyle">
+            <summary>
+            Gets or sets the style for item with LayoutType.MediumIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.LargeIconsStyle">
+            <summary>
+            Gets or sets the style for item with LayoutType.LargeIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.ExtraLargeIconsStyle">
+            <summary>
+            Gets or sets the style for item with LayoutType.ExtraLargeIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.ListStyle">
+            <summary>
+            Gets or sets the style for item with LayoutType.List.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.TilesStyle">
+            <summary>
+            Gets or sets the style for item with LayoutType.Tiles.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.DetailsStyle">
+            <summary>
+            Gets or sets the style for item with LayoutType.Details.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorStyleSelector.DefaultStyle">
+            <summary>
+            Gets or sets the default style for item.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector">
+            <summary>
+            Template selector that is used to provide the <see cref="T:System.Windows.DataTemplate"/> based on the <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutType"/> of the model.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector.SelectTemplate(System.Object,System.Windows.DependencyObject)">
+            <summary>
+            Returns the appropriate <see cref="T:System.Windows.DataTemplate"/> for <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel"/> item depending on its <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutType"/>.
+            </summary>
+            <param name="item"></param>
+            <param name="container"></param>
+            <returns>The chosen DataTemplate.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector.SmallIconsDataTemplate">
+            <summary>
+            Gets or sets the DataTemplate for item with LayoutType.SmallIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector.MediumIconsDataTemplate">
+            <summary>
+            Gets or sets the DataTemplate for item with LayoutType.MediumIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector.LargeIconsDataTemplate">
+            <summary>
+            Gets or sets the DataTemplate for item with LayoutType.LargeIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector.ExtraLargeIconsDataTemplate">
+            <summary>
+            Gets or sets the DataTemplate for item with LayoutType.ExtraLargeIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector.ListDataTemplate">
+            <summary>
+            Gets or sets the DataTemplate for item with LayoutType.List.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector.TilesDataTemplate">
+            <summary>
+            Gets or sets the DataTemplate for item with LayoutType.Tiles.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutConfiguratorTemplateSelector.DetailsDataTemplate">
+            <summary>
+            Gets or sets the DataTemplate for item with LayoutType.Details.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.LayoutType">
+            <summary>
+            Options that specify the type of the layout of the Main pane.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.LayoutType.SmallIcons">
+            <summary>
+            Specifies layout type with small icons.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.LayoutType.MediumIcons">
+            <summary>
+            Specifies layout type with medium icons.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.LayoutType.LargeIcons">
+            <summary>
+            Specifies layout type with large icons.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.LayoutType.ExtraLargeIcons">
+            <summary>
+            Specifies layout type with extra large icons.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.LayoutType.List">
+            <summary>
+            Specifies list layout type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.LayoutType.Tiles">
+            <summary>
+            Specifies tiles layout type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.LayoutType.Details">
+            <summary>
+            Specifies details layout type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter">
+            <summary>
+            A converter to return the appropriate <see cref="T:System.Windows.Media.ImageSource"/> based on the <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutType"/> for the current item.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Convert method to return the IconSource for the LayoutType.
+            </summary>
+            <param name="value">LayoutType.</param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns>IconSource.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Convert back method. Returns the value.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.ExtraLargeIconImageSource">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.ImageSource"/> for LayoutType.ExtraLargeIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.LargeIconImageSource">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.ImageSource"/> for LayoutType.ExtraLargeIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.MediumIconImageSource">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.ImageSource"/> for LayoutType.ExtraLargeIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.SmallIconImageSource">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.ImageSource"/> for LayoutType.SmallIcons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.ListImageSource">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.ImageSource"/> for LayoutType.List.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.TilesImageSource">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.ImageSource"/> for LayoutType.Tiles.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.LayoutTypeToIconConverter.DetailsImageSource">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Media.ImageSource"/> for LayoutType.Details.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.RoundFileSizeConverter">
+            <summary>
+            A converter that received a long value for file size and returns is formatted.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.RoundFileSizeConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a file size value (long) to a string with value (number) (modifier) where 1&lt;number&lt;1024 and modifier is bytes/KB/MB/GB/TB.
+            Parameter can be set to "KB" and the method would return the value converted only to KB.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.RoundFileSizeConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.OpenFileDialogControl">
+            <summary>
+            Control used for the Content of a <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.OpenFileDialogControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogControl.ResetTheme">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogControl.OnApplyTemplate">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogControl.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogControl">
+            <summary>
+            Control used for the Content of a <see cref="T:Telerik.Windows.Controls.RadOpenFolderDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogControl.ResetTheme">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogControl.OnApplyTemplate">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogControl.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileDialogsBreadcrumb">
+            <summary>
+            Custom RadBreadcrumb in order to meet the needs of FileDialogs. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogsBreadcrumb.#ctor">
+            <summary>
+            Initializes a new instance of the FileDialogsBreadcrumb class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogsBreadcrumb.OnApplyTemplate">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogsBreadcrumb.FindCurrentItemRecursively(System.String,System.Collections.IEnumerable,System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogsBreadcrumb.OnKeyUp(System.Windows.Input.KeyEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogsBreadcrumb.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.SaveFileDialogControl">
+            <summary>
+            Control used for the Content of a <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.SaveFileDialogControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.SaveFileDialogControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.SaveFileDialogControl.ResetTheme">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.SaveFileDialogControl.OnApplyTemplate">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.SaveFileDialogControl.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.DetailsGridItemsSourceConverter">
+            <summary>
+            Converter which switches the source of the Details GridView - search results from search pane or current files / folders from main view model.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.DetailsGridItemsSourceConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Switches SearchResults or CurrentFileSystemObjects depending on IsSearchViewActive property of search pane.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.DetailsGridItemsSourceConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported because the purpose of converter is to support one way binding to ItemsSource.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane">
+            <summary>
+            Control which wraps the search box of the FileDialogs.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.OnApplyTemplate">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.ResetTheme">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.IsSearchViewActiveProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.IsSearchViewActive"/> property.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.PropertyChanged">
+            <summary>
+            PropertyChanged event handler delegate.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.CurrentSearchResults">
+            <summary>
+            Collection of search results. We do not use ViewModels CurrentFileSystemObjects in order to be process the results in background successfully.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.IsSearchViewActive">
+            <summary>
+            Gets or sets the <see cref="F:Telerik.Windows.Controls.FileDialogs.FileDialogSearchPane.IsSearchViewActiveProperty"/>. When true, it indicates the Dialog's Main Pane shows results from search operation. 
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RadOpenFileDialog">
+            <summary>
+            Represents a dialog that allows user selection of filename for a file to be opened.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.IMultiSelectable">
+            <summary>
+            Interface that provides properties for multiple selection of files or folders.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IMultiSelectable.Multiselect">
+            <summary>
+            Gets or sets a value indicating whether multiple selection of files or folders is allowed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IMultiSelectable.SelectedFileSystemInfoWrappers">
+            <summary>
+            Gets a collection of selected <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.IMultiFilesSelectable">
+            <summary>
+            Interface that provides a collection of selected files.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IMultiFilesSelectable.FileNames">
+            <summary>
+            Gets or sets a string containing the selected file names, including their paths.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IMultiFilesSelectable.SafeFileNames">
+            <summary>
+            Gets or sets a string containing the selected file names, excluding their paths.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.IFileExtensionFilterable">
+            <summary>
+            Interface that provides properties for filtering files by extension.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IFileExtensionFilterable.Filter">
+            <summary>
+            Gets or sets the filter string that describes the list of extensions to filter by.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IFileExtensionFilterable.FilterIndex">
+            <summary>
+            Gets or sets the currently selected extension filter from the extensions described in the <see cref="P:Telerik.Windows.Controls.FileDialogs.IFileExtensionFilterable.Filter"/> property.
+            The index value of the first filter entry is 1.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IFileExtensionFilterable.DefaultExt">
+            <summary>
+            Gets or sets a value that specifies the default extension string to use to filter the list of files that are displayed.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFileDialog.OpenFile">
+            <summary>Opens a read-only stream for the file that is selected by the user using RadOpenFileDialog />.</summary>
+            <returns>A new <see cref="T:System.IO.Stream" /> that contains the selected file.</returns>
+            <exception cref="T:System.ArgumentNullException">Selected file is null.</exception>
+            <exception cref="T:System.ArgumentException">Selected file is empty string, contains only white space, contains one or more invalid characters, or refers to a non-file device.</exception>
+            <exception cref="T:System.NotSupportedException">Selected file refers to a non-file device.</exception>
+            <exception cref="T:System.FileNotFoundException">Selected file cannot be found, such as when mode is FileMode.Truncate or FileMode.Open, and the file specified by path does not exist. The file must already exist in these modes.</exception>
+            <exception cref="T:System.IOException">An I/O error occurred or the stream has been closed.</exception>
+            <exception cref="T:System.SecurityException">The caller does not have the required permission.</exception>
+            <exception cref="T:System.DirectoryNotFoundException">Selected file is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.UnauthorizedAccessException">The access requested is not permitted by the operating system for the specified path, such as when access is Write or ReadWrite and the file or directory is set for read-only access.</exception>
+            <exception cref="T:System.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">The specified mode contains an invalid value.</exception>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFileDialog.ResetTheme">
+            <summary>
+            Resets the theme.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFileDialog.GetDialogViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFileDialog.GetContent">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFileDialog.GetViewModel">
+            <summary>
+            Gets the OpenFileDialogViewModel that will be used as DataContext for this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFileDialog.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFileDialog.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFileDialog.OnOpenExecuted">
+            <summary>
+            Called when the Open command is executed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFileDialog.DefaultExt">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFileDialog.Filter">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFileDialog.FilterIndex">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFileDialog.Multiselect">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFileDialog.FileNames">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFileDialog.SafeFileNames">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RadSaveFileDialog">
+            <summary>
+            Represents a dialog that allows user selection of filename for file to be saved.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadSaveFileDialog.ResetTheme">
+            <summary>
+            Resets the theme.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadSaveFileDialog.OpenFile">
+            <summary>Creates a read-write file stream for the filename selected by the user using RadSaveFileDialog" />.</summary>
+            <returns>A new <see cref="T:System.IO.Stream" /> that contains the selected file.</returns>
+            <exception cref="T:System.ArgumentNullException">Selected file is null.</exception>
+            <exception cref="T:System.ArgumentException">Selected file is empty string, contains only white space, contains one or more invalid characters, or refers to a non-file device.</exception>
+            <exception cref="T:System.NotSupportedException">Selected file refers to a non-file device.</exception>
+            <exception cref="T:System.FileNotFoundException">Selected file cannot be found, such as when mode is FileMode.Truncate or FileMode.Open, and the file specified by path does not exist. The file must already exist in these modes.</exception>
+            <exception cref="T:System.IOException">An I/O error occurred or the stream has been closed.</exception>
+            <exception cref="T:System.SecurityException">The caller does not have the required permission.</exception>
+            <exception cref="T:System.DirectoryNotFoundException">Selected file is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.UnauthorizedAccessException">The access requested is not permitted by the operating system for the specified path, such as when access is Write or ReadWrite and the file or directory is set for read-only access.</exception>
+            <exception cref="T:System.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">The specified mode contains an invalid value.</exception>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadSaveFileDialog.GetDialogViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadSaveFileDialog.GetContent">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadSaveFileDialog.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadSaveFileDialog.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadSaveFileDialog.DefaultExt">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadSaveFileDialog.Filter">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadSaveFileDialog.FilterIndex">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.DialogViewModel">
+            <summary>
+            Base class for the different file dialogs.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.IDialogViewModel">
+            <summary>
+            Interface that provides base information for all file dialog view models.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ICurrentDirectoryViewModel">
+            <summary>
+            Interface that provides information about current drilled directory and currently selected file or folder.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.ICurrentDirectoryViewModel.CurrentParentDirectory">
+            <summary>
+            Gets the currently drilled directory.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.ICurrentDirectoryViewModel.SelectedFileSystemObject">
+            <summary>
+            Gets the currently selected file or folder.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.IDialogViewModel.GetChildren(Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper,System.String)">
+            <summary>
+            Gets the child files and/or folders for a specified <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/> that match the search pattern.
+            </summary>
+            <param name="directoryInfoWrapper">The specified <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/>.</param>
+            <param name="searchPattern">The search pattern.</param>
+            <returns>IEnumerable of <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/> result.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IDialogViewModel.Path">
+            <summary>
+            Gets a string representing the path to the current folder.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IDialogViewModel.Name">
+            <summary>
+            Gets or sets a string representing the full path to the current file system object.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IDialogViewModel.InitialDirectory">
+            <summary>
+            Gets or sets the initial directory.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IDialogViewModel.CustomPlaces">
+            <summary>
+            Gets or sets the collection of custom places.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IDialogViewModel.Layouts">
+            <summary>
+            Gets the available layouts for the dialog explorer.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IDialogViewModel.SelectedLayout">
+            <summary>
+            Gets the selected <see cref="T:Telerik.Windows.Controls.FileDialogs.LayoutConfigurationModel"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.DialogViewModel.#ctor(Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.DialogViewModel"/> class.
+            </summary>
+            <param name="fileSystemInfoWrapperFactory">The <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase"/> used for creating <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.DialogViewModel.GetChildren(Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.DialogViewModel.CanExecuteAccept">
+            <summary>
+            Defines the method that determines whether the accept command can execute in its current state.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.DialogViewModel.InvokeSelectedFileSystemObjects">
+            <summary>
+            Execute logic when accept is executed for the selected <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.DialogViewModel.GetCurrentFileSystemInfoWrappers(Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper)">
+            <summary>
+            Gets the current visible <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.DialogViewModel.ResetSelection">
+            <summary>
+            Resets the selection.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.MainNavigationRoot">
+            <summary>
+            Gets the main root <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/> used for folder navigation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.MainNavigationRootSource">
+            <summary>
+            Gets the root <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/> used for folder navigation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.Path">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.InitialDirectory">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.CurrentParentDirectory">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.SelectedFileSystemObject">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.CurrentFileSystemObjects">
+            <summary>
+            Gets the currently visible <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.RootAndCurrentFileSystemObjects">
+            <summary>
+            Gets the currently root and current visible <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.IsDirectorySelected">
+            <summary>
+            Return true if the selected item is directory.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.CustomPlaces">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.SelectedLayout">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.Layouts">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DialogViewModel.FileSystemInfoWrapperFactory">
+            <summary>
+            Gets the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase"/> for creating wrappers for <see cref="T:System.IO.FileSystemInfo"/>s.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel">
+            <summary>
+            Base ViewModel class for <see cref="T:Telerik.Windows.Controls.RadOpenFileDialog"/> and <see cref="T:Telerik.Windows.Controls.RadSaveFileDialog"/> controls. 
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.IFileFilterableModel">
+            <summary>
+            Interface that extends the <see cref="T:Telerik.Windows.Controls.FileDialogs.IFileExtensionFilterable"/> interface by providing a notion for filter descriptions and boolean property to determine if filtering is currently active or not.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IFileFilterableModel.IsFilterApplied">
+            <summary>
+            Gets or sets a value indicating whether the current filtering is active or not.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.IFileFilterableModel.FilterDescriptors">
+            <summary>
+            Gets or sets the list of <see cref="T:Telerik.Windows.Controls.FileDialogs.FileFilterDescriptor"/>s described by the <see cref="P:Telerik.Windows.Controls.FileDialogs.IFileExtensionFilterable.Filter"/> property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.#ctor(Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.InvokeSelectedFileSystemObjects">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.GetCurrentFileSystemInfoWrappers(Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.FilterIndex">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.DefaultExt">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.Filter">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.IsFilterApplied">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.FilterDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.SelectedFilterName">
+            <summary>
+            Gets the FilterName of the currently applied filter.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileDialogViewModel.IsSearchActive">
+            <summary>
+            SearchPane's IsSearchViewActive is OneWayToSource bound to IsSearchActive.
+            This is the reason for the public modifier here.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileFilterDescriptor">
+            <summary>
+            Class which describes a filter operation - extensions and their user friendly group name.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileFilterDescriptor.FilterName">
+            <summary>
+            The group name of the extensions.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileFilterDescriptor.Extensions">
+            <summary>
+            List of all extensions in the current group.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel">
+            <summary>
+            Provides a view model for setup and configuration of RadOpenFileDialog.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel.#ctor(Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel"/> class.
+            </summary>
+            <param name="fileSystemInfoWrapperFactory">The factory used from this <see cref="T:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel"/> for creation of file system wrappers.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel.InvokeSelectedFileSystemObjects">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel.CanExecuteAccept">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel.ResetSelection">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel.OnPropertyChanged(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel.Multiselect">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.OpenFileDialogViewModel.SelectedFileSystemInfoWrappers">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel">
+            <summary>
+            Provides a view model for setup and configuration of RadOpenFolderDialog.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel.#ctor(Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel"/> class.
+            </summary>
+            <param name="fileSystemInfoWrapperFactory">The factory used from this <see cref="T:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel"/> for creation of file system wrappers.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel.InvokeSelectedFileSystemObjects">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel.CanExecuteAccept">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel.ResetSelection">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel.GetCurrentFileSystemInfoWrappers(Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel.Multiselect">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.OpenFolderDialogViewModel.SelectedFileSystemInfoWrappers">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.SaveFileDialogViewModel">
+            <summary>
+            Provides a view model for setup and configuration of RadSaveFileDialog.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.SaveFileDialogViewModel.#ctor(Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FileDialogs.SaveFileDialogViewModel"/> class.
+            </summary>
+            <param name="fileSystemInfoWrapperFactory">The factory used from this <see cref="T:Telerik.Windows.Controls.FileDialogs.SaveFileDialogViewModel"/> for creation of file system wrappers.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.SaveFileDialogViewModel.InvokeSelectedFileSystemObjects">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper">
+            <summary>
+            Provides a wrapper for <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper">
+            <summary>
+            Base class that provides a wrapper for <see cref="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.FileSystemInfo"/>s.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.Size">
+            <summary>
+            Gets or sets the size, in bytes of the selected file.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.DateCreated">
+            <summary>
+            Gets the creation <see cref="T:System.DateTime"/> of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.TypeText">
+            <summary>
+            Gets the type of file as descriptive text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.IsShortcut">
+            <summary>
+            Gets whether the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/> is a shortcut.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.ShortcutLocation">
+            <summary>
+            Gets the shortcut location of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/> if it is a shortcut.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.SmallImage">
+            <summary>
+            Gets the small icon of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.MediumImage">
+            <summary>
+            Gets the medium icon of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.LargeImage">
+            <summary>
+            Gets the large icon of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.ExtraLargeImage">
+            <summary>
+            Gets the extra large icon of the <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.Name">
+            <summary>
+            Gets the selected file name, excluding the path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.LastWriteTime">
+            <summary>
+            Gets the time when the current file or directory was last written to.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.Path">
+            <summary>
+            Gets the selected file name, including the path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.SortOrder">
+            <summary>
+            Gets or a value indicating the sort order of this file system info entry.
+            This is used when sorting in GridView.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.Size">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.IsShortcut">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.ShortcutLocation">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.TypeText">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.Children">
+            <summary>
+            Gets the child <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.Parent">
+            <summary>
+            Gets the parent <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.ChildDirectories">
+            <summary>
+            Gets the child <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.IsExpanded">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/> is expanded.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.SortOrder">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileInfoWrapper">
+            <summary>
+            Provides a wrapper for <see cref="T:System.IO.FileInfo"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileInfoWrapper.Size">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileInfoWrapper.TypeText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FileDialogs.FileInfoWrapper.SortOrder">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase">
+            <summary>
+            Base factory class for creating <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s from <see cref="T:System.IO.FileSystemInfo"/>s.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase.GetConcreteFileSystemInfoWrapper(System.IO.FileSystemInfo)">
+            <summary>
+            Returns <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s from <see cref="T:System.IO.FileSystemInfo"/>s.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase.GetDirectoryInfoWrapper(System.IO.DirectoryInfo)">
+            <summary>
+            Returns the <see cref="T:Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper"/> for a specific <see cref="T:System.IO.DirectoryInfo"/>
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase.ReportError(System.Exception)">
+            <summary>
+            Called when exception is thrown when working with <see cref="T:Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper"/>s.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.IconSize">
+            <summary>
+            Options to specify the size of icons to return.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.IconSize.Small">
+            <summary>
+            Specifies small icon - 16 pixels by 16 pixels.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.IconSize.Medium">
+            <summary>
+            Specifies medium icon - 32 pixels by 32 pixels.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.IconSize.Large">
+            <summary>
+            Specifies large icon - 48 pixels by 48 pixels.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.IconSize.ExtraLarge">
+            <summary>
+            Specifies extra large icon - 256 pixels by 256 pixels. (Vista+) and fails on XP or lower.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ShellHelpers.ContextMenuHelper.GetCommandStringA(Telerik.Windows.Controls.FileDialogs.ShellHelpers.IContextMenu,System.UInt32,System.Boolean)">
+            <summary>
+            Retrieves the command string for a specific item from an iContextMenu (ANSI).
+            </summary>
+            <param name="icontextMenu">The IContextMenu to receive the string from.</param>
+            <param name="idcmd">The id of the specific item.</param>
+            <param name="executeString">Indicating whether it should return an execute string or not.</param>
+            <returns>If executeString is true it will return the executeString for the item, otherwise it will return the help info string.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ShellHelpers.ContextMenuHelper.GetCommandStringW(Telerik.Windows.Controls.FileDialogs.ShellHelpers.IContextMenu,System.UInt32,System.Boolean)">
+            <summary>
+            Retrieves the command string for a specific item from an iContextMenu (Unicode).
+            </summary>
+            <param name="icontextMenu">The IContextMenu to receive the string from.</param>
+            <param name="idcmd">The id of the specific item.</param>
+            <param name="executeString">Indicating whether it should return an execute string or not.</param>
+            <returns>If executeString is true it will return the executeString for the item, otherwise it will return the help info string.</returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.IconManager">
+            <summary>
+            Provides icons for files and folders.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ShellHelpers.IconManager.GetMyComputerIcon(Telerik.Windows.Controls.FileDialogs.IconSize)">
+            <summary>
+            Gets an <see cref="T:System.Windows.Media.ImageSource"/> for the "My Computer" icon.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ShellHelpers.IconManager.GetIcon(System.String,Telerik.Windows.Controls.FileDialogs.IconSize)">
+            <summary>
+            Gets an <see cref="T:System.Windows.Media.ImageSource"/> for the icon for the specified path and specified <see cref="T:Telerik.Windows.Controls.FileDialogs.IconSize"/>.
+            </summary>
+            <param name="fileName">The file path.</param>
+            <param name="size">The <see cref="T:Telerik.Windows.Controls.FileDialogs.IconSize"/>.</param>
+            <returns>ImageSource result.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FileDialogs.ShellHelpers.ShellContextMenuManager.ShowContextMenu(System.Collections.Generic.IEnumerable{Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper},System.Windows.Media.Visual)">
+            <summary>
+            Show shell context menu.
+            </summary>
+            <param name="selectedFileSystemInfoWrappers">Selected FileSystemInfoWrappers.</param>
+            <param name="hwndSource">HWND source.</param>
+            <returns>Shell contextMenu command.</returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.TPM">
+            <summary>
+             Specifies how TrackPopupMenuEx positions the shortcut menu horizontally.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.CSIDL">
+            <summary>
+            Used to retrieve directory paths to system special folders.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.CMIC">
+            <summary>
+            Flags used with the CMINVOKECOMMANDINFOEX structure.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.CMF">
+            <summary>
+             Specifies how the shortcut menu can be changed when calling IContextMenu::QueryContextMenu.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.MFT">
+            <summary>
+             Specifies the content of the new menu item.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.MIIM">
+            <summary>
+             Specifies the content of the new menu item.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.MFS">
+            <summary>
+             Specifies the state of the new menu item.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.SFGAO">
+            <summary>
+            The attributes that the caller is requesting, when calling IShellFolder::GetAttributesOf.
+            </summary> 
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.SHGNO">
+            <summary>
+            Defines the values used with the IShellFolder::GetDisplayNameOf and IShellFolder::SetNameOf 
+            methods to specify the type of file or folder names used by those methods.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.GCS">
+            <summary>
+             Flags specifying the information to return when calling IContextMenu::GetCommandString.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.FILE_ATTRIBUTE">
+            <summary>
+            Flags that specify the file information to retrieve with SHGetFileInfo.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.SHGFI">
+            <summary>	
+            Flags that specify the file information to retrieve with SHGetFileInfo.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.SHIL">
+            <summary>	
+            Flags that specify the file information to retrieve with SHGetImageList.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.MENUITEMINFO">
+            <summary>
+            Contains information about a menu item.
+            </summary> 
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.SHFILEINFO">
+            <summary>
+             Contains information about a file object.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.CMINVOKECOMMANDINFOEX">
+            <summary>
+             Contains extended information about a shortcut menu command.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FileDialogs.ShellHelpers.ShellContextMenuCommand">
+            <summary>
+            Selected Shell ContextMenu command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.ShellHelpers.ShellContextMenuCommand.None">
+            <summary>
+            None.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.ShellHelpers.ShellContextMenuCommand.Rename">
+            <summary>
+            Rename command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.ShellHelpers.ShellContextMenuCommand.Copy">
+            <summary>
+            Copy command.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FileDialogs.ShellHelpers.ShellContextMenuCommand.Paste">
+            <summary>
+            Paste command.
+            </summary>
+        </member>
+        <member name="T:FileDialogs.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:FileDialogs.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:FileDialogs.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RadOpenFolderDialog">
+            <summary>
+            Represents a dialog that allows user selection of folders.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFolderDialog.ResetTheme">
+            <summary>
+            Resets the theme.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFolderDialog.GetDialogViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFolderDialog.GetContent">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFolderDialog.GetViewModel">
+            <summary>
+            Gets the OpenFolderDialogViewModel that will be used as DataContext for this <see cref="T:Telerik.Windows.Controls.DialogWindowBase"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFolderDialog.OnInitialized(System.EventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFolderDialog.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadOpenFolderDialog.OnOpenExecuted">
+            <summary>
+            Called when the Open command is executed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFolderDialog.Multiselect">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFolderDialog.FileNames">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadOpenFolderDialog.SafeFileNames">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

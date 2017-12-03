@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Cloud</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Cloud.CloudUploadFileProgressChanged">
+            <summary>
+            Progress changed delegate for the file upload.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.ICloudUploadProvider">
+            <summary>
+            Upload file provider interface.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.ICloudUploadProvider.UploadFileAsync(System.String,System.IO.Stream,Telerik.Windows.Cloud.CloudUploadFileProgressChanged,System.Threading.CancellationToken)">
+            <summary>
+            Uploads a file to a cloud storage.
+            </summary>
+        </member>
+    </members>
+</doc>

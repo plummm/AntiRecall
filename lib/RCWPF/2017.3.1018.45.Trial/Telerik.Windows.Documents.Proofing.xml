@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Documents.Proofing</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Documents.Proofing.EditCustomDictionaryDialog">
+            <summary>
+            Dialog for editing custom dictionaries.
+            </summary>
+            <summary>
+            EditCustomDictionaryDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Proofing.EditCustomDictionaryDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Documents.Proofing.EditCustomDictionaryDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Proofing.EditCustomDictionaryDialog.ShowDialog(Telerik.Windows.Documents.Proofing.ICustomWordDictionary)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="customWordDictionary">The custom word dictionary to edit.</param>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Proofing.EditCustomDictionaryDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Proofing.SpellCheckAllAtOnceWindow">
+            <summary>
+            SpellCheckAllAtOnceWindow
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Proofing.SpellCheckAllAtOnceWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Documents.Proofing.SpellCheckWordByWordWindow">
+            <summary>
+            SpellCheckWordByWordWindow
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Documents.Proofing.SpellCheckWordByWordWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

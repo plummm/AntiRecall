@@ -47,7 +47,7 @@ namespace AntiRecall.network
                     e.Buffer[6] = 0x00;
 
                     MainWindow.count++;
-                
+                /*
                     if ((MainWindow.count + 7) % 8 ==0)
                     {
                         App.Current.Dispatcher.Invoke(
@@ -57,6 +57,7 @@ namespace AntiRecall.network
                             );
                         
                     }
+                    */
                 
 #if DEBUG
                     Console.WriteLine("capture recall");

@@ -1,0 +1,642 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Controls.FixedDocumentViewersUI</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Converters.DoubleToPercentConverter">
+            <summary>
+            Represents double to string percent converter.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Converters.DoubleToPercentConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Converters.DoubleToPercentConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Converters.ScaleModeToBooleanConverter">
+            <summary>
+            Represents scale mode to boolean converter.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DialogHelper">
+            <summary>
+            Represents the dialog helper class.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DialogHelper.SignatureDateFormat">
+            <summary>
+            Signature date format.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DialogHelper.GetParentWindow(Telerik.Windows.Controls.RadPdfViewer)">
+            <summary>
+            Gets the parent window.
+            </summary>
+            <param name="pdfViewer">The PDF viewer.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignaturePropertiesDialog">
+            <summary>
+            Represents the signature properties dialog.
+            </summary>
+            <summary>
+            SignaturePropertiesDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignaturePropertiesDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignaturePropertiesDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignaturePropertiesDialog.ShowDialog(Telerik.Windows.Documents.Fixed.UI.Dialogs.SignaturePropertiesDialogContext)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignaturePropertiesDialog.GetViewModel(Telerik.Windows.Documents.Fixed.UI.Dialogs.SignaturePropertiesDialogContext)">
+            <summary>
+            Gets the view model.
+            </summary>
+            <param name="context">The context.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignaturePropertiesDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignaturePropertiesDialog.ViewModelCreator">
+            <summary>
+            Gets or sets the view model creator responsible for creating the view model used for this dialog.
+            </summary>
+            <value>The view model creator.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignSignatureDialog">
+            <summary>
+            Represents the sign signature dialog.
+            </summary>
+            <summary>
+            SignSignatureDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignSignatureDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignSignatureDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignSignatureDialog.ShowDialog(Telerik.Windows.Documents.Fixed.UI.Dialogs.SignSignatureDialogContext)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignSignatureDialog.OnClosed">
+            <summary>
+            Called when the dialog is closed.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignSignatureDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.SignSignatureDialog.ViewModelCreator">
+            <summary>
+            Gets or sets the view model creator responsible for creating the view model used for this dialog.
+            </summary>
+            <value>The view model creator.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel">
+            <summary>
+            Represents the signature properties dialog view model.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.DialogViewModelBase`1">
+            <summary>
+            Represents dialog view-model base class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.DialogViewModelBase`1.OnPropertyChanged(System.String)">
+            <summary>
+            Called when property is changed.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="E:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.DialogViewModelBase`1.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.DialogViewModelBase`1.Context">
+            <summary>
+            Gets the context.
+            </summary>
+            <value>The context.</value>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.#ctor(Telerik.Windows.Documents.Fixed.UI.Dialogs.SignaturePropertiesDialogContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel"/> class.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.UpdateUIContent">
+            <summary>
+            Updates the content of the UI.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.UpdateSignatureSummaryContent(Telerik.Windows.Documents.Fixed.Model.DigitalSignatures.SignatureValidationResult)">
+            <summary>
+            Updates the content of the signature validation.
+            </summary>
+            <param name="validationResult">The validation result.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.UpdateSignerValidityContent(Telerik.Windows.Documents.Fixed.Model.DigitalSignatures.SignatureValidationResult)">
+            <summary>
+            Updates the content of the signer validity.
+            </summary>
+            <param name="validationResult">The validation result.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.UpdateDocumentIsModifiedContent(Telerik.Windows.Documents.Fixed.Model.DigitalSignatures.SignatureValidationResult)">
+            <summary>
+            Updates the content of the document is modified.
+            </summary>
+            <param name="validationResult">The validation result.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.UpdateSignatureDateContent(Telerik.Windows.Documents.Fixed.Model.DigitalSignatures.SignatureValidationResult)">
+            <summary>
+            Updates the content of the signature date.
+            </summary>
+            <param name="validationResult">The validation result.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.GetTimeOfSigning(System.DateTime)">
+            <summary>
+            Gets the time of signing in a proper sting format.
+            </summary>
+            <param name="timeOfSigning">The time of signing.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.SignatureGeneralStatus">
+            <summary>
+            Gets or sets the signature general status.
+            </summary>
+            <value>The signature general status.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.SignatureSummaryContent">
+            <summary>
+            Gets or sets the content of the signature validation.
+            </summary>
+            <value>The content of the signature validation.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.DocumentIsModifiedContent">
+            <summary>
+            Gets or sets the content of the document is modified.
+            </summary>
+            <value>The content of the document is modified.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.SignerValidityContent">
+            <summary>
+            Gets or sets the content of the signer validity.
+            </summary>
+            <value>The content of the signer validity.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignaturePropertiesDialogViewModel.SignatureDateContent">
+            <summary>
+            Gets or sets the content of the signature date.
+            </summary>
+            <value>The content of the signature date.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel">
+            <summary>
+            Represents the sign signature dialog view model.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.#ctor(Telerik.Windows.Documents.Fixed.UI.Dialogs.SignSignatureDialogContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel"/> class.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.GetSignatureAppearancesFormSource(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Gets the form source for the signature appearances.
+            </summary>
+            <param name="certificate">The certificate used to sign the signature.</param>
+            <returns></returns>
+        </member>
+        <member name="E:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.RequestDialogClose">
+            <summary>
+            Occurs when the dialog should be closed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.SelectCertificateCommand">
+            <summary>
+            Gets or sets the select certificate command.
+            </summary>
+            <value>The select certificate command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.SubmitCommand">
+            <summary>
+            Gets or sets the submit command.
+            </summary>
+            <value>The submit command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.CertificatePathContent">
+            <summary>
+            Gets or sets the content bonded to the certificate path text box.
+            </summary>
+            <value>The certificate path content.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.PasswordWatermarkContent">
+            <summary>
+            Gets or sets the content bonded to the password watermark.
+            </summary>
+            <value>The password watermark content.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.SelectCertificateWatermarkContent">
+            <summary>
+            Gets or sets the content bonded to the watermark of select certificate watermark text box.
+            </summary>
+            <value>The content of the certificate watermark.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.SignSignatureDialogViewModel.ErrorContent">
+            <summary>
+            Gets or sets the content of the error.
+            </summary>
+            <value>The content of the error.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.SignatureGeneralStatus">
+            <summary>
+            Represents the general status of the signature.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.SignatureGeneralStatus.Valid">
+            <summary>
+            The valid signature status.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.SignatureGeneralStatus.Invalid">
+            <summary>
+            The invalid signature status.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.SignatureGeneralStatus.Unknown">
+            <summary>
+            The unknown signature status.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel">
+            <summary>
+            Represents the signature panel.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel.RadPdfViewerProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.RadPdfViewer property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel.OnApplyTemplate">
+            <summary>
+            Called when the template is applied.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel.PropertyChanged">
+            <summary>
+            Occurs when a property has been changed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel.PdfViewer">
+            <summary>
+            Gets or sets the Rad Pdf viewer.
+            </summary>
+            <value>The Rad Pdf viewer.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel.SignatureGeneralStatus">
+            <summary>
+            Gets the signature general status.
+            </summary>
+            <value>The signature general status.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.SignaturePanel.ValidationMessage">
+            <summary>
+            Gets or sets the validation message.
+            </summary>
+            <value>The validation message.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox">
+            <summary>
+            Represents percent combo box.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.PercentValuesProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.FixedDocumentViewersUI.PercentValues property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.RadPdfViewerProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.FixedDocumentViewersUI.RadPDFViewer property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.ShowFitToWidthProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.FixedDocumentViewersUI.ShowFitToWidth property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.ShowFitToPageProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.FixedDocumentViewersUI.ShowFitToPage property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.ValueProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.FixedDocumentViewersUI.Value property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.OnApplyTemplate">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.OnInitialized(System.EventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.PercentValues">
+            <summary>
+            Gets or sets the percent values.
+            </summary>
+            <value>The percent values.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.RadPdfViewer">
+            <summary>
+            Gets or sets the RAD PDF viewer.
+            </summary>
+            <value>The RAD PDF viewer.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.ShowFitToWidth">
+            <summary>
+            Gets or sets the width of the show fit to.
+            </summary>
+            <value>The width of the show fit to.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.ShowFitToPage">
+            <summary>
+            Gets or sets the show fit to page.
+            </summary>
+            <value>The show fit to page.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.AdditionalGroupIsDisplayed">
+            <summary>
+            Gets the additional group is displayed.
+            </summary>
+            <value>The additional group is displayed.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.PercentComboBox.PercentItemsGroupIsDisplayed">
+            <summary>
+            Gets the percent items group is displayed.
+            </summary>
+            <value>The percent items group is displayed.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DefaultButtonService">
+            <summary>
+            Represents default button service.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DefaultButtonService.DefaultButtonProperty">
+            <summary>
+            Dependency property for default button.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DefaultButtonService.GetDefaultButton(System.Windows.DependencyObject)">
+            <summary>
+            Gets the default button.
+            </summary>
+            <param name="element">The element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DefaultButtonService.SetDefaultButton(System.Windows.DependencyObject,System.Windows.Controls.Button)">
+            <summary>
+            Sets the default button.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="button">The button.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DialogCommandBase">
+            <summary>
+            Represents dialog command base.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DialogCommandBase.Execute(System.Object)">
+            <summary>
+            Defines the method to be called when the command is invoked.
+            </summary>
+            <param name="parameter">Data used by the command.  If the command does not require
+            data to be passed, this object can be set to null.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DialogCommandBase.OnCanExecuteChanged">
+            <summary>
+            Called when CanExecute is changed..
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.DialogCommandBase.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether or not the command should
+            execute.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindCommandBase">
+            <summary>
+            Represents find command base.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindCommandBase.#ctor(Telerik.Windows.Controls.FixedDocumentViewerBase,Telerik.Windows.Documents.Fixed.Search.TextSearchOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindCommandBase"/> class.
+            </summary>
+            <param name="viewer">The viewer.</param>
+            <param name="textSearchOptions">The text search options.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindCommandBase.HandlerSearchResult(Telerik.Windows.Documents.Fixed.Search.SearchResult)">
+            <summary>
+            Handlers the search result.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.Commands.FindNextCommand">
+            <summary>
+            Represents find next command. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.Commands.FindNextCommand.#ctor(Telerik.Windows.Controls.FixedDocumentViewerBase,Telerik.Windows.Documents.Fixed.Search.TextSearchOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.Commands.FindNextCommand"/> class.
+            </summary>
+            <param name="viewer">The viewer.</param>
+            <param name="textSearchOptions">The text search options.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.Commands.FindNextCommand.Execute(System.Object)">
+            <summary>
+            Defines the method to be called when the command is invoked.
+            </summary>
+            <param name="parameter">Data used by the command.  If the command does not require
+            data to be passed, this object can be set to null.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.Commands.FindPreviousCommand">
+            <summary>
+            Represents find previous command.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.Commands.FindPreviousCommand.#ctor(Telerik.Windows.Controls.FixedDocumentViewerBase,Telerik.Windows.Documents.Fixed.Search.TextSearchOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.Commands.FindPreviousCommand"/> class.
+            </summary>
+            <param name="viewer">The viewer.</param>
+            <param name="textSearchOptions">The text search options.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.Commands.FindPreviousCommand.Execute(System.Object)">
+            <summary>
+            Defines the method to be called when the command is invoked.
+            </summary>
+            <param name="parameter">Data used by the command.  If the command does not require
+            data to be passed, this object can be set to null.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindDialog">
+            <summary>
+            Represents FindDialog.
+            </summary>
+            <summary>
+            FindDialog
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindDialog.ShowDialog(Telerik.Windows.Documents.Fixed.UI.Dialogs.FindDialogContext)">
+            <summary>
+            Shows the dialog.
+            </summary>
+            <param name="context">The FindDialogContext.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.FindDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.FindDialogViewModel">
+            <summary>
+            Represents find dialog view-model. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.FindDialogViewModel.FindNextCommand">
+            <summary>
+            Gets the find next command.
+            </summary>
+            <value>The find next command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.FindDialogViewModel.FindPreviousCommand">
+            <summary>
+            Gets the find previous command.
+            </summary>
+            <value>The find previous command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Dialogs.ViewModels.FindDialogViewModel.TextSearchOptions">
+            <summary>
+            Gets or sets the text search options.
+            </summary>
+            <value>The text search options.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent">
+            <summary>
+            Represents percent.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.Percent.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.FixedDocumentViewersUI.RadRadioMenuGroupItem">
+            <summary>
+            Represents RadRadioMenuGroupItem.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.FixedDocumentViewersUI.RadRadioMenuGroupItem.SelectedItemProperty">
+            <summary>
+            Identifies Telerik.Windows.Controls.FixedDocumentViewersUI.SelectedItem property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.RadRadioMenuGroupItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.FixedDocumentViewersUI.RadRadioMenuGroupItem"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.RadRadioMenuGroupItem.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>
+            Prepares the specified element to display the specified item.
+            </summary>
+            <param name="element">Element used to display the specified item.</param>
+            <param name="item">Specified item.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.FixedDocumentViewersUI.RadRadioMenuGroupItem.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>
+            When overridden in a derived class, undoes the effects of the <see cref="M:System.Windows.Controls.ItemsControl.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+            method.
+            </summary>
+            <param name="element">The container element.</param>
+            <param name="item">The item.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.FixedDocumentViewersUI.RadRadioMenuGroupItem.SelectedItem">
+            <summary>
+            Gets or sets the selected item.
+            </summary>
+            <value>The selected item.</value>
+        </member>
+    </members>
+</doc>

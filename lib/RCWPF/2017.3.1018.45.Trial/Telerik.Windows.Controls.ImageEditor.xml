@@ -1,0 +1,1094 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Controls.ImageEditor</name>
+    </assembly>
+    <members>
+        <member name="M:Telerik.Windows.Automation.Peers.RadImageEditorAutomationPeer.#ctor(Telerik.Windows.Controls.RadImageEditor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.RadImageEditorAutomationPeer"/> class.
+            </summary>
+            <param name="owner">The owner control for the peer.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadImageEditorAutomationPeer.GetAutomationControlTypeCore">
+            <summary>
+            Gets the control type for the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.
+            </summary>
+            <returns>
+            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom" /> enumeration value.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadImageEditorAutomationPeer.GetClassNameCore">
+            <summary>
+            Gets the name of the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadImageEditorAutomationPeer.GetHelpTextCore">
+            <summary>
+            Gets the string that describes the functionality of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />.
+            </summary>
+            <returns>
+            The help text, usually from the <see cref="T:System.Windows.Controls.ToolTip" />, or <see cref="F:System.String.Empty" /> if there is no help text.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadImageEditorAutomationPeer.GetChildrenCore">
+            <summary>
+            Gets the collection of child elements of the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.
+            </summary>
+            <returns>
+            A list of child <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> elements.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadImageEditorAutomationPeer.GetItemStatusCore">
+            <summary>
+            Gets a string that communicates the visual status of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetItemStatus"/>.
+            </summary>
+            <returns>
+            The string that contains the <see cref="P:System.Windows.Automation.AutomationProperties.ItemStatus"/> that is returned by <see cref="M:System.Windows.Automation.AutomationProperties.GetItemStatus(System.Windows.DependencyObject)"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">Not supported AutomationMode.</exception>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Commands.DrawCommand">
+            <summary>
+            Represents the drawing command.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Commands.DrawCommandContext">
+            <summary>
+            Represents the context of the <see cref="T:Telerik.Windows.Media.Imaging.Commands.DrawCommand"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Commands.DrawCommandContext.#ctor(System.Windows.Shapes.Path)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.Commands.DrawCommandContext"/> class.
+            </summary>
+            <param name="drawnPath">The path which should be drawn on the image.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Commands.DrawCommandContext.DrawnPath">
+            <summary>
+            Gets or sets the path which should be drawn on the image.
+            </summary>
+            <value>The drawn path.</value>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Commands.DrawTextCommandContext.#ctor(System.Double,System.Windows.Media.Color,System.String,System.Windows.Point,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.Commands.DrawTextCommandContext"/> class.
+            </summary>
+            <param name="fontSize">Size of the font.</param>
+            <param name="foreColor">Color of the text.</param>
+            <param name="text">The text.</param>
+            <param name="textPosition">The text position.</param>
+            <param name="textRotation">The angle, in degrees, of text's clockwise rotation.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Commands.DrawTextCommandContext.TextRotation">
+            <summary>
+            Gets the angle, in degrees, of clockwise rotation.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutedEventArgs.#ctor(Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageEditorCommandBase,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutedEventArgs"/> class.
+            </summary>
+            <param name="command">The command.</param>
+            <param name="commandParameter">The command parameter.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutedEventArgs.#ctor(Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageEditorCommandBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutedEventArgs"/> class.
+            </summary>
+            <param name="command">The command.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutedEventArgs.Command">
+            <summary>
+            Gets the command.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutedEventArgs.CommandParameter">
+            <summary>
+            Gets the command parameter.
+            </summary>
+            <value>The command parameter.</value>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutingEventArgs.#ctor(Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageEditorCommandBase,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutingEventArgs"/> class.
+            </summary>
+            <param name="command">The command.</param>
+            <param name="commandParameter">The command parameter.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutingEventArgs.#ctor(Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageEditorCommandBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutingEventArgs"/> class.
+            </summary>
+            <param name="command">The command.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutingEventArgs.Command">
+            <summary>
+            Gets the command.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutingEventArgs.CommandParameter">
+            <summary>
+            Gets the command parameter.
+            </summary>
+            <value>The command parameter.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageEditorCommandBase.CanExecuteInReadOnlyMode">
+            <summary>
+            Gets a value indicating whether this command can be executed when RadImageEditor is read-only. The default implementation returns false. 
+            </summary>
+            <value>
+            	<c>true</c> if this command preserves the image; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageEditorCommandBase.CanExecuteWithoutImage">
+            <summary>
+            Gets a value indicating whether this command can be executed when RadImageEditor doesn't have a lodaded image. The default implementation returns false. 
+            </summary>
+            <value>
+            	<c>true</c> if this command requires an image be loaded; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.History.ImageHistory.Clear">
+            <summary>
+            Clears both undo and redo stacks.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.History.ImageHistory.MaximumMemoryBufferSize">
+            <summary>
+            Gets or sets the maximum amount of memory in bytes the history manager can use to optimize the undo and redo operations.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.History.ImageHistory.MaxmimumMemoryBufferSize">
+            <summary>
+            Obsoleted.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.History.ImageHistory.CurrentImage">
+            <summary>
+            Gets the current image.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.History.ImageHistory.CanUndo">
+            <summary>
+            Determines whether an undo operation is available.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.History.ImageHistory.CanRedo">
+            <summary>
+            Determines whether a redo operation is available.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.History.ImageHistory.Depth">
+            <summary>
+            Gets or sets the max count allowed in both undo and redo stacks.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.PercentComboBox.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RadImageEditor">
+            <summary>
+            RadImageEditor is powerful UI component for image editing.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.EnablePanning">
+            <summary>
+            Enables the panning functionality.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.DisablePanning">
+            <summary>
+            Disables the panning functionality.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.AutoScaleImage">
+            <summary>
+            Causes this RadImageEditor instance to go into AutoFit mode by settings the ScaleFactor property to 0.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.Undo">
+            <summary>
+            Executes Undo.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.Redo">
+            <summary>
+            Executes redo.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.ExecuteCommand(Telerik.Windows.Media.Imaging.Commands.IImageCommand,System.Object)">
+            <summary>
+            Executes command.
+            </summary>
+            <param name="command">The command.</param>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.Flip(System.Windows.Controls.Orientation)">
+            <summary>
+            Flips the loaded image.
+            </summary>
+            <param name="flipOrientation">The flip orientation.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.Rotate(System.Double)">
+            <summary>
+            Rotates the image.
+            </summary>
+            <param name="degrees">The degrees.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.Rotate(System.Double,System.Windows.Media.Color)">
+            <summary>
+            Rotates the image.
+            </summary>
+            <param name="degrees">The degrees.</param>
+            <param name="backgroundColor">Color of the background.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.InvertColors">
+            <summary>
+            Inverts the colors of the image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.CommitTool">
+            <summary>
+            Commits the currently executing tool.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.CommitTool(System.Boolean)">
+            <summary>
+            Commits the currently executing tool.
+            </summary>
+            <param name="executeSameToolAfterCommit">Execute same tool after commit.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.ExecuteTool(Telerik.Windows.Media.Imaging.Tools.ITool)">
+            <summary>
+            Executes tool.
+            </summary>
+            <param name="tool">The tool.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.CancelExecuteTool">
+            <summary>
+            Cancels  currently executing tool.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.ResetToolSettings">
+            <summary>
+            Resets the currently executing tool settings.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.OnCommandExecuting(Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutingEventArgs)">
+            <summary>
+            Raises the <see cref="E:CommandExecuting"/> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutingEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.OnCommandExecuted(Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutedEventArgs)">
+            <summary>
+            Raises the <see cref="E:CommandExecuted"/> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageCommandExecutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.OnIsReadOnlyChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:IsReadOnlyChanged"/> event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.OnToolCommitting(Telerik.Windows.Media.Imaging.Tools.ToolCommittingEventArgs)">
+            <summary>
+            Raises the <see cref="E:ToolCommitting"/> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.Windows.Media.Imaging.Tools.ToolCommittingEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditor.OnToolCommitted(Telerik.Windows.Media.Imaging.Tools.ToolCommittedEventArgs)">
+            <summary>
+            Raises the <see cref="E:ToolCommitted"/> event.
+            </summary>
+            <param name="e">The <see cref="T:Telerik.Windows.Media.Imaging.Tools.ToolCommittedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.ExecutingTool">
+            <summary>
+            Gets the tool that is currently executing.
+            </summary>
+            <value>The tool.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.Commands">
+            <summary>
+            Gets the image editor commands.
+            </summary>
+            <value>The commands.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.History">
+            <summary>
+            Gets the history.
+            </summary>
+            <value>The history.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.Image">
+            <summary>
+            Gets or sets the current image.
+            </summary>
+            <value>The image.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.HasImage">
+            <summary>
+            Gets a value indicating whether there is image loaded in the image editor.
+            </summary>
+            <value>True if there is image loaded in the image editor.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.IsPanningEnabled">
+            <summary>
+            Gets or sets a value indicating whether the panning functionality is enabled.
+            </summary>
+            <value>
+            Boolean value indicating whether the panning functionality is enabled.
+            </value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.ActualScaleFactor">
+            <summary>
+            Gets the actual scale factor.
+            </summary>
+            <value>The actual scale factor.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.ScaleFactor">
+            <summary>
+            Gets or sets the scale factor. If 0 is set the scale factor is AutoFit.
+            </summary>
+            <value>The scale factor.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.ImageViewSize">
+            <summary>
+            Gets the scaled size of the image.
+            </summary>
+            <value>The scaled size of the image.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.AllowMouseWheelScaling">
+            <summary>
+            Gets or sets the value indicating whether wheel scaling is allowed.
+            </summary>
+            <value>Allow mouse wheel scaling.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.ToolSettingsContainer">
+            <summary>
+            Gets or sets the tool settings container.
+            </summary>
+            <value>The tool settings container.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditor.IsReadOnly">
+            <summary>
+            Gets or sets a value indicating whether the control is read-only.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadImageEditor.CommandError">
+            <summary>
+            Occurs on error while executing command.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadImageEditor.ScaleFactorChanged">
+            <summary>
+            Occurs when scale factor is changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadImageEditor.ImageViewSizeChanged">
+            <summary>
+            Occurs when the image view size is changed.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadImageEditor.CommandExecuting">
+            <summary>
+            Occurs before the execution of <see cref="T:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageEditorCommandBase"/>.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadImageEditor.CommandExecuted">
+            <summary>
+            Occurs after the execution of <see cref="T:Telerik.Windows.Media.Imaging.ImageEditorCommands.ImageEditorCommandBase"/>.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadImageEditor.IsReadOnlyChanged">
+            <summary>
+            Occurs when the IsReadOnly property changes.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadImageEditor.ToolCommitting">
+            <summary>
+            Occurs before the tool is about to commit.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Controls.RadImageEditor.ToolCommitted">
+            <summary>
+            Occurs when the tool is committed.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditorButton.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Telerik.Windows.Controls.RadImageEditorUI">
+            <summary>
+            RadImageEditor is powerful UI component for image editing with predefined UI.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.RadImageEditorUI.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditorUI.ImageToolsSections">
+            <summary>
+            Gets or sets the image tools sections collection.
+            </summary>
+            <value>The image tools sections collection.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditorUI.Image">
+            <summary>
+            Gets or sets the current image.
+            </summary>
+            <value>The image.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditorUI.ImageEditor">
+            <summary>
+            Gets the RadImageEditor used inside the RadImageEditorUI.
+            </summary>
+            <value>The image editor.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.RadImageEditorUI.IsReadOnly">
+            <summary>
+            Gets or sets a value indicating whether the control is read-only.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.ShaderEffects.ContrastAdjustEffect">
+            <summary>An effect that controls brightness and contrast.</summary>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.ShaderEffects.SharpenEffect">
+            <summary>An effect that sharpens the input.</summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.ShaderEffects.SharpenEffect.Scale">
+            <summary>The amount of scale.</summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.ShaderEffects.SharpenEffect.InputSize">
+            <summary>The size of the input (in pixels).</summary>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Tools.ToolBase">
+            <summary>
+            Represents an abstraction of a tool.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Tools.ITool">
+            <summary>
+            Represents an abstraction of a tool.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ITool.GetCommand">
+            <summary>
+            Gets the tool's associated command.
+            </summary>
+            <returns>The command.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ITool.GetContext">
+            <summary>
+            Gets the tool's command context.
+            </summary>
+            <returns>The command context.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ITool.ResetSettings">
+            <summary>
+             Resets the tool' settings if the tool’s IsResetSettingsSupported property is true.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ITool.AttachUI(Telerik.Windows.Media.Imaging.Tools.ToolInitInfo)">
+            <summary>
+            Attaches the UI. The method is invoked on tool's execution.
+            </summary>
+            <param name="previewInitInfo">The preview init info.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ITool.DetachUI">
+            <summary>
+            Detaches the UI. The method is invoked when the tool execution is canceled.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ITool.GetSettingsUI">
+            <summary>
+            Gets the tool' settings UI.
+            </summary>
+            <returns>The UI settings.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ITool.IsPreviewOverlay">
+            <summary>
+            Gets whether the tool has a preview overlay on the main image.
+            </summary>
+            <value>Indicates if a tool has a preview overlay.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ITool.IsDirty">
+            <summary>
+            Gets whether the tool has made any changes on the image.
+            </summary>
+            <value>Indicates is there any changes.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ITool.AffectsLayout">
+            <summary>
+            Gets whether the tool is changing the image size.
+            </summary>
+            <value>Indicates whether a tool affects layout.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ITool.IsResetSettingsSupported">
+            <summary>
+            Specifies whether the settings of a tool can be reset. The common implementation of a tool returns true.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ToolBase.GetCommand">
+            <summary>
+            Gets the tool's associated command.
+            </summary>
+            <returns>The command.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ToolBase.GetContext">
+            <summary>
+            Gets the tool's command context.
+            </summary>
+            <returns>The command context.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ToolBase.ResetSettings">
+            <summary>
+            Resets the tool' settings if the tool's IsResetSettingsSupported property is true.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ToolBase.AttachUI(Telerik.Windows.Media.Imaging.Tools.ToolInitInfo)">
+            <summary>
+            Attaches the UI. The method is invoked on tool's execution.
+            </summary>
+            <param name="previewInitInfo">The preview init info.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ToolBase.DetachUI">
+            <summary>
+            Detaches the UI. The method is invoked when the tool execution is canceled.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ToolBase.GetSettingsUI">
+            <summary>
+            Gets the tool' settings UI.
+            </summary>
+            <returns>The UI settings.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ToolBase.IsResetSettingsSupported">
+            <summary>
+            Specifies whether the settings of a tool can be reset. The common implementation of a tool returns true.
+            </summary>
+            <value>Indicates whether the settings can be reseted.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ToolBase.IsPreviewOverlay">
+            <summary>
+            Gets whether the tool has a preview overlay on the main image.
+            </summary>
+            <value>Indicates if a tool has a preview overlay.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ToolBase.IsDirty">
+            <summary>
+            Gets whether the tool has made any changes on the image.
+            </summary>
+            <value>Indicates is there any changes.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ToolBase.AffectsLayout">
+            <summary>
+            Gets whether the tool is changing the image size.
+            </summary>
+            <value>Indicates whether a tool affects layout.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ToolBase.IsMouseDependent">
+            <summary>
+            Gets whether there is an interaction between the mouse and the canvas. Used for TouchHandler behaviour.
+            </summary>
+            <value>Indicates whether the tool is mouse dependent.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.CropTool.FixedSize">
+            <summary>
+            Gets or sets the size of the crop rectangle. The rectangle cannot be resized. 
+            If this property is set, the values of AspectRatio and InitialSize properties will be ignored.
+            </summary>
+            <value>The size of the crop rectangle.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.CropTool.AspectRatio">
+            <summary>
+            Gets or sets the aspect ratio of the crop rectangle.
+            If FixedSize property is set, the value of AspectRatio property will be ignored.
+            </summary>
+            <value>The aspect ratio.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.CropTool.InitialSize">
+            <summary>
+            Gets or sets the initial size of the crop rectangle. 
+            If the AspectRatio property is set and the value of this property does not match the AspectRatio property's value,
+            the value of InitialSize property will be ignored.
+            </summary>
+            <value>The initial size.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.CropTool.IsMouseDependent">
+            <summary>
+            Gets whether there is an interaction between the mouse and the canvas. Used for TouchHandler behaviour.
+            </summary>
+            <value>Indicates whether the tool is mouse dependent.</value>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Tools.DrawTool">
+            <summary>
+            Represents a drawing tool.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Tools.DrawToolBase">
+            <summary>
+            Represents an abstraction of a tool which is responsible for drawing a geometries over an image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.Tools.DrawToolBase"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.GetCommand">
+            <summary>
+            Gets the tool's associated command.
+            </summary>
+            <returns>The command.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.GetContext">
+            <summary>
+            Gets the tool's command context.
+            </summary>
+            <returns>The command context.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.ResetSettings">
+            <summary>
+            Resets the tool' settings if the tool's IsResetSettingsSupported property is true.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.AttachUI(Telerik.Windows.Media.Imaging.Tools.ToolInitInfo)">
+            <summary>
+            Attaches the UI. The method is invoked on tool's execution.
+            </summary>
+            <param name="previewInitInfo">The preview init info.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.DetachUI">
+            <summary>
+            Detaches the UI. The method is invoked when the tool execution is canceled.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.StartDraw(System.Windows.Point)">
+            <summary>
+            Starts the drawing of a geometry.
+            </summary>
+            <param name="currentPoint">The current point related to the image.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.Draw(System.Windows.Point)">
+            <summary>
+            Draws a geometry.
+            </summary>
+            <param name="currentPoint">The current point related to the image.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.EndDraw(System.Windows.Point)">
+            <summary>
+            Ends the drawing of a geometry.
+            </summary>
+            <param name="currentPoint">The current point related to the image.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.SetPathProperties(System.Windows.Shapes.Path)">
+            <summary>
+            Sets properties to the path which contains the geometry which shall be drawn.
+            </summary>
+            <param name="path">The path.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.IsResetSettingsSupported">
+            <summary>
+            Specifies whether the settings of a tool can be reset. The common implementation of a tool returns true.
+            </summary>
+            <value>Indicates whether the settings can be reseted.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.IsPreviewOverlay">
+            <summary>
+            Gets whether the tool has a preview overlay on the main image.
+            </summary>
+            <value>Indicates if a tool has a preview overlay.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.DrawToolBase.AffectsLayout">
+            <summary>
+            Gets whether the tool is changing the image size.
+            </summary>
+            <value>Indicates whether a tool affects layout.</value>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawTool.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.Tools.DrawTool"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawTool.ResetSettings">
+            <summary>
+            Resets the tool' settings if the tool's IsResetSettingsSupported property is true.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawTool.GetSettingsUI">
+            <summary>
+            Gets the tool' settings UI.
+            </summary>
+            <returns>The UI settings.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawTool.StartDraw(System.Windows.Point)">
+            <summary>
+            Starts the drawing of a geometry.
+            </summary>
+            <param name="currentPoint">The current point related to the image.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawTool.Draw(System.Windows.Point)">
+            <summary>
+            Draws a geometry.
+            </summary>
+            <param name="currentPoint">The current point related to the image.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawTool.EndDraw(System.Windows.Point)">
+            <summary>
+            Ends the drawing of a geometry.
+            </summary>
+            <param name="currentPoint">The current point related to the image.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.DrawTool.SetPathProperties(System.Windows.Shapes.Path)">
+            <summary>
+            Sets properties to the path which contains the geometry which shall be drawn.
+            </summary>
+            <param name="path">The path.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.DrawTool.DefaultBrushSize">
+            <summary>
+            Gets or sets the default size of the brush which is used for drawing.
+            </summary>
+            <value>The default size of the brush.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.DrawTool.DefaultBrushColor">
+            <summary>
+            Gets or sets the default color of the brush which is used for drawing.
+            </summary>
+            <value>The default color of the brush.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.DrawTool.IsDirty">
+            <summary>
+            Gets whether the tool has made any changes on the image.
+            </summary>
+            <value>Indicates is there any changes.</value>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Shapes.EllipseShape">
+            <summary>
+            Represents an ellipse.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Shapes.IShape">
+            <summary>
+            Represents a shape abstraction.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Shapes.IShape.GetShapeGeometry">
+            <summary>
+            Gets the shape geometry.
+            </summary>
+            <returns>The geometry of a shape.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Shapes.IShape.DisplayName">
+            <summary>
+            Gets the display name of a shape.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Shapes.EllipseShape.GetShapeGeometry">
+            <summary>
+            Gets the ellipse geometry.
+            </summary>
+            <returns>The geometry of an ellipse.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Shapes.EllipseShape.DisplayName">
+            <summary>
+            Gets the display name of an ellipse shape.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Shapes.LineShape">
+            <summary>
+            Represents a line.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Shapes.LineShape.GetShapeGeometry">
+            <summary>
+            Gets the line shape geometry.
+            </summary>
+            <returns>The geometry of a line.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Shapes.LineShape.DisplayName">
+            <summary>
+            Gets the display name of a shape.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Shapes.RectangleShape">
+            <summary>
+            Represents a rectangle.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Shapes.RectangleShape.GetShapeGeometry">
+            <summary>
+            Gets the rectangle shape geometry.
+            </summary>
+            <returns>The geometry of a rectangle.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Shapes.RectangleShape.DisplayName">
+            <summary>
+            Gets the display name of a shape.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.PanTool.AttachUI(Telerik.Windows.Media.Imaging.Tools.ToolInitInfo)">
+            <summary>
+            Attaches the UI. The method is invoked on tool's execution.
+            </summary>
+            <param name="previewInitInfo">The preview init info.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.PanTool.DetachUI">
+            <summary>
+            Detaches the UI. The method is invoked when the tool execution is canceled.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.PanTool.GetCommand">
+            <summary>
+            Gets the tool's associated command.
+            </summary>
+            <returns>The command.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.PanTool.GetContext">
+            <summary>
+            Gets the tool's command context.
+            </summary>
+            <returns>The command context.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.PanTool.GetSettingsUI">
+            <summary>
+            Gets the tool' settings UI.
+            </summary>
+            <returns>The UI settings.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.PanTool.ResetSettings">
+            <summary>
+            Resets the tool' settings if the tool's IsResetSettingsSupported property is true.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.PanTool.IsResetSettingsSupported">
+            <summary>
+            Specifies whether the settings of a tool can be reset. The common implementation of a tool returns true.
+            </summary>
+            <value>Indicates whether the settings can be reseted.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.PanTool.AffectsLayout">
+            <summary>
+            Gets whether the tool is changing the image size.
+            </summary>
+            <value>Indicates whether a tool affects layout.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.PanTool.IsDirty">
+            <summary>
+            Gets whether the tool has made any changes on the image.
+            </summary>
+            <value>Indicates is there any changes.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.PanTool.IsPreviewOverlay">
+            <summary>
+            Gets whether the tool has a preview overlay on the main image.
+            </summary>
+            <value>Indicates if a tool has a preview overlay.</value>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Tools.ShapeTool">
+            <summary>
+            Represents a tool which draws shapes over an image.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ShapeTool.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.Tools.ShapeTool"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ShapeTool.ResetSettings">
+            <summary>
+            Resets the tool' settings if the tool's IsResetSettingsSupported property is true.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ShapeTool.GetSettingsUI">
+            <summary>
+            Gets the tool' settings UI.
+            </summary>
+            <returns>The UI settings.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ShapeTool.Draw(System.Windows.Point)">
+            <summary>
+            Draws a shape geometry.
+            </summary>
+            <param name="currentPoint">The current point related to the image.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ShapeTool.EndDraw(System.Windows.Point)">
+            <summary>
+            Ends the drawing of a geometry.
+            </summary>
+            <param name="currentPoint">The current point related to the image.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ShapeTool.SetPathProperties(System.Windows.Shapes.Path)">
+            <summary>
+            Sets properties to the path which contains the geometry which shall be drawn.
+            </summary>
+            <param name="path">The path.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ShapeTool.IsDirty">
+            <summary>
+            Gets whether the tool has made any changes on the image.
+            </summary>
+            <value>Indicates is there any changes.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ShapeTool.Shapes">
+            <summary>
+            Gets or sets the shapes.
+            </summary>
+            <value>The shapes.</value>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Tools.ToolCommittedEventArgs">
+            <summary>
+            Initializes a new instance of the ToolCommittedEventArgs with the ExecuteSameToolAfterCommit property set to true.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ToolCommittedEventArgs.#ctor(Telerik.Windows.Media.Imaging.Tools.ITool)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.Tools.ToolCommittedEventArgs"/> class.
+            </summary>
+            <param name="tool">The tool.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ToolCommittedEventArgs.Tool">
+            <summary>
+            Gets the current executed tool.
+            </summary>
+            <value>The tool.</value>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ToolCommittedEventArgs.ExecuteSameToolAfterCommit">
+            <summary>
+            Gets or sets a value indicating whether the tool is preserved as a current executing tool.
+            If set to <c>false</c>, current executing tool will be deactivated.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Tools.ToolCommittingEventArgs">
+            <summary>
+            Initializes a new instance of the ToolCommittingEventArgs with the Cancel property set to false.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.ToolCommittingEventArgs.#ctor(Telerik.Windows.Media.Imaging.Tools.ITool)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Media.Imaging.Tools.ToolCommittingEventArgs"/> class.
+            </summary>
+            <param name="tool">The tool.</param>
+        </member>
+        <member name="P:Telerik.Windows.Media.Imaging.Tools.ToolCommittingEventArgs.Tool">
+            <summary>
+            Gets the current executing tool.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.DrawTextToolSettings.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.DrawToolSettings.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.CanvasResizeToolSettings.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.CropAdorner.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.InlineToolSettingsPane.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.NumericPropertyEditor.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.ResizeToolSettings.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.RoundCornersToolSettings.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Telerik.Windows.Media.Imaging.Tools.UI.ShapeToolSettings">
+            <summary>
+            Represents the UI settings for the <see cref="T:Telerik.Windows.Media.Imaging.Tools.ShapeTool"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.ShapeToolSettings.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.Tools.UI.ToolSettingsHeader.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Media.Imaging.ZoomController.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.
+            This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" />
+            is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+    </members>
+</doc>

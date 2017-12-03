@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Documents.FormatProviders.OpenXml</name>
+    </assembly>
+    <members>
+        <member name="P:Telerik.Windows.Documents.FormatProviders.OpenXml.DocxDataProvider.Docx">
+            <summary>
+            Gets or sets the current document as HTML
+            </summary>
+        </member>
+    </members>
+</doc>

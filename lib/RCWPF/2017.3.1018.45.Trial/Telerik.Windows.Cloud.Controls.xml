@@ -1,0 +1,756 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Windows.Cloud.Controls</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Windows.Automation.Peers.RadCloudUploadListItemAutomationPeer">
+            <summary>
+            Exposes RadCloudUploadListItem type to UI Automation.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListItemAutomationPeer.#ctor(Telerik.Windows.Cloud.Controls.RadCloudUploadListItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.RadCloudUploadListItemAutomationPeer"/> class.
+            </summary>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListItemAutomationPeer.GetClassNameCore">
+            <summary>
+            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
+            </summary>
+            <returns>
+            An <see cref="F:System.String.Empty"/> string.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListItemAutomationPeer.GetHelpTextCore">
+            <summary>
+            Returns the string that describes the functionality of the <see cref="T:System.Windows.FrameworkElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText"/>.
+            </summary>
+            <returns>
+            The help text, or <see cref="F:System.String.Empty"/> if there is no help text.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListItemAutomationPeer.GetAutomationControlTypeCore">
+            <summary>
+            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
+            </summary>
+            <returns>
+            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Image"/> enumeration value.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListItemAutomationPeer.GetItemStatusCore">
+            <summary>
+            Gets a string that communicates the visual status of the System.Windows.UIElement 
+            that is associated with this System.Windows.Automation.Peers.UIElementAutomationPeer. 
+            This method is called by System.Windows.Automation.Peers.AutomationPeer.GetItemStatus().
+            </summary>
+            <returns>
+            The string that contains the System.Windows.Automation.AutomationProperties.ItemStatus
+            that is returned by System.Windows.Automation.AutomationProperties.GetItemStatus(System.Windows.DependencyObject).
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.RadCloudUploadListAutomationPeer">
+            <summary>
+            Exposes RadCloudUploadList type to UI Automation.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListAutomationPeer.#ctor(Telerik.Windows.Cloud.Controls.RadCloudUploadList)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.RadCloudUploadListAutomationPeer"/> class.
+            </summary>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListAutomationPeer.GetClassNameCore">
+            <summary>
+            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
+            </summary>
+            <returns>
+            An <see cref="F:System.String.Empty"/> string.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListAutomationPeer.GetHelpTextCore">
+            <summary>
+            Returns the string that describes the functionality of the <see cref="T:System.Windows.FrameworkElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText"/>.
+            </summary>
+            <returns>
+            The help text, or <see cref="F:System.String.Empty"/> if there is no help text.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListAutomationPeer.GetAutomationControlTypeCore">
+            <summary>
+            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
+            </summary>
+            <returns>
+            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Image"/> enumeration value.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadListAutomationPeer.GetItemStatusCore">
+            <summary>
+            Gets a string that communicates the visual status of the System.Windows.UIElement 
+            that is associated with this System.Windows.Automation.Peers.UIElementAutomationPeer. 
+            This method is called by System.Windows.Automation.Peers.AutomationPeer.GetItemStatus().
+            </summary>
+            <returns>
+            The string that contains the System.Windows.Automation.AutomationProperties.ItemStatus
+            that is returned by System.Windows.Automation.AutomationProperties.GetItemStatus(System.Windows.DependencyObject).
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Automation.Peers.RadCloudUploadAutomationPeer">
+            <summary>
+            Exposes RadCloudUpload type to UI Automation.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadAutomationPeer.#ctor(Telerik.Windows.Cloud.Controls.RadCloudUpload)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Automation.Peers.RadCloudUploadAutomationPeer"/> class.
+            </summary>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadAutomationPeer.GetClassNameCore">
+            <summary>
+            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
+            </summary>
+            <returns>
+            An <see cref="F:System.String.Empty"/> string.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadAutomationPeer.GetHelpTextCore">
+            <summary>
+            Returns the string that describes the functionality of the <see cref="T:System.Windows.FrameworkElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText"/>.
+            </summary>
+            <returns>
+            The help text, or <see cref="F:System.String.Empty"/> if there is no help text.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadAutomationPeer.GetAutomationControlTypeCore">
+            <summary>
+            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
+            </summary>
+            <returns>
+            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Image"/> enumeration value.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Automation.Peers.RadCloudUploadAutomationPeer.GetItemStatusCore">
+            <summary>
+            Gets a string that communicates the visual status of the System.Windows.UIElement 
+            that is associated with this System.Windows.Automation.Peers.UIElementAutomationPeer. 
+            This method is called by System.Windows.Automation.Peers.AutomationPeer.GetItemStatus().
+            </summary>
+            <returns>
+            The string that contains the System.Windows.Automation.AutomationProperties.ItemStatus
+            that is returned by System.Windows.Automation.AutomationProperties.GetItemStatus(System.Windows.DependencyObject).
+            </returns>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.StartUploadRequestedEventArgs">
+            <summary>
+            Class containing information related to whether the file upload should be queued or started directly.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.StartUploadRequestedEventArgs.ShouldQueueUpload">
+            <summary>
+            Indicates whether the item should be queued or started directly.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommands">
+            <summary>
+            <see cref="T:Telerik.Windows.Cloud.Controls.RadCloudUpload"/> related <see cref="T:System.Windows.Input.RoutedUICommand"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommands.Browse">
+            <summary>
+            Gets the Browse command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommands.AddFiles">
+            <summary>
+            Gets the AddFiles command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommands.StartUpload">
+            <summary>
+            Gets the StartUpload command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommands.RequestCancel">
+            <summary>
+            Gets the RequestCancel command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommands.ClearItems">
+            <summary>
+            Gets the ClearItems command.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommands.ClearUploadedItems">
+            <summary>
+            Gets the ClearUploadedItems command.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary">
+            <summary>
+            Struct containing information about the items of a <see cref="T:Telerik.Windows.Cloud.Controls.RadCloudUpload"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.NotStartedItemsCount">
+            <summary>
+            The not started items count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.UploadingItemsCount">
+            <summary>
+            The uploading items count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.UploadedItemsCount">
+            <summary>
+            The uploaded items count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.CancellingItemsCount">
+            <summary>
+            The cancelling items count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.CanceledItemsCount">
+            <summary>
+            The canceled items count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.FailedItemsCount">
+            <summary>
+            The failed items count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.InvalidItemsCount">
+            <summary>
+            The invalid items count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.QueuedItemsCount">
+            <summary>
+            The queued items count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadItemsSummary.ItemsCount">
+            <summary>
+            The items count.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileSizeValidationRule">
+            <summary>
+            Validation rule for the maximum size of a file.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileSizeValidationRule.Validate(System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Performs validation.
+            </summary>
+            <param name="value">The file name.</param>
+            <param name="cultureInfo">The culture to use in this rule.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileSizeValidationRule.MaxFileSize">
+            <summary>
+            The max file size.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileSizeValidationRule.ErrorContent">
+            <summary>
+            The error content.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.StringToFileNameConverter">
+            <summary>
+            A full file name to short file name converter.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.StringToFileNameConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the passed value to a file name.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.StringToFileNameConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommandButtons">
+            <summary>
+            Flag enumeration for the displayed buttons in a <see cref="T:Telerik.Windows.Cloud.Controls.RadCloudUpload"/>.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommandButtons.Browse">
+            <summary>
+            Browse.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommandButtons.AddFiles">
+            <summary>
+            Add files.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommandButtons.Upload">
+            <summary>
+            Start upload.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommandButtons.Cancel">
+            <summary>
+            Request cancel.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommandButtons.Clear">
+            <summary>
+            Clear items.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadCommandButtons.ClearUploaded">
+            <summary>
+            Clear uploaded items.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadListItemCommandButtons">
+            <summary>
+            Flag enumeration for the displayed buttons in a <see cref="T:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem"/>.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadListItemCommandButtons.None">
+            <summary>
+            No buttons.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadListItemCommandButtons.Upload">
+            <summary>
+            Start upload.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadListItemCommandButtons.Cancel">
+            <summary>
+            Request cancel.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadListItemCommandButtons.Close">
+            <summary>
+            Close items.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem">
+            <summary>
+            A control that presents a cloud file upload.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem.ButtonsProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem.Buttons"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem.ResetTheme">
+            <summary>
+            Resets the theme.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem.OnCreateAutomationPeer">
+            <summary>
+            Returns class-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> implementations for the Windows Presentation Foundation (WPF) infrastructure.
+            </summary>
+            <returns>
+            The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> implementation.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem.Buttons">
+            <summary>
+            The buttons that should be displayed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile">
+            <summary>
+            Class that contains logic for uploading a file, tracking upload progress and upload cancelation.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.#ctor(System.String,System.IO.Stream,System.Collections.Generic.List{System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.StartUpload">
+            <summary>
+            Starts the file upload.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.RequestCancel">
+            <summary>
+            Requests a cancellation for the upload.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.RequestClose">
+            <summary>
+            Raises the <see cref="E:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.CloseRequested"/> event.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.StateChanged">
+            <summary>
+            Occurs when the state changes.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.StartUploadRequested">
+            <summary>
+            Occurs when starting an upload is requested.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.ProgressChanged">
+            <summary>
+            Occurs when the upload progress changes.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.CloseRequested">
+            <summary>
+            Occurs when a close is requested.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.StartUploadCommand">
+            <summary>
+            A command that starts the file upload.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.RequestCancelCommand">
+            <summary>
+            A command that requests a cancel when executed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.RequestCloseCommand">
+            <summary>
+            A command that raises the <see cref="E:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.CloseRequested"/> event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.Provider">
+            <summary>
+            The cloud upload provider.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.State">
+            <summary>
+            The state of the upload.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.FileName">
+            <summary>
+            The short file name.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.FileSize">
+            <summary>
+            The file size.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.UploadedBytes">
+            <summary>
+            The uploaded bytes count.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.ValidationErrors">
+            <summary>
+            The validation errors.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile.UploadResult">
+            <summary>
+            The result of the upload.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.RadCloudUpload">
+            <summary>
+            A UI control for uploading files into the cloud.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.ProgressProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.Progress"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.TotalSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.TotalSize"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUpload.RequestCancel">
+            <summary>
+            Requests a cancellation for all uploading items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUpload.AddFile(System.String,System.IO.Stream,System.Boolean)">
+            <summary>
+            Creates a new CloudUploadFile instance and adds it for uploading.
+            </summary>
+            <param name="fileName">The file name of the file to be added.</param>
+            <param name="fileStream">The file stream of the file to be added.</param>
+            <param name="autoCloseStream">Indicating whether the stream should be auto closed.</param>
+            <returns>The newly created CloudUploadFile instance.</returns>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.InvalidItemsProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.InvalidItems"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.ValidItemsProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.ValidItems"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.ItemsProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.Items"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.ItemsSummaryProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.ItemsSummary"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.ProviderProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.Provider"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.ButtonsProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.Buttons"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.RadCloudUpload.MaximumSimultaneousUploadsCountProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.MaximumSimultaneousUploadsCount"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUpload.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Cloud.Controls.RadCloudUpload"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUpload.ResetTheme">
+            <summary>
+            Resets the theme.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUpload.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUpload.OnCreateAutomationPeer">
+            <summary>
+            Returns class-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> implementations for the Windows Presentation Foundation (WPF) infrastructure.
+            </summary>
+            <returns>
+            The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> implementation.
+            </returns>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.Progress">
+            <summary>
+            The upload progress.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.TotalSize">
+            <summary>
+            The total size of the current upload session.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.InvalidItems">
+            <summary>
+            The invalid items. These will not be uploaded.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.ValidItems">
+            <summary>
+            The valid items. These will be uploaded.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.ValidationRules">
+            <summary>
+            The validation rules.
+            </summary>
+        </member>
+        <member name="E:Telerik.Windows.Cloud.Controls.RadCloudUpload.ItemStateChanged">
+            <summary>
+            Occurs when the state of an item changes.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.Items">
+            <summary>
+            All items, valid and invalid. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.Provider">
+            <summary>
+            The cloud storage provider.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.Buttons">
+            <summary>
+            The buttons that should be displayed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.MaximumSimultaneousUploadsCount">
+            <summary>
+            The maximum number of running uploads.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.ItemsSummary">
+            <summary>
+            An object that contains information about the items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.CreateOpenFileDialog">
+            <summary>
+            Gets or sets a delegate that allows you to set up the <see cref="T:Microsoft.Win32.OpenFileDialog"/>.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.CanAddFilesWhileUploading">
+            <summary>
+            Gets or sets a value indicating whether the AddFilesCommand is enabled while upload is in progress.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Cloud.Controls.RadCloudUpload.AutoStart">
+            <summary>
+            Gets or sets a value indicating whether the newly added files should be started automatically.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileStateChangedEventArgs">
+            <summary>
+            Class containing information related to a state of a <see cref="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile"/>.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileStateChangedEventArgs.Item">
+            <summary>
+            The item.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileStateChangedEventArgs.PreviousState">
+            <summary>
+            The previous state.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileStateChangedEventArgs.NewState">
+            <summary>
+            The new state.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState">
+            <summary>
+            An enumeration that represents the state of a <see cref="T:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFile"/>.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState.NotStarted">
+            <summary>
+            The upload is not started.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState.Queued">
+            <summary>
+            The file is queued for uploading.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState.Uploading">
+            <summary>
+            The upload is started.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState.Uploaded">
+            <summary>
+            The upload completed successfully.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState.Cancelling">
+            <summary>
+            The upload has a pending cancellation.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState.Canceled">
+            <summary>
+            The upload was canceled.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState.Failed">
+            <summary>
+            The upload failed.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Cloud.Controls.Upload.CloudUploadFileState.Invalid">
+            <summary>
+            The file is invalid and will not be uploaded.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.HumanReadableFileSizeConverter">
+            <summary>
+            Class that converts file size to a friendly, human readable format.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.HumanReadableFileSizeConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the file size to a human readable format.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.HumanReadableFileSizeConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Cloud.Controls.RadCloudUploadList">
+            <summary>
+            An <see cref="T:System.Windows.Controls.ItemsControl"/> for the <see cref="T:Telerik.Windows.Cloud.Controls.RadCloudUploadListItem"/>s.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUploadList.ResetTheme">
+            <summary>
+            Resets the theme.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUploadList.GetContainerForItemOverride">
+            <summary>
+            Creates or identifies the element that is used to display the given item.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUploadList.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"/> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"/> is set to true internally.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.Windows.Cloud.Controls.RadCloudUploadList.OnCreateAutomationPeer">
+            <summary>
+            Returns class-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> implementations for the Windows Presentation Foundation (WPF) infrastructure.
+            </summary>
+            <returns>
+            The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> implementation.
+            </returns>
+        </member>
+    </members>
+</doc>
