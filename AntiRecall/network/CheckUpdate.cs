@@ -56,7 +56,6 @@ namespace AntiRecall.network
             XmlDocument doc = new XmlDocument();
             try
             {
-
                 doc.Load("https://etenal.me/wp-content/uploads/AntiRecall/newversion.xml");
             }
             catch
@@ -65,8 +64,25 @@ namespace AntiRecall.network
             }
             newVersion = doc.DocumentElement.GetAttribute("Version");
             url = doc.DocumentElement.GetAttribute("Url");
-            
-            return (!newVersion.Equals(ShortCut.myVersion));
+
+            if (newVersion.Equals(ShortCut.myVersion))
+                return false;
+
+            var t1 = newVersion.Split('.');
+            var t2 = ShortCut.myVersion.Split('.');
+
+            if (Convert.ToInt32(t1[0]) > Convert.ToInt32(t2[0]))
+                return true;
+            else if (Convert.ToInt32(t1[1]) > Convert.ToInt32(t2[1]) &&
+                Convert.ToInt32(t1[0]) == Convert.ToInt32(t2[0]))
+                return true;
+            else if (Convert.ToInt32(t1[2]) > Convert.ToInt32(t2[2]) &&
+                Convert.ToInt32(t1[0]) == Convert.ToInt32(t2[0]) &&
+                Convert.ToInt32(t1[1]) == Convert.ToInt32(t2[1]))
+                return true;
+
+
+            return false;
         }
 
         private static bool ShowUpdate()

@@ -103,7 +103,7 @@ namespace AntiRecall.patch
             int is_running = 0;
             int result = -1;
 
-            System.Threading.Thread.Sleep(20000);
+            System.Threading.Thread.Sleep(30000);
             is_running = FindProcess();
             if ((is_running & 1) == 1) //QQ.exe
             {

@@ -7,7 +7,6 @@ namespace AntiRecall.deploy
     public class ReplaceQQStartup : ICommand
     {
         private static RegistryKey startupKey;
-        private static string QQ_ori_path;
 
         public bool CanExecute(object parameter)
         {
@@ -19,12 +18,16 @@ namespace AntiRecall.deploy
             startupKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run", true);
             string QQName = "QQ2009";
             string MyName = "AntiRecall";
-            string MyValue = ShortCut.currentDirectory + @"\AntiRecall.exe";
+            string MyValue = "\"" + ShortCut.currentDirectory + @"\AntiRecall.exe" + "\"";
             if (IsInStartup(QQName))
             {
-                DeleteStartup(QQName);
+                DeleteStartup(QQName);   
             }
-            CreateStartup(MyName, MyValue);
+            if (!IsInStartup(MyName))
+            {
+                CreateStartup(MyName, MyValue);
+            }
+            System.Windows.Forms.MessageBox.Show("已将QQ自启动替换为AntiRecall");
         }
 
         public event EventHandler CanExecuteChanged;
@@ -36,7 +39,6 @@ namespace AntiRecall.deploy
                 Object o = startupKey.GetValue(KeyName);
                 if (o != null)
                 {
-                    QQ_ori_path = (string)o;
                     return true;
                 }
 

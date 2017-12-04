@@ -8,7 +8,7 @@ using System.Diagnostics;
 using AntiRecall.deploy;
 using AntiRecall.network;
 using System.Threading;
-using System.Windows.Media;
+using System.IO;
 using AntiRecall.patch;
 
 namespace AntiRecall
@@ -69,11 +69,14 @@ namespace AntiRecall
 
         public void ModeCheck()
         {
-            if (Xml.antiRElement["Mode"] == "proxy")
+             if (Xml.antiRElement["Mode"] == "proxy")
             {
                 this.PortItem.Foreground = System.Windows.Media.Brushes.Black;
                 this.PortText.Foreground = System.Windows.Media.Brushes.Black;
                 this.PortText.IsReadOnly = false;
+                this.Proxy_button.IsChecked = true;
+                this.Memory_patch_button.IsChecked = false;
+                this.Descript_text.Text = "请手动为QQ设置代理";
                 this.Explorer.Foreground = System.Windows.Media.Brushes.Black;
                 this.Explorer.IsEnabled = true;
             }
@@ -82,6 +85,10 @@ namespace AntiRecall
             {
                 this.PortItem.Foreground = System.Windows.Media.Brushes.Gray;
                 this.PortText.Foreground = System.Windows.Media.Brushes.Gray;
+                this.PortText.IsReadOnly = true;
+                this.Proxy_button.IsChecked = false;
+                this.Memory_patch_button.IsChecked = true;
+                this.Descript_text.Text = "请保证在开启后30秒内登录QQ";
                 this.Explorer.Foreground = System.Windows.Media.Brushes.Black;
                 this.Explorer.IsEnabled = true;
             }
@@ -128,6 +135,7 @@ namespace AntiRecall
                 Xml.CreateXml(Xml.antiRElement);
             }
             ModeCheck();
+            this.Descript_text.Text = Xml.antiRElement["Descript"];
         }
 
 

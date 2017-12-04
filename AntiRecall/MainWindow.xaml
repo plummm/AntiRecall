@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Title="AntiRecall" 
         Height="370" 
-        Width="182.153"
+        Width="182"
         ResizeMode="CanMinimize">
 
     <Window.Resources>
@@ -19,8 +19,8 @@
     </Window.Resources>
 
 
-    <Grid Margin="0,0,-6,0"
-          Background="Transparent">
+    <Grid Margin="0,0,0,0"
+          Background="White">
 
 
         <Grid.RowDefinitions>
@@ -60,9 +60,29 @@
                 Margin="21,76,10,213" 
                 FontSize="13" BorderBrush="#1E4E7099"/>
 
+        <StackPanel Margin="21,130,10,120">
+            <StackPanel Orientation="Vertical" Margin="0,18,0,0">
+                <RadioButton Content="内存补丁 " x:Name="Memory_patch_button" Command="{StaticResource patch_memory}"/>
+                <RadioButton Content="代理服务器 " x:Name="Proxy_button" Command="{StaticResource proxy}"/>
+            </StackPanel>
+        </StackPanel>
+
+        <TextBox Height="58" 
+                 Width="135" 
+                 x:Name="Descript_text"
+                 IsEnabled="False" 
+                 HorizontalAlignment="Left" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 VerticalContentAlignment="Bottom" 
+                 HorizontalContentAlignment="Center" 
+                 Text="AntiRecall v2.0" 
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled" 
+                 Margin="21,223,0,0"/>
+
         <telerik:RadToggleButton VerticalAlignment="Center" 
                                         HorizontalAlignment="Center" 
-                                        MinWidth="35" Margin="54,280,59,42" 
+                                        MinWidth="35" Margin="57,300,57,24" 
                                         IsChecked="False"
                                         Click="StartButton_Click"
                                         x:Name="Start" 
@@ -75,7 +95,7 @@
                                    PopupHorizontalOffset="-400"
                                    PopupVerticalOffset="-25"
                                    HorizontalAlignment="Center"
-                                   IsOpen="True"
+                                   IsOpen="False"
                                    SelectionChanged="RadRadialMenu_SelectionChanged">
                 <telerik:RadRadialMenu.Resources>
                     <Style BasedOn="{StaticResource RadialMenuButtonStyle}"

@@ -19,6 +19,7 @@ namespace AntiRecall.deploy
             antiRElement.Add("PortText", "");
             antiRElement.Add("QQPath", "");
             antiRElement.Add("Mode", "");
+            antiRElement.Add("Descript", "AntiRecall v2.0");
         }
 
         public static bool CheckXml()

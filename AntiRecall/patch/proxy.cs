@@ -15,7 +15,7 @@ namespace AntiRecall.patch
 
         public void Execute(object parameter)
         {
-            AntiRecall.deploy.Xml.antiRElement["QQPath"] = "proxy";
+            AntiRecall.deploy.Xml.antiRElement["Mode"] = "proxy";
             ((MainWindow)System.Windows.Application.Current.MainWindow).ModeCheck();
         }
 
