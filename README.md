@@ -2,9 +2,25 @@
 
 这款软件用于Win PC平台，针对QQ撤回功能，模块加载成功后方能使用
 
+## 新功能
+
+- 新增内存补丁模式，防撤回更加高效稳定
+- 重写了ui
+- 新增恢复QQ自启动功能
+
+## 下载地址
+
+[github release](https://github.com/FlyRabbit/AntiRecall/releases)
+
 ## 使用方法
 
+### 补丁模式
 
+使用热补丁patch内存，更高效稳定
+
+暂缺图
+
+### 代理模式
 ###### 配置代理
 
 ![](https://etenal.me/wp-content/uploads/2017/08/0.gif)
