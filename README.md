@@ -8,6 +8,8 @@
 - 重写了ui
 - 新增恢复QQ自启动功能
 
+![](https://etenal.me/wp-content/uploads/2017/08/3.gif)
+
 ## 下载地址
 
 [github release](https://github.com/FlyRabbit/AntiRecall/releases)
@@ -16,9 +18,9 @@
 
 ### 补丁模式
 
-使用热补丁patch内存，更高效稳定
+###### 选用补丁模式并运行
 
-暂缺图
+![](https://etenal.me/wp-content/uploads/2017/08/4.gif)
 
 ### 代理模式
 ###### 配置代理
