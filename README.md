@@ -1,4 +1,5 @@
 # AntiRecall（QQ,Wechat防撤回）
+[English](https://github.com/plummm/AntiRecall/blob/master/README-eng.md)
 
 这款软件用于Win PC平台，针对QQ,Wechat撤回功能.
 
