@@ -1,5 +1,6 @@
 # AntiRecall（For QQ and Wechat）
-[中文说明](https://github.com/plummm/AntiRecall/blob/master/README-zh.md)
+
+:earth_americas: English | :earth_asia: [简体中文](/README-zh.md)
 
 Anti-recall aims at QQ and Wechat for desktop version.
 
