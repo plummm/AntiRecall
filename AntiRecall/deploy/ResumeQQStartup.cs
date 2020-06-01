@@ -18,7 +18,7 @@ namespace AntiRecall.deploy
             startupKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run", true);
             string QQName = "QQ2009";
             string MyName = "AntiRecall";
-            if (-1 == Xml.antiRElement["QQPath"].IndexOf("QQ.exe"))
+            if (-1 == Xml.currentElement["Path"].IndexOf("QQ.exe"))
             {
                 System.Windows.Forms.MessageBox.Show("未设置QQ安装目录");
                 return;
@@ -26,7 +26,7 @@ namespace AntiRecall.deploy
             if (IsInStartup(MyName))
             {
                 DeleteStartup(MyName);
-                CreateStartup(QQName, "\"" + Xml.antiRElement["QQPath"] + "\"  /background");
+                CreateStartup(QQName, "\"" + Xml.antiRElement["Path"] + "\"  /background");
             }
             System.Windows.Forms.MessageBox.Show("已恢复QQ自启动，AntiRecall不再自启动");
         }

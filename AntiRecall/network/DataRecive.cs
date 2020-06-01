@@ -40,29 +40,38 @@ namespace AntiRecall.network
 
         public override void OnServerDataReceived(object sender, DataEventArgs e)
         {
-            
-            if (e.Buffer[6] == 0x17)
-                if (e.Count == 137 || e.Count == 121)
-                {
-                    e.Buffer[6] = 0x00;
+            //QQ
+            if (e.Buffer[6] == 0x17 && (e.Count == 137 || e.Count == 121))
+            {
+                e.Buffer[6] = 0x00;
 
-                    MainWindow.count++;
-                /*
-                    if ((MainWindow.count + 7) % 8 ==0)
-                    {
-                        App.Current.Dispatcher.Invoke(
-                            (Action)delegate {
-                                ((MainWindow)System.Windows.Application.Current.MainWindow).ModifyRecallCount();
-                            }
-                            );
+                MainWindow.count++;
+            /*
+                if ((MainWindow.count + 7) % 8 ==0)
+                {
+                    App.Current.Dispatcher.Invoke(
+                        (Action)delegate {
+                            ((MainWindow)System.Windows.Application.Current.MainWindow).ModifyRecallCount();
+                        }
+                        );
                         
-                    }
-                    */
+                }
+                */
                 
 #if DEBUG
-                    Console.WriteLine("capture recall");
+                Console.WriteLine("capture qq recall");
 #endif
-                }
+            }
+
+            //Wechat
+            Console.WriteLine("packet length {0}", e.Count);
+            Console.WriteLine("packet buffer {0}", e.Buffer[2]);
+            if ((e.Count == 572 || e.Count == 604) && e.Buffer[3] == 0x02 && e.Buffer[4] == 0x37) {
+                e.Buffer[2] = 0x0;
+#if DEBUG
+                Console.WriteLine("capture wechat recall");
+#endif
+            }
        
             return;
             

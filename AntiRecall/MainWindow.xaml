@@ -16,10 +16,12 @@
         <deploy:ResumeQQStartup x:Key="ResumeQQStartup"/>
         <patch:proxy x:Key="proxy"/>
         <patch:patch_memory x:Key="patch_memory"/>
+        <deploy:Xml x:Key="appQQ"/>
+        <deploy:Xml x:Key="appWechat"/>
     </Window.Resources>
 
 
-    <Grid Margin="0,0,0,0"
+    <Grid Margin="0,0,-0.333,-5"
           Background="White">
 
 
@@ -36,7 +38,9 @@
                    Foreground="Gray"
                    Grid.Row="0"
                    Margin="33,19,90,299" 
-                   Text="端口"
+                   Text="Port"
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center"
                    x:Name="PortItem"
                    FontWeight="Normal"
                    FontSize="20" RenderTransformOrigin="0.486,0.495"/>
@@ -52,7 +56,7 @@
                  FontSize="20" Width="64" Height="44"/>
 
 
-        <Button Content="选择QQ安装路径" 
+        <Button Content="Install Path" 
                 Foreground="Gray"
                 IsEnabled="False"
                 x:Name="Explorer" 
@@ -62,12 +66,28 @@
 
         <StackPanel Margin="21,130,10,120">
             <StackPanel Orientation="Vertical" Margin="0,18,0,0">
-                <RadioButton Content="内存补丁 " x:Name="Memory_patch_button" Command="{StaticResource patch_memory}"/>
-                <RadioButton Content="代理服务器 " x:Name="Proxy_button" Command="{StaticResource proxy}"/>
+                <RadioButton Content="Memory Patch" FontSize="13" x:Name="Memory_patch_button" Command="{StaticResource patch_memory}" Margin="0,0,0.333,0"/>
+                <RadioButton Content="Proxy " FontSize="13" x:Name="Proxy_button" Command="{StaticResource proxy}" Margin="0,0,0.333,0"/>
             </StackPanel>
         </StackPanel>
 
-        <TextBox Height="58" 
+        <TextBox 
+                 Width="135" 
+                 x:Name="Current_App"
+                 IsEnabled="False" 
+                 HorizontalAlignment="Left" 
+                 TextWrapping="Wrap" 
+                 VerticalContentAlignment="Center" 
+                 HorizontalContentAlignment="Center" 
+                 telerik:ActualSizeProxy.ActualHeight="30"
+                 telerik:ActualSizeProxy.ActualWidth="30"
+                 telerik:ActualSizeProxy.IsEnabled="True"
+                 Text="QQ"
+                 BorderThickness="0"
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled" 
+                 Margin="21,219,0,106.667" TextChanged="Current_App_TextChanged"/>
+
+        <TextBox Height="40" 
                  Width="135" 
                  x:Name="Descript_text"
                  IsEnabled="False" 
@@ -78,7 +98,7 @@
                  HorizontalContentAlignment="Center" 
                  Text="AntiRecall v2.0" 
                  ScrollViewer.VerticalScrollBarVisibility="Disabled" 
-                 Margin="21,223,0,0"/>
+                 Margin="21,250,0,0"/>
 
         <telerik:RadToggleButton VerticalAlignment="Center" 
                                         HorizontalAlignment="Center" 
@@ -98,8 +118,7 @@
                                    IsOpen="False"
                                    SelectionChanged="RadRadialMenu_SelectionChanged">
                 <telerik:RadRadialMenu.Resources>
-                    <Style BasedOn="{StaticResource RadialMenuButtonStyle}"
-                                   TargetType="telerikRadialMenu:RadialMenuButton">
+                    <Style BasedOn="{StaticResource RadialMenuButtonStyle}" TargetType="telerikRadialMenu:RadialMenuButton">
                         <Setter Property="Background" Value="#FF00B7E0" />
                         <Setter Property="BackContentTemplate">
                             <Setter.Value>
@@ -110,26 +129,37 @@
                         </Setter>
                     </Style>
                 </telerik:RadRadialMenu.Resources>
-                <telerik:RadRadialMenuItem Header="附加选项"
+                <telerik:RadRadialMenuItem Header="Options"
                                            CanUserSelect="False">
-                    <telerik:RadRadialMenuItem Header="替换QQ自启动"
+                    <telerik:RadRadialMenuItem Header="Replace the startup of QQ"
                                                CanUserSelect="False"
                                                Command="{StaticResource ReplaceQQStartup}"
                                                CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
-                    <telerik:RadRadialMenuItem Header="恢复QQ自启动"
+                    <telerik:RadRadialMenuItem Header="Resume the startup of QQ"
                                                CanUserSelect="False"
                                                Command="{StaticResource ResumeQQStartup}"
                                                CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
                 </telerik:RadRadialMenuItem>
-                <telerik:RadRadialMenuItem Header="模式"
+                <telerik:RadRadialMenuItem Header="Model"
                                            CanUserSelect="False">
-                    <telerik:RadRadialMenuItem Header="内存补丁"
+                    <telerik:RadRadialMenuItem Header="Memory Patch"
                                                CanUserSelect="False"
                                                Command="{StaticResource patch_memory}"
                                                CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
-                    <telerik:RadRadialMenuItem Header="代理服务器"
+                    <telerik:RadRadialMenuItem Header="Proxy"
                                                CanUserSelect="False"
                                                Command="{StaticResource proxy}"
+                                               CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+                </telerik:RadRadialMenuItem>
+                <telerik:RadRadialMenuItem Header="App"
+                                           CanUserSelect="False">
+                    <telerik:RadRadialMenuItem Header="QQ"
+                                               CanUserSelect="False"
+                                               Command="{StaticResource appQQ}"
+                                               CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+                    <telerik:RadRadialMenuItem Header="Wechat"
+                                               CanUserSelect="False"
+                                               Command="{StaticResource appWechat}"
                                                CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
                 </telerik:RadRadialMenuItem>
             </telerik:RadRadialMenu>

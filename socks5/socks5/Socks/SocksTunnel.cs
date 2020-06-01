@@ -164,8 +164,10 @@ namespace socks5
                 RemoteClient.onDataReceived += RemoteClient_onDataReceived;
                 RemoteClient.onClientDisconnected += RemoteClient_onClientDisconnected;
                 Client.Client.onClientDisconnected += Client_onClientDisconnected;
-                RemoteClient.ReceiveAsync();
-                Client.Client.ReceiveAsync();
+                if (RemoteClient.Sock != null)
+                    RemoteClient.ReceiveAsync();
+                if (Client.Client.Sock != null)
+                    Client.Client.ReceiveAsync();
             }
             catch
             {

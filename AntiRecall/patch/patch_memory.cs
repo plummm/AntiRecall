@@ -6,23 +6,24 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Windows.Input;
+using System.Runtime.CompilerServices;
 
 namespace AntiRecall.patch
 {
     public class patch_memory : ICommand
     {
         const int PROCESS_ALL_ACCESS = 0x1F0FFF;
-        private static byte[] single = { (byte)'\x81', (byte)'\x7d', (byte)'\x0c', (byte)'\x8a', (byte)'\x00' };
-        private static byte[] group = { (byte)'\x80', (byte)'\x7D', (byte)'\xFF', (byte)'\x11', (byte)'\x0f' };
-        private struct ModuleType
+        public ModuleType myProc;
+        public static string procName { get; set; }
+        public static string moduleName { get; set; }
+
+        public struct ModuleType
         {
             public IntPtr StartAddr;
             public int Size;
             public int Pid;
         }
-        private static ModuleType pTIM;
-        private static ModuleType pQQ;
-        private static NotifyIcon module_ni;
+        public static NotifyIcon module_ni;
 
         [DllImport("kernel32.dll")]
         public static extern IntPtr OpenProcess(
@@ -55,15 +56,15 @@ namespace AntiRecall.patch
             return true;
         }
 
-        public void Execute(object parameter)
+        public virtual void Execute(object parameter)
         {
-            AntiRecall.deploy.Xml.antiRElement["Mode"] = "patch";
+            AntiRecall.deploy.Xml.currentElement["Mode"] = "patch";
             ((MainWindow)System.Windows.Application.Current.MainWindow).ModeCheck();
         }
 
         public event EventHandler CanExecuteChanged;
 
-        public static int StartingIndex(byte[] x, byte[] y)
+        public int StartingIndex(byte[] x, byte[] y)
         {
             try
             {
@@ -80,57 +81,53 @@ namespace AntiRecall.patch
             }
         }
 
-        private void disposeBallon(System.Windows.Forms.MouseEventHandler value)
+        public void disposeBallon(System.Windows.Forms.MouseEventHandler value)
         {
             module_ni.Visible = false;
         }
 
-        private static void LoadBallon()
+        public void LoadBallon()
         {
             module_ni = new NotifyIcon();
             module_ni.Icon = SystemIcons.Exclamation;
             module_ni.Visible = true;
             module_ni.BalloonTipTitle = "AntiRecall";
-            module_ni.BalloonTipText = "防撤回模块已成功加载";
+            module_ni.BalloonTipText = "Antirecall mudule has been loaded.";
             module_ni.BalloonTipIcon = ToolTipIcon.Info;
             module_ni.ShowBalloonTip(30000);
             module_ni.Visible = false;
             module_ni.Dispose();
         }
 
-        public static void StartPatch()
+        public virtual int doPatch(ModuleType proc)
+        {
+            return 0;
+        }
+        public void StartPatch()
         {
             int is_running = 0;
             int result = -1;
 
             System.Threading.Thread.Sleep(30000);
             is_running = FindProcess();
-            if ((is_running & 1) == 1) //QQ.exe
+            if (is_running == 1)
             {
-                result = Patch(pQQ);
+                result = doPatch(myProc);
                 if (result == -1)
                 {
-                    System.Windows.MessageBox.Show("QQ防撤回补丁加载失败，请关闭杀毒软件后重试。");
+                    System.Windows.MessageBox.Show("Fail to load antirecall module, close antivirus and try again");
                 }
             }
-            if ((is_running >> 1 & 1) == 1) //Tim.exe
-            {
-                result = Patch(pTIM);
-                if (result == -1)
-                {
-                    System.Windows.MessageBox.Show("Tim防撤回补丁加载失败，请关闭杀毒软件后重试。");
-                }
-            }   
         }
 
-        private static int FindProcess()
+        private int FindProcess()
         {
             int result = 0;
             ProcessModule myProcessModule;
             ProcessModuleCollection PMCollection;
             Process[] processArray;
 
-            processArray = Process.GetProcessesByName("QQ");
+            processArray = Process.GetProcessesByName(procName);
             if (processArray.Length != 0)
             {
                 result += 1;
@@ -139,79 +136,93 @@ namespace AntiRecall.patch
                 for (int i = 0; i < PMCollection.Count; i++)
                 {
                     myProcessModule = PMCollection[i];
-                    if (myProcessModule.ModuleName.Equals("IM.dll"))
+                    if (myProcessModule.ModuleName.ToLower().Equals(moduleName))
                     {
-                        pQQ.StartAddr = myProcessModule.BaseAddress;
-                        pQQ.Size = myProcessModule.ModuleMemorySize;
-                        pQQ.Pid = processArray[0].Id;
+                        myProc.StartAddr = myProcessModule.BaseAddress;
+                        myProc.Size = myProcessModule.ModuleMemorySize;
+                        myProc.Pid = processArray[0].Id;
                         break;
                     }
                 }
             }
-
-            processArray = Process.GetProcessesByName("TIM");
-            if (processArray.Length != 0)
-            {
-                result += 2;
-
-                PMCollection = processArray[0].Modules;
-                for (int i = 0; i < PMCollection.Count; i++)
-                {
-                    myProcessModule = PMCollection[i];
-                    if (myProcessModule.ModuleName.Equals("IM.dll"))
-                    {
-                        pTIM.StartAddr = myProcessModule.BaseAddress;
-                        pTIM.Size = myProcessModule.ModuleMemorySize;
-                        pTIM.Pid = processArray[0].Id;
-                        break;
-                    }
-                }
-            }
-           
 
             return result;
         }
 
-        private static int Patch(ModuleType process)
+        public int Patch(ModuleType process, byte[] pattern, byte[] replacement, int offset)
         {
             IntPtr pHandle = OpenProcess(PROCESS_ALL_ACCESS, false, process.Pid);
-            int userAddr;
-            int groupAddr;
             int bytesRead = 0;
             int bytesWritten = 0;
-            int position = 0;
             byte[] buffer = new byte[process.Size];
-            byte[] byteToWrite = new byte[1];
+            int position;
+            int userAddr;
+            byte[] byteToWrite;
 
             if (ReadProcessMemory((int)pHandle, (int)process.StartAddr, buffer, process.Size, ref bytesRead) == false)
                     return -1;
 
-            position = StartingIndex(buffer, single);
+            position = StartingIndex(buffer, pattern);
             if (position < 0)
-                return position;
+                return -1;
             //string str = System.Text.Encoding.Unicode.GetString(buffer);
             //int position = str.IndexOf(single);
-            userAddr = (int)process.StartAddr + position - 5;
-            if ((char)buffer[position - 5] == '\x85')
-                byteToWrite[0] = (byte)'\x84';
-            else
-                byteToWrite[0] = (byte)'\x85';
-            position = StartingIndex(buffer, group);
-            if (position == -1)
-                return -1;
-            groupAddr = (int)process.StartAddr + position + 5;
+            userAddr = (int)process.StartAddr + position + offset;
+            byteToWrite = replacement.ToArray();
 
-            if (WriteProcessMemory((int)pHandle, userAddr, byteToWrite, 1, ref bytesWritten) == false)
+            if (WriteProcessMemory((int)pHandle, userAddr, byteToWrite, byteToWrite.Length, ref bytesWritten) == false)
                 return -1;
 
-            if (WriteProcessMemory((int)pHandle, groupAddr, byteToWrite, 1, ref bytesWritten) == false)
-                return -1;
-
-            if (byteToWrite[0] == '\x84')
-                LoadBallon();
+            LoadBallon();
 
             CloseHandle((int)pHandle);
             return 1;
+        }
+    }
+
+    public class QQPatch : patch_memory
+    {
+        private static byte[] chat = { (byte)'\x81', (byte)'\x7d', (byte)'\x0c', (byte)'\x8a', (byte)'\x00' };
+        private static byte[] groupChat = { (byte)'\x80', (byte)'\x7D', (byte)'\xFF', (byte)'\x11', (byte)'\x0f' };
+        private static byte[] chatReplacement = { (byte)'\x84' };
+        private static int chatOffset = -5;
+        private static int groupChatOffset = 5;
+
+        public QQPatch() { }
+
+        public QQPatch(string name1, string name2) 
+        {
+            procName = name1;
+            moduleName = name2;
+        }
+
+        public override int doPatch(ModuleType process)
+        {
+            if (Patch(process, chat, chatReplacement, chatOffset) == -1 ||
+                Patch(process, groupChat, chatReplacement, groupChatOffset) == -1)
+                return -1;
+            return 0;
+        }
+
+    }
+    public class WechatPatch : patch_memory
+    {
+        private static byte[] wechatPattern = { (byte)'\x83', (byte)'\xC4', (byte)'\x14', (byte)'\x84', (byte)'\xC0', (byte)'\x74', (byte)'\x7D' };
+        private static byte[] chatReplacement = { (byte)'\x7d' };
+        private static int offset = 5;
+
+        public WechatPatch() { }
+
+        public WechatPatch(string name1, string name2)
+        {
+            procName = name1;
+            moduleName = name2;
+        }
+        public override int doPatch(ModuleType process)
+        {
+            if (Patch(process, wechatPattern, chatReplacement, offset) == -1)
+                return -1;
+            return 0;
         }
     }
 }

@@ -66,7 +66,7 @@ namespace AntiRecall.deploy
         {
             if (currentDirectory == null)
                 currentDirectory = System.IO.Directory.GetCurrentDirectory();
-            myVersion = "2.0.1";
+            myVersion = "2.1.1";
 
             if (!CheckShortCut(filename))
             {

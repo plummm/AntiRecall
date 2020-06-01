@@ -116,6 +116,10 @@ namespace socks5.TCP
                 {
                     buffer = new byte[buffersize];
                 }
+                else
+                {
+                    buffer = new byte[4096];
+                }
                 Receiving = true;
                 try
                 {
@@ -147,7 +151,7 @@ namespace socks5.TCP
                     {
                         onClientDisconnected(this, new ClientEventArgs(this));
                         this.Sock.Close();
-                        //this.Sock = null;
+                        this.Sock = null;
                         return;
                     }
                     else

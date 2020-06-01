@@ -33,7 +33,7 @@ namespace AntiRecall.network
                 {
                     if (DownloadNewVersion())
                     {
-                        MessageBoxResult result = System.Windows.MessageBox.Show(@"下载成功，请手动解压覆盖源文件", @"大吉大利，今晚吃鸡", MessageBoxButton.OK);
+                        MessageBoxResult result = System.Windows.MessageBox.Show(@"Download successfully，please manually unzip and overwrite the old files", @"Congradulation", MessageBoxButton.OK);
                         if (result == MessageBoxResult.OK)
                         {
                             System.Diagnostics.Process.Start(ShortCut.currentDirectory + @"\\tmp");
@@ -41,7 +41,7 @@ namespace AntiRecall.network
                     }
                     else
                     {
-                        MessageBoxResult result = System.Windows.MessageBox.Show(@"下载失败，请手动更新。", @"错误", MessageBoxButton.OK);
+                        MessageBoxResult result = System.Windows.MessageBox.Show(@"Fail to download，please update manually.", @"Download error", MessageBoxButton.OK);
                         if (result == MessageBoxResult.OK)
                             System.Diagnostics.Process.Start("https://github.com/FlyRabbit/AntiRecall/releases");
                     }
@@ -87,7 +87,7 @@ namespace AntiRecall.network
 
         private static bool ShowUpdate()
         {
-            MessageBoxResult result = System.Windows.MessageBox.Show(@"检测到新版本，是否下载更新？", @"检查更新", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = System.Windows.MessageBox.Show(@"New version available，will you download it?", @"Check updates", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
                 return true;
             else
@@ -124,7 +124,7 @@ namespace AntiRecall.network
             long size = new System.IO.FileInfo(@".\\tmp\\AntiRecall.zip").Length;
             if (size != 0)
             {
-                MessageBoxResult result = System.Windows.MessageBox.Show(@"下载成功，请手动解压覆盖源文件", @"大吉大利，今晚吃鸡", MessageBoxButton.OK);
+                MessageBoxResult result = System.Windows.MessageBox.Show(@"Fail to download，please update manually.", @"Congradulation", MessageBoxButton.OK);
                 if (result == MessageBoxResult.OK)
                 {
                     System.Diagnostics.Process.Start(ShortCut.currentDirectory + @"\\tmp");
@@ -132,7 +132,7 @@ namespace AntiRecall.network
             }
             else
             {
-                MessageBoxResult result = System.Windows.MessageBox.Show(@"下载失败，请手动更新。", @"错误", MessageBoxButton.OK);
+                MessageBoxResult result = System.Windows.MessageBox.Show(@"Fail to download，please update manually.", @"Download error", MessageBoxButton.OK);
                 if (result == MessageBoxResult.OK)
                     System.Diagnostics.Process.Start("https://github.com/FlyRabbit/AntiRecall/releases");
             }
