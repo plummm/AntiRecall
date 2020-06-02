@@ -1,34 +1,33 @@
-# AntiRecall（For QQ and Wechat）
+# AntiRecall (For Telegram, WeChat, and QQ)
 
-:earth_americas: English | :earth_asia: [简体中文](/README-zh.md)
+![Platform](https://img.shields.io/badge/Platform-Windows-brightgreen)![Version](https://img.shields.io/badge/Version-v3.0.0-red)[![Download](https://img.shields.io/badge/Downloads-2.0K-yellow)![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
-Anti-recall aims at QQ and Wechat for desktop version.
+:crescent_moon: English | :sleeping:[简体中文](/README-zh.md)
+
+Anti-recall for **Telegram**, **WeChat**, and **QQ**.
 
 
 
-Two methods are provided
+## Support
 
-- Proxy
-- Memory patch
-
-Personally recommend using memory-patch which is more stable than proxy 
-
-## Update 6/1/2020
-
-- Support anti-recall for Wechat
+- Prevent messages from revoking by server (*Telegram* :heavy_check_mark: *WeChat* :heavy_check_mark: *QQ* :heavy_check_mark:)
+- Hot patch without modifying original application
+- No overhead due to the binary level patching
 
 ## Download
 
 [github release](https://github.com/FlyRabbit/AntiRecall/releases)
 
+## Demo
+
+![](resource/telegram.gif)
+
 ## How to use it?
 
-### Memory patch
+![](resource/how_to_use.gif)
 
-![](https://etenal.me/wp-content/uploads/2017/08/4.gif)
+## To-do 
 
-### Proxy
-
-![](https://etenal.me/wp-content/uploads/2017/08/0.gif)
-
-#### 
+- Tag the deleted message
+- View the original content of edited messages(Telegram)
+- Remove proxy method (Maybe)

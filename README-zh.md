@@ -1,50 +1,33 @@
 # AntiRecall（QQ,Wechat防撤回）
 
-:earth_americas: [English](/README.md) | :earth_asia: 简体中文
+![Platform](https://img.shields.io/badge/Platform-Windows-brightgreen)![Version](https://img.shields.io/badge/Version-v3.0.0-red)![Download](https://img.shields.io/badge/Downloads-2.0K-yellow)![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)
 
-这款软件用于Win PC平台，针对QQ,Wechat撤回功能.
+:crescent_moon: [English]((/README.md)) | :sleeping:简体中文
 
-内存补丁模式更为稳定和高效
+用于Win PC平台，阻止**Telegram**, **Wechat**, **QQ**的撤回功能.
 
-## 更新 6/1/2020
-- 支持了针对微信PC客户端的防撤回
 
-## 新功能
 
-- 新增内存补丁模式，防撤回更加高效稳定
-- 重写了ui
-- 新增恢复QQ自启动功能
-
-![](https://etenal.me/wp-content/uploads/2017/08/3.gif)
+## 支持
+- 阻止消息被服务器撤回 (*Telegram* :heavy_check_mark: *WeChat* :heavy_check_mark: *QQ* :heavy_check_mark:)
+- 使用热补丁，不会修改程序原本的代码
+- 二进制层面的Patch，没有额外开销
 
 ## 下载地址
 
 [github release](https://github.com/FlyRabbit/AntiRecall/releases)
 
+## 演示
+
+![](resource/telegram.gif)
+
 ## 使用方法
 
-### 补丁模式
-
-###### 选用补丁模式并运行
-
-![](https://etenal.me/wp-content/uploads/2017/08/4.gif)
-
-### 代理模式
-###### 配置代理
-
-![](https://etenal.me/wp-content/uploads/2017/08/0.gif)
-
-###### 配置AntiRecall
-
-![](https://etenal.me/wp-content/uploads/2017/08/1.gif)
-
-###### 等待撤回模块加载
-
-![](https://etenal.me/wp-content/uploads/2017/08/2.gif)
+![](resource/how_to_use.gif)
 
 ## TO DO
 
-#### 加快proxy处理数据包速度
-#### 加入自定义规则
-#### 定位具体撤回消息
+- 标记被删除的消息
+- 查看被修改的消息原本的内容(Telegram)
+- 移除代理模式
 
