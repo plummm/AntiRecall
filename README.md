@@ -1,43 +1,34 @@
-# AntiRecall（QQ防撤回）
+# AntiRecall（For QQ and Wechat）
 
-这款软件用于Win PC平台，针对QQ撤回功能，模块加载成功后方能使用
+:earth_americas: English | :earth_asia: [简体中文](/README-zh.md)
 
-## 新功能
+Anti-recall aims at QQ and Wechat for desktop version.
 
-- 新增内存补丁模式，防撤回更加高效稳定
-- 重写了ui
-- 新增恢复QQ自启动功能
 
-![](https://etenal.me/wp-content/uploads/2017/08/3.gif)
 
-## 下载地址
+Two methods are provided
+
+- Proxy
+- Memory patch
+
+Personally recommend using memory-patch which is more stable than proxy 
+
+## Update 6/1/2020
+
+- Support anti-recall for Wechat
+
+## Download
 
 [github release](https://github.com/FlyRabbit/AntiRecall/releases)
 
-## 使用方法
+## How to use it?
 
-### 补丁模式
-
-###### 选用补丁模式并运行
+### Memory patch
 
 ![](https://etenal.me/wp-content/uploads/2017/08/4.gif)
 
-### 代理模式
-###### 配置代理
+### Proxy
 
 ![](https://etenal.me/wp-content/uploads/2017/08/0.gif)
 
-###### 配置AntiRecall
-
-![](https://etenal.me/wp-content/uploads/2017/08/1.gif)
-
-###### 等待撤回模块加载
-
-![](https://etenal.me/wp-content/uploads/2017/08/2.gif)
-
-## TO DO
-
-#### 加快proxy处理数据包速度
-#### 加入自定义规则
-#### 定位具体撤回消息
-
+#### 
