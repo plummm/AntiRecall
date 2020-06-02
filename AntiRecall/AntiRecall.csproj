@@ -141,6 +141,7 @@
     <Compile Include="deploy\ReplaceQQStartup.cs" />
     <Compile Include="deploy\ResumeQQStartup.cs" />
     <Compile Include="deploy\ShortCut.cs" />
+    <Compile Include="deploy\Strings.cs" />
     <Compile Include="deploy\Xml.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

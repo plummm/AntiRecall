@@ -18,6 +18,7 @@
         <patch:patch_memory x:Key="patch_memory"/>
         <deploy:Xml x:Key="appQQ"/>
         <deploy:Xml x:Key="appWechat"/>
+        <deploy:Xml x:Key="appTelegram"/>
     </Window.Resources>
 
 
@@ -82,7 +83,7 @@
                  telerik:ActualSizeProxy.ActualHeight="30"
                  telerik:ActualSizeProxy.ActualWidth="30"
                  telerik:ActualSizeProxy.IsEnabled="True"
-                 Text="QQ"
+                 Text=""
                  BorderThickness="0"
                  ScrollViewer.VerticalScrollBarVisibility="Disabled" 
                  Margin="21,219,0,106.667" TextChanged="Current_App_TextChanged"/>
@@ -160,6 +161,10 @@
                     <telerik:RadRadialMenuItem Header="Wechat"
                                                CanUserSelect="False"
                                                Command="{StaticResource appWechat}"
+                                               CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+                    <telerik:RadRadialMenuItem Header="Telegram"
+                                               CanUserSelect="False"
+                                               Command="{StaticResource appTelegram}"
                                                CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
                 </telerik:RadRadialMenuItem>
             </telerik:RadRadialMenu>

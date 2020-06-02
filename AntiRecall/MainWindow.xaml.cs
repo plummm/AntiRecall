@@ -11,6 +11,7 @@ using AntiRecall.network;
 using System.Threading;
 using System.IO;
 using AntiRecall.patch;
+using System.Collections.Generic;
 
 namespace AntiRecall
 {
@@ -23,18 +24,19 @@ namespace AntiRecall
 
         private string port;
         private static NotifyIcon ni;
+        public static Dictionary<string, patch_memory> instances;
         public static socks5.Socks5Server proxy;
         public static double count { get; set; }
         public static bool is_recallmodule_load { get; set; }
 
-        private void init_minimize()
+        private void Init_minimize()
         {
             System.Windows.Forms.MenuItem menuItem1 = new System.Windows.Forms.MenuItem();
             System.Windows.Forms.ContextMenu contextMenu = new System.Windows.Forms.ContextMenu();
 
             menuItem1.Index = 0;
             menuItem1.Text = "Exit";
-            menuItem1.Click += new System.EventHandler(menuItem1_Click);
+            menuItem1.Click += new System.EventHandler(MenuItem1_Click);
             contextMenu.MenuItems.Add(menuItem1);
 
             ni = new NotifyIcon();
@@ -58,7 +60,7 @@ namespace AntiRecall
                 };
         }
 
-        private void init_socks5()
+        private void Init_socks5()
         {
             if (port!=null)
                 proxy = new Socks5Server(IPAddress.Any, Convert.ToInt32(port));
@@ -96,7 +98,7 @@ namespace AntiRecall
 
             if (-1 != Xml.currentElement["Path"].IndexOf("exe"))
             {
-                this.Explorer.Content = "Ready to go";
+                this.Explorer.Content = Strings.explorer_ready;
             }
         }
         /*
@@ -120,14 +122,24 @@ namespace AntiRecall
         public MainWindow()
         {
             InitializeComponent();
+            instances = InitializeInstances();
             Xml xml = new Xml();
-            ShortCut.init_shortcut("AntiRecall");
-            Xml.init_xml();
+            ShortCut.init_shortcut(Strings.title);
+            xml.Init_xml();
             CheckUpdate.init_checkUpdate();
-            init_minimize();
+            Init_minimize();
             ModeCheck();
-            PortText.Text = Xml.getPort();
-            this.Descript_text.Text = "AntiRecall v" + ShortCut.myVersion;
+            PortText.Text = xml.GetPort();
+            this.Descript_text.Text = Strings.title+" v" + ShortCut.myVersion;
+        }
+
+        private Dictionary<string, patch_memory> InitializeInstances()
+        {
+            Dictionary<string, patch_memory> instances = new Dictionary<string, patch_memory>();
+            instances["QQ"] = new QQPatch("QQ", "im.dll");
+            instances["Wechat"] = new WechatPatch("Wechat", "wechatwin.dll");
+            instances["Telegram"] = new TelegramPatch("Telegram", "telegram.exe");
+            return instances;
         }
 
 
@@ -153,7 +165,7 @@ namespace AntiRecall
 
                 if (Xml.currentElement["Mode"] == "proxy")
                 {
-                    init_socks5();
+                    Init_socks5();
                     //Startup.init_startup();
                     //Modify xml
                     Xml.currentElement["Port"] = PortText.Text;
@@ -166,30 +178,13 @@ namespace AntiRecall
                 else if (Xml.currentElement["Mode"] == "patch")
                 {
                     Xml.currentElement["Port"] = PortText.Text;
-                    if (!Xml.CheckXml())
-                        Xml.CreateXml(Xml.antiRElement);
-                    else
-                        Xml.ModifyXml(Xml.currentApp, Xml.currentElement);
-                    switch (Xml.currentApp)
-                    {
-                        case "QQ":
-                            QQPatch qqPathcher = new QQPatch("QQ", "im.dll");
-                            var qqThread = new Thread(() => qqPathcher.StartPatch());
-                            qqThread.Start();
-                            break;
-                        case "Wechat":
-                            WechatPatch wcPathcher = new WechatPatch("Wechat", "wechatwin.dll");
-                            var wcThread = new Thread(() => wcPathcher.StartPatch());
-                            wcThread.Start();
-                            break;
-                        default:
-                            break;
-                    }
-                    
+                    Xml.ModifyXml(Xml.currentApp, Xml.currentElement);
+                    var th = new Thread(() => instances[Xml.currentApp].StartPatch());
+                    th.Start();
                 }
                 else
                 {
-                    System.Windows.MessageBox.Show("Choose a valid anti-recall method");
+                    System.Windows.MessageBox.Show(Strings.invalid_method);
                     this.Start.IsChecked = false;
                     return;
                 }
@@ -207,13 +202,13 @@ namespace AntiRecall
                     }
                     catch (Exception)
                     {
-                        System.Windows.MessageBox.Show("Fail to boot target application，Please check if it's a correct path");
+                        System.Windows.MessageBox.Show(Strings.incorrect_target_path);
                         this.Start.IsChecked = false;
                     }
                 }
                 else
                 {
-                    System.Windows.MessageBox.Show("Cannot detect any executeable application. Please check if it's a correct path");
+                    System.Windows.MessageBox.Show(Strings.invalid_target_path);
                     this.Start.IsChecked = false;
                 }
             }
@@ -245,7 +240,7 @@ namespace AntiRecall
             
         }
 
-        private void menuItem1_Click(object Sender, EventArgs e)
+        private void MenuItem1_Click(object Sender, EventArgs e)
         {
             ni.Visible = false;
             if (proxy != null)
@@ -257,8 +252,8 @@ namespace AntiRecall
         {
             this.Hide();
 
-            ni.BalloonTipTitle = "AntiRecall";
-            ni.BalloonTipText = "Minimized Antirecall, running on the background";
+            ni.BalloonTipTitle = Strings.title;
+            ni.BalloonTipText = Strings.minimized;
             ni.BalloonTipIcon = ToolTipIcon.Info;
             ni.ShowBalloonTip(30000);
         }

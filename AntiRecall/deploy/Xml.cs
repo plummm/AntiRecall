@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Xml;
+using AntiRecall.deploy;
 
 namespace AntiRecall.deploy
 {
@@ -16,6 +17,7 @@ namespace AntiRecall.deploy
         public static SortedDictionary<string, SortedDictionary<string, string>> antiRElement;
         public static SortedDictionary<string, string> currentElement;
         public static string currentApp;
+        private static string[] namelist = { "QQ", "Wechat", "Telegram" };
 
         public bool CanExecute(object parameter)
         {
@@ -25,13 +27,14 @@ namespace AntiRecall.deploy
         public virtual void Execute(object parameter)
         {
             string name = (string)((Telerik.Windows.Controls.RadRadialMenuItem)parameter).Header;
-            switchApp(name);
+            SwitchApp(name);
         }
 
         public event EventHandler CanExecuteChanged;
-        public static void init_xml()
+        public void Init_xml()
         {
-            currentApp = "QQ";
+            bool update = false;
+            currentApp = "Telegram";
             antiRElement = new SortedDictionary<string, SortedDictionary<string, string>>();
             if (CheckXml())
             {
@@ -44,7 +47,7 @@ namespace AntiRecall.deploy
                 {
                     string appName = node.Attributes["Name"].Value;
                     var app = new SortedDictionary<string, string>();
-
+                    app["Name"] = node.Attributes["Name"].Value;
                     app["Port"] = node.Attributes["Port"].Value;
                     app["Path"] = node.Attributes["Path"].Value;
                     app["Mode"] = node.Attributes["Mode"].Value;
@@ -52,60 +55,62 @@ namespace AntiRecall.deploy
                     antiRElement[appName] = app;
                 }
             }
-            else
+
+            foreach (string name in namelist)
             {
-                var app = new SortedDictionary<string, string>();
-                app["Name"] = "QQ";
-                app["Port"] = "";
-                app["Path"] = "";
-                app["Mode"] = "";
-                app["Descript"] = "AntiRecall";
-                antiRElement["QQ"] = app;
-                app = new SortedDictionary<string, string>();
-                app["Name"] = "Wechat";
-                app["Port"] = "";
-                app["Path"] = "";
-                app["Mode"] = "";
-                app["Descript"] = "AntiRecall";
-                antiRElement["Wechat"] = app;
+                if (!antiRElement.ContainsKey(name))
+                {
+                    antiRElement[name] = MainWindow.instances[name].BasicInfo();
+                    update = true;
+                }
+            }
+            if (update)
+            {
+                System.IO.File.Delete(ShortCut.currentDirectory + @"\setting.xml");
                 CreateXml(antiRElement);
             }
 
             currentElement = antiRElement[currentApp];
-            MainWindow window = (MainWindow)System.Windows.Application.Current.MainWindow;
+            SwitchApp(currentApp);
+            _ = (MainWindow)System.Windows.Application.Current.MainWindow;
         }
         
-        public void switchApp(string name)
+        public void SwitchApp(string name)
         {
             MainWindow window = (MainWindow)System.Windows.Application.Current.MainWindow;
             currentApp = name;
             currentElement = antiRElement[currentApp];
-            TextBox curApp = (TextBox)window.FindName("Current_App");
-            curApp.Text = currentApp;
-            RadioButton buttonA = (RadioButton)window.FindName("Memory_patch_button");
-            RadioButton buttonB = (RadioButton)window.FindName("Proxy_button");
+            window.Current_App.Text = currentApp;
             if (currentElement["Mode"] == "proxy")
             {
-                buttonB.IsChecked = true;
+                window.Proxy_button.IsChecked = true;
             } 
             else
             {
-                buttonB.IsChecked = false;
+                window.Proxy_button.IsChecked = false;
             }
 
             if (currentElement["Mode"] == "patch")
             {
-                buttonA.IsChecked = true;
+                window.Memory_patch_button.IsChecked = true;
             }
             else
             {
-                buttonA.IsChecked = false;
+                window.Memory_patch_button.IsChecked = false;
             }
-            TextBox port = (TextBox)window.FindName("PortText");
-            port.Text = currentElement["Port"];
+
+            if (-1 != currentElement["Path"].IndexOf("exe"))
+            {
+                window.Explorer.Content = Strings.explorer_ready;
+            }
+            else
+            {
+                window.Explorer.Content = Strings.explorer_hold;
+            }
+            window.PortText.Text = currentElement["Port"];
         }
 
-        public static string getPort()
+        public string GetPort()
         {
             foreach (var entry in antiRElement)
             {
@@ -115,7 +120,7 @@ namespace AntiRecall.deploy
             return null;
         }
 
-        public static string getDescription()
+        public string GetDescription()
         {
             foreach (var entry in antiRElement)
             {
@@ -141,8 +146,9 @@ namespace AntiRecall.deploy
             {
                 System.IO.File.Delete(ShortCut.currentDirectory + @"\setting.xml");
                 System.Windows.MessageBox.Show("1.Support Wechat(have fun)\n2.Optimize the performance of memory patch\n3.Proxy is unstable due to some reasons, I recommand using memory patch", "What's new", MessageBoxButton.OK);
+                return false;
             }
-            return false;
+            return true;
         }
 
         public static void CreateXml(SortedDictionary<string, SortedDictionary<string, string>> dict)

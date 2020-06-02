@@ -17,7 +17,7 @@ namespace AntiRecall.deploy
         {
             startupKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run", true);
             string QQName = "QQ2009";
-            string MyName = "AntiRecall";
+            string MyName = Strings.title;
             if (-1 == Xml.currentElement["Path"].IndexOf("QQ.exe"))
             {
                 System.Windows.Forms.MessageBox.Show("未设置QQ安装目录");

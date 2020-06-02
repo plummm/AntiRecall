@@ -77,7 +77,7 @@ namespace socks5
                     module_ni.Icon = SystemIcons.Exclamation;
                     module_ni.Visible = true;
                     module_ni.BalloonTipTitle = "AntiRecall";
-                    module_ni.BalloonTipText = "防撤回模块已成功加载";
+                    module_ni.BalloonTipText = "AntiRecall module has been Loaded";
                     module_ni.BalloonTipIcon = ToolTipIcon.Info;
                     module_ni.ShowBalloonTip(30000);
                     module_ni.Visible = false;

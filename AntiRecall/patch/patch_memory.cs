@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Windows.Input;
 using System.Runtime.CompilerServices;
+using AntiRecall.deploy;
 
 namespace AntiRecall.patch
 {
@@ -14,8 +15,8 @@ namespace AntiRecall.patch
     {
         const int PROCESS_ALL_ACCESS = 0x1F0FFF;
         public ModuleType myProc;
-        public static string procName { get; set; }
-        public static string moduleName { get; set; }
+        public string procName { get; set; }
+        public string moduleName { get; set; }
 
         public struct ModuleType
         {
@@ -64,6 +65,18 @@ namespace AntiRecall.patch
 
         public event EventHandler CanExecuteChanged;
 
+        public SortedDictionary<string, string> BasicInfo()
+        {
+            SortedDictionary<string, string> dict = new SortedDictionary<string, string>
+            {
+                ["Name"] = procName,
+                ["Port"] = "",
+                ["Path"] = "",
+                ["Mode"] = "",
+                ["Descript"] = Strings.title
+            };
+            return dict;
+        }
         public int StartingIndex(byte[] x, byte[] y)
         {
             try
@@ -91,8 +104,8 @@ namespace AntiRecall.patch
             module_ni = new NotifyIcon();
             module_ni.Icon = SystemIcons.Exclamation;
             module_ni.Visible = true;
-            module_ni.BalloonTipTitle = "AntiRecall";
-            module_ni.BalloonTipText = "Antirecall mudule has been loaded.";
+            module_ni.BalloonTipTitle = Strings.title;
+            module_ni.BalloonTipText = Strings.loaded_module;
             module_ni.BalloonTipIcon = ToolTipIcon.Info;
             module_ni.ShowBalloonTip(30000);
             module_ni.Visible = false;
@@ -115,7 +128,7 @@ namespace AntiRecall.patch
                 result = doPatch(myProc);
                 if (result == -1)
                 {
-                    System.Windows.MessageBox.Show("Fail to load antirecall module, close antivirus and try again");
+                    System.Windows.MessageBox.Show(Strings.failed_loaded_module);
                 }
             }
         }
@@ -182,11 +195,11 @@ namespace AntiRecall.patch
 
     public class QQPatch : patch_memory
     {
-        private static byte[] chat = { (byte)'\x81', (byte)'\x7d', (byte)'\x0c', (byte)'\x8a', (byte)'\x00' };
-        private static byte[] groupChat = { (byte)'\x80', (byte)'\x7D', (byte)'\xFF', (byte)'\x11', (byte)'\x0f' };
-        private static byte[] chatReplacement = { (byte)'\x84' };
-        private static int chatOffset = -5;
-        private static int groupChatOffset = 5;
+        private static readonly byte[] chat = { (byte)'\x81', (byte)'\x7d', (byte)'\x0c', (byte)'\x8a', (byte)'\x00' };
+        private static readonly byte[] groupChat = { (byte)'\x80', (byte)'\x7D', (byte)'\xFF', (byte)'\x11', (byte)'\x0f' };
+        private static readonly byte[] chatReplacement = { (byte)'\x84' };
+        private static readonly int chatOffset = -5;
+        private static readonly int groupChatOffset = 5;
 
         public QQPatch() { }
 
@@ -207,9 +220,9 @@ namespace AntiRecall.patch
     }
     public class WechatPatch : patch_memory
     {
-        private static byte[] wechatPattern = { (byte)'\x83', (byte)'\xC4', (byte)'\x14', (byte)'\x84', (byte)'\xC0', (byte)'\x74', (byte)'\x7D' };
-        private static byte[] chatReplacement = { (byte)'\x7d' };
-        private static int offset = 5;
+        private static readonly byte[] wechatPattern = { (byte)'\x83', (byte)'\xC4', (byte)'\x14', (byte)'\x84', (byte)'\xC0', (byte)'\x74', (byte)'\x7D' };
+        private static readonly byte[] chatReplacement = { (byte)'\x7d' };
+        private static readonly int offset = 5;
 
         public WechatPatch() { }
 
@@ -218,9 +231,32 @@ namespace AntiRecall.patch
             procName = name1;
             moduleName = name2;
         }
+
         public override int doPatch(ModuleType process)
         {
             if (Patch(process, wechatPattern, chatReplacement, offset) == -1)
+                return -1;
+            return 0;
+        }
+    }
+
+    public class TelegramPatch : patch_memory
+    {
+        private static readonly byte[] tgPattern = { (byte)'\x0F', (byte)'\x84', (byte)'\xE5', (byte)'\x00', (byte)'\x00', (byte)'\x00', (byte)'\x51', (byte)'\x8B', (byte)'\xC4', (byte)'\x89', (byte)'\x08', (byte)'\x8B', (byte)'\xCE' };
+        private static readonly byte[] tgReplacement = { (byte)'\x90', (byte)'\x90', (byte)'\x90', (byte)'\x90', (byte)'\x90' };
+        private static readonly int offset = 13;
+
+        public TelegramPatch() { }
+
+        public TelegramPatch(string name1, string name2)
+        {
+            procName = name1;
+            moduleName = name2;
+        }
+
+        public override int doPatch(ModuleType process)
+        {
+            if (Patch(process, tgPattern, tgReplacement, offset) == -1)
                 return -1;
             return 0;
         }

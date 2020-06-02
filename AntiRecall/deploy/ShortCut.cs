@@ -66,6 +66,13 @@ namespace AntiRecall.deploy
         {
             if (currentDirectory == null)
                 currentDirectory = System.IO.Directory.GetCurrentDirectory();
+            if (System.IO.File.Exists(currentDirectory+"/AntiRecall.lnk"))
+            {
+                string lnkPath = currentDirectory + "/AntiRecall.lnk";
+                WshShell shell = new WshShell(); //Create a new WshShell Interface
+                IWshShortcut link = (IWshShortcut)shell.CreateShortcut(lnkPath);
+                currentDirectory = System.IO.Path.GetDirectoryName(link.TargetPath);
+            }
             myVersion = "2.1.1";
 
             if (!CheckShortCut(filename))
