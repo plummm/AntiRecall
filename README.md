@@ -1,6 +1,6 @@
 # AntiRecall (For Telegram, WeChat, and QQ)
 
-![Platform](https://img.shields.io/badge/Platform-Windows-brightgreen)![Version](https://img.shields.io/badge/Version-v3.0.0-red)[![Download](https://img.shields.io/badge/Downloads-2.0K-yellow)![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+![Platform](https://img.shields.io/badge/Platform-Windows-brightgreen)  ![Version](https://img.shields.io/badge/Version-v3.0.0-red)  ![Download](https://img.shields.io/badge/Downloads-2.0K-yellow)  ![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)
 
 :crescent_moon: English | :sleeping:[简体中文](/README-zh.md)
 
