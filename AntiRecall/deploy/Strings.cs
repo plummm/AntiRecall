@@ -17,5 +17,9 @@ namespace AntiRecall.deploy
         public static string loaded_module = "Antirecall mudule has been loaded.";
         public static string failed_loaded_module = "Fail to load antirecall module, close antivirus and try again";
         public static string minimized = "Minimized AntiRecall, running on the background";
+        public static string launch_stopped = "Stopped";
+        public static string launch_started = "Started";
+        public static string proxy_warning = "Proxy is not recommended any more. Do you really want to use proxy?";
+        public static string warning = "Warning";
     }
 }

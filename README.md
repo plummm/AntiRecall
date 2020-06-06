@@ -13,6 +13,7 @@ Anti-recall for **Telegram**, **WeChat**, and **QQ**.
 - Prevent messages from revoking by server (*Telegram* :heavy_check_mark: *WeChat* :heavy_check_mark: *QQ* :heavy_check_mark:)
 - Hot patch without modifying original application
 - No overhead due to the binary level patching
+- Tag deleted message (Tagging deleted message bases on [Telegram-Anti-Revoke](https://github.com/SpriteOvO/Telegram-Anti-Revoke ))
 
 ## Download
 
@@ -20,7 +21,17 @@ Anti-recall for **Telegram**, **WeChat**, and **QQ**.
 
 ## Demo
 
+##### Telegram :arrow_down_small:
+
 ![](resource/telegram.gif)
+
+##### WeChat :arrow_down_small:
+
+![](resource/wechat.gif)
+
+##### QQ :arrow_down_small:
+
+![](resource/qq.gif)
 
 ## How to use it?
 
@@ -28,6 +39,5 @@ Anti-recall for **Telegram**, **WeChat**, and **QQ**.
 
 ## To-do 
 
-- Tag the deleted message
 - View the original content of edited messages(Telegram)
 - Remove proxy method (Maybe)

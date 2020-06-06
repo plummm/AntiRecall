@@ -47,8 +47,14 @@ namespace AntiRecall
             ni.Icon = new Icon("../../Resources/main-blue.ico");
 #else
             ShortCut.currentDirectory = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
-         
-            ni.Icon = new Icon(ShortCut.currentDirectory + "\\Resources\\main-blue.ico");
+            try
+            {
+                ni.Icon = new Icon(ShortCut.currentDirectory + "\\Resources\\main-blue.ico");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("No ico found");
+            }
             
 #endif
             ni.DoubleClick +=
@@ -79,7 +85,7 @@ namespace AntiRecall
                 this.PortText.IsReadOnly = false;
                 this.Proxy_button.IsChecked = true;
                 this.Memory_patch_button.IsChecked = false;
-                this.Descript_text.Text = "set proxy for QQ";
+                this.Descript_text.Text = "set proxy for QQ/Wechat";
                 this.Explorer.Foreground = System.Windows.Media.Brushes.Black;
                 this.Explorer.IsEnabled = true;
             }
@@ -148,6 +154,7 @@ namespace AntiRecall
 
             if (this.Start.IsChecked == false)
             {
+                Xml.currentElement["Launch"] = Strings.launch_stopped;
                 if (Xml.currentElement["Mode"] == "proxy")
                 {
                     proxy.Stop();
@@ -161,19 +168,23 @@ namespace AntiRecall
 
             if (this.Start.IsChecked == true)
             {
+                Xml.currentElement["Launch"] = Strings.launch_started;
                 port = PortText.Text;
 
                 if (Xml.currentElement["Mode"] == "proxy")
                 {
-                    Init_socks5();
-                    //Startup.init_startup();
-                    //Modify xml
-                    Xml.currentElement["Port"] = PortText.Text;
-                    if (!Xml.CheckXml())
-                        Xml.CreateXml(Xml.antiRElement);
-                    else
-                        Xml.ModifyXml(Xml.currentApp, Xml.currentElement);
-                    
+                    MessageBoxResult result = System.Windows.MessageBox.Show(Strings.proxy_warning, Strings.warning, MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        Init_socks5();
+                        //Startup.init_startup();
+                        //Modify xml
+                        Xml.currentElement["Port"] = PortText.Text;
+                        if (!Xml.CheckXml())
+                            Xml.CreateXml(Xml.antiRElement);
+                        else
+                            Xml.ModifyXml(Xml.currentApp, Xml.currentElement);
+                    }
                 }
                 else if (Xml.currentElement["Mode"] == "patch")
                 {
@@ -184,7 +195,7 @@ namespace AntiRecall
                 }
                 else
                 {
-                    System.Windows.MessageBox.Show(Strings.invalid_method);
+                    System.Windows.MessageBox.Show(Strings.invalid_method, Strings.warning);
                     this.Start.IsChecked = false;
                     return;
                 }
@@ -202,13 +213,13 @@ namespace AntiRecall
                     }
                     catch (Exception)
                     {
-                        System.Windows.MessageBox.Show(Strings.incorrect_target_path);
+                        System.Windows.MessageBox.Show(Strings.incorrect_target_path, Strings.warning);
                         this.Start.IsChecked = false;
                     }
                 }
                 else
                 {
-                    System.Windows.MessageBox.Show(Strings.invalid_target_path);
+                    System.Windows.MessageBox.Show(Strings.invalid_target_path, Strings.warning);
                     this.Start.IsChecked = false;
                 }
             }

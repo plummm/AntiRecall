@@ -9,11 +9,51 @@ using System.Windows.Input;
 using System.Runtime.CompilerServices;
 using AntiRecall.deploy;
 
+/*
+ * char, INT8, SBYTE, CHARâ€ 	                                        8-bit signed integer	                System.SByte
+ * short, short int, INT16, SHORT	                                    16-bit signed integer	                System.Int16
+ * int, long, long int, INT32, LONG32, BOOLâ€ , INT	                    32-bit signed integer	                System.Int32
+ * __int64, INT64, LONGLONG	                                            64-bit signed integer	                System.Int64
+ * unsigned char, UINT8, UCHARâ€ , BYTE	                                8-bit unsigned integer	                System.Byte
+ * unsigned short, UINT16, USHORT, WORD, ATOM, WCHARâ€ , __wchar_t	    16-bit unsigned integer	                System.UInt16
+ * unsigned, unsigned int, UINT32, ULONG32, DWORD32, ULONG, DWORD, UINT	32-bit unsigned integer	                System.UInt32
+ * unsigned __int64, UINT64, DWORDLONG, ULONGLONG	                    64-bit unsigned integer	                System.UInt64
+ * float, FLOAT	                                                        Single-precision floating point	        System.Single
+ * double, long double, DOUBLE	                                        Double-precision floating point	        System.Double
+ */
+using HANDLE = System.IntPtr;
+using DWORD = System.UInt32;
+using BOOL = System.Boolean;
+using SIZE_T = System.UInt32;
+using LPDWORD = System.UInt32;
+
+//System.IntPtr
+using LPVOID = System.IntPtr;
+using FARPROC = System.IntPtr;
+using HMODULE = System.IntPtr;
+
+//System.String
+using LPCTSTR = System.String;
+using LPSTR = System.String;
+using LPCSTR = System.String;
+using PCSTR = System.String;
+using PSTR = System.String;
+using LPCWSTR = System.String;
+using LPWSTR = System.String;
+using PCWSTR = System.String;
+using PWSTR = System.String;
+using System.Text;
+
 namespace AntiRecall.patch
 {
     public class patch_memory : ICommand
     {
-        const int PROCESS_ALL_ACCESS = 0x1F0FFF;
+        //mask
+        const uint PROCESS_ALL_ACCESS = 0x1F0FFF;
+        const uint MEM_COMMIT = 0x00001000;
+        const uint PAGE_READWRITE = 0x04;
+        const uint INFINITE = 0xFFFFFFFF;
+
         public ModuleType myProc;
         public string procName { get; set; }
         public string moduleName { get; set; }
@@ -21,36 +61,79 @@ namespace AntiRecall.patch
         public struct ModuleType
         {
             public IntPtr StartAddr;
-            public int Size;
-            public int Pid;
+            public SIZE_T Size;
+            public uint Pid;
         }
         public static NotifyIcon module_ni;
 
         [DllImport("kernel32.dll")]
-        public static extern IntPtr OpenProcess(
-            int dwDesiredAccess, 
-            bool bInheritHandle, 
-            int dwProcessId);
+        public static extern HANDLE OpenProcess(
+            DWORD dwDesiredAccess,
+            BOOL bInheritHandle,
+            DWORD dwProcessId);
 
         [DllImport("kernel32.dll")]
-        public static extern bool ReadProcessMemory(
-            int hProcess,
-            int lpBaseAddress, 
-            byte[] lpBuffer, 
-            int dwSize, 
-            ref int lpNumberOfBytesRead);
+        public static extern LPVOID VirtualAllocEx(
+            HANDLE hProcess,
+            LPVOID lpAddress,
+            SIZE_T dwSize,
+            DWORD flAllocationType,
+            DWORD flProtect);
 
         [DllImport("kernel32.dll")]
-        public static extern bool WriteProcessMemory(
-            int  hProcess,
-            int  lpBaseAddress,
+        public static extern BOOL WriteProcessMemory(
+            HANDLE hProcess,
+            LPVOID lpBaseAddress,
             byte[] lpBuffer,
-            int  nSize,
-            ref int  lpNumberOfBytesWritten);
+            SIZE_T nSize,
+            ref SIZE_T lpNumberOfBytesWritten
+        );
 
         [DllImport("kernel32.dll")]
-        public static extern bool CloseHandle(
-            int hObject);
+        public static extern BOOL WriteProcessMemory(
+            HANDLE hProcess,
+            LPVOID lpBaseAddress,
+            UInt16[] lpBuffer,
+            SIZE_T nSize,
+            ref SIZE_T lpNumberOfBytesWritten
+        );
+
+        [DllImport("kernel32.dll")]
+        public static extern BOOL ReadProcessMemory(
+            HANDLE hProcess,
+            LPVOID lpBaseAddress,
+            byte[] lpBuffer,
+            SIZE_T dwSize,
+            ref SIZE_T lpNumberOfBytesRead);
+
+        [DllImport("kernel32.dll")]
+        public static extern FARPROC GetProcAddress(
+            HMODULE hModule,
+            LPCSTR lpProcName);
+
+        [DllImport("kernel32.dll")]
+        public static extern HMODULE GetModuleHandle(
+            LPCTSTR lpModuleName);
+
+        [DllImport("kernel32.dll")]
+        public static extern DWORD WaitForSingleObject(
+            HANDLE hHandle,
+            DWORD dwMilliseconds);
+
+        [DllImport("kernel32.dll")]
+        public static extern HANDLE CreateRemoteThread(
+            HANDLE hProcess,
+            IntPtr lpThreadAttributes,
+            SIZE_T dwStackSize,
+            IntPtr lpStartAddress,
+            int lpParameter,
+            DWORD dwCreationFlags,
+            LPDWORD lpThreadId
+        );
+
+        [DllImport("kernel32.dll")]
+        public static extern BOOL CloseHandle(
+            HANDLE hObject);
 
         public bool CanExecute(object parameter)
         {
@@ -121,7 +204,11 @@ namespace AntiRecall.patch
             int is_running = 0;
             int result = -1;
 
+#if DEBUG
+            System.Threading.Thread.Sleep(2);
+#else
             System.Threading.Thread.Sleep(30000);
+#endif
             is_running = FindProcess();
             if (is_running == 1)
             {
@@ -152,8 +239,8 @@ namespace AntiRecall.patch
                     if (myProcessModule.ModuleName.ToLower().Equals(moduleName))
                     {
                         myProc.StartAddr = myProcessModule.BaseAddress;
-                        myProc.Size = myProcessModule.ModuleMemorySize;
-                        myProc.Pid = processArray[0].Id;
+                        myProc.Size = (SIZE_T)myProcessModule.ModuleMemorySize;
+                        myProc.Pid = (DWORD)processArray[0].Id;
                         break;
                     }
                 }
@@ -164,15 +251,15 @@ namespace AntiRecall.patch
 
         public int Patch(ModuleType process, byte[] pattern, byte[] replacement, int offset)
         {
-            IntPtr pHandle = OpenProcess(PROCESS_ALL_ACCESS, false, process.Pid);
-            int bytesRead = 0;
-            int bytesWritten = 0;
-            byte[] buffer = new byte[process.Size];
+            HANDLE pHandle = OpenProcess(PROCESS_ALL_ACCESS, false, process.Pid);
+            SIZE_T bytesRead = 0;
+            SIZE_T bytesWritten = 0;
+            byte[] buffer = new byte[(int)process.Size];
             int position;
             int userAddr;
             byte[] byteToWrite;
 
-            if (ReadProcessMemory((int)pHandle, (int)process.StartAddr, buffer, process.Size, ref bytesRead) == false)
+            if (ReadProcessMemory(pHandle, process.StartAddr, buffer, process.Size, ref bytesRead) == false)
                     return -1;
 
             position = StartingIndex(buffer, pattern);
@@ -182,14 +269,62 @@ namespace AntiRecall.patch
             //int position = str.IndexOf(single);
             userAddr = (int)process.StartAddr + position + offset;
             byteToWrite = replacement.ToArray();
+            //IntPtr pByteToWrite = ByteArray2IntPtr(byteToWrite);
 
-            if (WriteProcessMemory((int)pHandle, userAddr, byteToWrite, byteToWrite.Length, ref bytesWritten) == false)
+            if (WriteProcessMemory(pHandle, new IntPtr(userAddr), byteToWrite, (SIZE_T)byteToWrite.Length, ref bytesWritten) == false)
                 return -1;
 
             LoadBallon();
 
-            CloseHandle((int)pHandle);
+            CloseHandle(pHandle);
             return 1;
+        }
+
+        public bool InjectDll(ModuleType process, LPCTSTR szDllPath)
+        {
+            IntPtr pThreadProc;
+            HANDLE hThread, hProcess, pRemoteBuf;
+            SIZE_T bytesWritten = 0;
+            DWORD dwBufSize = (DWORD)(szDllPath.Length + 1) * 2;
+            int buf;
+
+            //wchar in C
+            UInt16[] wDllPath = szDllPath.ToCharArray().Select(x => (UInt16)x).ToArray();
+
+
+            hProcess = OpenProcess(PROCESS_ALL_ACCESS, false, process.Pid);
+            if (hProcess == IntPtr.Zero)
+            {
+                return false;
+            }
+            pRemoteBuf = VirtualAllocEx(hProcess, IntPtr.Zero, dwBufSize, MEM_COMMIT, PAGE_READWRITE);
+
+            WriteProcessMemory(hProcess, pRemoteBuf, wDllPath, dwBufSize, ref bytesWritten);
+            pThreadProc = GetProcAddress(GetModuleHandle("kernel32.dll"), "LoadLibraryW");
+            unsafe
+            {
+                buf = pRemoteBuf.ToInt32();
+            }
+            hThread = CreateRemoteThread(hProcess, IntPtr.Zero, 0, pThreadProc, buf, 0, 0);
+            WaitForSingleObject(hThread, INFINITE);
+            CloseHandle(hThread);
+            CloseHandle(hProcess);
+
+            return true;
+        }
+
+        private IntPtr ByteArray2IntPtr(byte[] array)
+        {
+            IntPtr ptr = Marshal.AllocHGlobal(array.Length);
+            Marshal.Copy(array, 0, ptr, array.Length);
+            return ptr;
+        }
+
+        private byte[] IntPtr2ByteArray(IntPtr ptr, int size)
+        {
+            byte[] managedArray = new byte[size];
+            Marshal.Copy(ptr, managedArray, 0, size);
+            return managedArray;
         }
     }
 
@@ -245,6 +380,7 @@ namespace AntiRecall.patch
         private static readonly byte[] tgPattern = { (byte)'\x0F', (byte)'\x84', (byte)'\xE5', (byte)'\x00', (byte)'\x00', (byte)'\x00', (byte)'\x51', (byte)'\x8B', (byte)'\xC4', (byte)'\x89', (byte)'\x08', (byte)'\x8B', (byte)'\xCE' };
         private static readonly byte[] tgReplacement = { (byte)'\x90', (byte)'\x90', (byte)'\x90', (byte)'\x90', (byte)'\x90' };
         private static readonly int offset = 13;
+        private static readonly string dllName = "\\TelegramHelper.dll";
 
         public TelegramPatch() { }
 
@@ -256,8 +392,8 @@ namespace AntiRecall.patch
 
         public override int doPatch(ModuleType process)
         {
-            if (Patch(process, tgPattern, tgReplacement, offset) == -1)
-                return -1;
+            Patch(process, tgPattern, tgReplacement, offset);
+            InjectDll(process, ShortCut.currentDirectory + dllName);
             return 0;
         }
     }

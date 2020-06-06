@@ -52,6 +52,7 @@ namespace AntiRecall.deploy
                     app["Path"] = node.Attributes["Path"].Value;
                     app["Mode"] = node.Attributes["Mode"].Value;
                     app["Descript"] = node.Attributes["Descript"].Value;
+                    app["Launch"] = Strings.launch_stopped;
                     antiRElement[appName] = app;
                 }
             }
@@ -60,7 +61,9 @@ namespace AntiRecall.deploy
             {
                 if (!antiRElement.ContainsKey(name))
                 {
-                    antiRElement[name] = MainWindow.instances[name].BasicInfo();
+                    var app = MainWindow.instances[name].BasicInfo();
+                    app["Launch"] = Strings.launch_stopped;
+                    antiRElement[name] = app;
                     update = true;
                 }
             }
@@ -108,6 +111,10 @@ namespace AntiRecall.deploy
                 window.Explorer.Content = Strings.explorer_hold;
             }
             window.PortText.Text = currentElement["Port"];
+            if (currentElement["Launch"] == Strings.launch_stopped)
+                window.Start.IsChecked = false;
+            else
+                window.Start.IsChecked = true;
         }
 
         public string GetPort()
