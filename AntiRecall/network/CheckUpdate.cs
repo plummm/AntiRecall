@@ -110,18 +110,19 @@ namespace AntiRecall.network
                 thread.Start();
                 */
                 client = new WebClient();
-                client.DownloadFile(url, ".\\tmp\\AntiRecall.zip");
+                client.DownloadFile(url, ShortCut.currentDirectory+@"\\tmp\\AntiRecall.zip");
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                System.Windows.MessageBox.Show(e.ToString(), @"Download error", MessageBoxButton.OK);
                 return false;
             }
         }
 
         private static void DownloadCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            long size = new System.IO.FileInfo(@".\\tmp\\AntiRecall.zip").Length;
+            long size = new System.IO.FileInfo(ShortCut.currentDirectory + @"\\tmp\\AntiRecall.zip").Length;
             if (size != 0)
             {
                 MessageBoxResult result = System.Windows.MessageBox.Show(@"Fail to download，please update manually.", @"Congradulation", MessageBoxButton.OK);
