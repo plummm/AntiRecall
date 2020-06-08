@@ -26,11 +26,11 @@
 
 ##### WeChat :arrow_down_small:
 
-![](C:/Users/etena/source/repos/FlyRabbit/AntiRecall/resource/wechat.gif)
+![](resource/wechat.gif)
 
 ##### QQ :arrow_down_small:
 
-![](C:/Users/etena/source/repos/FlyRabbit/AntiRecall/resource/qq.gif)
+![](resource/qq.gif)
 
 ## 使用方法
 
