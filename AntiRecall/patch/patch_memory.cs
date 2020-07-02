@@ -153,9 +153,8 @@ namespace AntiRecall.patch
             SortedDictionary<string, string> dict = new SortedDictionary<string, string>
             {
                 ["Name"] = procName,
-                ["Port"] = "",
                 ["Path"] = "",
-                ["Mode"] = "",
+                ["Mode"] = "patch",
                 ["Descript"] = Strings.title
             };
             return dict;

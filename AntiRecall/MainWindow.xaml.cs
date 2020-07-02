@@ -3,7 +3,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Drawing;
-using socks5;
 using System.Net;
 using System.Diagnostics;
 using AntiRecall.deploy;
@@ -21,11 +20,8 @@ namespace AntiRecall
     
     public partial class MainWindow : Window
     {
-
-        private string port;
         private static NotifyIcon ni;
         public static Dictionary<string, patch_memory> instances;
-        public static socks5.Socks5Server proxy;
         public static double count { get; set; }
         public static bool is_recallmodule_load { get; set; }
 
@@ -66,37 +62,13 @@ namespace AntiRecall
                 };
         }
 
-        private void Init_socks5()
-        {
-            if (port!=null)
-                proxy = new Socks5Server(IPAddress.Any, Convert.ToInt32(port));
-            proxy.PacketSize = 65535;
-            proxy.Start();
-        }
-
         private delegate void TextChanger();
 
         public void ModeCheck()
         {
-             if (Xml.currentElement["Mode"] == "proxy")
-            {
-                this.PortItem.Foreground = System.Windows.Media.Brushes.Black;
-                this.PortText.Foreground = System.Windows.Media.Brushes.Black;
-                this.PortText.IsReadOnly = false;
-                this.Proxy_button.IsChecked = true;
-                this.Memory_patch_button.IsChecked = false;
-                this.Descript_text.Text = "set proxy for QQ/Wechat";
-                this.Explorer.Foreground = System.Windows.Media.Brushes.Black;
-                this.Explorer.IsEnabled = true;
-            }
 
             if (Xml.currentElement["Mode"] == "patch")
             {
-                this.PortItem.Foreground = System.Windows.Media.Brushes.Gray;
-                this.PortText.Foreground = System.Windows.Media.Brushes.Gray;
-                this.PortText.IsReadOnly = true;
-                this.Proxy_button.IsChecked = false;
-                this.Memory_patch_button.IsChecked = true;
                 this.Descript_text.Text = "All set";
                 this.Explorer.Foreground = System.Windows.Media.Brushes.Black;
                 this.Explorer.IsEnabled = true;
@@ -107,23 +79,6 @@ namespace AntiRecall
                 this.Explorer.Content = Strings.explorer_ready;
             }
         }
-        /*
-        private void UpdateCount()
-        {
-            Regex re = new Regex("\\[\\d*\\]");
-#if DEBUG
-            Console.WriteLine(count);
-#endif
-            Recall_Text.Text = re.Replace(Recall_Text.Text, "["+Convert.ToString(Math.Ceiling(count / 8))+"]");
-        }
-
-        public void ModifyRecallCount()
-        {
-            Recall_Text.Dispatcher.Invoke(
-                System.Windows.Threading.DispatcherPriority.Normal,
-                new TextChanger(UpdateCount));
-        }*/
-
         
         public MainWindow()
         {
@@ -135,7 +90,6 @@ namespace AntiRecall
             CheckUpdate.init_checkUpdate();
             Init_minimize();
             ModeCheck();
-            PortText.Text = xml.GetPort();
             this.Descript_text.Text = Strings.title+" v" + ShortCut.myVersion;
         }
 
@@ -155,10 +109,6 @@ namespace AntiRecall
             if (this.Start.IsChecked == false)
             {
                 Xml.currentElement["Launch"] = Strings.launch_stopped;
-                if (Xml.currentElement["Mode"] == "proxy")
-                {
-                    proxy.Stop();
-                }
 
                 if (Xml.currentElement["Mode"] == "patch")
                 {
@@ -169,26 +119,9 @@ namespace AntiRecall
             if (this.Start.IsChecked == true)
             {
                 Xml.currentElement["Launch"] = Strings.launch_started;
-                port = PortText.Text;
 
-                if (Xml.currentElement["Mode"] == "proxy")
+                if (Xml.currentElement["Mode"] == "patch")
                 {
-                    MessageBoxResult result = System.Windows.MessageBox.Show(Strings.proxy_warning, Strings.warning, MessageBoxButton.YesNo, MessageBoxImage.Question);
-                    if (result == MessageBoxResult.Yes)
-                    {
-                        Init_socks5();
-                        //Startup.init_startup();
-                        //Modify xml
-                        Xml.currentElement["Port"] = PortText.Text;
-                        if (!Xml.CheckXml())
-                            Xml.CreateXml(Xml.antiRElement);
-                        else
-                            Xml.ModifyXml(Xml.currentApp, Xml.currentElement);
-                    }
-                }
-                else if (Xml.currentElement["Mode"] == "patch")
-                {
-                    Xml.currentElement["Port"] = PortText.Text;
                     Xml.ModifyXml(Xml.currentApp, Xml.currentElement);
                     var th = new Thread(() => instances[Xml.currentApp].StartPatch());
                     th.Start();
@@ -254,8 +187,6 @@ namespace AntiRecall
         private void MenuItem1_Click(object Sender, EventArgs e)
         {
             ni.Visible = false;
-            if (proxy != null)
-                proxy.Stop();
             Close();
         }
 
@@ -279,8 +210,6 @@ namespace AntiRecall
         protected override void OnClosed(EventArgs e)
         {
             ni.Visible = false;
-            if (proxy!=null)
-                proxy.Stop();
             base.OnClosed(e);
             App.Current.Shutdown();
         }

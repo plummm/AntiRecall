@@ -26,7 +26,7 @@ namespace AntiRecall.deploy
 
         public virtual void Execute(object parameter)
         {
-            string name = (string)((Telerik.Windows.Controls.RadRadialMenuItem)parameter).Header;
+            string name = (string)((RadioButton)parameter).Content;
             SwitchApp(name);
         }
 
@@ -48,9 +48,8 @@ namespace AntiRecall.deploy
                     string appName = node.Attributes["Name"].Value;
                     var app = new SortedDictionary<string, string>();
                     app["Name"] = node.Attributes["Name"].Value;
-                    app["Port"] = node.Attributes["Port"].Value;
                     app["Path"] = node.Attributes["Path"].Value;
-                    app["Mode"] = node.Attributes["Mode"].Value;
+                    app["Mode"] = "patch";
                     app["Descript"] = node.Attributes["Descript"].Value;
                     app["Launch"] = Strings.launch_stopped;
                     antiRElement[appName] = app;
@@ -84,23 +83,15 @@ namespace AntiRecall.deploy
             currentApp = name;
             currentElement = antiRElement[currentApp];
             window.Current_App.Text = currentApp;
-            if (currentElement["Mode"] == "proxy")
-            {
-                window.Proxy_button.IsChecked = true;
-            } 
-            else
-            {
-                window.Proxy_button.IsChecked = false;
-            }
-
-            if (currentElement["Mode"] == "patch")
-            {
-                window.Memory_patch_button.IsChecked = true;
-            }
-            else
-            {
-                window.Memory_patch_button.IsChecked = false;
-            }
+            window.Telegram_button.IsChecked = false;
+            window.WeChat_button.IsChecked = false;
+            window.QQ_button.IsChecked = false;
+            if (currentApp == "Telegram")
+                window.Telegram_button.IsChecked = true;
+            if (currentApp == "Wechat")
+                window.WeChat_button.IsChecked = true;
+            if (currentApp == "QQ")
+                window.QQ_button.IsChecked = true;
 
             if (-1 != currentElement["Path"].IndexOf("exe"))
             {
@@ -110,21 +101,10 @@ namespace AntiRecall.deploy
             {
                 window.Explorer.Content = Strings.explorer_hold;
             }
-            window.PortText.Text = currentElement["Port"];
             if (currentElement["Launch"] == Strings.launch_stopped)
                 window.Start.IsChecked = false;
             else
                 window.Start.IsChecked = true;
-        }
-
-        public string GetPort()
-        {
-            foreach (var entry in antiRElement)
-            {
-                var app = entry.Value;
-                return app["Port"];
-            }
-            return null;
         }
 
         public string GetDescription()
@@ -171,7 +151,6 @@ namespace AntiRecall.deploy
                 XmlElement child = (XmlElement)rootNode.AppendChild(doc.CreateElement("App"));
                 child.SetAttribute("Name", app["Name"]);
                 child.SetAttribute("Path", app["Path"]);
-                child.SetAttribute("Port", app["Port"]);
                 child.SetAttribute("Mode", app["Mode"]);
                 child.SetAttribute("Descript", app["Descript"]);
             }
@@ -190,7 +169,6 @@ namespace AntiRecall.deploy
                 if (node.Attributes["Name"].Value == app)
                 {
                     node.Attributes["Path"].Value = dict["Path"];
-                    node.Attributes["Port"].Value = dict["Port"];
                     node.Attributes["Mode"].Value = dict["Mode"];
                     node.Attributes["Descript"].Value = dict["Descript"];
                     break;
