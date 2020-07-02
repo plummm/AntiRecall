@@ -40,4 +40,3 @@ Anti-recall for **Telegram**, **WeChat**, and **QQ**.
 ## To-do 
 
 - View the original content of edited messages(Telegram)
-- Remove proxy method (Maybe)
