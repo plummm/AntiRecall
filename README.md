@@ -1,4 +1,5 @@
 # AntiRecall (For Telegram, WeChat, and QQ)
+AntiRecall is a tool prevents messages from deleting/revoking by server. It currently supports Telegram, WeChat, and QQ.
 
 ![Platform](https://img.shields.io/badge/Platform-Windows-brightgreen)  ![Version](https://img.shields.io/badge/Version-v3.0.0-red)  ![Download](https://img.shields.io/badge/Downloads-2.0K-yellow)  ![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)
 
@@ -10,7 +11,7 @@ Anti-recall for **Telegram**, **WeChat**, and **QQ**.
 
 ## Support
 
-- Prevent messages from revoking by server (*Telegram* :heavy_check_mark: *WeChat* :heavy_check_mark: *QQ* :heavy_check_mark:)
+- Prevent messages from deleting/revoking by server (*Telegram* :heavy_check_mark: *WeChat* :heavy_check_mark: *QQ* :heavy_check_mark:)
 - Hot patch without modifying original application
 - No overhead due to the binary level patching
 - Tag deleted message (Tagging deleted message bases on [Telegram-Anti-Revoke](https://github.com/SpriteOvO/Telegram-Anti-Revoke ))
