@@ -4,13 +4,13 @@
 
 :crescent_moon: English | :sleeping:[简体中文](/README-zh.md)
 
-Anti-recall for **Telegram**, **WeChat**, and **QQ**.
+Anti-Recall is a tool prevents messages from deleting/revoking/recalling by servers. It currently supports  **Telegram**, **WeChat**, and **QQ**.
 
 
 
 ## Support
 
-- Prevent messages from revoking by server (*Telegram* :heavy_check_mark: *WeChat* :heavy_check_mark: *QQ* :heavy_check_mark:)
+- Prevent messages from deleting/revoking by server (*Telegram* :heavy_check_mark: *WeChat* :heavy_check_mark: *QQ* :heavy_check_mark:)
 - Hot patch without modifying original application
 - No overhead due to the binary level patching
 - Tag deleted message (Tagging deleted message bases on [Telegram-Anti-Revoke](https://github.com/SpriteOvO/Telegram-Anti-Revoke ))
