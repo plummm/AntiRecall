@@ -76,10 +76,17 @@ void InitOffsets()
         g::Offsets::Media = 0x54;
     }
     // ver > 2.1.7
-    else if (g::CurrentVersion > 2001007) {
+    if (g::CurrentVersion > 2001007 && g::CurrentVersion < 2004000) {
         g::Offsets::TimeText = 0x88;
         g::Offsets::TimeWidth = 0x8C;
         g::Offsets::MainView = 0x54;
         g::Offsets::Media = 0x4C;
+    }
+
+    if (g::CurrentVersion >= 2004000) {
+        g::Offsets::TimeText = 0x70;
+        g::Offsets::TimeWidth = 0x74;
+        g::Offsets::MainView = 0x5c;
+        g::Offsets::Media = 0x54;
     }
 }

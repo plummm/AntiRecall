@@ -354,8 +354,8 @@ namespace AntiRecall.patch
     }
     public class WechatPatch : patch_memory
     {
-        private static readonly byte[] wechatPattern = { (byte)'\x83', (byte)'\xC4', (byte)'\x14', (byte)'\x84', (byte)'\xC0', (byte)'\x74', (byte)'\x7D' };
-        private static readonly byte[] chatReplacement = { (byte)'\x7d' };
+        private static readonly byte[] wechatPattern = { (byte)'\x83', (byte)'\xC4', (byte)'\x14', (byte)'\x84', (byte)'\xC0', (byte)'\x74', (byte)'\x7D', (byte)'\x0F', (byte)'\x10' };
+        private static readonly byte[] chatReplacement = { (byte)'\xEB' };
         private static readonly int offset = 5;
 
         public WechatPatch() { }

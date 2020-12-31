@@ -73,7 +73,7 @@ namespace AntiRecall.deploy
                 IWshShortcut link = (IWshShortcut)shell.CreateShortcut(lnkPath);
                 currentDirectory = System.IO.Path.GetDirectoryName(link.TargetPath);
             }
-            myVersion = "3.2.1";
+            myVersion = "3.2.2";
 
             if (!CheckShortCut(filename))
             {
