@@ -4,7 +4,7 @@
 
 :crescent_moon: English | :sleeping:[简体中文](/README-zh.md)
 
-Anti-Recall is a tool prevents messages from deleting/revoking/recalling by servers. It currently supports  **Telegram**, **WeChat**, and **QQ**.
+Anti-Recall is a tool that prevents messages from deleting/revoking/recalling. It currently supports  **Telegram**, **WeChat**, and **QQ**.
 
 
 
