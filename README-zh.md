@@ -2,6 +2,8 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Windows-brightgreen)  ![Version](https://img.shields.io/badge/Version-v3.0.0-red)  ![Download](https://img.shields.io/badge/Downloads-2.0K-yellow)  ![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)
 
+## 个人时间有限，这个项目不再维护，如果你有兴趣接管这个项目请与我联系
+
 :crescent_moon: [English](/README.md) | :sleeping:简体中文
 
 用于Win PC平台，阻止**Telegram**, **Wechat**, **QQ**的撤回功能.
